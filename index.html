@@ -101,7 +101,7 @@ header.nav.scrolled .shell{height:78px;box-shadow:0 18px 40px -18px rgba(40,4,8,
 .hero{position:relative;background:radial-gradient(1000px 700px at 75% 35%,rgba(196,38,48,.45),transparent 60%),radial-gradient(900px 600px at 0% 100%,rgba(30,2,5,.7),transparent 60%),linear-gradient(165deg,#8A161D 0%,var(--navy) 45%,var(--ink) 100%);color:#fff;overflow:hidden;padding:230px 0 140px}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,120,110,.22) 1px,transparent 1.4px);background-size:14px 14px;mask-image:radial-gradient(ellipse 60% 55% at 72% 45%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse 60% 55% at 72% 45%,#000 10%,transparent 70%)}
 .hero .net{position:absolute;right:-5%;top:10%;width:70%;height:85%;opacity:.55;pointer-events:none}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,900px);gap:70px;align-items:center}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.5rem);margin:24px 0 28px;font-weight:600;text-transform:uppercase;letter-spacing:-.035em;line-height:.98}
 .hero h1 em{display:block;text-transform:none;font-size:.86em;letter-spacing:-.03em;margin-top:6px}
 .hero h1 .thin{display:block;font-family:var(--sans);font-weight:500;font-size:.78rem;line-height:1.6;color:rgba(255,255,255,.75);letter-spacing:.26em;margin-bottom:22px}
@@ -550,19 +550,6 @@ footer .logo{margin-bottom:26px}
         <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
         <a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a>
         <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-stream" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span>Dołącz online – stream</a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="arch arch-card">
-        <span class="ac-top">Zaproszenie</span>
-        <div class="ac-rule"></div>
-        <strong class="ac-day">6</strong>
-        <span class="ac-month">listopada 2026</span>
-        <div class="ac-rule"></div>
-        <span class="ac-name">Business Women <em>IMPACT</em></span>
-        <span class="ac-place">Butelkownia · Warszawa · 11:30</span>
-        <img class="ac-logo" src="assets/pwcc-logo-gold.png" alt="Polish Women Chamber of Commerce" width="782" height="295">
       </div>
     </div>
   </div>
