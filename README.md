@@ -1,9 +1,14 @@
-# Kongres Gospodarczy Kobiet Biznesu 2026 — strona www
+# Kongres Gospodarczy Kobiet Biznesu 2026 — kongresgospodarczypwcc.pl
 
 Strona Kongresu Gospodarczego Kobiet Biznesu: **5–6 listopada 2026, Butelkownia, Warszawa, start 11:00**.
-Organizator: Polish Women Chamber of Commerce. Częścią Kongresu jest premiera magazynu **Business Women IMPACT** (6 listopada).
+Organizator: Polish Women Chamber of Commerce.
 
-Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgrać oba na hosting.
+- **Dzień I (5.11, 11:00–17:00)** — Global Women Chamber of Commerce, spotkanie zamknięte.
+- **Dzień II (6.11, od 11:30)** — Business Women IMPACT 2026 dla 500 uczestników; o 18:00 premiera magazynu **Business Women IMPACT**.
+
+Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgrać je na hosting wraz z `robots.txt` i `sitemap.xml`. Plik `CNAME` ustawia domenę kongresgospodarczypwcc.pl przy hostingu na GitHub Pages; na innym hostingu można go pominąć.
+
+**Program** jest w sekcji `#program` (zakładki Dzień I / Dzień II) — każdy punkt to jeden `<li>` z godziną w `<time>`.
 
 - **Kolory (bordo PWCC #710001 i złoto)**: blok `:root` na początku `<style>` (`--navy` = bordo, `--gold` = złoto). Czcionki: Playfair Display + DM Sans.
 - **Adres e-mail zgłoszeń (biuro@polishwomenchamber.pl) i odliczanie (5.11.2026, 11:00)**: obiekt `CONFIG` w ostatnim `<script>`.

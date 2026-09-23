@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kongres Gospodarczy Kobiet Biznesu 2026 · 5–6 listopada · Butelkownia, Warszawa</title>
-<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — 5–6 listopada 2026, Butelkownia, Warszawa, start 11:00. Organizator: Polish Women Chamber of Commerce. Podczas Kongresu premiera magazynu Business Women IMPACT.">
+<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — 5–6 listopada 2026, Butelkownia, Warszawa. Dzień I: Global Women Chamber of Commerce. Dzień II: Business Women IMPACT 2026 dla 500 uczestników. Organizator: Polish Women Chamber of Commerce.">
 <meta property="og:title" content="Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Warszawa">
-<meta property="og:description" content="Dwa dni debat, networkingu i partnerstw kobiet biznesu. Organizator: Polish Women Chamber of Commerce.">
-<meta property="og:url" content="https://www.businesswomenimpact.pl">
+<meta property="og:description" content="Dzień I: Global Women Chamber of Commerce. Dzień II: Business Women IMPACT 2026 — debaty, IMPACT Talks, Centra Biznesowe, premiera magazynu. Organizator: PWCC.">
+<meta property="og:url" content="https://kongresgospodarczypwcc.pl/">
+<link rel="canonical" href="https://kongresgospodarczypwcc.pl/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://kongresgospodarczypwcc.pl/assets/patricia-claudia-mitro.jpg">
 <meta name="theme-color" content="#710001">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -420,6 +423,49 @@ footer .logo{margin-bottom:26px}
   .logo .emblem{width:36px;height:36px}
   .logo{gap:7px}
 }
+
+/* ---------- program: zakładki dni i agenda ---------- */
+.day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
+.day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
+.day-tabs button strong{display:block;font-family:var(--serif);font-size:1.6rem;color:var(--navy);font-weight:600}
+.day-tabs button span{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin:4px 0 8px}
+.day-tabs button em{font-style:italic;font-family:var(--serif);font-size:1.05rem;color:var(--muted)}
+.day-tabs button.on{background:var(--navy);border-color:var(--navy);box-shadow:0 20px 40px -24px rgba(58,6,10,.7)}
+.day-tabs button.on strong{color:#fff}.day-tabs button.on span{color:var(--gold-light)}.day-tabs button.on em{color:rgba(255,255,255,.8)}
+.day-panel{max-width:900px;margin:0 auto}
+.day-note{text-align:center;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--navy);margin-bottom:34px}
+.agenda{list-style:none;border-top:1px solid var(--line)}
+.agenda li{display:grid;grid-template-columns:150px 1fr;gap:26px;padding:22px 0;border-bottom:1px solid var(--line)}
+.agenda time{font-family:var(--serif);font-size:1.12rem;color:var(--gold-deep);font-weight:600;white-space:nowrap}
+.agenda h4{font-family:var(--serif);font-size:1.25rem;color:var(--navy);margin-bottom:4px;line-height:1.3}
+.agenda p{color:var(--muted);font-size:.95rem}
+.agenda li.highlight{background:linear-gradient(90deg,rgba(198,161,94,.16),transparent);padding-left:16px;margin-left:-16px;border-left:3px solid var(--gold)}
+.prog-foot{text-align:center;font-size:.85rem;color:var(--muted);font-style:italic;margin-top:30px}
+.topic.concierge{background:linear-gradient(160deg,rgba(198,161,94,.22),rgba(198,161,94,.06))}
+/* ---------- GWCC ---------- */
+.gw-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.gw{border:1px solid var(--line);border-radius:16px;padding:28px 24px;background:rgba(255,255,255,.04)}
+.gw strong{display:block;font-family:var(--serif);font-size:1.3rem;color:var(--gold-light);margin-bottom:10px;font-weight:500}
+.gw p{color:rgba(255,255,255,.75);font-size:.92rem}
+.gw-note{margin-top:34px;color:rgba(255,255,255,.7);font-style:italic;font-family:var(--serif)}
+/* ---------- organizator (jasna sekcja) ---------- */
+#organizator .org-card{background:linear-gradient(160deg,var(--navy),var(--ink));border-color:var(--navy)}
+#organizator .big-quote{color:var(--text)}
+#organizator .sign strong{color:var(--navy)}
+#organizator .sign span{color:var(--muted)}
+#organizator .creds{border-top-color:var(--line)}
+#organizator .creds div{color:var(--muted)}
+#organizator .creds b{color:var(--navy)}
+#magazyn{background:var(--cream)}
+/* ---------- partnerzy ---------- */
+.values{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:50px}
+.values div{background:var(--paper);padding:22px 16px;text-align:center}
+.values b{display:block;font-family:var(--serif);color:var(--navy);font-size:1.08rem;margin-bottom:6px}
+.values span{font-size:.8rem;color:var(--muted);line-height:1.45;display:block}
+.tier-note{text-align:center;max-width:820px;margin:34px auto 50px;font-size:.88rem;color:var(--muted)}
+.concierge-q{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);background:var(--gold);display:inline-block;padding:6px 12px;border-radius:30px;font-weight:700;margin:6px 0 18px}
+@media (max-width:1080px){.gw-grid{grid-template-columns:1fr 1fr}.values{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:680px){.day-tabs{grid-template-columns:1fr}.agenda li{grid-template-columns:1fr;gap:6px}.gw-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr 1fr}.agenda li.highlight{margin-left:0}}
 </style>
 </head>
 <body>
@@ -444,7 +490,7 @@ footer .logo{margin-bottom:26px}
     <ul class="menu" id="menu">
       <li><a href="#o-kongresie">O Kongresie</a></li>
       <li><a href="#program">Program</a></li>
-      <li><a href="#tematy">Tematy</a></li>
+      <li><a href="#gwcc">GWCC</a></li>
       <li><a href="#magazyn">Magazyn</a></li>
       <li><a href="#partnerzy">Partnerzy</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
@@ -468,12 +514,12 @@ footer .logo{margin-bottom:26px}
     <div>
       <a class="publisher" href="https://polishwomenchamber.pl/" target="_blank" rel="noopener"><img src="assets/pwcc-logo-gold.png" alt="Polish Women Chamber of Commerce" width="782" height="295"></a>
       <h1><span class="thin">5–6 listopada 2026 · Butelkownia, Warszawa</span>Kongres Gospodarczy <em>Kobiet Biznesu</em></h1>
-      <p class="lead">Dwa dni, które łączą przedsiębiorczynie, liderki, inwestorów, instytucje i&nbsp;dyplomację. Przywództwo, kapitał, inwestycje, internacjonalizacja i&nbsp;nowe technologie — w&nbsp;gronie kobiet, które realnie kształtują gospodarkę.</p>
+      <p class="lead">Międzynarodowe wydarzenie biznesu, relacji i&nbsp;realnych możliwości współpracy. Izby gospodarcze, delegacje z&nbsp;różnych części świata, partnerzy, prelegentki i&nbsp;przedsiębiorczynie — w&nbsp;środowisku zaprojektowanym tak, by rozmowy zamieniały się w&nbsp;konkretne projekty.</p>
       <div class="hero-meta">
-        <div><small>Termin</small><strong>5–6 listopada 2026</strong></div>
-        <div><small>Start</small><strong>godz. 11:00</strong></div>
+        <div><small>Dzień I · 5.11 · 11:00</small><strong>Global Women Chamber of Commerce</strong></div>
+        <div><small>Dzień II · 6.11 · 11:30</small><strong>Business Women IMPACT 2026</strong></div>
+        <div><small>Uczestnicy</small><strong>500 gości</strong></div>
         <div><small>Miejsce</small><strong>Butelkownia, Warszawa</strong></div>
-        <div><small>Premiera</small><strong>Magazyn Business Women IMPACT</strong></div>
       </div>
       <div class="hero-ctas">
         <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
@@ -511,19 +557,19 @@ footer .logo{margin-bottom:26px}
       <div class="quote-mark">“</div>
       <div class="badge"><strong>2 dni</strong>5–6 listopada 2026</div>
       <div class="av-text">
-        <p>Miejsce, w&nbsp;którym kobiecy biznes nie tylko się spotyka — ale zawiera partnerstwa, buduje kapitał i&nbsp;wyznacza kierunki.</p>
-        <span>Idea Kongresu</span>
+        <p>Nie chcemy, aby Partner tylko pokazywał, co sprzedaje. Chcemy, aby pokazał, co realnie może zrobić dla uczestnika.</p>
+        <span>Zasada Kongresu</span>
       </div>
     </div>
     <div class="reveal">
       <span class="eyebrow">O Kongresie</span>
-      <h2>Gospodarka, w&nbsp;której kobiety mają <em>realny wpływ</em></h2>
-      <p class="lead">Kongres Gospodarczy Kobiet Biznesu to prestiżowe wydarzenie organizowane przez Polish Women Chamber of Commerce — jedyną Izbę Gospodarczą Kobiet Biznesu w&nbsp;Polsce i&nbsp;Europie, działającą na podstawie ustawy o&nbsp;izbach gospodarczych.</p>
+      <h2>Wydarzenie, które <em>służy działaniu</em></h2>
+      <p class="lead">Kongres Gospodarczy Kobiet Biznesu organizuje Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w&nbsp;Polsce i&nbsp;Europie. Każda część programu ma określony cel biznesowy, dedykowaną przestrzeń i&nbsp;konkretną wartość dla uczestników.</p>
       <ul class="checks">
-        <li><span><b>Debaty i&nbsp;panele eksperckie</b> — liderki, inwestorzy i&nbsp;decydenci z&nbsp;Polski i&nbsp;świata.</span></li>
-        <li><span><b>Strategiczny networking</b> — spotkania przedsiębiorczyń, partnerów biznesowych, instytucji i&nbsp;dyplomacji.</span></li>
-        <li><span><b>Perspektywa międzynarodowa</b> — sieć relacji Izby w&nbsp;16 państwach, Europa i&nbsp;region GCC.</span></li>
-        <li><span><b>Premiera magazynu Business Women IMPACT</b> — inauguracja międzynarodowego magazynu gospodarczego dla kobiet biznesu.</span></li>
+        <li><span><b>Dzień I — Global Women Chamber of Commerce</b> — zamknięte spotkanie izb i&nbsp;delegacji międzynarodowych, które rozpoczyna tworzenie pierwszej światowej instytucji gospodarczej tego typu.</span></li>
+        <li><span><b>Dzień II — Business Women IMPACT 2026</b> — międzynarodowy dzień biznesu dla 500 uczestników: debaty, IMPACT Talks, Centra Biznesowe i&nbsp;networking.</span></li>
+        <li><span><b>Networking zaprojektowany, a&nbsp;nie przypadkowy</b> — Business Matchmaking Concierge kieruje uczestników do właściwych osób, partnerów, izb i&nbsp;delegacji.</span></li>
+        <li><span><b>Premiera magazynu Business Women IMPACT</b> — pierwsza okładka nowej platformy medialnej PWCC.</span></li>
       </ul>
       <a href="#program" class="btn btn-dark">Zobacz program <span class="arr">→</span></a>
     </div>
@@ -533,117 +579,128 @@ footer .logo{margin-bottom:26px}
 <!-- ================= STATS ================= -->
 <div class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><strong data-count="2" data-days>0</strong><span>Dni Kongresu w&nbsp;Warszawie</span></div>
-    <div class="stat reveal"><strong data-count="16">0</strong><span>Województw w&nbsp;strukturach Izby</span></div>
-    <div class="stat reveal"><strong data-count="16">0</strong><span>Państw — sieć relacji międzynarodowych</span></div>
-    <div class="stat reveal"><strong data-count="160" data-suffix="+">0</strong><span>Firm członkowskich PWCC</span></div>
-  </div>
-</div>
-
-<!-- ================= WHO ================= -->
-<section class="cream" id="dla-kogo">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <span class="eyebrow center">Dla kogo jest Kongres</span>
-      <h2>Jedno wydarzenie. <em>Trzy</em> drogi do wpływu.</h2>
-      <p class="lead">Kongres łączy środowiska, które razem budują nowoczesną gospodarkę — przedsiębiorczynie, partnerów biznesowych i&nbsp;inwestorów.</p>
-    </div>
-    <div class="cards3">
-      <article class="card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
-        <span class="num" style="margin-top:28px">01</span>
-        <h3>Dla przedsiębiorczyń i&nbsp;liderek</h3>
-        <p>Poszerz sieć kontaktów, poznaj inwestorów i&nbsp;partnerów, zdobądź wiedzę do skalowania biznesu i&nbsp;pokaż swoją markę na arenie międzynarodowej.</p>
-        <a href="#rejestracja" class="more">Zarejestruj się <span>→</span></a>
-      </article>
-      <article class="card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
-        <span class="num" style="margin-top:28px">02</span>
-        <h3>Dla partnerów i&nbsp;marek premium</h3>
-        <p>Dotrzyj do świadomej, decyzyjnej i&nbsp;zamożnej grupy odbiorców. Ekspozycja podczas Kongresu, wystąpienia i&nbsp;obecność w&nbsp;magazynie Business Women IMPACT.</p>
-        <a href="#partnerzy" class="more">Pakiety partnerskie <span>→</span></a>
-      </article>
-      <article class="card reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
-        <span class="num" style="margin-top:28px">03</span>
-        <h3>Dla inwestorów i&nbsp;instytucji</h3>
-        <p>Poznaj zweryfikowane projekty i&nbsp;firmy prowadzone przez kobiety — od nowych technologii i&nbsp;biotech po nieruchomości i&nbsp;rynek kapitałowy — we współpracy z&nbsp;PWCC Investment Club.</p>
-        <a href="#kontakt" class="more">Porozmawiajmy <span>→</span></a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TOPICS ================= -->
-<section class="dark" id="tematy">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Tematy Kongresu</span>
-      <h2>Tematy, które <em>definiują</em> przyszłość gospodarki</h2>
-      <p class="lead">Sześć ścieżek tematycznych — od sali zarządu po rynki globalne.</p>
-    </div>
-    <div class="topics">
-      <div class="topic reveal" data-n="01"><div class="bar"></div><h3>Przywództwo</h3><p>Liderki, które budują organizacje, zespoły i&nbsp;standardy nowoczesnego zarządzania.</p></div>
-      <div class="topic reveal" data-n="02"><div class="bar"></div><h3>Biznes &amp; Skalowanie</h3><p>Strategie wzrostu, budowanie pozycji rynkowej i&nbsp;historie firm, które zmieniają branże.</p></div>
-      <div class="topic reveal" data-n="03"><div class="bar"></div><h3>Kapitał &amp; Inwestycje</h3><p>Rynek kapitałowy, nieruchomości międzynarodowe, fundusze i&nbsp;budowanie dochodu pasywnego.</p></div>
-      <div class="topic reveal" data-n="04"><div class="bar"></div><h3>Internacjonalizacja</h3><p>Ekspansja zagraniczna, dystrybucja produktów premium, Europa i&nbsp;region GCC.</p></div>
-      <div class="topic reveal" data-n="05"><div class="bar"></div><h3>Nowe technologie</h3><p>Nanotechnologia, biotech, deep-tech i&nbsp;sektor New Space — biznes przyszłości już dziś.</p></div>
-      <div class="topic reveal" data-n="06"><div class="bar"></div><h3>Wpływ &amp; Odporność</h3><p>Dyplomacja gospodarcza, bezpieczeństwo, odporność regionów i&nbsp;rola kobiet w&nbsp;państwie.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= AWARDS STRIP ================= -->
-<div class="awards">
-  <div class="wrap">
-    <h3>Organizator — wyróżnienia i&nbsp;uznanie</h3>
-    <div class="award reveal"><div class="laurel">F</div><p><b>Forbes Women &amp; UK Embassy</b>Equality Leaders 2022 — nagroda dla Prezydentki PWCC</p></div>
-    <div class="award reveal"><div class="laurel">CoE</div><p><b>Council of Europe</b>Inicjatywy włączone do Kompendium Dobrych Praktyk (2025)</p></div>
-    <div class="award reveal"><div class="laurel">16</div><p><b>Zasięg międzynarodowy</b>Relacje i&nbsp;przedstawicielstwa w&nbsp;16 państwach świata</p></div>
+    <div class="stat reveal"><strong data-count="2">0</strong><span>Dni Kongresu w&nbsp;Warszawie</span></div>
+    <div class="stat reveal"><strong data-count="500">0</strong><span>Uczestników Dnia II</span></div>
+    <div class="stat reveal"><strong data-count="25">0</strong><span>Struktur założycielskich — cel GWCC</span></div>
+    <div class="stat reveal"><strong data-count="5">0</strong><span>Centrów Biznesowych</span></div>
   </div>
 </div>
 
 <!-- ================= PROGRAM ================= -->
 <section class="cream" id="program">
-  <div class="wrap event">
-    <aside class="event-card reveal">
-      <span class="eyebrow">Kongres 2026</span>
-      <div class="date-big"><strong>5–6</strong><span>listopada<br>2026</span></div>
-      <dl>
-        <div><dt>Wydarzenie</dt><dd>Kongres Gospodarczy Kobiet Biznesu</dd></div>
-        <div><dt>Organizator</dt><dd>Polish Women Chamber of Commerce</dd></div>
-        <div><dt>Miejsce</dt><dd>Butelkownia, Warszawa</dd></div>
-        <div><dt>Start</dt><dd>5 listopada, godz. 11:00</dd></div>
-        <div><dt>Udział</dt><dd>Po wcześniejszej rejestracji</dd></div>
-      </dl>
-      <ul class="pills"><li>Liderki</li><li>Kapitał i inwestycje</li><li>Dyplomacja gospodarcza</li><li>Networking premium</li></ul>
-      <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
-    </aside>
-    <div>
-      <div class="reveal">
-        <span class="eyebrow">Program ramowy</span>
-        <h2>Dwa dni, w&nbsp;których kobiecy biznes <em>zabiera głos</em></h2>
-        <p class="lead" style="margin-bottom:54px">Kongres zgromadzi przedsiębiorczynie, inwestorów, przedstawicieli instytucji, dyplomacji i&nbsp;partnerów strategicznych. Drugiego dnia odbędzie się premiera magazynu Business Women IMPACT.</p>
-      </div>
-      <div class="day-label reveal"><strong>Dzień I</strong><span>5 listopada 2026</span></div>
-      <ol class="timeline">
-        <li class="reveal"><small>Godz. 11:00</small><h4>Otwarcie Kongresu</h4><p>Wystąpienie Prezydentki Polish Women Chamber of Commerce i&nbsp;gości honorowych.</p></li>
-        <li class="reveal"><small>Debaty</small><h4>Przywództwo, kapitał i&nbsp;internacjonalizacja</h4><p>Panele z&nbsp;udziałem liderek, inwestorów i&nbsp;ekspertów z&nbsp;Polski i&nbsp;zagranicy.</p></li>
-        <li class="reveal"><small>Networking</small><h4>Spotkania biznesowe</h4><p>Strategiczny networking przedsiębiorczyń, partnerów i&nbsp;instytucji.</p></li>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Program Kongresu</span>
+      <h2>Dwa dni, w&nbsp;których kobiecy biznes <em>zabiera głos</em></h2>
+      <p class="lead">Każdy blok ma jasno określony rezultat — od pierwszej rozmowy po konkretne zobowiązania po Kongresie.</p>
+    </div>
+    <div class="day-tabs reveal" role="tablist">
+      <button type="button" role="tab" class="on" data-day="1" aria-selected="true"><strong>Dzień I</strong><span>5 listopada · 11:00–17:00</span><em>Global Women Chamber of Commerce</em></button>
+      <button type="button" role="tab" data-day="2" aria-selected="false"><strong>Dzień II</strong><span>6 listopada · od 11:30</span><em>Business Women IMPACT 2026</em></button>
+    </div>
+
+    <!-- DZIEŃ I -->
+    <div class="day-panel" data-panel="1">
+      <p class="day-note reveal">Spotkanie zamknięte — udział na zaproszenie. Izby gospodarcze i&nbsp;delegacje międzynarodowe rozpoczynają wspólne tworzenie Global Women Chamber of Commerce.</p>
+      <ol class="agenda">
+        <li class="reveal"><time>11:00–11:25</time><div><h4>Rejestracja i&nbsp;networking powitalny</h4><p>Potwierdzenie obecności, tłumaczenia i&nbsp;pierwsze kontakty.</p></div></li>
+        <li class="reveal"><time>11:25–11:40</time><div><h4>Otwarcie i&nbsp;wspólna ambicja</h4><p>Cel GWCC jako pierwszej światowej instytucji tego typu oraz rola 25 struktur założycielskich.</p></div></li>
+        <li class="reveal"><time>11:40–12:20</time><div><h4>Międzynarodowa mapa możliwości</h4><p>Każda organizacja przedstawia swój rynek, skalę działania, kompetencje i&nbsp;oczekiwane partnerstwa.</p></div></li>
+        <li class="reveal"><time>12:20–13:05</time><div><h4>Warsztat I: diagnoza i&nbsp;potencjał</h4><p>Potrzeby kobiet biznesu, bariery w&nbsp;eksporcie, ESG, finansowaniu i&nbsp;dostępie do łańcuchów dostaw.</p></div></li>
+        <li class="reveal"><time>13:05–13:25</time><div><h4>Przerwa kawowa</h4><p>Networking według obszarów zainteresowania.</p></div></li>
+        <li class="reveal"><time>13:25–13:45</time><div><h4>Wnioski i&nbsp;wspólne priorytety</h4><p>Najważniejsze potrzeby, zasoby i&nbsp;obszary możliwej współpracy.</p></div></li>
+        <li class="reveal highlight"><time>13:45–14:25</time><div><h4>Global Women Chamber of Commerce</h4><p>Przedstawienie modelu sieci, grona założycieli i&nbsp;uroczyste wręczenie nominacji do tworzonych struktur.</p></div></li>
+        <li class="reveal"><time>14:25–14:40</time><div><h4>Zdjęcia i&nbsp;komunikat medialny</h4><p>Wspólne zdjęcie nominowanych oraz delegacji.</p></div></li>
+        <li class="reveal"><time>14:40–15:00</time><div><h4>Przerwa kawowa</h4><p>Rozmowy z&nbsp;nominowanymi i&nbsp;partnerami.</p></div></li>
+        <li class="reveal"><time>15:00–15:25</time><div><h4>Pierwsze wspólne produkty GWCC</h4><p>Magazyn Business Women IMPACT, międzynarodowe certyfikacje oraz licencje na książki i&nbsp;programy szkoleniowe.</p></div></li>
+        <li class="reveal"><time>15:25–16:15</time><div><h4>Warsztat II: aktywności komercyjne</h4><p>Konkretne przedsięwzięcia: odbiorca, korzyść, model finansowania, liderzy i&nbsp;pierwsze kroki.</p></div></li>
+        <li class="reveal"><time>16:15–16:40</time><div><h4>Prezentacja portfela projektów</h4><p>3–5 najważniejszych projektów, organizacje prowadzące i&nbsp;terminy spotkań startowych.</p></div></li>
+        <li class="reveal"><time>16:40–16:55</time><div><h4>Deklaracje współpracy</h4><p>Zgłoszenia do projektów, komitetów i&nbsp;programów pilotażowych.</p></div></li>
+        <li class="reveal"><time>16:55–17:00</time><div><h4>Zamknięcie</h4><p>Podsumowanie i&nbsp;plan działań na kolejne 72 godziny.</p></div></li>
       </ol>
-      <div class="day-label reveal"><strong>Dzień II</strong><span>6 listopada 2026</span></div>
-      <ol class="timeline">
-        <li class="reveal"><small>Panele</small><h4>Nowe technologie i&nbsp;gospodarka przyszłości</h4><p>Nanotechnologia, biotech, deep-tech, bezpieczeństwo i&nbsp;odporność gospodarcza.</p></li>
-        <li class="reveal highlight"><small>Premiera</small><h4>Inauguracja magazynu Business Women IMPACT</h4><p>Odsłonięcie okładki i&nbsp;prezentacja pierwszego wydania przez Redaktor Naczelną.</p></li>
-        <li class="reveal"><small>Wieczór</small><h4>Gala &amp; networking premium</h4><p>Podsumowanie Kongresu, spotkania z&nbsp;partnerami i&nbsp;strategiczny networking.</p></li>
+    </div>
+
+    <!-- DZIEŃ II -->
+    <div class="day-panel" data-panel="2" hidden>
+      <p class="day-note reveal">Międzynarodowy dzień biznesu, relacji i&nbsp;realnych możliwości współpracy — dla 500 uczestników.</p>
+      <ol class="agenda">
+        <li class="reveal"><time>11:30–13:00</time><div><h4>Registration &amp; Red Carpet Business Experience</h4><p>Welcome drink, Red Carpet, profesjonalna fotografia, video interviews, Social Media Wall, otwarcie stref Partnerów i&nbsp;Wystawców, matchmaking i&nbsp;dostęp do pięciu Centrów Biznesowych.</p></div></li>
+        <li class="reveal"><time>13:00–13:15</time><div><h4>Opening Show — IMPACT</h4><p>Film otwierający, muzyka, światło i&nbsp;ekrany LED. Oficjalne otwarcie przez Prezydentkę PWCC.</p></div></li>
+        <li class="reveal"><time>13:15–14:00</time><div><h4>Debata I: Chambers United — od sieci do realnego biznesu</h4><p>Jak wykorzystać siłę izb i&nbsp;organizacji biznesowych, by przedsiębiorcy otrzymywali dostęp do rynków, rekomendacje, partnerów i&nbsp;klientów. Element specjalny: „I&nbsp;can open this door”.</p></div></li>
+        <li class="reveal"><time>14:00–15:00</time><div><h4>IMPACT Talks I: Pieniądze • Pozycja • Wpływ</h4><p>Zysk bez przepraszania · Executive Presence · Wpływ bez udawania.</p></div></li>
+        <li class="reveal"><time>15:00–16:30</time><div><h4>Global Business Connections</h4><p>Moderowany networking w&nbsp;pięciu Centrach Biznesowych — trzy rozmowy, które mają prowadzić do spotkań, ofert i&nbsp;współpracy.</p></div></li>
+        <li class="reveal"><time>16:00–16:45</time><div><h4>Debata II: Women Opening Global Markets</h4><p>Ambasadorki, Konsulki Honorowe i&nbsp;przedstawicielki środowisk międzynarodowych o&nbsp;tym, jak dyplomacja gospodarcza otwiera nowe rynki.</p></div></li>
+        <li class="reveal"><time>16:45–17:00</time><div><h4>Global Cooperation Moment</h4><p>Honorowy List Intencyjny, deklaracja kierunku dalszej współpracy i&nbsp;wspólne zdjęcie.</p></div></li>
+        <li class="reveal"><time>17:00–18:00</time><div><h4>IMPACT Talks II: Firma przyszłości</h4><p>AI jako cyfrowy zespół · Firma gotowa na świat · Odporność zamiast chaosu.</p></div></li>
+        <li class="reveal highlight"><time>18:00–18:50</time><div><h4>The Business Experience · Premiera magazynu Business Women IMPACT</h4><p>Premiera pierwszej okładki magazynu, a&nbsp;równolegle: 15-Minute Deal Room, Expert Office Hours, Media &amp; Content Experience oraz Restore &amp; Power Lounge.</p></div></li>
+        <li class="reveal"><time>18:50–19:50</time><div><h4>IMPACT Talks III: Marka • Skala • Dziedzictwo</h4><p>Marka, którą pamięta rynek · Skala przez partnerstwa · Final Keynote — Liderka w&nbsp;długim biegu.</p></div></li>
+        <li class="reveal"><time>19:50–20:10</time><div><h4>IMPACT Finale — 500 Commitments</h4><p>Każdy uczestnik odpowiada: co zrobisz w&nbsp;ciągu 14 dni po Kongresie? Zobowiązania pojawiają się na ekranie.</p></div></li>
+        <li class="reveal"><time>od 20:10</time><div><h4>Business After Dark</h4><p>Networking dinner, live cooking, DJ, R&amp;B i&nbsp;neo-soul, Luxury Networking Lounge. Równolegle: Private Global Lounge — wyłącznie na zaproszenie.</p></div></li>
       </ol>
-      <p class="reveal" style="font-size:.85rem;color:var(--muted);font-style:italic">Szczegółowy program z&nbsp;godzinami i&nbsp;listą prelegentów zostanie opublikowany wkrótce.</p>
+    </div>
+    <p class="reveal prog-foot">Organizator zastrzega sobie prawo do zmian w&nbsp;programie. Lista prelegentek zostanie opublikowana wkrótce.</p>
+  </div>
+</section>
+
+<!-- ================= BUSINESS CENTERS ================= -->
+<section class="dark" id="centra">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Global Business Connections</span>
+      <h2>Pięć Centrów <em>Biznesowych</em></h2>
+      <p class="lead">Przestrzenie Expo, w&nbsp;których odbywa się moderowany networking. Uczestnicy przechodzą przez trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.</p>
+    </div>
+    <div class="topics">
+      <div class="topic reveal" data-n="01"><div class="bar"></div><h3>Global Markets &amp; Export</h3><p>Eksport, wejście na nowe rynki, logistyka, dystrybucja i&nbsp;e-commerce.</p></div>
+      <div class="topic reveal" data-n="02"><div class="bar"></div><h3>Money, Investment &amp; Capital</h3><p>Finansowanie, inwestycje, bankowość, fundusze i&nbsp;kapitał.</p></div>
+      <div class="topic reveal" data-n="03"><div class="bar"></div><h3>ESG &amp; Responsible Growth</h3><p>ESG, energetyka, raportowanie, odpowiedzialność i&nbsp;łańcuchy dostaw.</p></div>
+      <div class="topic reveal" data-n="04"><div class="bar"></div><h3>AI, Future &amp; Digital Business</h3><p>Technologie, AI, cyberbezpieczeństwo, automatyzacja, martech i&nbsp;digital commerce.</p></div>
+      <div class="topic reveal" data-n="05"><div class="bar"></div><h3>Brand, Media &amp; Wellbeing</h3><p>Marki premium, media, komunikacja, beauty, longevity, wellbeing i&nbsp;marki eksperckie.</p></div>
+      <div class="topic reveal concierge" data-n="+"><div class="bar"></div><h3>Business Matchmaking Concierge</h3><p>Podczas rejestracji wskazujesz: kogo chcesz poznać, czego szukasz i&nbsp;co możesz zaoferować. PWCC kieruje Cię do właściwych osób.</p></div>
     </div>
   </div>
 </section>
 
+<!-- ================= EXPERIENCE ================= -->
+<section class="cream" id="doswiadczenia">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">The Business Experience</span>
+      <h2>Formaty, które <em>tworzą biznes</em></h2>
+      <p class="lead">Uczestnicy nie muszą wybierać jednej sceny. Każdy może przejść do przestrzeni, która w&nbsp;danym momencie daje mu największą wartość.</p>
+    </div>
+    <div class="cards3">
+      <article class="card reveal"><span class="num">15 min</span><h3>The 15-Minute Deal Room</h3><p>Wcześniej dopasowane spotkania partnerów, przedsiębiorców, inwestorów, izb i&nbsp;delegacji. Problem → możliwość → decyzja o&nbsp;kolejnym kroku.</p></article>
+      <article class="card reveal"><span class="num">Eksperci</span><h3>Expert Office Hours</h3><p>Szybka ekspercka odpowiedź: prawo, eksport, inwestycje, finansowanie, ESG, AI, media, marka i&nbsp;sprzedaż.</p></article>
+      <article class="card reveal"><span class="num">Media</span><h3>Media &amp; Content Experience</h3><p>Studio podcastowe, video interviews, fotografia, reels, Social Wall i&nbsp;materiały live.</p></article>
+      <article class="card reveal"><span class="num">Red Carpet</span><h3>Red Carpet Business Experience</h3><p>Welcome drink, profesjonalna fotografia i&nbsp;pierwsze rozmowy biznesowe od momentu wejścia.</p></article>
+      <article class="card reveal"><span class="num">Wellbeing</span><h3>Restore &amp; Power Lounge</h3><p>Strefa regeneracji: odpoczynek, hydration, ładowanie urządzeń, beauty touch-up i&nbsp;krótkie formaty wellness.</p></article>
+      <article class="card reveal"><span class="num">Invitation only</span><h3>Private Global Lounge</h3><p>Zamknięta strefa premium dla delegacji, przedstawicielek izb, Partnerów Strategicznych i&nbsp;zaproszonych liderów.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GWCC ================= -->
+<section class="dark" id="gwcc" style="background:radial-gradient(900px 500px at 85% 0%,rgba(198,161,94,.14),transparent 60%),linear-gradient(160deg,var(--ink),var(--navy))">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dzień I · 5 listopada 2026 · spotkanie zamknięte</span>
+      <h2>Global Women <em>Chamber of Commerce</em></h2>
+      <p class="lead">Pierwszego dnia rozpoczyna się tworzenie pierwszej światowej instytucji gospodarczej tego typu — budowanej przez 25 struktur biznesowych reprezentujących kobiety przedsiębiorcze z&nbsp;różnych części świata. GWCC ma stać się stałą platformą wymiany kontaktów, rekomendacji, wiedzy, dostępu do rynków i&nbsp;wspólnych przedsięwzięć.</p>
+    </div>
+    <div class="gw-grid">
+      <div class="gw reveal"><strong>GWCC</strong><p>Ogłoszenie pierwszej światowej instytucji tego typu, grono struktur założycielskich i&nbsp;pierwsze nominacje.</p></div>
+      <div class="gw reveal"><strong>Wspólne projekty</strong><p>3–5 aktywności biznesowych i&nbsp;komercyjnych z&nbsp;liderem oraz planem realizacji do grudnia 2027&nbsp;r.</p></div>
+      <div class="gw reveal"><strong>ESG</strong><p>Wspólny kierunek: wspieranie kobiet w&nbsp;łańcuchach dostaw, eksporcie i&nbsp;dostępie do kapitału.</p></div>
+      <div class="gw reveal"><strong>Biznes</strong><p>Magazyn Business Women IMPACT, międzynarodowe certyfikacje i&nbsp;licencje na książki.</p></div>
+      <div class="gw reveal"><strong>Relacje</strong><p>Katalog izb i&nbsp;delegacji oraz konkretne połączenia między partnerami.</p></div>
+    </div>
+    <p class="gw-note reveal">Planowane komitety tematyczne: ESG, certyfikacja kobiet w&nbsp;biznesie, współpraca międzynarodowa i&nbsp;eksport, inwestycje, media oraz edukacja.</p>
+  </div>
+</section>
+
 <!-- ================= ORGANIZER ================= -->
-<section class="dark" id="organizator" style="background:linear-gradient(160deg,var(--ink),var(--navy))">
+<section id="organizator">
   <div class="wrap editor">
     <div class="org-card reveal">
       <small>Organizator</small>
@@ -661,7 +718,7 @@ footer .logo{margin-bottom:26px}
       <div class="creds">
         <div><b>18 lat doświadczenia</b>Mentor Global Women’s Leadership</div>
         <div><b>Forbes Women &amp; UK Embassy</b>Equality Leaders 2022</div>
-        <div><b>Krajowe Prezydium Rad Kobiet</b>Członkini od 6 lat</div>
+        <div><b>Council of Europe</b>Kompendium Dobrych Praktyk (2025)</div>
         <div><b>Autorka książek</b>m.in. „Mentalność Sukcesu”, „SHE CAN DO IT”</div>
       </div>
     </div>
@@ -672,7 +729,7 @@ footer .logo{margin-bottom:26px}
 <section id="magazyn">
   <div class="wrap mag">
     <div class="cover-stage reveal" aria-hidden="true">
-      <div class="seal"><div class="seal-inner">Premiera<strong>6.11</strong>2026</div></div>
+      <div class="seal"><div class="seal-inner">Premiera<strong>6.11</strong>18:00</div></div>
       <div class="cover">
         <img class="c-photo" src="assets/patricia-claudia-mitro.jpg" alt="" loading="lazy">
         <div class="c-shade"></div>
@@ -690,12 +747,12 @@ footer .logo{margin-bottom:26px}
       </div>
     </div>
     <div class="reveal">
-      <span class="eyebrow">Premiera podczas Kongresu · 6 listopada</span>
+      <span class="eyebrow">Premiera · 6 listopada · 18:00–18:50</span>
       <h2>Magazyn Business Women <em>IMPACT</em></h2>
-      <p class="lead">Podczas Kongresu odbędzie się inauguracja Business Women IMPACT — prestiżowego międzynarodowego magazynu gospodarczego dla przedsiębiorczyń, liderek i&nbsp;środowisk biznesu, wydawanego przez Polish Women Chamber of Commerce.</p>
+      <p class="lead">Podczas The Business Experience odbędzie się premiera pierwszej okładki Business Women IMPACT — międzynarodowego magazynu gospodarczo-biznesowego i&nbsp;nowej platformy medialnej Polish Women Chamber of Commerce.</p>
       <ul class="checks">
         <li><span><b>Wywiady i&nbsp;treści eksperckie</b> — liderki, inwestorzy i&nbsp;decydenci z&nbsp;Polski i&nbsp;świata.</span></li>
-        <li><span><b>Wydanie drukowane, cyfrowe i&nbsp;wideo</b> — we współpracy z&nbsp;Polish Women Chamber TV.</span></li>
+        <li><span><b>Dla partnerów</b> — obecność przy powstawaniu nowej platformy medialnej PWCC.</span></li>
         <li><span><b>Redaktor Naczelna</b> — Patricia Claudia Mitro.</span></li>
       </ul>
       <a href="#rejestracja" class="btn btn-dark">Zgłoś swoją historię do wydania <span class="arr">→</span></a>
@@ -708,35 +765,45 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="sec-head center reveal">
       <span class="eyebrow center">Partnerzy Kongresu</span>
-      <h2>Współtwórz <em>Kongres</em> 2026</h2>
-      <p class="lead">Zapraszamy marki premium, instytucje i&nbsp;inwestorów do grona partnerów Kongresu Gospodarczego Kobiet Biznesu. Liczba pakietów jest ograniczona.</p>
+      <h2>Od stoiska do <em>doświadczenia</em></h2>
+      <p class="lead">Partner nie kupuje wyłącznie powierzchni. Partner wchodzi do zaprojektowanego środowiska relacji biznesowych — jako ekspert, partner biznesowy, connector, gospodarz doświadczenia, partner medialny i&nbsp;uczestnik ekosystemu.</p>
     </div>
+    <div class="values reveal">
+      <div><b>Widoczność</b><span>scena, przestrzeń, komunikacja, content</span></div>
+      <div><b>Relacje</b><span>networking, Concierge, Deal Room</span></div>
+      <div><b>Ekspertyza</b><span>możliwość pokazania kompetencji</span></div>
+      <div><b>Rynek</b><span>izby, delegacje, przedsiębiorcy</span></div>
+      <div><b>Media</b><span>wywiady, podcasty, foto i&nbsp;video</span></div>
+      <div><b>Prestiż</b><span>ograniczona liczba Partnerów i&nbsp;500 gości</span></div>
+      <div><b>Kontynuacja</b><span>relacje rozwijane po Kongresie</span></div>
+    </div>
+    <div class="tiers">
+      <div class="tier reveal">
+        <small>Dzień I</small>
+        <div class="tier-name">Partner Strategiczny Dnia</div>
+        <ul><li>Wyłączność branżowa i&nbsp;2 miejsca VIP</li><li>Logo w&nbsp;komunikacji Dnia I i&nbsp;obecność w&nbsp;katalogu</li><li>5-minutowa wypowiedź ekspercka</li><li>10 uzgodnionych rozmów po wydarzeniu</li><li>Zdjęcia i&nbsp;komunikat PR</li></ul>
+      </div>
+      <div class="tier reveal">
+        <small>Dzień I</small>
+        <div class="tier-name">Partner ESG</div>
+        <ul><li>Pełny pakiet strategiczny i&nbsp;tytuł Partnera ESG</li><li>Udział eksperta w&nbsp;części merytorycznej</li><li>Oznaczenie przy deklaracji ESG</li><li>Współpraca przy raporcie podsumowującym</li><li>15 uzgodnionych rozmów</li></ul>
+      </div>
+      <div class="tier featured reveal">
+        <span class="ribbon">Oba dni</span>
+        <small>Dzień I + Dzień II</small>
+        <div class="tier-name">Partner Główny Kongresu</div>
+        <ul><li>Widoczność podczas obu dni Kongresu</li><li>Wyłączność branżowa całego wydarzenia i&nbsp;4 miejsca VIP</li><li>Wystąpienie eksperckie i&nbsp;strefa partnera w&nbsp;Dniu II</li><li>Pełny pakiet medialny</li><li>20 uzgodnionych rozmów B2B</li></ul>
+      </div>
+    </div>
+    <p class="tier-note reveal">Maksymalnie 3 Partnerów Strategicznych Dnia I z&nbsp;wyłącznością branżową. Każdy partner przechodzi weryfikację reputacyjną. Kontakty po wydarzeniu są umawiane za zgodą obu stron — baza uczestników nie jest sprzedawana ani przekazywana.</p>
     <div class="partners-grid reveal">
       <div class="plogo main logo-tile"><img src="assets/pwcc-logo.png" alt="Polish Women Chamber of Commerce" loading="lazy" width="782" height="295"></div>
       <div class="plogo main">Business Women<br>IMPACT</div>
       <div class="plogo main">PWCC<br>Investment Club</div>
-      <div class="plogo">Partner strategiczny<br>— miejsce dostępne</div>
-      <div class="plogo">Partner medialny<br>— miejsce dostępne</div>
+      <div class="plogo">Partner Główny<br>— miejsce dostępne</div>
+      <div class="plogo">Partner ESG<br>— miejsce dostępne</div>
     </div>
-    <div class="tiers">
-      <div class="tier reveal">
-        <small>Pakiet</small>
-        <div class="tier-name">Partner Kongresu</div>
-        <ul><li>Logo w&nbsp;materiałach i&nbsp;na stronie Kongresu</li><li>Zaproszenia na Kongres i&nbsp;galę</li><li>Obecność w&nbsp;wydaniu inauguracyjnym magazynu</li></ul>
-      </div>
-      <div class="tier featured reveal">
-        <span class="ribbon">Ograniczona liczba</span>
-        <small>Pakiet</small>
-        <div class="tier-name">Partner Strategiczny</div>
-        <ul><li>Wystąpienie lub udział w&nbsp;panelu</li><li>Strefa ekspozycji podczas Kongresu</li><li>Artykuł lub wywiad w&nbsp;magazynie Business Women IMPACT</li><li>Pakiet zaproszeń VIP</li></ul>
-      </div>
-      <div class="tier reveal">
-        <small>Pakiet</small>
-        <div class="tier-name">Partner Tytularny</div>
-        <ul><li>Współtytuł Kongresu</li><li>Wystąpienie podczas otwarcia i&nbsp;gali</li><li>Kampania w&nbsp;kanałach PWCC w&nbsp;kraju i&nbsp;za granicą</li></ul>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:50px" class="reveal"><a href="#kontakt" class="btn btn-dark">Zapytaj o&nbsp;ofertę partnerską <span class="arr">→</span></a></div>
+    <div style="text-align:center;margin-top:10px" class="reveal"><a href="#kontakt" class="btn btn-dark">Zapytaj o&nbsp;ofertę partnerską <span class="arr">→</span></a></div>
   </div>
 </section>
 
@@ -746,9 +813,9 @@ footer .logo{margin-bottom:26px}
     <div class="reveal">
       <span class="eyebrow">Rejestracja</span>
       <h2>Dołącz do <em>Kongresu</em> 2026</h2>
-      <p class="lead" style="color:rgba(255,255,255,.72)">Zarejestruj udział, zgłoś się jako prelegentka lub partner albo zaproponuj swoją historię do magazynu. Skontaktujemy się z&nbsp;Tobą osobiście.</p>
+      <p class="lead" style="color:rgba(255,255,255,.72)">Zarejestruj udział, zgłoś się jako prelegentka, partner, izba lub delegacja. Odpowiedz na trzy pytania Business Matchmaking Concierge — dzięki nim skierujemy Cię do właściwych osób.</p>
       <ul class="contact-list">
-        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5–6.11.2026 · start 11:00</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5.11 · 11:00 · Dzień I &nbsp;|&nbsp; 6.11 · 11:30 · Dzień II</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Butelkownia, Warszawa</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span><a href="" data-mail>—</a></li>
       </ul>
@@ -764,14 +831,21 @@ footer .logo{margin-bottom:26px}
       </div>
       <div class="field"><label for="f-type">Zgłaszam się jako</label>
         <select id="f-type" name="type">
-          <option>Uczestniczka / uczestnik Kongresu</option>
+          <option>Uczestniczka / uczestnik Dnia II</option>
+          <option>Izba gospodarcza / delegacja</option>
+          <option>Partner / wystawca</option>
           <option>Prelegentka / prelegent</option>
-          <option>Partner / sponsor Kongresu</option>
           <option>Bohaterka wydania magazynu Business Women IMPACT</option>
           <option>Media</option>
         </select>
       </div>
-      <div class="field"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" rows="3"></textarea></div>
+      <div class="concierge-q">Business Matchmaking Concierge</div>
+      <div class="field"><label for="f-meet">Kogo chcę poznać?</label><input id="f-meet" name="meet"></div>
+      <div class="row2">
+        <div class="field"><label for="f-seek">Czego szukam?</label><input id="f-seek" name="seek"></div>
+        <div class="field"><label for="f-offer">Co mogę zaoferować?</label><input id="f-offer" name="offer"></div>
+      </div>
+      <div class="field"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" rows="2"></textarea></div>
       <label class="consent"><input type="checkbox" id="f-consent" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie Kongresu Gospodarczego Kobiet Biznesu i magazynu Business Women IMPACT.</label>
       <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Wyślij zgłoszenie <span class="arr">→</span></button>
       <p class="form-ok" id="formOk">Dziękujemy! Otworzyliśmy Twój program pocztowy z gotowym zgłoszeniem — wystarczy kliknąć „Wyślij”.</p>
@@ -794,7 +868,7 @@ footer .logo{margin-bottom:26px}
       </div>
       <div>
         <h5>Kongres</h5>
-        <ul><li><a href="#o-kongresie">O Kongresie</a></li><li><a href="#program">Program</a></li><li><a href="#tematy">Tematy</a></li><li><a href="#partnerzy">Partnerzy</a></li><li><a href="#rejestracja">Rejestracja</a></li></ul>
+        <ul><li><a href="#o-kongresie">O Kongresie</a></li><li><a href="#program">Program</a></li><li><a href="#centra">Centra Biznesowe</a></li><li><a href="#gwcc">Global Women Chamber of Commerce</a></li><li><a href="#partnerzy">Partnerzy</a></li><li><a href="#rejestracja">Rejestracja</a></li></ul>
       </div>
       <div>
         <h5>Ekosystem PWCC</h5>
@@ -802,17 +876,16 @@ footer .logo{margin-bottom:26px}
       </div>
       <div>
         <h5>Newsletter</h5>
-        <p>Otrzymaj jako pierwsza/y informacje o&nbsp;programie, prelegentach i&nbsp;premierze magazynu.</p>
+        <p>Otrzymaj jako pierwsza/y informacje o&nbsp;programie, prelegentkach i&nbsp;premierze magazynu.</p>
         <form class="news" id="newsForm"><input type="email" placeholder="Twój e-mail" aria-label="E-mail" required><button>Zapisz</button></form>
       </div>
     </div>
   </div>
   <div class="wrap fbottom">
-    <span>© 2026 Kongres Gospodarczy Kobiet Biznesu · Organizator: Polish Women Chamber of Commerce.</span>
+    <span>© 2026 Kongres Gospodarczy Kobiet Biznesu · kongresgospodarczypwcc.pl · Organizator: Polish Women Chamber of Commerce.</span>
     <span><a href="#top">Polityka prywatności</a> &nbsp;·&nbsp; <a href="#top">Do góry ↑</a></span>
   </div>
 </footer>
-
 <script>
 /* =========================================================
    TŁUMACZENIE PL / EN — przełącznik języka strony
@@ -828,21 +901,18 @@ const I18N_EN = {
   "Warszawa · 5–6.11.2026": "Warsaw · 5–6.11.2026",
   "O Kongresie": "About",
   "Program": "Programme",
-  "Tematy": "Topics",
   "Magazyn": "Magazine",
   "Partnerzy": "Partners",
   "Kontakt": "Contact",
   "Rejestracja": "Registration",
   "5–6 listopada 2026 · Butelkownia, Warszawa": "5–6 November 2026 · Butelkownia, Warsaw",
-  "Dwa dni, które łączą przedsiębiorczynie, liderki, inwestorów, instytucje i dyplomację. Przywództwo, kapitał, inwestycje, internacjonalizacja i nowe technologie — w gronie kobiet, które realnie kształtują gospodarkę.": "Two days bringing together women entrepreneurs, leaders, investors, institutions and the diplomatic community. Leadership, capital, investment, international expansion and new technologies — among the women who are truly shaping the economy.",
-  "Termin": "Dates",
-  "5–6 listopada 2026": "5–6 November 2026",
-  "Start": "Start",
-  "godz. 11:00": "11:00 am",
+  "Międzynarodowe wydarzenie biznesu, relacji i realnych możliwości współpracy. Izby gospodarcze, delegacje z różnych części świata, partnerzy, prelegentki i przedsiębiorczynie — w środowisku zaprojektowanym tak, by rozmowy zamieniały się w konkretne projekty.": "An international event of business, relationships and real opportunities for cooperation. Chambers of commerce, delegations from around the world, partners, speakers and women entrepreneurs — in an environment designed to turn conversations into concrete projects.",
+  "Dzień I · 5.11 · 11:00": "Day I · 5.11 · 11:00 am",
+  "Dzień II · 6.11 · 11:30": "Day II · 6.11 · 11:30 am",
+  "Uczestnicy": "Participants",
+  "500 gości": "500 guests",
   "Miejsce": "Venue",
   "Butelkownia, Warszawa": "Butelkownia, Warsaw",
-  "Premiera": "Premiere",
-  "Magazyn Business Women IMPACT": "Business Women IMPACT magazine",
   "Zarejestruj się": "Register",
   "Zostań partnerem": "Become a partner",
   "Warszawa": "Warsaw",
@@ -854,177 +924,225 @@ const I18N_EN = {
   "Minut": "Minutes",
   "Sekund": "Seconds",
   "2 dni": "2 days",
-  "Miejsce, w którym kobiecy biznes nie tylko się spotyka — ale zawiera partnerstwa, buduje kapitał i wyznacza kierunki.": "A place where women in business do not just meet — they forge partnerships, build capital and set the direction.",
-  "Idea Kongresu": "The Congress idea",
-  "Gospodarka, w której kobiety mają": "An economy in which women have",
-  "realny wpływ": "real influence",
-  "Kongres Gospodarczy Kobiet Biznesu to prestiżowe wydarzenie organizowane przez Polish Women Chamber of Commerce — jedyną Izbę Gospodarczą Kobiet Biznesu w Polsce i Europie, działającą na podstawie ustawy o izbach gospodarczych.": "The Economic Congress of Business Women is a prestigious event organised by the Polish Women Chamber of Commerce — the only chamber of commerce for women in business in Poland and Europe, operating under the Polish Act on Chambers of Commerce.",
-  "Debaty i panele eksperckie": "Debates and expert panels",
-  "— liderki, inwestorzy i decydenci z Polski i świata.": "— leaders, investors and decision-makers from Poland and around the world.",
-  "Strategiczny networking": "Strategic networking",
-  "— spotkania przedsiębiorczyń, partnerów biznesowych, instytucji i dyplomacji.": "— meetings between women entrepreneurs, business partners, institutions and diplomats.",
-  "Perspektywa międzynarodowa": "An international perspective",
-  "— sieć relacji Izby w 16 państwach, Europa i region GCC.": "— the Chamber’s network in 16 countries, across Europe and the GCC region.",
+  "5–6 listopada 2026": "5–6 November 2026",
+  "Nie chcemy, aby Partner tylko pokazywał, co sprzedaje. Chcemy, aby pokazał, co realnie może zrobić dla uczestnika.": "We do not want a Partner simply to show what they sell. We want them to show what they can genuinely do for the participant.",
+  "Zasada Kongresu": "The Congress principle",
+  "Wydarzenie, które": "An event built",
+  "służy działaniu": "for action",
+  "Kongres Gospodarczy Kobiet Biznesu organizuje Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w Polsce i Europie. Każda część programu ma określony cel biznesowy, dedykowaną przestrzeń i konkretną wartość dla uczestników.": "The Economic Congress of Business Women is organised by the Polish Women Chamber of Commerce — the only chamber of commerce for women in business in Poland and Europe. Every part of the programme has a defined business goal, a dedicated space and concrete value for participants.",
+  "Dzień I — Global Women Chamber of Commerce": "Day I — Global Women Chamber of Commerce",
+  "— zamknięte spotkanie izb i delegacji międzynarodowych, które rozpoczyna tworzenie pierwszej światowej instytucji gospodarczej tego typu.": "— a closed meeting of chambers and international delegations launching the creation of the first global economic institution of its kind.",
+  "Dzień II — Business Women IMPACT 2026": "Day II — Business Women IMPACT 2026",
+  "— międzynarodowy dzień biznesu dla 500 uczestników: debaty, IMPACT Talks, Centra Biznesowe i networking.": "— an international business day for 500 participants: debates, IMPACT Talks, Business Centres and networking.",
+  "Networking zaprojektowany, a nie przypadkowy": "Networking by design, not by chance",
+  "— Business Matchmaking Concierge kieruje uczestników do właściwych osób, partnerów, izb i delegacji.": "— the Business Matchmaking Concierge connects participants with the right people, partners, chambers and delegations.",
   "Premiera magazynu Business Women IMPACT": "Premiere of Business Women IMPACT magazine",
-  "— inauguracja międzynarodowego magazynu gospodarczego dla kobiet biznesu.": "— the launch of an international business magazine for women in business.",
+  "— pierwsza okładka nowej platformy medialnej PWCC.": "— the first cover of PWCC’s new media platform.",
   "Zobacz program": "See the programme",
   "Dni Kongresu w Warszawie": "Days of the Congress in Warsaw",
-  "Województw w strukturach Izby": "Polish regions within the Chamber",
-  "Państw — sieć relacji międzynarodowych": "Countries in our international network",
-  "Firm członkowskich PWCC": "PWCC member companies",
-  "Dla kogo jest Kongres": "Who the Congress is for",
-  "Jedno wydarzenie.": "One event.",
-  "Trzy": "Three",
-  "drogi do wpływu.": "paths to influence.",
-  "Kongres łączy środowiska, które razem budują nowoczesną gospodarkę — przedsiębiorczynie, partnerów biznesowych i inwestorów.": "The Congress brings together the communities building the modern economy — women entrepreneurs, business partners and investors.",
-  "Dla przedsiębiorczyń i liderek": "For women entrepreneurs and leaders",
-  "Poszerz sieć kontaktów, poznaj inwestorów i partnerów, zdobądź wiedzę do skalowania biznesu i pokaż swoją markę na arenie międzynarodowej.": "Expand your network, meet investors and partners, gain the know-how to scale your business and present your brand on the international stage.",
-  "Dla partnerów i marek premium": "For partners and premium brands",
-  "Dotrzyj do świadomej, decyzyjnej i zamożnej grupy odbiorców. Ekspozycja podczas Kongresu, wystąpienia i obecność w magazynie Business Women IMPACT.": "Reach a discerning, affluent audience of decision-makers. Exposure at the Congress, speaking opportunities and a presence in Business Women IMPACT magazine.",
-  "Pakiety partnerskie": "Partnership packages",
-  "Dla inwestorów i instytucji": "For investors and institutions",
-  "Poznaj zweryfikowane projekty i firmy prowadzone przez kobiety — od nowych technologii i biotech po nieruchomości i rynek kapitałowy — we współpracy z PWCC Investment Club.": "Discover vetted projects and women-led companies — from new technologies and biotech to real estate and capital markets — in cooperation with the PWCC Investment Club.",
-  "Porozmawiajmy": "Let’s talk",
-  "Tematy Kongresu": "Congress topics",
-  "Tematy, które": "Topics that",
-  "definiują": "define",
-  "przyszłość gospodarki": "the future of the economy",
-  "Sześć ścieżek tematycznych — od sali zarządu po rynki globalne.": "Six thematic tracks — from the boardroom to global markets.",
-  "Przywództwo": "Leadership",
-  "Liderki, które budują organizacje, zespoły i standardy nowoczesnego zarządzania.": "Women who build organisations, teams and the standards of modern management.",
-  "Biznes & Skalowanie": "Business & Scaling",
-  "Strategie wzrostu, budowanie pozycji rynkowej i historie firm, które zmieniają branże.": "Growth strategies, market positioning and the stories of companies transforming their industries.",
-  "Kapitał & Inwestycje": "Capital & Investment",
-  "Rynek kapitałowy, nieruchomości międzynarodowe, fundusze i budowanie dochodu pasywnego.": "Capital markets, international real estate, funds and building passive income.",
-  "Internacjonalizacja": "International Expansion",
-  "Ekspansja zagraniczna, dystrybucja produktów premium, Europa i region GCC.": "Going global, premium product distribution, Europe and the GCC region.",
-  "Nowe technologie": "New Technologies",
-  "Nanotechnologia, biotech, deep-tech i sektor New Space — biznes przyszłości już dziś.": "Nanotechnology, biotech, deep tech and New Space — the business of the future, today.",
-  "Wpływ & Odporność": "Influence & Resilience",
-  "Dyplomacja gospodarcza, bezpieczeństwo, odporność regionów i rola kobiet w państwie.": "Economic diplomacy, security, regional resilience and the role of women in the state.",
-  "Organizator — wyróżnienia i uznanie": "The organiser — awards and recognition",
-  "Equality Leaders 2022 — nagroda dla Prezydentki PWCC": "Equality Leaders 2022 — awarded to the PWCC President",
-  "Inicjatywy włączone do Kompendium Dobrych Praktyk (2025)": "Initiatives included in the Compendium of Good Practices (2025)",
-  "Zasięg międzynarodowy": "International reach",
-  "Relacje i przedstawicielstwa w 16 państwach świata": "Relationships and representatives in 16 countries",
-  "Kongres 2026": "Congress 2026",
-  "listopada": "November",
-  "Wydarzenie": "Event",
-  "Kongres Gospodarczy Kobiet Biznesu": "Economic Congress of Business Women",
-  "Organizator": "Organiser",
-  "5 listopada, godz. 11:00": "5 November, 11:00 am",
-  "Udział": "Attendance",
-  "Po wcześniejszej rejestracji": "By prior registration",
-  "Liderki": "Leaders",
-  "Kapitał i inwestycje": "Capital & investment",
-  "Dyplomacja gospodarcza": "Economic diplomacy",
-  "Networking premium": "Premium networking",
-  "Program ramowy": "Programme outline",
+  "Uczestników Dnia II": "Day II participants",
+  "Struktur założycielskich — cel GWCC": "Founding organisations — the GWCC goal",
+  "Centrów Biznesowych": "Business Centres",
+  "Program Kongresu": "Congress programme",
   "Dwa dni, w których kobiecy biznes": "Two days when women in business",
   "zabiera głos": "take the floor",
-  "Kongres zgromadzi przedsiębiorczynie, inwestorów, przedstawicieli instytucji, dyplomacji i partnerów strategicznych. Drugiego dnia odbędzie się premiera magazynu Business Women IMPACT.": "The Congress will bring together women entrepreneurs, investors, representatives of institutions, the diplomatic community and strategic partners. The second day will feature the premiere of Business Women IMPACT magazine.",
+  "Każdy blok ma jasno określony rezultat — od pierwszej rozmowy po konkretne zobowiązania po Kongresie.": "Every session has a clearly defined outcome — from the first conversation to concrete commitments after the Congress.",
   "Dzień I": "Day I",
-  "5 listopada 2026": "5 November 2026",
-  "Godz. 11:00": "11:00 am",
-  "Otwarcie Kongresu": "Opening of the Congress",
-  "Wystąpienie Prezydentki Polish Women Chamber of Commerce i gości honorowych.": "Address by the President of the Polish Women Chamber of Commerce and guests of honour.",
-  "Debaty": "Debates",
-  "Przywództwo, kapitał i internacjonalizacja": "Leadership, capital and international expansion",
-  "Panele z udziałem liderek, inwestorów i ekspertów z Polski i zagranicy.": "Panels with leaders, investors and experts from Poland and abroad.",
-  "Networking": "Networking",
-  "Spotkania biznesowe": "Business meetings",
-  "Strategiczny networking przedsiębiorczyń, partnerów i instytucji.": "Strategic networking for women entrepreneurs, partners and institutions.",
+  "5 listopada · 11:00–17:00": "5 November · 11:00 am–5:00 pm",
   "Dzień II": "Day II",
-  "6 listopada 2026": "6 November 2026",
-  "Panele": "Panels",
-  "Nowe technologie i gospodarka przyszłości": "New technologies and the economy of the future",
-  "Nanotechnologia, biotech, deep-tech, bezpieczeństwo i odporność gospodarcza.": "Nanotechnology, biotech, deep tech, security and economic resilience.",
-  "Inauguracja magazynu Business Women IMPACT": "Launch of Business Women IMPACT magazine",
-  "Odsłonięcie okładki i prezentacja pierwszego wydania przez Redaktor Naczelną.": "Cover reveal and presentation of the first issue by the Editor-in-Chief.",
-  "Wieczór": "Evening",
-  "Gala & networking premium": "Gala & premium networking",
-  "Podsumowanie Kongresu, spotkania z partnerami i strategiczny networking.": "Congress closing, meetings with partners and strategic networking.",
-  "Szczegółowy program z godzinami i listą prelegentów zostanie opublikowany wkrótce.": "The detailed programme with times and the list of speakers will be published soon.",
+  "6 listopada · od 11:30": "6 November · from 11:30 am",
+  "Spotkanie zamknięte — udział na zaproszenie. Izby gospodarcze i delegacje międzynarodowe rozpoczynają wspólne tworzenie Global Women Chamber of Commerce.": "A closed meeting — by invitation only. Chambers of commerce and international delegations begin jointly building the Global Women Chamber of Commerce.",
+  "Rejestracja i networking powitalny": "Registration and welcome networking",
+  "Potwierdzenie obecności, tłumaczenia i pierwsze kontakty.": "Check-in, interpretation and first connections.",
+  "Otwarcie i wspólna ambicja": "Opening and shared ambition",
+  "Cel GWCC jako pierwszej światowej instytucji tego typu oraz rola 25 struktur założycielskich.": "The purpose of GWCC as the first global institution of its kind and the role of its 25 founding organisations.",
+  "Międzynarodowa mapa możliwości": "An international map of opportunities",
+  "Każda organizacja przedstawia swój rynek, skalę działania, kompetencje i oczekiwane partnerstwa.": "Each organisation presents its market, scale, key competences and the partnerships it seeks.",
+  "Warsztat I: diagnoza i potencjał": "Workshop I: diagnosis and potential",
+  "Potrzeby kobiet biznesu, bariery w eksporcie, ESG, finansowaniu i dostępie do łańcuchów dostaw.": "The needs of women in business and barriers in export, ESG, financing and access to supply chains.",
+  "Przerwa kawowa": "Coffee break",
+  "Networking według obszarów zainteresowania.": "Networking by area of interest.",
+  "Wnioski i wspólne priorytety": "Conclusions and shared priorities",
+  "Najważniejsze potrzeby, zasoby i obszary możliwej współpracy.": "Key needs, resources and areas for potential cooperation.",
+  "Przedstawienie modelu sieci, grona założycieli i uroczyste wręczenie nominacji do tworzonych struktur.": "Presentation of the network model and the founding members, followed by the ceremonial presentation of nominations to the new structures.",
+  "Zdjęcia i komunikat medialny": "Photographs and media statement",
+  "Wspólne zdjęcie nominowanych oraz delegacji.": "Group photograph of nominees and delegations.",
+  "Rozmowy z nominowanymi i partnerami.": "Conversations with nominees and partners.",
+  "Pierwsze wspólne produkty GWCC": "The first joint GWCC products",
+  "Magazyn Business Women IMPACT, międzynarodowe certyfikacje oraz licencje na książki i programy szkoleniowe.": "Business Women IMPACT magazine, international certifications, and licences for books and training programmes.",
+  "Warsztat II: aktywności komercyjne": "Workshop II: commercial initiatives",
+  "Konkretne przedsięwzięcia: odbiorca, korzyść, model finansowania, liderzy i pierwsze kroki.": "Concrete ventures: audience, benefit, funding model, leaders and first steps.",
+  "Prezentacja portfela projektów": "Project portfolio presentation",
+  "3–5 najważniejszych projektów, organizacje prowadzące i terminy spotkań startowych.": "The 3–5 key projects, lead organisations and kick-off meeting dates.",
+  "Deklaracje współpracy": "Cooperation pledges",
+  "Zgłoszenia do projektów, komitetów i programów pilotażowych.": "Sign-ups for projects, committees and pilot programmes.",
+  "Zamknięcie": "Closing",
+  "Podsumowanie i plan działań na kolejne 72 godziny.": "Summary and the action plan for the next 72 hours.",
+  "Międzynarodowy dzień biznesu, relacji i realnych możliwości współpracy — dla 500 uczestników.": "An international day of business, relationships and real opportunities for cooperation — for 500 participants.",
+  "Welcome drink, Red Carpet, profesjonalna fotografia, video interviews, Social Media Wall, otwarcie stref Partnerów i Wystawców, matchmaking i dostęp do pięciu Centrów Biznesowych.": "Welcome drink, Red Carpet, professional photography, video interviews, Social Media Wall, opening of the Partner and Exhibitor zones, matchmaking and access to the five Business Centres.",
+  "Film otwierający, muzyka, światło i ekrany LED. Oficjalne otwarcie przez Prezydentkę PWCC.": "Opening film, music, lighting and LED screens. Official opening by the President of PWCC.",
+  "Debata I: Chambers United — od sieci do realnego biznesu": "Debate I: Chambers United — from network to real business",
+  "Jak wykorzystać siłę izb i organizacji biznesowych, by przedsiębiorcy otrzymywali dostęp do rynków, rekomendacje, partnerów i klientów. Element specjalny: „I can open this door”.": "How to harness the power of chambers and business organisations so that entrepreneurs gain access to markets, recommendations, partners and clients. Special feature: “I can open this door”.",
+  "IMPACT Talks I: Pieniądze • Pozycja • Wpływ": "IMPACT Talks I: Money • Position • Influence",
+  "Zysk bez przepraszania · Executive Presence · Wpływ bez udawania.": "Profit without apology · Executive Presence · Influence without pretence.",
+  "Moderowany networking w pięciu Centrach Biznesowych — trzy rozmowy, które mają prowadzić do spotkań, ofert i współpracy.": "Moderated networking across five Business Centres — three conversations designed to lead to meetings, offers and cooperation.",
+  "Ambasadorki, Konsulki Honorowe i przedstawicielki środowisk międzynarodowych o tym, jak dyplomacja gospodarcza otwiera nowe rynki.": "Ambassadors, Honorary Consuls and international representatives on how economic diplomacy opens new markets.",
+  "Honorowy List Intencyjny, deklaracja kierunku dalszej współpracy i wspólne zdjęcie.": "Honorary Letter of Intent, a declaration on the direction of future cooperation and a group photograph.",
+  "IMPACT Talks II: Firma przyszłości": "IMPACT Talks II: The company of the future",
+  "AI jako cyfrowy zespół · Firma gotowa na świat · Odporność zamiast chaosu.": "AI as a digital team · A company ready for the world · Resilience instead of chaos.",
+  "The Business Experience · Premiera magazynu Business Women IMPACT": "The Business Experience · Premiere of Business Women IMPACT magazine",
+  "Premiera pierwszej okładki magazynu, a równolegle: 15-Minute Deal Room, Expert Office Hours, Media & Content Experience oraz Restore & Power Lounge.": "Unveiling of the magazine’s first cover, alongside the 15-Minute Deal Room, Expert Office Hours, Media & Content Experience and the Restore & Power Lounge.",
+  "IMPACT Talks III: Marka • Skala • Dziedzictwo": "IMPACT Talks III: Brand • Scale • Legacy",
+  "Marka, którą pamięta rynek · Skala przez partnerstwa · Final Keynote — Liderka w długim biegu.": "A brand the market remembers · Scale through partnerships · Final Keynote — The leader in the long run.",
+  "Każdy uczestnik odpowiada: co zrobisz w ciągu 14 dni po Kongresie? Zobowiązania pojawiają się na ekranie.": "Every participant answers: what will you do in the 14 days after the Congress? The commitments appear on screen.",
+  "od 20:10": "from 8:10 pm",
+  "Networking dinner, live cooking, DJ, R&B i neo-soul, Luxury Networking Lounge. Równolegle: Private Global Lounge — wyłącznie na zaproszenie.": "Networking dinner, live cooking, DJ, R&B and neo-soul, Luxury Networking Lounge. In parallel: the Private Global Lounge — by invitation only.",
+  "Organizator zastrzega sobie prawo do zmian w programie. Lista prelegentek zostanie opublikowana wkrótce.": "The organiser reserves the right to change the programme. The list of speakers will be published soon.",
+  "Pięć Centrów": "Five Business",
+  "Biznesowych": "Centres",
+  "Przestrzenie Expo, w których odbywa się moderowany networking. Uczestnicy przechodzą przez trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.": "Expo spaces hosting moderated networking. Participants take part in three business conversations designed to lead to a meeting, an offer, cooperation or a recommendation.",
+  "Eksport, wejście na nowe rynki, logistyka, dystrybucja i e-commerce.": "Export, entering new markets, logistics, distribution and e-commerce.",
+  "Finansowanie, inwestycje, bankowość, fundusze i kapitał.": "Financing, investment, banking, funds and capital.",
+  "ESG, energetyka, raportowanie, odpowiedzialność i łańcuchy dostaw.": "ESG, energy, reporting, responsibility and supply chains.",
+  "Technologie, AI, cyberbezpieczeństwo, automatyzacja, martech i digital commerce.": "Technology, AI, cybersecurity, automation, martech and digital commerce.",
+  "Marki premium, media, komunikacja, beauty, longevity, wellbeing i marki eksperckie.": "Premium brands, media, communications, beauty, longevity, wellbeing and expert brands.",
+  "Podczas rejestracji wskazujesz: kogo chcesz poznać, czego szukasz i co możesz zaoferować. PWCC kieruje Cię do właściwych osób.": "When you register, tell us who you want to meet, what you are looking for and what you can offer. PWCC will connect you with the right people.",
+  "Formaty, które": "Formats that",
+  "tworzą biznes": "create business",
+  "Uczestnicy nie muszą wybierać jednej sceny. Każdy może przejść do przestrzeni, która w danym momencie daje mu największą wartość.": "Participants do not have to choose a single stage. Everyone can move to the space that offers them the most value at any given moment.",
+  "Wcześniej dopasowane spotkania partnerów, przedsiębiorców, inwestorów, izb i delegacji. Problem → możliwość → decyzja o kolejnym kroku.": "Pre-matched meetings between partners, entrepreneurs, investors, chambers and delegations. Problem → opportunity → decision on the next step.",
+  "Eksperci": "Experts",
+  "Szybka ekspercka odpowiedź: prawo, eksport, inwestycje, finansowanie, ESG, AI, media, marka i sprzedaż.": "Quick expert answers: law, export, investment, financing, ESG, AI, media, brand and sales.",
+  "Media": "Media",
+  "Studio podcastowe, video interviews, fotografia, reels, Social Wall i materiały live.": "Podcast studio, video interviews, photography, reels, Social Wall and live content.",
+  "Welcome drink, profesjonalna fotografia i pierwsze rozmowy biznesowe od momentu wejścia.": "Welcome drink, professional photography and the first business conversations from the moment you arrive.",
+  "Strefa regeneracji: odpoczynek, hydration, ładowanie urządzeń, beauty touch-up i krótkie formaty wellness.": "A recharge zone: rest, hydration, device charging, beauty touch-ups and short wellness sessions.",
+  "Zamknięta strefa premium dla delegacji, przedstawicielek izb, Partnerów Strategicznych i zaproszonych liderów.": "A closed premium area for delegations, chamber representatives, Strategic Partners and invited leaders.",
+  "Dzień I · 5 listopada 2026 · spotkanie zamknięte": "Day I · 5 November 2026 · closed meeting",
+  "Pierwszego dnia rozpoczyna się tworzenie pierwszej światowej instytucji gospodarczej tego typu — budowanej przez 25 struktur biznesowych reprezentujących kobiety przedsiębiorcze z różnych części świata. GWCC ma stać się stałą platformą wymiany kontaktów, rekomendacji, wiedzy, dostępu do rynków i wspólnych przedsięwzięć.": "The first day marks the start of building the first global economic institution of its kind — created by 25 business organisations representing women entrepreneurs from around the world. GWCC is to become a permanent platform for exchanging contacts, recommendations, knowledge, market access and joint ventures.",
+  "Ogłoszenie pierwszej światowej instytucji tego typu, grono struktur założycielskich i pierwsze nominacje.": "Announcement of the first global institution of its kind, its founding organisations and the first nominations.",
+  "Wspólne projekty": "Joint projects",
+  "3–5 aktywności biznesowych i komercyjnych z liderem oraz planem realizacji do grudnia 2027 r.": "3–5 business and commercial initiatives, each with a lead and an implementation plan through December 2027.",
+  "Wspólny kierunek: wspieranie kobiet w łańcuchach dostaw, eksporcie i dostępie do kapitału.": "A shared direction: supporting women in supply chains, export and access to capital.",
+  "Biznes": "Business",
+  "Magazyn Business Women IMPACT, międzynarodowe certyfikacje i licencje na książki.": "Business Women IMPACT magazine, international certifications and book licences.",
+  "Relacje": "Relationships",
+  "Katalog izb i delegacji oraz konkretne połączenia między partnerami.": "A directory of chambers and delegations, and concrete connections between partners.",
+  "Planowane komitety tematyczne: ESG, certyfikacja kobiet w biznesie, współpraca międzynarodowa i eksport, inwestycje, media oraz edukacja.": "Planned thematic committees: ESG, certification of women in business, international cooperation and export, investment, media and education.",
+  "Organizator": "Organiser",
   "Jedyna Izba Gospodarcza Kobiet Biznesu w Polsce i Europie. Struktury we wszystkich województwach i sieć relacji w 16 państwach świata.": "The only chamber of commerce for women in business in Poland and Europe. A presence in every Polish region and a network spanning 16 countries.",
   "Słowo od Prezydentki": "A word from the President",
   "Kongres Gospodarczy Kobiet Biznesu to przestrzeń, w której sukcesy kobiet w gospodarce stają się widoczne, a rozmowy zamieniają się w partnerstwa, inwestycje i realny wpływ — w Polsce i na świecie.": "The Economic Congress of Business Women is a space where women’s achievements in the economy become visible, and conversations turn into partnerships, investment and real influence — in Poland and around the world.",
   "Prezydentka Polish Women Chamber of Commerce · Redaktor Naczelna Business Women IMPACT": "President of the Polish Women Chamber of Commerce · Editor-in-Chief of Business Women IMPACT",
   "18 lat doświadczenia": "18 years of experience",
-  "Krajowe Prezydium Rad Kobiet": "National Presidium of Women’s Councils",
-  "Członkini od 6 lat": "Member for 6 years",
+  "Kompendium Dobrych Praktyk (2025)": "Compendium of Good Practices (2025)",
   "Autorka książek": "Author",
   "m.in. „Mentalność Sukcesu”, „SHE CAN DO IT”": "incl. “Mentalność Sukcesu”, “SHE CAN DO IT”",
+  "Premiera": "Premiere",
   "Wydanie inauguracyjne": "Inaugural issue",
   "Nr 01": "No. 01",
+  "Przywództwo": "Leadership",
   "Kobiety, które zmieniają zasady gry": "Women who change the rules of the game",
   "Kapitał": "Capital",
   "Inwestycje bez granic": "Investment without borders",
   "Polska marka na świecie": "Polish brands on the world stage",
   "Redaktor Naczelna": "Editor-in-Chief",
-  "Premiera podczas Kongresu · 6 listopada": "Premiering at the Congress · 6 November",
+  "Premiera · 6 listopada · 18:00–18:50": "Premiere · 6 November · 6:00–6:50 pm",
   "Magazyn Business Women": "Business Women",
-  "Podczas Kongresu odbędzie się inauguracja Business Women IMPACT — prestiżowego międzynarodowego magazynu gospodarczego dla przedsiębiorczyń, liderek i środowisk biznesu, wydawanego przez Polish Women Chamber of Commerce.": "The Congress will host the launch of Business Women IMPACT — a prestigious international business magazine for women entrepreneurs, leaders and the business community, published by the Polish Women Chamber of Commerce.",
+  "Podczas The Business Experience odbędzie się premiera pierwszej okładki Business Women IMPACT — międzynarodowego magazynu gospodarczo-biznesowego i nowej platformy medialnej Polish Women Chamber of Commerce.": "During The Business Experience, the first cover of Business Women IMPACT will be unveiled — an international business magazine and the new media platform of the Polish Women Chamber of Commerce.",
   "Wywiady i treści eksperckie": "Interviews and expert content",
-  "Wydanie drukowane, cyfrowe i wideo": "Print, digital and video editions",
-  "— we współpracy z Polish Women Chamber TV.": "— in partnership with Polish Women Chamber TV.",
+  "— liderki, inwestorzy i decydenci z Polski i świata.": "— leaders, investors and decision-makers from Poland and around the world.",
+  "Dla partnerów": "For partners",
+  "— obecność przy powstawaniu nowej platformy medialnej PWCC.": "— a presence at the birth of PWCC’s new media platform.",
+  "— Patricia Claudia Mitro.": "— Patricia Claudia Mitro.",
   "Zgłoś swoją historię do wydania": "Submit your story for the issue",
   "Partnerzy Kongresu": "Congress partners",
-  "Współtwórz": "Help shape the",
-  "Kongres": "Congress",
-  "Zapraszamy marki premium, instytucje i inwestorów do grona partnerów Kongresu Gospodarczego Kobiet Biznesu. Liczba pakietów jest ograniczona.": "We invite premium brands, institutions and investors to partner with the Economic Congress of Business Women. The number of packages is limited.",
-  "Partner strategiczny": "Strategic partner",
+  "Od stoiska do": "From stand to",
+  "doświadczenia": "experience",
+  "Partner nie kupuje wyłącznie powierzchni. Partner wchodzi do zaprojektowanego środowiska relacji biznesowych — jako ekspert, partner biznesowy, connector, gospodarz doświadczenia, partner medialny i uczestnik ekosystemu.": "A Partner does not simply buy floor space. A Partner enters a designed environment of business relationships — as an expert, business partner, connector, experience host, media partner and member of the ecosystem.",
+  "Widoczność": "Visibility",
+  "scena, przestrzeń, komunikacja, content": "stage, space, communications, content",
+  "networking, Concierge, Deal Room": "networking, Concierge, Deal Room",
+  "Ekspertyza": "Expertise",
+  "możliwość pokazania kompetencji": "the chance to demonstrate expertise",
+  "Rynek": "Market",
+  "izby, delegacje, przedsiębiorcy": "chambers, delegations, entrepreneurs",
+  "wywiady, podcasty, foto i video": "interviews, podcasts, photo and video",
+  "Prestiż": "Prestige",
+  "ograniczona liczba Partnerów i 500 gości": "a limited number of Partners and 500 guests",
+  "Kontynuacja": "Continuity",
+  "relacje rozwijane po Kongresie": "relationships that grow after the Congress",
+  "Partner Strategiczny Dnia": "Strategic Partner of the Day",
+  "Wyłączność branżowa i 2 miejsca VIP": "Sector exclusivity and 2 VIP seats",
+  "Logo w komunikacji Dnia I i obecność w katalogu": "Logo in Day I communications and a listing in the directory",
+  "5-minutowa wypowiedź ekspercka": "A 5-minute expert address",
+  "10 uzgodnionych rozmów po wydarzeniu": "10 agreed meetings after the event",
+  "Zdjęcia i komunikat PR": "Photographs and a PR release",
+  "Pełny pakiet strategiczny i tytuł Partnera ESG": "The full strategic package and the title of ESG Partner",
+  "Udział eksperta w części merytorycznej": "An expert contribution to the programme",
+  "Oznaczenie przy deklaracji ESG": "Recognition alongside the ESG declaration",
+  "Współpraca przy raporcie podsumowującym": "Collaboration on the summary report",
+  "15 uzgodnionych rozmów": "15 agreed meetings",
+  "Oba dni": "Both days",
+  "Dzień I + Dzień II": "Day I + Day II",
+  "Partner Główny Kongresu": "Main Congress Partner",
+  "Widoczność podczas obu dni Kongresu": "Visibility on both days of the Congress",
+  "Wyłączność branżowa całego wydarzenia i 4 miejsca VIP": "Sector exclusivity for the whole event and 4 VIP seats",
+  "Wystąpienie eksperckie i strefa partnera w Dniu II": "An expert talk and a partner zone on Day II",
+  "Pełny pakiet medialny": "A full media package",
+  "20 uzgodnionych rozmów B2B": "20 agreed B2B meetings",
+  "Maksymalnie 3 Partnerów Strategicznych Dnia I z wyłącznością branżową. Każdy partner przechodzi weryfikację reputacyjną. Kontakty po wydarzeniu są umawiane za zgodą obu stron — baza uczestników nie jest sprzedawana ani przekazywana.": "A maximum of 3 Day I Strategic Partners, each with sector exclusivity. Every partner undergoes reputational vetting. Post-event meetings are arranged with the consent of both sides — the participant database is never sold or shared.",
+  "Partner Główny": "Main Partner",
   "— miejsce dostępne": "— available",
-  "Partner medialny": "Media partner",
-  "Pakiet": "Package",
-  "Partner Kongresu": "Congress Partner",
-  "Logo w materiałach i na stronie Kongresu": "Logo in Congress materials and on the website",
-  "Zaproszenia na Kongres i galę": "Invitations to the Congress and gala",
-  "Obecność w wydaniu inauguracyjnym magazynu": "A presence in the magazine’s inaugural issue",
-  "Ograniczona liczba": "Limited availability",
-  "Partner Strategiczny": "Strategic Partner",
-  "Wystąpienie lub udział w panelu": "Speaking slot or panel seat",
-  "Strefa ekspozycji podczas Kongresu": "Exhibition space at the Congress",
-  "Artykuł lub wywiad w magazynie Business Women IMPACT": "Feature article or interview in Business Women IMPACT",
-  "Pakiet zaproszeń VIP": "VIP invitation package",
-  "Partner Tytularny": "Title Partner",
-  "Współtytuł Kongresu": "Co-title of the Congress",
-  "Wystąpienie podczas otwarcia i gali": "Speaking at the opening and the gala",
-  "Kampania w kanałach PWCC w kraju i za granicą": "Campaign across PWCC channels in Poland and abroad",
   "Zapytaj o ofertę partnerską": "Enquire about partnership",
   "Dołącz do": "Join the",
   "Kongresu": "Congress",
-  "Zarejestruj udział, zgłoś się jako prelegentka lub partner albo zaproponuj swoją historię do magazynu. Skontaktujemy się z Tobą osobiście.": "Register to attend, apply as a speaker or partner, or propose your story for the magazine. We will contact you personally.",
-  "5–6.11.2026 · start 11:00": "5–6.11.2026 · starts 11:00 am",
+  "Zarejestruj udział, zgłoś się jako prelegentka, partner, izba lub delegacja. Odpowiedz na trzy pytania Business Matchmaking Concierge — dzięki nim skierujemy Cię do właściwych osób.": "Register to attend, or apply as a speaker, partner, chamber or delegation. Answer the three Business Matchmaking Concierge questions so we can connect you with the right people.",
+  "5.11 · 11:00 · Dzień I | 6.11 · 11:30 · Dzień II": "5.11 · 11:00 am · Day I | 6.11 · 11:30 am · Day II",
   "Imię i nazwisko *": "Full name *",
   "Firma / instytucja": "Company / institution",
   "Telefon": "Phone",
   "Zgłaszam się jako": "I am registering as",
-  "Uczestniczka / uczestnik Kongresu": "Congress participant",
+  "Uczestniczka / uczestnik Dnia II": "Day II participant",
+  "Izba gospodarcza / delegacja": "Chamber of commerce / delegation",
+  "Partner / wystawca": "Partner / exhibitor",
   "Prelegentka / prelegent": "Speaker",
-  "Partner / sponsor Kongresu": "Congress partner / sponsor",
   "Bohaterka wydania magazynu Business Women IMPACT": "Featured story in Business Women IMPACT",
-  "Media": "Media",
+  "Kogo chcę poznać?": "Who do I want to meet?",
+  "Czego szukam?": "What am I looking for?",
+  "Co mogę zaoferować?": "What can I offer?",
   "Wiadomość": "Message",
   "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie Kongresu Gospodarczego Kobiet Biznesu i magazynu Business Women IMPACT.": "I consent to the processing of my personal data for the purpose of being contacted about the Economic Congress of Business Women and Business Women IMPACT magazine.",
   "Wyślij zgłoszenie": "Send registration",
   "Dziękujemy! Otworzyliśmy Twój program pocztowy z gotowym zgłoszeniem — wystarczy kliknąć „Wyślij”.": "Thank you! Your email app has opened with your registration ready — simply press “Send”.",
   "5–6.11.2026 · Butelkownia, Warszawa": "5–6.11.2026 · Butelkownia, Warsaw",
+  "Kongres": "Congress",
+  "Centra Biznesowe": "Business Centres",
   "Ekosystem PWCC": "PWCC ecosystem",
-  "Otrzymaj jako pierwsza/y informacje o programie, prelegentach i premierze magazynu.": "Be the first to hear about the programme, speakers and the magazine premiere.",
+  "Magazyn Business Women IMPACT": "Business Women IMPACT magazine",
+  "Otrzymaj jako pierwsza/y informacje o programie, prelegentkach i premierze magazynu.": "Be the first to hear about the programme, speakers and the magazine premiere.",
   "Zapisz": "Subscribe",
-  "© 2026 Kongres Gospodarczy Kobiet Biznesu · Organizator: Polish Women Chamber of Commerce.": "© 2026 Economic Congress of Business Women · Organiser: Polish Women Chamber of Commerce.",
+  "© 2026 Kongres Gospodarczy Kobiet Biznesu · kongresgospodarczypwcc.pl · Organizator: Polish Women Chamber of Commerce.": "© 2026 Economic Congress of Business Women · kongresgospodarczypwcc.pl · Organiser: Polish Women Chamber of Commerce.",
   "Polityka prywatności": "Privacy policy",
   "Do góry ↑": "Back to top ↑",
-  /* atrybuty (placeholder, aria-label, alt) */
   "Kongres Gospodarczy Kobiet Biznesu — strona główna": "Economic Congress of Business Women — home",
   "Język": "Language",
   "Patricia Claudia Mitro — Prezydentka Polish Women Chamber of Commerce": "Patricia Claudia Mitro — President of the Polish Women Chamber of Commerce",
   "Twój e-mail": "Your email",
-  /* komunikaty skryptu */
   "__title": "Economic Congress of Business Women 2026 · 5–6 November · Butelkownia, Warsaw",
-  "__desc": "Economic Congress of Business Women — 5–6 November 2026, Butelkownia, Warsaw, starting 11:00 am. Organiser: Polish Women Chamber of Commerce. Featuring the premiere of Business Women IMPACT magazine.",
+  "__desc": "Economic Congress of Business Women — 5–6 November 2026, Butelkownia, Warsaw. Day I: Global Women Chamber of Commerce. Day II: Business Women IMPACT 2026 for 500 participants. Organiser: Polish Women Chamber of Commerce.",
   "__alert": "Please enter your full name, a valid email address and tick the consent box.",
-  "__mail": ["Full name", "Company", "Email", "Phone", "Registering as", "Please subscribe me to the newsletter: "],
+  "__mail": [
+    "Full name",
+    "Company",
+    "Email",
+    "Phone",
+    "Registering as",
+    "Please subscribe me to the newsletter: ",
+    "Who I want to meet",
+    "What I am looking for",
+    "What I can offer"
+  ],
   "__subject": "Economic Congress of Business Women 2026"
 };
 const I18N = (() => {
@@ -1033,7 +1151,7 @@ const I18N = (() => {
   const texts = [], attrs = [];
   const PL = { __title: document.title, __desc: document.querySelector('meta[name=description]').content,
     __alert: 'Uzupełnij imię i nazwisko, poprawny e-mail oraz zaznacz zgodę.',
-    __mail: ['Imię i nazwisko', 'Firma', 'E-mail', 'Telefon', 'Zgłoszenie jako', 'Proszę o zapis do newslettera: '],
+    __mail: ['Imię i nazwisko', 'Firma', 'E-mail', 'Telefon', 'Zgłoszenie jako', 'Proszę o zapis do newslettera: ', 'Kogo chcę poznać', 'Czego szukam', 'Co mogę zaoferować'],
     __subject: 'Kongres Gospodarczy Kobiet Biznesu 2026' };
   // zapamiętaj oryginalne (polskie) teksty
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -1105,6 +1223,15 @@ document.querySelectorAll('[data-mail]').forEach(a => { a.href = 'mailto:' + CON
   tick(); setInterval(tick, 1000);
 })();
 
+// Program: zakładki Dzień I / Dzień II
+document.querySelectorAll('.day-tabs button').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.day-tabs button').forEach(b => { const on = b === btn; b.classList.toggle('on', on); b.setAttribute('aria-selected', on); });
+  document.querySelectorAll('.day-panel').forEach(p => {
+    p.hidden = p.dataset.panel !== btn.dataset.day;
+    if (!p.hidden) p.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  });
+}));
+
 // Sticky header shadow + mobile menu
 const header = document.querySelector('header.nav');
 addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 20), {passive:true});
@@ -1137,7 +1264,7 @@ document.getElementById('regForm').addEventListener('submit', e => {
     alert(I18N.t('__alert')); return;
   }
   const L = I18N.t('__mail');
-  const body = `${L[0]}: ${f.name.value}\n${L[1]}: ${f.company.value}\n${L[2]}: ${f.email.value}\n${L[3]}: ${f.phone.value}\n${L[4]}: ${f.type.value}\n\n${f.message.value}`;
+  const body = `${L[0]}: ${f.name.value}\n${L[1]}: ${f.company.value}\n${L[2]}: ${f.email.value}\n${L[3]}: ${f.phone.value}\n${L[4]}: ${f.type.value}\n\n${L[6]}: ${f.meet.value}\n${L[7]}: ${f.seek.value}\n${L[8]}: ${f.offer.value}\n\n${f.message.value}`;
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(I18N.t('__subject') + ' — ' + f.type.value)}&body=${encodeURIComponent(body)}`;
   document.getElementById('formOk').style.display = 'block';
 });
