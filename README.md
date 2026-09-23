@@ -15,3 +15,10 @@ Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgr
 - **Grafiki** (`assets/`): `patricia-claudia-mitro.jpg` (baner i okładka magazynu), `pwcc-logo.png` / `pwcc-logo-gold.png` (logo organizatora na jasne / bordowe tło), `pwcc-emblem.png` (godło w logo Kongresu w menu).
 - **Logotypy pozostałych partnerów**: miejsca oznaczone w sekcji Partnerzy.
 - **Wersja angielska (PL / EN)**: przełącznik w pasku menu. Tłumaczenia są w słowniku `I18N_EN` w `index.html` — każdy nowy polski tekst trzeba tam dopisać z angielskim odpowiednikiem. Wybór języka jest zapamiętywany; link `?lang=en` otwiera stronę od razu po angielsku, a osoby z przeglądarką w innym języku niż polski widzą automatycznie wersję angielską.
+
+## Podstrona oferty magazynu — `/magazyn/`
+
+`magazyn/index.html` to oferta reklamowa i partnerska **Business Women IMPACT 2026/2027** (na podstawie PDF „Oferta wizualna”): oferta w 60 sekund, kolportaż druk i cyfrowy, interaktywna mapa 140 stron, wymiary reklam, okładki, pakiety, subskrypcje, zasady i formularz zapytania (wybrane miejsca trafiają do e-maila).
+
+- **Ceny, strony i działy**: tablice `SECTIONS`, `COVERS`, `PACKAGES` i `DIST` na początku ostatniego `<script>` — mapa, tabele i zestawienie budują się z nich automatycznie.
+- **Adres zapytań**: obiekt `CONFIG` w tym samym skrypcie.
