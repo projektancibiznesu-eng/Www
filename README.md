@@ -6,5 +6,6 @@ Wydawca: Polish Women Chamber of Commerce · www.businesswomenimpact.pl
 Całość to jeden plik `index.html` (bez budowania) — wystarczy wgrać go na hosting.
 
 - **Kolory marki (bordo i złoto)**: blok `:root` na początku `<style>` (`--navy` = bordo, `--gold` = złoto). Czcionki: Playfair Display + DM Sans.
-- **Adres e-mail zgłoszeń i data odliczania**: obiekt `CONFIG` na początku `<script>`.
-- **Miejsce wydarzenia, portret Redaktor Naczelnej, logotypy partnerów**: oznaczone w treści jako do uzupełnienia.
+- **Adres e-mail zgłoszeń (biuro@polishwomenchamber.pl) i odliczanie (5.11.2026, 11:00)**: obiekt `CONFIG` na początku `<script>`.
+- **Portret Redaktor Naczelnej**: `assets/patricia-claudia-mitro.jpg` (okładka i sekcja Redakcja).
+- **Logotypy partnerów**: miejsca oznaczone w sekcji Partnerzy.

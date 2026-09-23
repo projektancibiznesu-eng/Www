@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Business Women IMPACT — Inauguracja magazynu · 6 listopada 2026</title>
-<meta name="description" content="Business Women IMPACT — prestiżowy międzynarodowy magazyn gospodarczy dla kobiet biznesu. Inauguracja 6 listopada 2026 podczas Kongresu Gospodarczego Kobiet Biznesu. Wydawca: Polish Women Chamber of Commerce.">
-<meta property="og:title" content="Business Women IMPACT — Inauguracja 6.11.2026">
+<title>Business Women IMPACT — Inauguracja magazynu · 5–6 listopada 2026 · Butelkownia</title>
+<meta name="description" content="Business Women IMPACT — prestiżowy międzynarodowy magazyn gospodarczy dla kobiet biznesu. Inauguracja podczas Kongresu Gospodarczego Kobiet Biznesu, 5–6 listopada 2026, Butelkownia. Wydawca: Polish Women Chamber of Commerce.">
+<meta property="og:title" content="Business Women IMPACT — Inauguracja 5–6.11.2026 · Butelkownia">
 <meta property="og:description" content="Nowy głos kobiet w gospodarce. Premiera pierwszego wydania podczas Kongresu Gospodarczego Kobiet Biznesu.">
 <meta property="og:url" content="https://www.businesswomenimpact.pl">
 <meta name="theme-color" content="#5A0B10">
@@ -112,10 +112,15 @@ header.nav.scrolled .shell{height:78px;box-shadow:0 18px 40px -18px rgba(40,4,8,
 .cover .c-top{display:flex;justify-content:space-between;font-size:.55rem;letter-spacing:.25em;color:var(--gold-light);text-transform:uppercase}
 .cover .c-mast{font-family:var(--serif);font-weight:600;text-transform:uppercase;line-height:.9;margin-top:14px;color:#fff;font-size:2.1rem;letter-spacing:-.03em}
 .cover .c-mast span{display:block;font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;font-size:3.3rem;letter-spacing:-.02em;background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:4px}
+.cover{overflow:hidden}
+.cover > *{position:relative;z-index:2}
+.cover .c-photo{position:absolute;z-index:0;left:0;right:0;top:16%;width:100%;height:auto;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%);mask-image:linear-gradient(to bottom,transparent 0,#000 14%)}
+.cover .c-shade{position:absolute;z-index:1;inset:0;background:linear-gradient(to bottom,transparent 55%,rgba(40,3,6,.55) 75%,rgba(30,2,4,.92) 100%)}
 .cover .c-silh{flex:1;position:relative;margin:10px 0}
-.cover .c-silh svg{position:absolute;right:-10px;bottom:0;height:100%;opacity:.95}
-.cover .c-lines{position:absolute;left:0;top:18%;display:flex;flex-direction:column;gap:14px;max-width:52%;z-index:2}
-.cover .c-lines p{font-family:var(--serif-2);font-size:.95rem;line-height:1.15;color:#fff}
+.cover .c-lines{position:absolute;left:0;bottom:6px;display:flex;flex-direction:column;gap:10px;max-width:40%;z-index:2}
+.cover .c-name{position:absolute;right:0;bottom:6px;text-align:right;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:.95rem;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.cover .c-name small{display:block;font-family:var(--sans);font-style:normal;font-size:.46rem;letter-spacing:.22em;text-transform:uppercase;color:#fff;margin-top:4px}
+.cover .c-lines p{text-shadow:0 2px 10px rgba(0,0,0,.6);font-family:var(--serif-2);font-size:.82rem;line-height:1.15;color:#fff}
 .cover .c-lines p b{display:block;font-family:var(--sans);font-size:.5rem;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;font-weight:600;margin-bottom:3px}
 .cover .c-bottom{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(201,164,92,.5);padding-top:10px;font-size:.55rem;letter-spacing:.2em;color:var(--gold-light);text-transform:uppercase}
 .cover .c-bottom strong{font-family:var(--serif);font-size:1.2rem;letter-spacing:0;color:#fff;text-transform:none}
@@ -211,9 +216,8 @@ section{padding:120px 0;scroll-margin-top:110px}
 /* Editor */
 .editor{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
 .portrait{border-radius:18px;position:relative;aspect-ratio:4/5;background:radial-gradient(circle at 50% 38%,rgba(230,207,154,.28),transparent 55%),linear-gradient(170deg,var(--navy-2),var(--ink));border:1px solid var(--line);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
-.portrait svg{width:78%;opacity:.9}
-.portrait::after{content:"";position:absolute;inset:18px;border:1px solid rgba(201,164,92,.25);pointer-events:none}
-.portrait .ph-note{position:absolute;top:34px;left:0;right:0;text-align:center;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(230,207,154,.55)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.portrait::after{content:"";position:absolute;inset:18px;border:1px solid rgba(228,203,148,.55);border-radius:10px;pointer-events:none}
 .big-quote{font-family:var(--serif-2);font-style:italic;font-weight:400;font-size:clamp(1.5rem,2.4vw,2.1rem);line-height:1.35;color:#fff;margin:22px 0 34px;position:relative}
 .big-quote::before{content:"“";position:absolute;left:-10px;top:-70px;font-family:var(--serif);font-size:8rem;color:rgba(201,164,92,.25);font-style:normal}
 .sign strong{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--gold-light)}
@@ -343,7 +347,7 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="tb-left">Wydawca: <b>Polish Women Chamber of Commerce</b> &nbsp;·&nbsp; Izba Gospodarcza Kobiet Biznesu</div>
     <div class="tb-right">
-      <a href="#inauguracja">Inauguracja · <b>06.11.2026</b></a>
+      <a href="#inauguracja">Kongres · <b>5–6.11.2026</b> · Butelkownia</a>
       <div class="lang" aria-label="Język"><span class="on">PL</span><span>EN</span></div>
     </div>
   </div>
@@ -381,10 +385,11 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div>
       <span class="eyebrow">Polish Women Chamber of Commerce</span>
-      <h1><span class="thin">Oficjalna zapowiedź · Premiera 06.11.2026</span>Business Women <em>Impact Magazine</em></h1>
+      <h1><span class="thin">Oficjalna zapowiedź · 5–6 listopada 2026</span>Business Women <em>Impact Magazine</em></h1>
       <p class="lead">Prestiżowy międzynarodowy magazyn gospodarczy dla przedsiębiorczyń, liderek i&nbsp;środowisk biznesu. Przywództwo, kapitał, inwestycje, internacjonalizacja i&nbsp;nowe technologie — opowiedziane przez kobiety, które realnie kształtują rynek.</p>
       <div class="hero-meta">
-        <div><small>Inauguracja</small><strong>6 listopada 2026</strong></div>
+        <div><small>Inauguracja</small><strong>5–6 listopada 2026 · 11:00</strong></div>
+        <div><small>Miejsce</small><strong>Butelkownia</strong></div>
         <div><small>Podczas</small><strong>Kongresu Gospodarczego Kobiet Biznesu</strong></div>
         <div><small>Wydawca</small><strong>Polish Women Chamber of Commerce</strong></div>
       </div>
@@ -395,8 +400,10 @@ footer .logo{margin-bottom:26px}
     </div>
 
     <div class="cover-stage" aria-hidden="true">
-      <div class="seal"><div class="seal-inner">Premiera<strong>06.11</strong>2026</div></div>
+      <div class="seal"><div class="seal-inner">Premiera<strong>5–6.11</strong>2026</div></div>
       <div class="cover">
+        <img class="c-photo" src="assets/patricia-claudia-mitro.jpg" alt="" loading="eager">
+        <div class="c-shade"></div>
         <div class="c-top"><span>Wydanie inauguracyjne</span><span>Nr 01</span></div>
         <div class="c-mast">Business Women<span>IMPACT</span></div>
         <div class="c-silh">
@@ -405,11 +412,7 @@ footer .logo{margin-bottom:26px}
             <p><b>Kapitał</b>Inwestycje bez granic</p>
             <p><b>Global</b>Polska marka na świecie</p>
           </div>
-          <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6CF9A"/><stop offset="1" stop-color="#A8823A"/></linearGradient></defs>
-            <path d="M118 40c22 0 36 18 34 42-1 14-6 26-14 34 4 8 12 12 22 16 30 12 40 40 40 80v88H40v-70c0-40 16-70 50-86 8-4 14-10 16-18-10-8-16-22-16-38 0-28 12-48 28-48z" fill="url(#g1)" opacity=".92"/>
-            <path d="M92 70c6-26 30-40 52-30 18 8 24 30 20 52-10-24-30-30-52-22" fill="#4A080D" opacity=".6"/>
-          </svg>
+          <div class="c-name">Patricia<br>Claudia Mitro<small>Redaktor Naczelna</small></div>
         </div>
         <div class="c-bottom"><span>Polish Women<br>Chamber of Commerce</span><strong>2026</strong></div>
       </div>
@@ -420,7 +423,7 @@ footer .logo{margin-bottom:26px}
 <!-- ================= COUNTDOWN ================= -->
 <div class="countdown-band">
   <div class="wrap">
-    <h3><small>Do inauguracji magazynu pozostało</small>Kongres Gospodarczy Kobiet Biznesu · 06.11.2026</h3>
+    <h3><small>Do inauguracji magazynu pozostało</small>Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Butelkownia</h3>
     <div class="cd" id="countdown" aria-live="polite">
       <div><strong id="cd-d">--</strong><span>Dni</span></div>
       <div><strong id="cd-h">--</strong><span>Godzin</span></div>
@@ -534,11 +537,12 @@ footer .logo{margin-bottom:26px}
   <div class="wrap event">
     <aside class="event-card reveal">
       <span class="eyebrow">Wydarzenie inauguracyjne</span>
-      <div class="date-big"><strong>06</strong><span>listopada<br>2026</span></div>
+      <div class="date-big"><strong>5–6</strong><span>listopada<br>2026</span></div>
       <dl>
         <div><dt>Wydarzenie</dt><dd>Kongres Gospodarczy Kobiet Biznesu</dd></div>
         <div><dt>Organizator</dt><dd>Polish Women Chamber of Commerce</dd></div>
-        <div><dt>Miejsce</dt><dd>Lokalizacja zostanie ogłoszona wkrótce</dd></div>
+        <div><dt>Miejsce</dt><dd>Butelkownia</dd></div>
+        <div><dt>Start</dt><dd>godz. 11:00</dd></div>
         <div><dt>Charakter</dt><dd>Wydarzenie zamknięte · udział na zaproszenie i&nbsp;po rejestracji</dd></div>
       </dl>
       <a href="#rejestracja" class="btn btn-gold">Zarezerwuj miejsce <span class="arr">→</span></a>
@@ -555,7 +559,7 @@ footer .logo{margin-bottom:26px}
         <li class="reveal"><small>Część III</small><h4>Debaty liderek i&nbsp;inwestorów</h4><p>Przywództwo, kapitał, internacjonalizacja i&nbsp;nowe technologie — rozmowy z&nbsp;bohaterkami wydania.</p></li>
         <li class="reveal"><small>Część IV</small><h4>Gala &amp; networking premium</h4><p>Wręczenie egzemplarzy premierowych, spotkania z&nbsp;partnerami i&nbsp;strategiczny networking.</p></li>
       </ol>
-      <p class="reveal" style="font-size:.85rem;color:var(--muted);font-style:italic">Szczegółowy program z&nbsp;godzinami i&nbsp;listą prelegentów zostanie opublikowany wkrótce.</p>
+      <p class="reveal" style="font-size:.85rem;color:var(--muted);font-style:italic">Start: 5 listopada 2026, godz. 11:00, Butelkownia. Szczegółowy program z&nbsp;listą prelegentów zostanie opublikowany wkrótce.</p>
     </div>
   </div>
 </section>
@@ -563,9 +567,8 @@ footer .logo{margin-bottom:26px}
 <!-- ================= EDITOR ================= -->
 <section class="dark" id="redakcja" style="background:linear-gradient(160deg,var(--ink),var(--navy))">
   <div class="wrap editor">
-    <div class="portrait reveal" role="img" aria-label="Miejsce na portret Redaktor Naczelnej">
-      <span class="ph-note">Miejsce na portret</span>
-      <svg viewBox="0 0 200 220" fill="none"><defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6CF9A" stop-opacity=".55"/><stop offset="1" stop-color="#A8823A" stop-opacity=".2"/></linearGradient></defs><circle cx="100" cy="72" r="42" fill="url(#g2)"/><path d="M20 220c0-50 36-86 80-86s80 36 80 86z" fill="url(#g2)"/></svg>
+    <div class="portrait reveal">
+      <img src="assets/patricia-claudia-mitro.jpg" alt="Patricia Claudia Mitro — Redaktor Naczelna Business Women IMPACT, Prezydentka Polish Women Chamber of Commerce" loading="lazy" width="1023" height="1537">
     </div>
     <div class="reveal">
       <span class="eyebrow">Słowo od Redaktor Naczelnej</span>
@@ -631,7 +634,7 @@ footer .logo{margin-bottom:26px}
       <ul class="contact-list">
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><span>www.businesswomenimpact.pl</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span><a href="" data-mail>—</a></li>
-        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>06.11.2026 · Kongres Gospodarczy Kobiet Biznesu</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5–6.11.2026 · 11:00 · Butelkownia</span></li>
       </ul>
     </div>
     <form class="reg reveal" id="regForm" novalidate>
@@ -645,7 +648,7 @@ footer .logo{margin-bottom:26px}
       </div>
       <div class="field"><label for="f-type">Jestem zainteresowana/y</label>
         <select id="f-type" name="type">
-          <option>Udziałem w inauguracji 06.11.2026</option>
+          <option>Udziałem w Kongresie i inauguracji 5–6.11.2026</option>
           <option>Publikacją mojej historii w magazynie</option>
           <option>Partnerstwem / reklamą</option>
           <option>Prenumeratą magazynu</option>
@@ -703,8 +706,8 @@ footer .logo{margin-bottom:26px}
    (do potwierdzenia / zmiany przed publikacją)
    ========================================================= */
 const CONFIG = {
-  email: 'kontakt@businesswomenimpact.pl',
-  eventDate: '2026-11-06T10:00:00+01:00'
+  email: 'biuro@polishwomenchamber.pl',
+  eventDate: '2026-11-05T11:00:00+01:00'
 };
 
 // e-mail w sekcji kontakt
