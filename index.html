@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Business Women IMPACT — Inauguracja magazynu · 5–6 listopada 2026 · Butelkownia</title>
-<meta name="description" content="Business Women IMPACT — prestiżowy międzynarodowy magazyn gospodarczy dla kobiet biznesu. Inauguracja podczas Kongresu Gospodarczego Kobiet Biznesu, 5–6 listopada 2026, Butelkownia. Wydawca: Polish Women Chamber of Commerce.">
-<meta property="og:title" content="Business Women IMPACT — Inauguracja 5–6.11.2026 · Butelkownia">
+<title>Business Women IMPACT — Inauguracja magazynu · 5–6 listopada 2026 · Butelkownia, Warszawa</title>
+<meta name="description" content="Business Women IMPACT — prestiżowy międzynarodowy magazyn gospodarczy dla kobiet biznesu. Inauguracja podczas Kongresu Gospodarczego Kobiet Biznesu, 5–6 listopada 2026, Butelkownia, Warszawa. Wydawca: Polish Women Chamber of Commerce.">
+<meta property="og:title" content="Business Women IMPACT — Inauguracja 5–6.11.2026 · Butelkownia, Warszawa">
 <meta property="og:description" content="Nowy głos kobiet w gospodarce. Premiera pierwszego wydania podczas Kongresu Gospodarczego Kobiet Biznesu.">
 <meta property="og:url" content="https://www.businesswomenimpact.pl">
 <meta name="theme-color" content="#5A0B10">
@@ -60,12 +60,17 @@ h2 em,h1 em{font-style:italic;color:var(--gold);font-weight:400;letter-spacing:-
 
 /* ---------- TOP BAR ---------- */
 .topbar{background:var(--ink);color:rgba(255,255,255,.7);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:20px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:20px;white-space:nowrap}
+@media (max-width:1320px){.topbar .tb-sub{display:none}}
 .topbar b{color:var(--gold-light);font-weight:600}
 .topbar .tb-right{display:flex;gap:22px;align-items:center}
 .topbar .tb-right a:hover{color:var(--gold-light)}
-.lang{display:flex;gap:8px}
-.lang span{cursor:pointer;opacity:.6}.lang span.on{opacity:1;color:var(--gold-light)}
+.lang{display:flex;gap:4px}
+.lang button{background:none;border:0;font:inherit;letter-spacing:inherit;color:inherit;cursor:pointer;opacity:.6;padding:4px 6px}
+.lang button.on{opacity:1;color:var(--gold-light);font-weight:600}
+.lang-pill{display:flex;flex:none;background:#EFE3DE;border-radius:40px;padding:4px}
+.lang-pill button{border:0;background:none;cursor:pointer;font-family:var(--sans);font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--navy);padding:9px 13px;border-radius:40px;transition:.3s}
+.lang-pill button.on{background:var(--navy);color:var(--gold-light)}
 
 /* ---------- HEADER ---------- */
 header.nav{position:sticky;top:0;z-index:50;padding:16px 0;margin-bottom:-124px;transition:padding .3s}
@@ -204,6 +209,8 @@ section{padding:120px 0;scroll-margin-top:110px}
 .event-card dl{display:grid;gap:20px;margin-bottom:36px}
 .event-card dt{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
 .event-card dd{font-family:var(--serif-2);font-size:1.25rem}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:-6px 0 32px}
+.pills li{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gold-light);border:1px solid var(--line);border-radius:40px;padding:7px 14px}
 .timeline{list-style:none;position:relative;padding-left:40px}
 .timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--gold),rgba(201,164,92,.1))}
 .timeline li{position:relative;padding:0 0 42px}
@@ -237,7 +244,7 @@ section{padding:120px 0;scroll-margin-top:110px}
 
 /* Partners */
 .partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-bottom:50px}
-.plogo{border-radius:10px;aspect-ratio:16/9;border:1px dashed rgba(201,164,92,.6);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);transition:.3s;padding:10px}
+.plogo{min-width:0;overflow-wrap:anywhere;border-radius:10px;aspect-ratio:16/9;border:1px dashed rgba(201,164,92,.6);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);transition:.3s;padding:10px}
 .plogo:hover{background:var(--paper);border-style:solid;color:var(--gold-deep)}
 .plogo.main{border-style:solid;background:var(--navy);color:var(--gold-light);font-family:var(--serif);letter-spacing:.06em;text-transform:none;font-size:1rem;line-height:1.2}
 .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
@@ -297,6 +304,27 @@ footer .logo{margin-bottom:26px}
   .menu a{font-size:.7rem;letter-spacing:.12em}
   .nav .btn{display:none}
 }
+@media (max-width:680px){
+  .lang-pill button{padding:8px 10px;font-size:.64rem}
+  .nav .shell{gap:8px}
+  .topbar .wrap{white-space:normal}
+  .topbar .wrap{height:auto;min-height:38px;padding-top:8px;padding-bottom:8px;text-align:center;font-size:.64rem}
+  .logo{gap:9px}
+  .logo .l2{display:none}
+  .logo .l0{font-size:.5rem;letter-spacing:.2em}
+}
+@media (max-width:400px){
+  .split > *,.event > *,.editor > *,.fgrid > *{min-width:0}
+  footer .logo{white-space:normal}
+  .contact-list li{overflow-wrap:anywhere}
+  .cd{gap:8px}.cd div{min-width:62px}
+  .partners-grid{grid-template-columns:1fr}
+  .plogo{aspect-ratio:auto;min-height:96px}
+  .logo .emblem{width:40px;height:40px}
+  .logo .l1{font-size:1.1rem}
+  .burger{width:46px;height:46px}.burger span{left:11px;top:22px}
+  .lang-pill{padding:3px}.lang-pill button{padding:7px 8px}
+}
 @media (max-width:1080px){
   .menu{gap:16px}
   .hero .wrap,.split,.event,.editor{grid-template-columns:1fr;gap:60px}
@@ -345,10 +373,9 @@ footer .logo{margin-bottom:26px}
 <!-- ================= TOP BAR ================= -->
 <div class="topbar">
   <div class="wrap">
-    <div class="tb-left">Wydawca: <b>Polish Women Chamber of Commerce</b> &nbsp;·&nbsp; Izba Gospodarcza Kobiet Biznesu</div>
+    <div class="tb-left">Wydawca: <b>Polish Women Chamber of Commerce</b><span class="tb-sub"> &nbsp;·&nbsp; Izba Gospodarcza Kobiet Biznesu</span></div>
     <div class="tb-right">
-      <a href="#inauguracja">Kongres · <b>5–6.11.2026</b> · Butelkownia</a>
-      <div class="lang" aria-label="Język"><span class="on">PL</span><span>EN</span></div>
+      <a href="#inauguracja">Kongres · <b>5–6.11.2026</b> · Butelkownia, Warszawa</a>
     </div>
   </div>
 </div>
@@ -369,6 +396,7 @@ footer .logo{margin-bottom:26px}
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
     <a href="#rejestracja" class="btn btn-gold">Zarezerwuj miejsce</a>
+    <div class="lang-pill" role="group" aria-label="Język"><button type="button" data-lang="pl">PL</button><button type="button" data-lang="en">EN</button></div>
     <button class="burger" id="burger" aria-label="Menu"><span></span></button>
   </div></div>
 </header>
@@ -389,7 +417,7 @@ footer .logo{margin-bottom:26px}
       <p class="lead">Prestiżowy międzynarodowy magazyn gospodarczy dla przedsiębiorczyń, liderek i&nbsp;środowisk biznesu. Przywództwo, kapitał, inwestycje, internacjonalizacja i&nbsp;nowe technologie — opowiedziane przez kobiety, które realnie kształtują rynek.</p>
       <div class="hero-meta">
         <div><small>Inauguracja</small><strong>5–6 listopada 2026 · 11:00</strong></div>
-        <div><small>Miejsce</small><strong>Butelkownia</strong></div>
+        <div><small>Miejsce</small><strong>Butelkownia, Warszawa</strong></div>
         <div><small>Podczas</small><strong>Kongresu Gospodarczego Kobiet Biznesu</strong></div>
         <div><small>Wydawca</small><strong>Polish Women Chamber of Commerce</strong></div>
       </div>
@@ -423,7 +451,7 @@ footer .logo{margin-bottom:26px}
 <!-- ================= COUNTDOWN ================= -->
 <div class="countdown-band">
   <div class="wrap">
-    <h3><small>Do inauguracji magazynu pozostało</small>Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Butelkownia</h3>
+    <h3><small>Do inauguracji magazynu pozostało</small>Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Butelkownia, Warszawa</h3>
     <div class="cd" id="countdown" aria-live="polite">
       <div><strong id="cd-d">--</strong><span>Dni</span></div>
       <div><strong id="cd-h">--</strong><span>Godzin</span></div>
@@ -465,7 +493,7 @@ footer .logo{margin-bottom:26px}
     <div class="stat reveal"><strong data-count="16">0</strong><span>Województw w&nbsp;strukturach Izby</span></div>
     <div class="stat reveal"><strong data-count="16">0</strong><span>Państw — sieć relacji międzynarodowych</span></div>
     <div class="stat reveal"><strong data-count="160" data-suffix="+">0</strong><span>Firm członkowskich PWCC</span></div>
-    <div class="stat reveal"><strong data-count="18" data-suffix=" lat">0</strong><span>Doświadczenia we wspieraniu kobiet biznesu</span></div>
+    <div class="stat reveal"><strong data-count="18" data-suffix=" lat" data-years>0</strong><span>Doświadczenia we wspieraniu kobiet biznesu</span></div>
   </div>
 </div>
 
@@ -541,10 +569,11 @@ footer .logo{margin-bottom:26px}
       <dl>
         <div><dt>Wydarzenie</dt><dd>Kongres Gospodarczy Kobiet Biznesu</dd></div>
         <div><dt>Organizator</dt><dd>Polish Women Chamber of Commerce</dd></div>
-        <div><dt>Miejsce</dt><dd>Butelkownia</dd></div>
+        <div><dt>Miejsce</dt><dd>Butelkownia, Warszawa</dd></div>
         <div><dt>Start</dt><dd>godz. 11:00</dd></div>
         <div><dt>Charakter</dt><dd>Wydarzenie zamknięte · udział na zaproszenie i&nbsp;po rejestracji</dd></div>
       </dl>
+      <ul class="pills"><li>Liderki</li><li>Kapitał i inwestycje</li><li>Dyplomacja gospodarcza</li><li>Networking premium</li></ul>
       <a href="#rejestracja" class="btn btn-gold">Zarezerwuj miejsce <span class="arr">→</span></a>
     </aside>
     <div>
@@ -559,7 +588,7 @@ footer .logo{margin-bottom:26px}
         <li class="reveal"><small>Część III</small><h4>Debaty liderek i&nbsp;inwestorów</h4><p>Przywództwo, kapitał, internacjonalizacja i&nbsp;nowe technologie — rozmowy z&nbsp;bohaterkami wydania.</p></li>
         <li class="reveal"><small>Część IV</small><h4>Gala &amp; networking premium</h4><p>Wręczenie egzemplarzy premierowych, spotkania z&nbsp;partnerami i&nbsp;strategiczny networking.</p></li>
       </ol>
-      <p class="reveal" style="font-size:.85rem;color:var(--muted);font-style:italic">Start: 5 listopada 2026, godz. 11:00, Butelkownia. Szczegółowy program z&nbsp;listą prelegentów zostanie opublikowany wkrótce.</p>
+      <p class="reveal" style="font-size:.85rem;color:var(--muted);font-style:italic">Start: 5 listopada 2026, godz. 11:00, Butelkownia, Warszawa. Szczegółowy program z&nbsp;listą prelegentów zostanie opublikowany wkrótce.</p>
     </div>
   </div>
 </section>
@@ -634,7 +663,7 @@ footer .logo{margin-bottom:26px}
       <ul class="contact-list">
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><span>www.businesswomenimpact.pl</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span><a href="" data-mail>—</a></li>
-        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5–6.11.2026 · 11:00 · Butelkownia</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5–6.11.2026 · 11:00 · Butelkownia, Warszawa</span></li>
       </ul>
     </div>
     <form class="reg reveal" id="regForm" novalidate>
@@ -702,6 +731,252 @@ footer .logo{margin-bottom:26px}
 
 <script>
 /* =========================================================
+   TŁUMACZENIE PL / EN — przełącznik języka strony
+   Klucz: tekst polski (dokładnie jak na stronie), wartość: angielski.
+   Nowy tekst na stronie = dopisz tu jego tłumaczenie.
+   ========================================================= */
+const I18N_EN = {
+  "Wydawca:": "Publisher:",
+  "· Izba Gospodarcza Kobiet Biznesu": "· Chamber of Commerce for Women in Business",
+  "Kongres ·": "Congress ·",
+  "· Butelkownia, Warszawa": "· Butelkownia, Warsaw",
+  "International Magazine": "International Magazine",
+  "O magazynie": "About",
+  "Rubryki": "Sections",
+  "Inauguracja": "Launch",
+  "Redakcja": "Editorial",
+  "Partnerzy": "Partners",
+  "Kontakt": "Contact",
+  "Zarezerwuj miejsce": "Reserve your seat",
+  "Oficjalna zapowiedź · 5–6 listopada 2026": "Official announcement · 5–6 November 2026",
+  "Prestiżowy międzynarodowy magazyn gospodarczy dla przedsiębiorczyń, liderek i środowisk biznesu. Przywództwo, kapitał, inwestycje, internacjonalizacja i nowe technologie — opowiedziane przez kobiety, które realnie kształtują rynek.": "A prestigious international business magazine for women entrepreneurs, leaders and the wider business community. Leadership, capital, investment, international expansion and new technologies — told by the women who are truly shaping the market.",
+  "5–6 listopada 2026 · 11:00": "5–6 November 2026 · 11:00 am",
+  "Miejsce": "Venue",
+  "Butelkownia, Warszawa": "Butelkownia, Warsaw",
+  "Podczas": "At",
+  "Kongresu Gospodarczego Kobiet Biznesu": "the Business Women Economic Congress",
+  "Wydawca": "Publisher",
+  "Dołącz do inauguracji": "Join the launch",
+  "Zostań partnerem": "Become a partner",
+  "Premiera": "Premiere",
+  "Wydanie inauguracyjne": "Inaugural issue",
+  "Nr 01": "No. 01",
+  "Przywództwo": "Leadership",
+  "Kobiety, które zmieniają zasady gry": "Women who change the rules of the game",
+  "Kapitał": "Capital",
+  "Inwestycje bez granic": "Investment without borders",
+  "Polska marka na świecie": "Polish brands on the world stage",
+  "Redaktor Naczelna": "Editor-in-Chief",
+  "Do inauguracji magazynu pozostało": "Countdown to the magazine launch",
+  "Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Butelkownia, Warszawa": "Business Women Economic Congress · 5–6.11.2026 · Butelkownia, Warsaw",
+  "Dni": "Days",
+  "Godzin": "Hours",
+  "Minut": "Minutes",
+  "Sekund": "Seconds",
+  "Edycja inauguracyjna": "Inaugural edition",
+  "Nie opisujemy świata biznesu z boku. Tworzymy go — razem z kobietami, które mają realny wpływ.": "We do not observe the business world from the sidelines. We shape it — together with women of real influence.",
+  "Manifest redakcji": "Editorial manifesto",
+  "Magazyn, który buduje": "A magazine that builds",
+  "wpływ": "influence",
+  ", a nie tylko o nim pisze": " — not one that merely writes about it",
+  "Business Women IMPACT to międzynarodowy magazyn gospodarczy wydawany w ekosystemie Polish Women Chamber of Commerce — jedynej Izby Gospodarczej Kobiet Biznesu w Polsce i Europie, działającej na podstawie ustawy o izbach gospodarczych.": "Business Women IMPACT is an international business magazine published within the ecosystem of the Polish Women Chamber of Commerce — the only chamber of commerce for women in business in Poland and Europe, operating under the Polish Act on Chambers of Commerce.",
+  "Treści eksperckie klasy premium": "Premium expert content",
+  "— wywiady z liderkami, inwestorami i decydentami z Polski i świata.": "— interviews with leaders, investors and decision-makers from Poland and around the world.",
+  "Perspektywa międzynarodowa": "An international perspective",
+  "— sieć relacji i przedstawicielstw w 16 państwach, Europa i region GCC.": "— a network of relationships and representatives in 16 countries, across Europe and the GCC region.",
+  "Most między biznesem, kapitałem i dyplomacją": "A bridge between business, capital and diplomacy",
+  "— platforma dialogu przedsiębiorców, administracji i partnerów strategicznych.": "— a platform for dialogue between entrepreneurs, public administration and strategic partners.",
+  "Wydanie drukowane, cyfrowe i wideo": "Print, digital and video editions",
+  "— we współpracy z Polish Women Chamber TV i podcastami biznesowymi.": "— in partnership with Polish Women Chamber TV and business podcasts.",
+  "Poznaj rubryki": "Explore the sections",
+  "Województw w strukturach Izby": "Polish regions within the Chamber",
+  "Państw — sieć relacji międzynarodowych": "Countries in our international network",
+  "Firm członkowskich PWCC": "PWCC member companies",
+  "Doświadczenia we wspieraniu kobiet biznesu": "Of experience supporting women in business",
+  "Dla kogo tworzymy": "Who we create for",
+  "Jedna platforma.": "One platform.",
+  "Trzy": "Three",
+  "drogi do wpływu.": "paths to influence.",
+  "Magazyn łączy środowiska, które razem budują nowoczesną gospodarkę — przedsiębiorczynie, partnerów biznesowych i inwestorów.": "The magazine brings together the communities building the modern economy — women entrepreneurs, business partners and investors.",
+  "Dla przedsiębiorczyń i liderek": "For women entrepreneurs and leaders",
+  "Opowiedz swoją historię sukcesu, pokaż markę na arenie międzynarodowej i zyskaj dostęp do sieci kontaktów, wiedzy oraz inspiracji do skalowania biznesu.": "Share your success story, present your brand on the international stage and gain access to a network of contacts, knowledge and inspiration to scale your business.",
+  "Zgłoś swoją historię": "Submit your story",
+  "Dla partnerów i marek premium": "For partners and premium brands",
+  "Dotrzyj do świadomej, decyzyjnej i zamożnej grupy odbiorców. Partnerstwa strategiczne, publikacje sponsorowane i obecność podczas inauguracji.": "Reach a discerning, affluent audience of decision-makers. Strategic partnerships, sponsored features and a presence at the launch event.",
+  "Pakiety partnerskie": "Partnership packages",
+  "Dla inwestorów i instytucji": "For investors and institutions",
+  "Poznaj zweryfikowane projekty i firmy prowadzone przez kobiety — od nowych technologii i biotech po nieruchomości i rynek kapitałowy — we współpracy z PWCC Investment Club.": "Discover vetted projects and women-led companies — from new technologies and biotech to real estate and capital markets — in cooperation with the PWCC Investment Club.",
+  "Porozmawiajmy": "Let’s talk",
+  "Rubryki magazynu": "Magazine sections",
+  "Tematy, które": "Topics that",
+  "definiują": "define",
+  "przyszłość gospodarki": "the future of the economy",
+  "Każde wydanie to przemyślana selekcja tematów strategicznych — od sali zarządu po rynki globalne.": "Every issue is a curated selection of strategic topics — from the boardroom to global markets.",
+  "Liderki, które budują organizacje, zespoły i standardy nowoczesnego zarządzania.": "Women who build organisations, teams and the standards of modern management.",
+  "Biznes & Skalowanie": "Business & Scaling",
+  "Strategie wzrostu, budowanie pozycji rynkowej i historie firm, które zmieniają branże.": "Growth strategies, market positioning and the stories of companies transforming their industries.",
+  "Kapitał & Inwestycje": "Capital & Investment",
+  "Rynek kapitałowy, nieruchomości międzynarodowe, fundusze i budowanie dochodu pasywnego.": "Capital markets, international real estate, funds and building passive income.",
+  "Internacjonalizacja": "International Expansion",
+  "Ekspansja zagraniczna, dystrybucja produktów premium, Europa i region GCC.": "Going global, premium product distribution, Europe and the GCC region.",
+  "Nowe technologie": "New Technologies",
+  "Nanotechnologia, biotech, deep-tech i sektor New Space — biznes przyszłości już dziś.": "Nanotechnology, biotech, deep tech and New Space — the business of the future, today.",
+  "Wpływ & Odporność": "Influence & Resilience",
+  "Dyplomacja gospodarcza, bezpieczeństwo, odporność regionów i rola kobiet w państwie.": "Economic diplomacy, security, regional resilience and the role of women in the state.",
+  "Wyróżnienia i uznanie środowiska": "Awards and recognition",
+  "Equality Leaders 2022 — nagroda dla Redaktor Naczelnej": "Equality Leaders 2022 — awarded to our Editor-in-Chief",
+  "Inicjatywy włączone do Kompendium Dobrych Praktyk (2025)": "Initiatives included in the Compendium of Good Practices (2025)",
+  "Zasięg międzynarodowy": "International reach",
+  "Relacje i przedstawicielstwa w 16 państwach świata": "Relationships and representatives in 16 countries",
+  "Wydarzenie inauguracyjne": "Launch event",
+  "listopada": "November",
+  "Wydarzenie": "Event",
+  "Kongres Gospodarczy Kobiet Biznesu": "Business Women Economic Congress",
+  "Organizator": "Organiser",
+  "Start": "Start",
+  "godz. 11:00": "11:00 am",
+  "Charakter": "Format",
+  "Wydarzenie zamknięte · udział na zaproszenie i po rejestracji": "Private event · by invitation and registration only",
+  "Liderki": "Leaders", "Kapitał i inwestycje": "Capital & investment", "Networking premium": "Premium networking", "Dyplomacja gospodarcza": "Economic diplomacy",
+  "Inauguracja magazynu": "Magazine launch",
+  "Wieczór, w którym kobiecy biznes": "The moment women in business",
+  "zabiera głos": "take the floor",
+  "Premiera pierwszego wydania Business Women IMPACT odbędzie się podczas Kongresu Gospodarczego Kobiet Biznesu — w gronie przedsiębiorczyń, inwestorów, przedstawicieli instytucji, dyplomacji i partnerów strategicznych.": "The first issue of Business Women IMPACT will premiere at the Business Women Economic Congress — among women entrepreneurs, investors, representatives of institutions, the diplomatic community and strategic partners.",
+  "Część I": "Part I",
+  "Otwarcie Kongresu": "Opening of the Congress",
+  "Wystąpienie Prezydentki Polish Women Chamber of Commerce i gości honorowych.": "Address by the President of the Polish Women Chamber of Commerce and guests of honour.",
+  "Część II": "Part II",
+  "Oficjalna premiera magazynu": "Official magazine premiere",
+  "Odsłonięcie okładki i prezentacja pierwszego wydania Business Women IMPACT przez Redaktor Naczelną.": "Cover reveal and presentation of the first issue of Business Women IMPACT by the Editor-in-Chief.",
+  "Część III": "Part III",
+  "Debaty liderek i inwestorów": "Leaders’ and investors’ debates",
+  "Przywództwo, kapitał, internacjonalizacja i nowe technologie — rozmowy z bohaterkami wydania.": "Leadership, capital, international expansion and new technologies — conversations with the women featured in the issue.",
+  "Część IV": "Part IV",
+  "Gala & networking premium": "Gala & premium networking",
+  "Wręczenie egzemplarzy premierowych, spotkania z partnerami i strategiczny networking.": "Presentation of premiere copies, meetings with partners and strategic networking.",
+  "Start: 5 listopada 2026, godz. 11:00, Butelkownia, Warszawa. Szczegółowy program z listą prelegentów zostanie opublikowany wkrótce.": "Start: 5 November 2026, 11:00 am, Butelkownia, Warsaw. The detailed programme and list of speakers will be published soon.",
+  "Słowo od Redaktor Naczelnej": "A word from the Editor-in-Chief",
+  "Business Women IMPACT powstaje po to, by sukcesy kobiet w gospodarce były widoczne, słyszalne i inspirujące — w Polsce i na świecie. To magazyn o realnym wpływie: na rynki, na kapitał i na przyszłość.": "Business Women IMPACT exists so that the achievements of women in the economy are seen, heard and inspiring — in Poland and around the world. This is a magazine of real influence: on markets, on capital and on the future.",
+  "Redaktor Naczelna · Prezydentka Polish Women Chamber of Commerce": "Editor-in-Chief · President of the Polish Women Chamber of Commerce",
+  "18 lat doświadczenia": "18 years of experience",
+  "Krajowe Prezydium Rad Kobiet": "National Presidium of Women’s Councils",
+  "Członkini od 6 lat": "Member for 6 years",
+  "Autorka książek": "Author",
+  "m.in. „Mentalność Sukcesu”, „SHE CAN DO IT”": "incl. “Mentalność Sukcesu”, “SHE CAN DO IT”",
+  "Współtwórz": "Help shape the",
+  "historię": "story",
+  "pierwszego wydania": "of the first issue",
+  "Zapraszamy marki premium, instytucje i inwestorów do grona partnerów inauguracji. Liczba miejsc w wydaniu premierowym jest ograniczona.": "We invite premium brands, institutions and investors to become launch partners. Places in the premiere issue are limited.",
+  "Partner strategiczny": "Strategic partner",
+  "— miejsce dostępne": "— available",
+  "Partner medialny": "Media partner",
+  "Pakiet": "Package",
+  "Partner Wydania": "Issue Partner",
+  "Logo w wydaniu inauguracyjnym": "Logo in the inaugural issue",
+  "Obecność na stronie magazynu": "Presence on the magazine website",
+  "Zaproszenia na premierę": "Invitations to the premiere",
+  "Ograniczona liczba": "Limited availability",
+  "Partner Strategiczny": "Strategic Partner",
+  "Artykuł lub wywiad w wydaniu": "Feature article or interview in the issue",
+  "Ekspozycja podczas Kongresu": "Exposure at the Congress",
+  "Wyróżnienie w materiałach i Polish Women Chamber TV": "Featured in materials and on Polish Women Chamber TV",
+  "Pakiet zaproszeń VIP": "VIP invitation package",
+  "Partner Tytularny": "Title Partner",
+  "Współtytuł wydania premierowego": "Co-title of the premiere issue",
+  "Wystąpienie podczas inauguracji": "Speaking slot at the launch",
+  "Kampania w kanałach PWCC w kraju i za granicą": "Campaign across PWCC channels in Poland and abroad",
+  "Zapytaj o ofertę partnerską": "Enquire about partnership",
+  "Rejestracja": "Registration",
+  "Bądź przy": "Be there for the",
+  "narodzinach": "birth",
+  "magazynu": "of the magazine",
+  "Zgłoś chęć udziału w inauguracji, zaproponuj swoją historię do wydania lub zapytaj o partnerstwo. Redakcja skontaktuje się z Tobą osobiście.": "Register your interest in the launch, propose your story for the issue or enquire about partnership. Our editorial team will contact you personally.",
+  "5–6.11.2026 · 11:00 · Butelkownia, Warszawa": "5–6.11.2026 · 11:00 am · Butelkownia, Warsaw",
+  "Imię i nazwisko *": "Full name *",
+  "Firma / instytucja": "Company / institution",
+  "Telefon": "Phone",
+  "Jestem zainteresowana/y": "I am interested in",
+  "Udziałem w Kongresie i inauguracji 5–6.11.2026": "Attending the Congress and launch, 5–6.11.2026",
+  "Publikacją mojej historii w magazynie": "Having my story featured in the magazine",
+  "Partnerstwem / reklamą": "Partnership / advertising",
+  "Prenumeratą magazynu": "A magazine subscription",
+  "Współpracą inwestorską": "Investment cooperation",
+  "Wiadomość": "Message",
+  "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie magazynu Business Women IMPACT i wydarzenia inauguracyjnego.": "I consent to the processing of my personal data for the purpose of being contacted about Business Women IMPACT magazine and its launch event.",
+  "Wyślij zgłoszenie": "Send request",
+  "Dziękujemy! Otworzyliśmy Twój program pocztowy z gotowym zgłoszeniem — wystarczy kliknąć „Wyślij”.": "Thank you! Your email app has opened with your request ready — simply press “Send”.",
+  "Międzynarodowy magazyn gospodarczy dla przedsiębiorczyń, liderek i środowisk biznesu. Wydawany w ekosystemie Polish Women Chamber of Commerce.": "An international business magazine for women entrepreneurs, leaders and the business community. Published within the Polish Women Chamber of Commerce ecosystem.",
+  "Magazyn": "Magazine",
+  "Inauguracja 2026": "Launch 2026",
+  "Ekosystem PWCC": "PWCC ecosystem",
+  "Otrzymaj jako pierwsza/y informacje o premierze i zaproszenia na wydarzenia.": "Be the first to receive premiere news and event invitations.",
+  "Zapisz": "Subscribe",
+  "© 2026 Business Women IMPACT · Wydawca: Polish Women Chamber of Commerce. Magazyn w trakcie rejestracji.": "© 2026 Business Women IMPACT · Publisher: Polish Women Chamber of Commerce. Magazine registration in progress.",
+  "Polityka prywatności": "Privacy policy",
+  "Do góry ↑": "Back to top ↑",
+  /* atrybuty (placeholder, aria-label, alt) */
+  "Język": "Language",
+  "Business Women IMPACT — strona główna": "Business Women IMPACT — home",
+  "Zapowiedź": "Announcement",
+  "Patricia Claudia Mitro — Redaktor Naczelna Business Women IMPACT, Prezydentka Polish Women Chamber of Commerce": "Patricia Claudia Mitro — Editor-in-Chief of Business Women IMPACT, President of the Polish Women Chamber of Commerce",
+  "Twój e-mail": "Your email",
+  /* komunikaty skryptu */
+  "__title": "Business Women IMPACT — Magazine launch · 5–6 November 2026 · Butelkownia, Warsaw",
+  "__desc": "Business Women IMPACT — a prestigious international business magazine for women in business. Launching at the Business Women Economic Congress, 5–6 November 2026, Butelkownia, Warsaw. Publisher: Polish Women Chamber of Commerce.",
+  "__alert": "Please enter your full name, a valid email address and tick the consent box.",
+  "__mail": ["Full name", "Company", "Email", "Phone", "Interest", "Please subscribe me to the newsletter: "],
+  "__years": " yrs"
+};
+
+const I18N = (() => {
+  const norm = t => t.replace(/[\s ]+/g, ' ').trim();
+  const ATTRS = ['placeholder', 'aria-label', 'alt'];
+  const texts = [], attrs = [];
+  const PL = { __title: document.title, __desc: document.querySelector('meta[name=description]').content,
+    __alert: 'Uzupełnij imię i nazwisko, poprawny e-mail oraz zaznacz zgodę.',
+    __mail: ['Imię i nazwisko', 'Firma', 'E-mail', 'Telefon', 'Zainteresowanie', 'Proszę o zapis do newslettera: '], __years: ' lat' };
+  // zapamiętaj oryginalne (polskie) teksty
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    acceptNode: n => (['SCRIPT', 'STYLE'].includes(n.parentNode.nodeName) || n.parentNode.closest('svg')) ? 2 : 1 });
+  let n;
+  while ((n = walker.nextNode())) {
+    const key = norm(n.nodeValue);
+    if (key && I18N_EN[key] !== undefined) {
+      const m = n.nodeValue.match(/^([\s ]*)[\s\S]*?([\s ]*)$/);
+      texts.push({ n, pl: n.nodeValue, en: m[1] + I18N_EN[key] + m[2] });
+    }
+  }
+  document.querySelectorAll(ATTRS.map(a => `[${a}]`).join(',')).forEach(el => ATTRS.forEach(a => {
+    const v = el.getAttribute(a); if (v && I18N_EN[v] !== undefined) attrs.push({ el, a, pl: v, en: I18N_EN[v] });
+  }));
+  let lang = 'pl';
+  function set(l) {
+    lang = l === 'en' ? 'en' : 'pl';
+    const en = lang === 'en';
+    texts.forEach(t => { t.n.nodeValue = en ? t.en : t.pl; });
+    attrs.forEach(t => t.el.setAttribute(t.a, en ? t.en : t.pl));
+    document.documentElement.lang = lang;
+    document.title = en ? I18N_EN.__title : PL.__title;
+    document.querySelector('meta[name=description]').content = en ? I18N_EN.__desc : PL.__desc;
+    document.querySelectorAll('[data-lang]').forEach(b => {
+      b.classList.toggle('on', b.dataset.lang === lang); b.setAttribute('aria-pressed', b.dataset.lang === lang);
+    });
+    document.dispatchEvent(new CustomEvent('langchange', { detail: lang }));
+    try { localStorage.setItem('bwi-lang', lang); } catch (e) {}
+    const u = new URL(location.href); u.searchParams.set('lang', lang);
+    try { history.replaceState(null, '', u); } catch (e) {}
+  }
+  document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => set(b.dataset.lang)));
+  // start: ?lang=en → zapamiętany wybór → język przeglądarki
+  let start = new URLSearchParams(location.search).get('lang');
+  if (!start) { try { start = localStorage.getItem('bwi-lang'); } catch (e) {} }
+  if (!start) start = (navigator.language || 'pl').toLowerCase().startsWith('pl') ? 'pl' : 'en';
+  if (start === 'en') set('en'); else document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('on', b.dataset.lang === 'pl'));
+  return { get lang() { return lang; }, t: k => (lang === 'en' ? I18N_EN : PL)[k], set };
+})();
+</script>
+<script>
+/* =========================================================
    KONFIGURACJA — adres, na który trafiają zgłoszenia
    (do potwierdzenia / zmiany przed publikacją)
    ========================================================= */
@@ -745,8 +1020,8 @@ const io = new IntersectionObserver(entries => {
     const c = e.target.querySelector('[data-count]');
     if (c && !c.dataset.done){
       c.dataset.done = 1;
-      const end = +c.dataset.count, suf = c.dataset.suffix || '', t0 = performance.now();
-      const step = t => { const p = Math.min(1,(t-t0)/1600), v = Math.round(end*(1-Math.pow(1-p,3))); c.textContent = v + suf; if (p<1) requestAnimationFrame(step); };
+      const end = +c.dataset.count, t0 = performance.now(), suf = () => c.hasAttribute('data-years') ? I18N.t('__years') : (c.dataset.suffix || '');
+      const step = t => { const p = Math.min(1,(t-t0)/1600), v = Math.round(end*(1-Math.pow(1-p,3))); c.textContent = v + suf(); if (p<1) requestAnimationFrame(step); };
       requestAnimationFrame(step);
     }
     io.unobserve(e.target);
@@ -759,16 +1034,17 @@ document.getElementById('regForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = e.target;
   if (!f.name.value.trim() || !f.email.checkValidity() || !document.getElementById('f-consent').checked){
-    alert('Uzupełnij imię i nazwisko, poprawny e-mail oraz zaznacz zgodę.'); return;
+    alert(I18N.t('__alert')); return;
   }
-  const body = `Imię i nazwisko: ${f.name.value}\nFirma: ${f.company.value}\nE-mail: ${f.email.value}\nTelefon: ${f.phone.value}\nZainteresowanie: ${f.type.value}\n\n${f.message.value}`;
+  const L = I18N.t('__mail');
+  const body = `${L[0]}: ${f.name.value}\n${L[1]}: ${f.company.value}\n${L[2]}: ${f.email.value}\n${L[3]}: ${f.phone.value}\n${L[4]}: ${f.type.value}\n\n${f.message.value}`;
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Business Women IMPACT — ' + f.type.value)}&body=${encodeURIComponent(body)}`;
   document.getElementById('formOk').style.display = 'block';
 });
 document.getElementById('newsForm').addEventListener('submit', e => {
   e.preventDefault();
   const v = e.target.querySelector('input').value;
-  location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Newsletter — Business Women IMPACT')}&body=${encodeURIComponent('Proszę o zapis do newslettera: ' + v)}`;
+  location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Newsletter — Business Women IMPACT')}&body=${encodeURIComponent(I18N.t('__mail')[5] + v)}`;
 });
 </script>
 </body>
