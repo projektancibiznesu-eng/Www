@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kongres Gospodarczy Kobiet Biznesu · 6 listopada 2026 · Butelkownia, Warszawa</title>
-<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — Business Women IMPACT 2026. 6 listopada 2026, Butelkownia, Warszawa, start 11:30. 25 delegacji zagranicznych, 500 uczestników online i offline. Organizator: Polish Women Chamber of Commerce.">
+<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — Business Women IMPACT 2026. 5–6 listopada 2026, Butelkownia, Centrum Praskie Koneser, Warszawa. Ambasadorki, delegacje z ponad 25 państw, ponad 500 uczestników, powołanie Global Women Chamber of Commerce. Organizator: Polish Women Chamber of Commerce.">
 <meta property="og:title" content="Kongres Gospodarczy Kobiet Biznesu · 6 listopada 2026 · Warszawa">
 <meta property="og:description" content="Business Women IMPACT 2026 — 25 delegacji zagranicznych, 500 uczestników online i offline, debaty, IMPACT Talks, Centra Biznesowe i premiera magazynu. Organizator: PWCC.">
 <meta property="og:url" content="https://kongresgospodarczypwcc.pl/">
@@ -64,7 +64,7 @@ h2 em,h1 em{font-style:italic;color:var(--gold);font-weight:400;letter-spacing:-
 /* ---------- TOP BAR ---------- */
 .topbar{background:var(--ink);color:rgba(255,255,255,.7);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;gap:20px;white-space:nowrap}
-@media (max-width:1320px){.topbar .tb-sub{display:none}}
+@media (max-width:1500px){.topbar .tb-sub{display:none}}
 .topbar b{color:var(--gold-light);font-weight:600}
 .topbar .tb-right{display:flex;gap:22px;align-items:center}
 .topbar .tb-right a:hover{color:var(--gold-light)}
@@ -515,6 +515,41 @@ footer .logo{margin-bottom:26px}
 .countdown-band h3{color:#fff}.countdown-band h3 small{color:var(--gold-light)}
 .cd div{background:rgba(255,255,255,.06)!important;border:1px solid var(--line)}
 
+.rc-grid{grid-auto-rows:1fr;align-items:stretch!important}
+.rc{position:relative;height:100%}
+.rc .rc-role{min-height:2.4em}
+.rc .rc-org{min-height:4.1em;display:flex;align-items:flex-start;justify-content:center}
+.rc-logo-box{height:64px;display:flex;align-items:center;justify-content:center;margin-bottom:10px;width:100%}
+.rc-logo-box .rc-logo{margin:0}
+.rc-logo-box .rc-logo[src$=".svg"]{margin:0;max-height:96px}
+.rc details{margin-top:auto}
+.rc-nodet{margin-top:auto;height:41px}
+.rc-more{position:absolute;inset:0 0 52px 0;background:var(--paper);border-radius:18px 18px 0 0;padding:22px 22px 10px;overflow-y:auto;text-align:left;z-index:2;box-shadow:inset 0 -12px 12px -12px rgba(58,6,10,.2)}
+.rc-more h5:first-child{margin-top:0}
+.rc details summary{position:relative;z-index:3}
+/* ---------- momenty / dyplomacja ---------- */
+.cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.cards5 .card{padding:30px 22px 26px}
+.cards5 .card h3{font-size:1.28rem;margin:12px 0 10px}
+.cards5 .card p{font-size:.9rem}
+.sub-h{font-family:var(--sans);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light);font-weight:600;margin:0 0 20px}
+.amb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.amb{border:1px solid var(--line);border-radius:16px;padding:26px 26px 22px;background:rgba(255,255,255,.05)}
+.amb-st{display:inline-block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;background:var(--gold);color:var(--ink);padding:5px 10px;border-radius:30px;margin-bottom:14px}
+.amb h3{font-family:var(--serif);font-size:1.35rem;color:#fff;margin-bottom:6px}
+.amb-role{color:var(--gold-light);font-family:var(--serif);font-style:italic}
+.amb-x{color:rgba(255,255,255,.7);font-size:.88rem;margin-top:6px}
+.amb-note{margin:24px 0 56px;color:rgba(255,255,255,.72);font-family:var(--serif);font-style:italic}
+.inv-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:50px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-size:.8rem;color:#fff;border:1px solid var(--line);border-radius:40px;padding:7px 14px;background:rgba(255,255,255,.04)}
+.chips li span{color:var(--gold-light);font-size:.7rem;letter-spacing:.06em}
+.chips.inst li{background:var(--gold);color:var(--ink);border-color:var(--gold);font-weight:600}
+.inv-p{margin-top:18px;color:rgba(255,255,255,.75);font-size:.92rem}
+.f-addr{margin:14px 0 0;font-size:.82rem;line-height:1.6;color:rgba(255,255,255,.6)}
+.hero-facts{flex-wrap:wrap}
+@media (max-width:900px){.inv-grid{grid-template-columns:1fr}}
+
 /* ---------- program: zakładki dni i agenda ---------- */
 .day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
 .day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
@@ -567,7 +602,7 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="tb-left">Organizator główny: <b>Polish Women Chamber of Commerce</b><span class="tb-sub"> &nbsp;·&nbsp; Izba Gospodarcza Kobiet Biznesu</span></div>
     <div class="tb-right">
-      <a href="#program"><b>6 listopada 2026</b> · Butelkownia, Warszawa</a>
+      <a href="#program"><b>6 listopada 2026</b> · Butelkownia, Koneser, Warszawa</a>
     </div>
   </div>
 </div>
@@ -582,6 +617,7 @@ footer .logo{margin-bottom:26px}
     <ul class="menu" id="menu">
       <li><a href="#o-kongresie">O Kongresie</a></li>
       <li><a href="#rada">Rada</a></li>
+      <li><a href="#delegacje">Delegacje</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#magazyn">Magazyn</a></li>
       <li><a href="#partnerzy">Partnerzy</a></li>
@@ -606,15 +642,17 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div>
       <h1>Kongres Gospodarczy <em>Kobiet Biznesu</em></h1>
-      <div class="hero-date"><strong>6 listopada 2026</strong><span>Business Women IMPACT 2026 · start 11:30 · Butelkownia, Warszawa</span></div>
-      <p class="lead">Wspólne wydarzenie wielu podmiotów gospodarczych — izb gospodarczych, rad, zrzeszeń przedsiębiorców, organizacji biznesowych i&nbsp;instytucji z&nbsp;Polski i&nbsp;zagranicy — realizowane we współpracy, z&nbsp;inicjatywy Polish Women Chamber of Commerce. Międzynarodowa przestrzeń biznesu i&nbsp;relacji, w&nbsp;której rozmowy zamieniają się w&nbsp;konkretne projekty.</p>
+      <div class="hero-date"><strong>6 listopada 2026</strong><span>Business Women IMPACT 2026 · 11:30–24:00 · Butelkownia, Centrum Praskie Koneser, Warszawa</span></div>
+      <p class="lead">Pierwsze w Polsce wydarzenie gospodarcze, które na taką skalę łączy w jednej przestrzeni kobiecą dyplomację, izby gospodarcze i przemysłowo-handlowe, organizacje kobiet biznesu, delegacje zagraniczne oraz partnerów instytucjonalnych i korporacyjnych. Wspólne przedsięwzięcie wielu podmiotów gospodarczych, z inicjatywy Polish Women Chamber of Commerce.</p>
       <div class="hero-facts">
-        <div><strong>25</strong><span>delegacji zagranicznych</span></div>
+        <div><strong>25+</strong><span>państw — delegacje zagraniczne</span></div>
         <i aria-hidden="true"></i>
-        <div><strong>500</strong><span>uczestników online i&nbsp;offline</span></div>
+        <div><strong>500+</strong><span>uczestników</span></div>
+        <i aria-hidden="true"></i>
+        <div><strong>100</strong><span>gości VIP</span></div>
       </div>
       <div class="hero-ctas">
-        <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
+        <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-gold" target="_blank" rel="noopener">Kup bilet <span class="arr">→</span></a>
         <a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a>
         <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-stream" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span>Dołącz online – stream</a>
       </div>
@@ -628,77 +666,96 @@ footer .logo{margin-bottom:26px}
     <div class="sec-head center reveal">
       <span class="eyebrow center">Rada Programowa</span>
       <h2>Rada Programowa Kongresu Gospodarczego <em>Kobiet Biznesu</em></h2>
-      <p class="lead">Liderki izb gospodarczych, klastrów i organizacji biznesowych z&nbsp;całej Polski, które współtworzą program Kongresu.</p>
+      <p class="lead">W&nbsp;Radzie Programowej zasiadają przedstawicielki izb gospodarczych i&nbsp;organizacji z&nbsp;całej Polski. Kolejne izby wyraziły chęć dołączenia do grona współtworzącego Kongres.</p>
     </div>
     <div class="rc-grid">
-      <article class="rc reveal">
-        <div class="rc-photo"><img src="assets/rada/marlena-miasko.jpg" alt="Marlena Miąsko" loading="lazy" width="480" height="480"></div>
-        <h3>Marlena Miąsko</h3>
-        <p class="rc-role">Wiceprezes, Zastępca Dyrektora Generalnego</p>
-        <p class="rc-org">Regionalna Izba Gospodarcza w Katowicach</p>
-        <img class="rc-logo" src="assets/rada/rig-katowice.svg" alt="Regionalna Izba Gospodarcza w Katowicach" loading="lazy">
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Menedżerka związana z Izbą od 10 lat, wcześniej Dyrektor ds. Współpracy Międzynarodowej RIG — koordynowała wsparcie ekspansji MŚP na rynki zagraniczne i tworzyła obszar międzynarodowy Europejskiego Kongresu Małych i Średnich Przedsiębiorstw. Doświadczenie zdobywała w międzynarodowych projektach komercyjnych (Polska, Niemcy, Austria, Szwajcaria, Czechy, Słowacja) oraz w belgijskiej organizacji YES for Europe (Erasmus+). Magister filologii germańskiej, studia III stopnia na Uniwersytecie Opolskim, studiowała także na Otto-Friedrich-Universität Bamberg.</p><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego działająca od 1990 roku, skupiająca blisko 700 firm członkowskich. Współtworzy ponad 2,5-milionową społeczność przedsiębiorców w Europie we współpracy z CEA-PME w Brukseli. Prowadzi przedstawicielstwa zagraniczne m.in. w Szanghaju, New Delhi, Las Vegas, Tel Awiwie, Kairze, Düsseldorfie i Dakarze. Organizator Europejskiego Kongresu MŚP, Kongresu Industry in Transition i Health Business Innovations.</p><a class="rc-www" href="https://rig.katowice.pl" target="_blank" rel="noopener">rig.katowice.pl →</a></details>
-      </article>
       <article class="rc reveal">
         <div class="rc-photo"><span class="mono" aria-hidden="true">JS</span></div>
         <h3>Jolanta Sawińska</h3>
         <p class="rc-role">Dyrektor Regionu, Raben Logistics Polska</p>
         <p class="rc-org">Polsko-Turecka Izba Gospodarcza</p>
-        <img class="rc-logo" src="assets/rada/ptig.png" alt="Polsko-Turecka Izba Gospodarcza" loading="lazy">
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ponad 30 lat doświadczenia w branży logistycznej. Kompleksowo zarządza regionem w Raben Logistics Polska — podlegają jej dyrektorzy operacyjni i kluczowe działy wsparcia; kierowała strukturami na poziomie oddziałów i regionów, wdrażając strategie biznesowe i operacyjne. Wiceprezes Zarządu Społecznego Towarzystwa Oświatowego, wspierająca edukację i rozwój talentów.</p><h5>O organizacji</h5><p>Działa od 2007 roku, wspierając polskie i tureckie firmy w rozwoju współpracy handlowej: dostęp do wiarygodnych partnerów, pomoc prawna w negocjacjach i specjalistyczna wiedza o obu rynkach. Reprezentuje interesy członków wobec władz, współpracuje z izbami handlowymi i przemysłowymi w Turcji. Członek stowarzyszony Krajowej Izby Gospodarczej.</p><a class="rc-www" href="https://ptcoc.eu" target="_blank" rel="noopener">ptcoc.eu →</a></details>
+        <div class="rc-logo-box"><img class="rc-logo" src="assets/rada/ptig.png" alt="Polsko-Turecka Izba Gospodarcza" loading="lazy"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Ponad 30 lat doświadczenia w branży logistycznej. Kompleksowo zarządza regionem w Raben Logistics Polska — podlegają jej dyrektorzy operacyjni i kluczowe działy wsparcia; kierowała strukturami na poziomie oddziałów i regionów, wdrażając strategie biznesowe i operacyjne. Wiceprezes Zarządu Społecznego Towarzystwa Oświatowego, wspierająca edukację i rozwój talentów.</p><h5>O organizacji</h5><p>Działa od 2007 roku, wspierając polskie i tureckie firmy w rozwoju współpracy handlowej: dostęp do wiarygodnych partnerów, pomoc prawna w negocjacjach i specjalistyczna wiedza o obu rynkach. Reprezentuje interesy członków wobec władz, współpracuje z izbami handlowymi i przemysłowymi w Turcji. Członek stowarzyszony Krajowej Izby Gospodarczej.</p><a class="rc-www" href="https://ptcoc.eu" target="_blank" rel="noopener">ptcoc.eu →</a></div></details>
       </article>
       <article class="rc reveal">
         <div class="rc-photo"><span class="mono" aria-hidden="true">LS</span></div>
         <h3>Lidia Secler</h3>
         <p class="rc-role">Dyrektor Generalny</p>
         <p class="rc-org">Regionalna Izba Gospodarcza w Kaliszu</p>
-        <img class="rc-logo" src="assets/rada/rig-kalisz.png" alt="Regionalna Izba Gospodarcza w Kaliszu" loading="lazy">
-        <details><summary>Czytaj więcej</summary><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego reprezentująca interesy zrzeszonych przedsiębiorców i pracodawców, szczególnie wobec organów władzy publicznej. Działa na rzecz rozwoju przedsiębiorczości i kształcenia zawodowego, promuje społeczną odpowiedzialność biznesu i stwarza warunki do polubownego rozstrzygania sporów. Hasło Izby: „Ułatwiamy biznes · Łączymy przedsiębiorców”.</p><a class="rc-www" href="https://rigkalisz.pl" target="_blank" rel="noopener">rigkalisz.pl →</a></details>
+        <div class="rc-logo-box"><img class="rc-logo" src="assets/rada/rig-kalisz.png" alt="Regionalna Izba Gospodarcza w Kaliszu" loading="lazy"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego reprezentująca interesy zrzeszonych przedsiębiorców i pracodawców, szczególnie wobec organów władzy publicznej. Działa na rzecz rozwoju przedsiębiorczości i kształcenia zawodowego, promuje społeczną odpowiedzialność biznesu i stwarza warunki do polubownego rozstrzygania sporów. Hasło Izby: „Ułatwiamy biznes · Łączymy przedsiębiorców”.</p><a class="rc-www" href="https://rigkalisz.pl" target="_blank" rel="noopener">rigkalisz.pl →</a></div></details>
       </article>
       <article class="rc reveal">
-        <div class="rc-photo"><span class="mono" aria-hidden="true">MG</span></div>
-        <h3>dr Małgorzata Gierwazik</h3>
-        <p class="rc-role">Członek Zarządu</p>
-        <p class="rc-org">Polska Izba Gospodarcza Importerów, Eksporterów i Kooperacji</p>
-        
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Doktor nauk społecznych w zakresie nauk o polityce i administracji (UAM Poznań). Ekspertka komunikacji strategicznej oraz zarządzania w sektorze publicznym i prywatnym. Wykładowczyni UAM i Uniwersytetu WSB Merito — komunikacja biznesowa, ład korporacyjny, autorytet lidera i wizerunek organizacji. Autorka licznych publikacji, doradczyni kadry menedżerskiej w zakresie komunikacji i struktur governance.</p><h5>O organizacji</h5><p>Od 1995 roku kompleksowo wspiera firmy w internacjonalizacji i rozwoju eksportu. Ma około 50 porozumień o współpracy z partnerami na całym świecie. Wyszukuje i weryfikuje kontrahentów, organizuje misje gospodarcze i spotkania B2B, legalizuje dokumentację eksportową z upoważnienia Krajowej Izby Gospodarczej i wydaje certyfikaty dla obrotu międzynarodowego.</p><a class="rc-www" href="https://pcc.org.pl" target="_blank" rel="noopener">pcc.org.pl →</a></details>
-      </article>
-      <article class="rc reveal">
-        <div class="rc-photo"><span class="mono" aria-hidden="true">PW</span></div>
-        <h3>Pola Witecka</h3>
-        <p class="rc-role">Prezes Zarządu</p>
-        <p class="rc-org">Polska Izba Gospodarcza Agentów Ubezpieczeniowych</p>
-        
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ekspertka ds. zarządzania ryzykiem korporacyjnym i MŚP, Członek Zarządu SGU Group Sp. z o.o. W branży ubezpieczeniowej od 2004 roku — m.in. Dyrektor Agencji Wyłącznej TUiR Allianz Polska i Dyrektor Regionalny ESALIENS TFI. Certyfikowany Compliance Officer (ACO, AMLSO). Specjalizuje się w kompleksowym zabezpieczaniu firm: od majątku i OC, przez ryzyka cybernetyczne, po polisy D&O i procesy sukcesyjne. Absolwentka SGH, Uniwersytetu Ekonomicznego we Wrocławiu i studiów z wyceny nieruchomości.</p><h5>O organizacji</h5><p>Izba zrzeszająca agentów ubezpieczeniowych i reprezentująca ich interesy gospodarcze. Pod przewodnictwem Poli Witeckiej (Prezes Zarządu od grudnia 2025 r.) działa na rzecz profesjonalizacji doradztwa ubezpieczeniowego i bezpieczeństwa przedsiębiorców.</p></details>
-      </article>
-      <article class="rc reveal">
-        <div class="rc-photo"><img src="assets/rada/izabela-taborowska.jpg" alt="Izabela Taborowska" loading="lazy" width="480" height="480"></div>
-        <h3>Izabela Taborowska</h3>
-        <p class="rc-role">Wiceprzewodnicząca Rady</p>
-        <p class="rc-org">Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji</p>
-        
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ekspertka cyberbezpieczeństwa i IT z ponad 20-letnim doświadczeniem, od 2023 roku na czele CyberClue — firmy rozwijającej ideę cyberbezpieczeństwa 360°. Karierę zaczynała przy jednym z pierwszych produktów z rodziny Norton; współpracowała m.in. z Symantec, Aviva, Roche, Signal Iduna i Empik. Audytorka wiodąca ISO 27001 i ISO 22301 oraz audytorka wewnętrzna ISO 42001 i TISAX. Speakerka m.in. Forum Gospodarczego TIME, ekspertka TVP Info, Biznes24 i Dziennika Gazety Prawnej.</p><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego sektora elektroniki, telekomunikacji i technologii cyfrowych, uczestnicząca w dialogu o regulacjach i przyszłości rynku technologicznego.</p><a class="rc-www" href="http://www.kigeit.org.pl" target="_blank" rel="noopener">www.kigeit.org.pl →</a></details>
-      </article>
-      <article class="rc reveal">
-        <div class="rc-photo"><span class="mono" aria-hidden="true">AZ</span></div>
-        <h3>Agnieszka Zdanowicz</h3>
-        <p class="rc-role">Wiceprezeska Zarządu</p>
-        <p class="rc-org">Klaster Gospodarki Cyrkularnej i Recyklingu — Krajowy Klaster Kluczowy</p>
-        
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Od 2019 roku odpowiada za strategię rozwoju, ofertę komercyjną i portfel projektów Klastra. Współautorka metodologii ProGOZ oraz narzędzi GoGreen, ProESG, ProEko i GOZ Index. Ekspertka gospodarki o obiegu zamkniętym i śladu węglowego (LCA), trenerka Akademii Managera Transformacji Biznesu, współtwórczyni Polish Circular Forum. Przez ponad 12 lat w samorządzie regionalnym, m.in. jako Dyrektorka Działu Polityki Miejskiej i Innowacyjności w Agencji Rozwoju Mazowsza; ewaluatorka europejskich projektów grantowych.</p><h5>O organizacji</h5><p>Działa od 2012 roku, od 2016 z tytułem Krajowego Klastra Kluczowego nadanym przez Ministerstwo Rozwoju i Technologii. Zrzesza blisko 200 firm i instytucji zielonej gospodarki — producentów, recyklerów, dostawców technologii, jednostki naukowe i doradcze. Organizator Polish Circular Forum — największego forum gospodarki cyrkularnej z perspektywy przemysłu.</p></details>
+        <div class="rc-photo"><span class="mono" aria-hidden="true">KS</span></div>
+        <h3>Karolina Stanek-Oznerek</h3>
+        <p class="rc-role">Przedstawicielka Izby</p>
+        <p class="rc-org">Regionalna Izba Gospodarcza w Katowicach</p>
+        <div class="rc-logo-box"><img class="rc-logo" src="assets/rada/rig-katowice.svg" alt="Regionalna Izba Gospodarcza w Katowicach" loading="lazy"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego działająca od 1990 roku, skupiająca blisko 700 firm członkowskich. Współtworzy ponad 2,5-milionową społeczność przedsiębiorców w Europie we współpracy z CEA-PME w Brukseli. Prowadzi przedstawicielstwa zagraniczne m.in. w Szanghaju, New Delhi, Las Vegas, Tel Awiwie, Kairze, Düsseldorfie i Dakarze. Organizator Europejskiego Kongresu MŚP, Kongresu Industry in Transition i Health Business Innovations.</p><a class="rc-www" href="https://rig.katowice.pl" target="_blank" rel="noopener">rig.katowice.pl →</a></div></details>
       </article>
       <article class="rc reveal">
         <div class="rc-photo"><span class="mono" aria-hidden="true">MG</span></div>
         <h3>Monika Gotlibowska</h3>
         <p class="rc-role">Członkini Zarządu</p>
         <p class="rc-org">Izba Przemysłowo-Handlowa w Toruniu</p>
-        
-        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Przedsiębiorczyni z ponad 25-letnim doświadczeniem, prowadząca firmę z sektora spożywczego i gastronomicznego. Absolwentka Wydziału Prawa i Administracji UMK w Toruniu. Trzecią kadencję w Zarządzie IPH w Toruniu, drugą kadencję członkini Prezydium Krajowej Izby Gospodarczej oraz członkini Toruńskiej Rady Rozwoju przy Prezydencie Miasta Torunia. Od lat działa na rzecz sektora MŚP i konkurencyjności polskich firm.</p><h5>O organizacji</h5><p>Ponad 35 lat działalności, głównie w sektorze MŚP: tysiące godzin doradztwa, setki wspartych firm regionalnych, kilkadziesiąt partnerstw lokalnych i zagranicznych oraz pomoc w założeniu kilkuset przedsiębiorstw.</p></details>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Przedsiębiorczyni z ponad 25-letnim doświadczeniem, prowadząca firmę z sektora spożywczego i gastronomicznego. Absolwentka Wydziału Prawa i Administracji UMK w Toruniu. Trzecią kadencję w Zarządzie IPH w Toruniu, drugą kadencję członkini Prezydium Krajowej Izby Gospodarczej oraz członkini Toruńskiej Rady Rozwoju przy Prezydencie Miasta Torunia. Od lat działa na rzecz sektora MŚP i konkurencyjności polskich firm.</p><h5>O organizacji</h5><p>Ponad 35 lat działalności, głównie w sektorze MŚP: tysiące godzin doradztwa, setki wspartych firm regionalnych, kilkadziesiąt partnerstw lokalnych i zagranicznych oraz pomoc w założeniu kilkuset przedsiębiorstw.</p></div></details>
       </article>
-      <article class="rc rc-org-only reveal">
-        <img class="rc-logo big" src="assets/rada/nanonet.png" alt="Fundacja Wspierania Nanonauki i Nanotechnologii NANONET" loading="lazy">
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">MŁ</span></div>
+        <h3>Marta Łagód</h3>
+        <p class="rc-role">Przedstawicielka Izby</p>
+        <p class="rc-org">Izba Polsko-Kazachstańska</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><a class="rc-www" href="https://pkihp.pl" target="_blank" rel="noopener">pkihp.pl →</a></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">MK</span></div>
+        <h3>Monika Kusowska</h3>
+        <p class="rc-role">Kierownik Biura</p>
+        <p class="rc-org">Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego sektora elektroniki, telekomunikacji i technologii cyfrowych, uczestnicząca w dialogu o regulacjach i przyszłości rynku technologicznego.</p><a class="rc-www" href="http://www.kigeit.org.pl" target="_blank" rel="noopener">www.kigeit.org.pl →</a></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><img src="assets/rada/izabela-taborowska.jpg" alt="Izabela Taborowska" loading="lazy" width="480" height="480"></div>
+        <h3>Izabela Taborowska</h3>
+        <p class="rc-role">Wiceprzewodnicząca Rady</p>
+        <p class="rc-org">Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Ekspertka cyberbezpieczeństwa i IT z ponad 20-letnim doświadczeniem, od 2023 roku na czele CyberClue — firmy rozwijającej ideę cyberbezpieczeństwa 360°. Karierę zaczynała przy jednym z pierwszych produktów z rodziny Norton; współpracowała m.in. z Symantec, Aviva, Roche, Signal Iduna i Empik. Audytorka wiodąca ISO 27001 i ISO 22301 oraz audytorka wewnętrzna ISO 42001 i TISAX. Speakerka m.in. Forum Gospodarczego TIME, ekspertka TVP Info, Biznes24 i Dziennika Gazety Prawnej.</p><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego sektora elektroniki, telekomunikacji i technologii cyfrowych, uczestnicząca w dialogu o regulacjach i przyszłości rynku technologicznego.</p><a class="rc-www" href="http://www.kigeit.org.pl" target="_blank" rel="noopener">www.kigeit.org.pl →</a></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">JW</span></div>
+        <h3>Julia Wiera</h3>
+        <p class="rc-role">Koordynator wolontariatu</p>
         <p class="rc-org">Fundacja Wspierania Nanonauki i Nanotechnologii NANONET</p>
-        <details><summary>Czytaj więcej</summary><h5>O organizacji</h5><p>Popularyzuje wiedzę o nanotechnologii i integruje środowisko naukowe, akademickie i przemysł. Twórca portalu nanonet.pl (od 2006 r.) — największego polskojęzycznego medium o nanotechnologii. Koordynuje Śląski Klaster Nano, rozwijający współpracę nauki i biznesu oraz komercjalizację wyników badań.</p></details>
+        <div class="rc-logo-box"><img class="rc-logo" src="assets/rada/nanonet.png" alt="Fundacja Wspierania Nanonauki i Nanotechnologii NANONET" loading="lazy"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O organizacji</h5><p>Popularyzuje wiedzę o nanotechnologii i integruje środowisko naukowe, akademickie i przemysł. Twórca portalu nanonet.pl (od 2006 r.) — największego polskojęzycznego medium o nanotechnologii. Koordynuje Śląski Klaster Nano, rozwijający współpracę nauki i biznesu oraz komercjalizację wyników badań.</p></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">MG</span></div>
+        <h3>dr Małgorzata Gierwazik</h3>
+        <p class="rc-role">Członek Zarządu</p>
+        <p class="rc-org">Polska Izba Gospodarcza Importerów, Eksporterów i Kooperacji</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Doktor nauk społecznych w zakresie nauk o polityce i administracji (UAM Poznań). Ekspertka komunikacji strategicznej oraz zarządzania w sektorze publicznym i prywatnym. Wykładowczyni UAM i Uniwersytetu WSB Merito — komunikacja biznesowa, ład korporacyjny, autorytet lidera i wizerunek organizacji. Autorka licznych publikacji, doradczyni kadry menedżerskiej w zakresie komunikacji i struktur governance.</p><h5>O organizacji</h5><p>Od 1995 roku kompleksowo wspiera firmy w internacjonalizacji i rozwoju eksportu. Ma około 50 porozumień o współpracy z partnerami na całym świecie. Wyszukuje i weryfikuje kontrahentów, organizuje misje gospodarcze i spotkania B2B, legalizuje dokumentację eksportową z upoważnienia Krajowej Izby Gospodarczej i wydaje certyfikaty dla obrotu międzynarodowego.</p><a class="rc-www" href="https://pcc.org.pl" target="_blank" rel="noopener">pcc.org.pl →</a></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><img src="assets/rada/pola-witecka.jpg" alt="Pola Witecka" loading="lazy" width="480" height="480"></div>
+        <h3>Pola Witecka</h3>
+        <p class="rc-role">Prezes Zarządu</p>
+        <p class="rc-org">Polska Izba Gospodarcza Agentów Ubezpieczeniowych</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Ekspertka ds. zarządzania ryzykiem korporacyjnym i MŚP, Członek Zarządu SGU Group Sp. z o.o. W branży ubezpieczeniowej od 2004 roku — m.in. Dyrektor Agencji Wyłącznej TUiR Allianz Polska i Dyrektor Regionalny ESALIENS TFI. Certyfikowany Compliance Officer (ACO, AMLSO). Specjalizuje się w kompleksowym zabezpieczaniu firm: od majątku i OC, przez ryzyka cybernetyczne, po polisy D&O i procesy sukcesyjne. Absolwentka SGH, Uniwersytetu Ekonomicznego we Wrocławiu i studiów z wyceny nieruchomości.</p><h5>O organizacji</h5><p>Izba zrzeszająca agentów ubezpieczeniowych i reprezentująca ich interesy gospodarcze. Pod przewodnictwem Poli Witeckiej (Prezes Zarządu od grudnia 2025 r.) działa na rzecz profesjonalizacji doradztwa ubezpieczeniowego i bezpieczeństwa przedsiębiorców.</p></div></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">AZ</span></div>
+        <h3>Agnieszka Zdanowicz</h3>
+        <p class="rc-role">Wiceprezeska Zarządu</p>
+        <p class="rc-org">Klaster Gospodarki Cyrkularnej i Recyklingu — Krajowy Klaster Kluczowy</p>
+        <div class="rc-logo-box"></div>
+        <details><summary>Czytaj więcej</summary><div class="rc-more"><h5>O osobie</h5><p>Od 2019 roku odpowiada za strategię rozwoju, ofertę komercyjną i portfel projektów Klastra. Współautorka metodologii ProGOZ oraz narzędzi GoGreen, ProESG, ProEko i GOZ Index. Ekspertka gospodarki o obiegu zamkniętym i śladu węglowego (LCA), trenerka Akademii Managera Transformacji Biznesu, współtwórczyni Polish Circular Forum. Przez ponad 12 lat w samorządzie regionalnym, m.in. jako Dyrektorka Działu Polityki Miejskiej i Innowacyjności w Agencji Rozwoju Mazowsza; ewaluatorka europejskich projektów grantowych.</p><h5>O organizacji</h5><p>Działa od 2012 roku, od 2016 z tytułem Krajowego Klastra Kluczowego nadanym przez Ministerstwo Rozwoju i Technologii. Zrzesza blisko 200 firm i instytucji zielonej gospodarki — producentów, recyklerów, dostawców technologii, jednostki naukowe i doradcze. Organizator Polish Circular Forum — największego forum gospodarki cyrkularnej z perspektywy przemysłu.</p></div></details>
       </article>
     </div>
   </div>
@@ -730,12 +787,12 @@ footer .logo{margin-bottom:26px}
     <div class="reveal">
       <span class="eyebrow">O Kongresie</span>
       <h2>Wydarzenie, które <em>służy działaniu</em></h2>
-      <p class="lead">Kongres Gospodarczy Kobiet Biznesu to wspólna inicjatywa wielu podmiotów gospodarczych: izb, rad, zrzeszeń, organizacji biznesowych i&nbsp;instytucji, które łączą siły, by wspierać przedsiębiorczość kobiet. Organizatorem głównym jest Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w&nbsp;Polsce i&nbsp;Europie. Każda część programu ma określony cel biznesowy, dedykowaną przestrzeń i&nbsp;konkretną wartość dla uczestników.</p>
+      <p class="lead">Kongres nie jest galą ani tradycyjną konferencją, lecz platformą realnej współpracy zaprojektowaną na konkretne rezultaty. Moderowane okrągłe stoły, speed networking, warsztaty projektowe i matchmaking biznesowy prowadzą do powstania międzynarodowej mapy potrzeb, zasobów i możliwości, powołania zespołów roboczych i uruchomienia wspólnych projektów gospodarczych. Organizatorem jest Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w Polsce, obejmująca swoimi strukturami wszystkie województwa.</p>
       <ul class="checks">
-        <li><span><b>25 delegacji zagranicznych</b> — izby gospodarcze i&nbsp;organizacje kobiet biznesu z&nbsp;różnych części świata.</span></li>
-        <li><span><b>Business Women IMPACT 2026</b> — międzynarodowy dzień biznesu dla 500 uczestników online i&nbsp;offline: debaty, IMPACT Talks, Centra Biznesowe i&nbsp;networking.</span></li>
-        <li><span><b>Networking zaprojektowany, a&nbsp;nie przypadkowy</b> — Business Matchmaking Concierge kieruje uczestników do właściwych osób, partnerów, izb i&nbsp;delegacji.</span></li>
-        <li><span><b>Premiera magazynu Business Women IMPACT</b> — pierwsza okładka nowej platformy medialnej PWCC.</span></li>
+        <li><span><b>Ambasadorki i delegacje z ponad 25 państw</b> — od Europy, przez Amerykę Północną, Bliski Wschód i Azję, po Afrykę i Australię.</span></li>
+        <li><span><b>Ponad 500 uczestników i do 100 gości VIP</b> — liderki izb, dyplomacja gospodarcza, inwestorki i właścicielki firm z różnych części świata.</span></li>
+        <li><span><b>Wspólne projekty do grudnia 2027 r.</b> — pierwsze działania ruszą w ciągu 72 godzin od zakończenia spotkania delegacji.</span></li>
+        <li><span><b>Izby i organizacje współtworzące</b> — przedstawicielki 24 izb gospodarczych oraz delegacji międzynarodowych.</span></li>
       </ul>
       <a href="#program" class="btn btn-dark">Zobacz program <span class="arr">→</span></a>
     </div>
@@ -745,12 +802,59 @@ footer .logo{margin-bottom:26px}
 <!-- ================= STATS ================= -->
 <div class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><strong data-count="25">0</strong><span>Delegacji zagranicznych</span></div>
-    <div class="stat reveal"><strong data-count="500">0</strong><span>Uczestników online i&nbsp;offline</span></div>
-    <div class="stat reveal"><strong data-count="5">0</strong><span>Centrów Biznesowych</span></div>
-    <div class="stat reveal"><strong data-count="3">0</strong><span>Bloki IMPACT Talks</span></div>
+    <div class="stat reveal"><strong data-count="25" data-suffix="+">0</strong><span>Państw — delegacje</span></div>
+    <div class="stat reveal"><strong data-count="500" data-suffix="+">0</strong><span>Uczestników</span></div>
+    <div class="stat reveal"><strong data-count="100">0</strong><span>Gości VIP</span></div>
+    <div class="stat reveal"><strong data-count="30">0</strong><span>Stoisk w&nbsp;strefie Expo</span></div>
   </div>
 </div>
+
+<!-- ================= MOMENTY ================= -->
+<section class="cream" id="momenty">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Najważniejsze momenty</span>
+      <h2>Wydarzenie <em>bez precedensu</em></h2>
+      <p class="lead">Nigdy dotąd w Polsce do jednego wydarzenia gospodarczego nie zaproszono jednocześnie wszystkich ambasadorek państw obcych akredytowanych w naszym kraju oraz delegacji środowisk kobiet biznesu z ponad 25 państw.</p>
+    </div>
+    <div class="cards3 cards5">
+      <article class="card reveal"><span class="num">GWCC</span><h3>Global Women Chamber of Commerce</h3><p>Uroczyste ogłoszenie powołania pierwszej światowej instytucji gospodarczej tego typu — platformy współpracy izb, organizacji gospodarczych i środowisk kobiet biznesu. Inicjatorką i Prezydentką GWCC jest Patricia Claudia Mitro.</p></article>
+      <article class="card reveal"><span class="num">Premiera</span><h3>Magazyn Business Women IMPACT</h3><p>Premiera międzynarodowego magazynu gospodarczego dla kobiet biznesu.</p></article>
+      <article class="card reveal"><span class="num">ESG</span><h3>Krajowa Certyfikacja ESG</h3><p>Ogłoszenie Krajowej Certyfikacji ESG.</p></article>
+      <article class="card reveal"><span class="num">Dyplomacja</span><h3>Women Opening Global Markets</h3><p>Debata dyplomatyczna o tym, jak dyplomacja gospodarcza otwiera kobietom dostęp do nowych rynków.</p></article>
+      <article class="card reveal"><span class="num">List</span><h3>Honorowy List Intencyjny</h3><p>Podpisanie Honorowego Listu Intencyjnego Wsparcia Misji Polish Women Chamber of Commerce.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DYPLOMACJA ================= -->
+<section class="dark" id="delegacje" style="background:radial-gradient(900px 500px at 85% 0%,rgba(198,161,94,.16),transparent 60%),linear-gradient(160deg,var(--ink),var(--navy))">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Kobieca dyplomacja i delegacje międzynarodowe</span>
+      <h2>Ambasadorki i delegacje <em>z ponad 25 państw</em></h2>
+      <p class="lead">Wszystkie ambasadorki państw obcych akredytowane w Polsce zostały zaproszone w charakterze Gości Honorowych Polish Women Chamber of Commerce do zamkniętego Dnia Delegacji, 5 listopada 2026 r. Zaproszenia otrzymały także oficjalne delegacje z ponad 25 państw świata, reprezentujące izby gospodarcze, organizacje kobiet biznesu i środowiska przedsiębiorczyń.</p>
+    </div>
+    <h4 class="sub-h reveal">Ambasadorki, które wezmą aktywny udział w Kongresie</h4>
+    <div class="amb-grid">
+        <article class="amb reveal"><span class="amb-st">Udział potwierdzony</span><h3>J.E. Clémentine Shakembo Kamanga</h3><p class="amb-role">Ambasador Demokratycznej Republiki Konga w Polsce</p><p class="amb-x">wraz z pierwszą radczynią Ambasady, Bijou Ambago Mbali</p></article>
+        <article class="amb reveal"><span class="amb-st">Udział potwierdzony</span><h3>J.E. Emmanuelle Lamoureux</h3><p class="amb-role">Ambasador Kanady w Polsce</p></article>
+        <article class="amb reveal"><span class="amb-st">Zadeklarowała chęć udziału</span><h3>J.E. Neeta Bhushan</h3><p class="amb-role">Ambasador Indii w Polsce</p></article>
+    </div>
+    <p class="amb-note reveal">Trwają rozmowy z kolejnymi ambasadami oraz organizacjami kobiet biznesu — m.in. z Mołdawii, Bośni i Hercegowiny, Republiki Południowej Afryki, Mauritiusu i Australii. Pełna lista delegacji zostanie ogłoszona przed wydarzeniem.</p>
+    <div class="inv-grid">
+      <div class="reveal">
+        <h4 class="sub-h">Zaproszone organizacje kobiet biznesu z całego świata</h4>
+        <ul class="chips"><li>FCEM – Femmes Chefs d’Entreprises Mondiales <span>Francja</span></li><li>BPW International <span>Szwajcaria</span></li><li>ICC WCF Women’s Council <span>Francja</span></li><li>AIDDA <span>Włochy</span></li><li>Verband deutscher Unternehmerinnen – VdU <span>Niemcy</span></li><li>KAGİDER <span>Turcja</span></li><li>Canadian Women’s Chamber of Commerce <span>Kanada</span></li><li>U.S. Women’s Chamber of Commerce <span>USA</span></li><li>IWFCI <span>Australia</span></li><li>Dubai Business Women Council <span>ZEA</span></li><li>Bahrain Businesswomen’s Society <span>Bahrajn</span></li><li>FICCI Ladies Organisation – FLO <span>Indie</span></li><li>IWAPI <span>Indonezja</span></li><li>Vietnam Women Entrepreneurs Council <span>Wietnam</span></li><li>Bangladesh Women Chamber of Commerce &amp; Industry <span>Bangladesz</span></li><li>Women’s Chamber of Industry and Commerce <span>Sri Lanka</span></li><li>Uganda Women Entrepreneurs Association <span>Uganda</span></li><li>Tanzania Women Chamber of Commerce <span>Tanzania</span></li></ul>
+      </div>
+      <div class="reveal">
+        <h4 class="sub-h">Zaproszone instytucje w Polsce</h4>
+        <ul class="chips inst"><li>Specjalne strefy ekonomiczne</li><li>Agencje rozwoju regionalnego</li><li>Samorządy terytorialne</li><li>Izby gospodarcze i przemysłowo-handlowe</li></ul>
+        <p class="inv-p">Do udziału w Kongresie zaproszono specjalne strefy ekonomiczne, agencje rozwoju regionalnego oraz samorządy — jako partnerów rozwoju gospodarczego regionów i przedsiębiorczości kobiet. W zamkniętym Dniu Delegacji wezmą udział przedstawicielki 24 izb gospodarczych.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ================= PROGRAM ================= -->
 <section class="cream" id="program">
@@ -760,11 +864,11 @@ footer .logo{margin-bottom:26px}
       <h2>Dzień, w&nbsp;którym kobiecy biznes <em>zabiera głos</em></h2>
       <p class="lead">Każdy blok ma jasno określony rezultat — od pierwszej rozmowy po konkretne zobowiązania po Kongresie.</p>
     </div>
-    <div class="day-tabs single reveal"><div class="on"><strong>6 listopada 2026</strong><span>Butelkownia, Warszawa · od 11:30</span><em>Business Women IMPACT 2026</em></div></div>
+    <div class="day-tabs single reveal"><div class="on"><strong>6 listopada 2026</strong><span>Butelkownia, Warszawa · 11:30–24:00</span><em>Business Women IMPACT 2026</em></div></div>
 
     <!-- DZIEŃ II -->
     <div class="day-panel" data-panel="2">
-      <p class="day-note reveal">Międzynarodowy dzień biznesu, relacji i&nbsp;realnych możliwości współpracy — dla 500 uczestników online i&nbsp;offline.</p>
+      <p class="day-note reveal">Główna część Kongresu: światowa debata liderek izb, część dyplomatyczna, IMPACT TALKS o kapitale, sztucznej inteligencji i ekspansji międzynarodowej, panel finansowy, pięć centrów tematycznych, strefa Expo z 30 stoiskami, moderowany matchmaking biznesowy oraz wieczorne Business After Dark.</p>
       <ol class="agenda">
         <li class="reveal"><time>11:30–13:00</time><div><h4>Registration &amp; Red Carpet Business Experience</h4><p>Welcome drink, Red Carpet, profesjonalna fotografia, video interviews, Social Media Wall, otwarcie stref Partnerów i&nbsp;Wystawców, matchmaking i&nbsp;dostęp do pięciu Centrów Biznesowych.</p></div></li>
         <li class="reveal"><time>13:00–13:15</time><div><h4>Opening Show — IMPACT</h4><p>Film otwierający, muzyka, światło i&nbsp;ekrany LED. Oficjalne otwarcie przez Prezydentkę PWCC.</p></div></li>
@@ -833,10 +937,10 @@ footer .logo{margin-bottom:26px}
     </div>
     <div class="reveal">
       <span class="eyebrow">Słowo od Prezydentki</span>
-      <p class="big-quote">Kongres Gospodarczy Kobiet Biznesu to przestrzeń, w&nbsp;której sukcesy kobiet w&nbsp;gospodarce stają się widoczne, a&nbsp;rozmowy zamieniają się w&nbsp;partnerstwa, inwestycje i&nbsp;realny wpływ — w&nbsp;Polsce i&nbsp;na świecie.</p>
+      <p class="big-quote">Naszą ambicją jest, aby Warszawa stała się miejscem spotkania organizacji reprezentujących różne kraje, kultury i modele gospodarcze — połączonych wspólnym celem budowania większego dostępu kobiet do współpracy międzynarodowej, kapitału, wiedzy, rynków i procesów decyzyjnych. Kongres ma być początkiem trwałej, dobrze zorganizowanej i opartej na wzajemnym szacunku współpracy międzynarodowej kobiet biznesu.</p>
       <div class="sign">
         <strong>Patricia Claudia Mitro</strong>
-        <span>Prezydentka Polish Women Chamber of Commerce · Redaktor Naczelna Business Women IMPACT</span>
+        <span>Prezydentka Polish Women Chamber of Commerce · Inicjatorka i Prezydentka Global Women Chamber of Commerce</span>
       </div>
       <div class="creds">
         <div><b>18 lat doświadczenia</b>Mentor Global Women’s Leadership</div>
@@ -924,8 +1028,10 @@ footer .logo{margin-bottom:26px}
       <p class="lead" style="color:rgba(255,255,255,.72)">Zarejestruj udział, zgłoś się jako prelegentka, partner, izba lub delegacja. Odpowiedz na trzy pytania Business Matchmaking Concierge — dzięki nim skierujemy Cię do właściwych osób.</p>
       <ul class="contact-list">
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>6 listopada 2026 · start 11:30</span></li>
-        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Butelkownia, Warszawa</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Butelkownia, Centrum Praskie Koneser, ul. Ząbkowska, Warszawa</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span><a href="" data-mail>—</a></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 8h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4z"/><path d="M14 8v10"/></svg></span><a href="https://www.naffy.io/polishwomenchamber" target="_blank" rel="noopener">Bilety na Kongres</a></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="9" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>Kontakt dla mediów: <a href="mailto:patricia.mitro@polishwomenchamber.pl">patricia.mitro@polishwomenchamber.pl</a></span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg></span><a href="https://www.naffy.io/polishwomenchamber" target="_blank" rel="noopener">Transmisja online</a></li>
       </ul>
     </div>
@@ -969,6 +1075,7 @@ footer .logo{margin-bottom:26px}
     <div class="fgrid">
       <div>
         <div class="f-title">Kongres Gospodarczy<strong>Kobiet Biznesu</strong><span>6.11.2026 · Butelkownia, Warszawa</span></div>
+        <p class="f-addr">Polish Women Chamber of Commerce — Izba Gospodarcza Kobiet Biznesu<br>Aleja Jana Pawła II 27, 00-867 Warszawa</p>
         <div class="f-publisher"><small>Organizator główny</small><a href="https://polishwomenchamber.pl/" target="_blank" rel="noopener"><img src="assets/pwcc-logo-gold.png" alt="Polish Women Chamber of Commerce" loading="lazy" width="782" height="295"></a></div>
         <div class="socials">
           <a href="https://www.linkedin.com/company/izba-gospodarcza-polish-women-chamber-pwc" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
@@ -1003,6 +1110,90 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "W Radzie Programowej zasiadają przedstawicielki izb gospodarczych i organizacji z całej Polski. Kolejne izby wyraziły chęć dołączenia do grona współtworzącego Kongres.": "The Programme Council brings together representatives of chambers of commerce and organisations from across Poland. Further chambers have expressed interest in joining the organisations co-creating the Congress.",
+  "Przedstawicielka Izby": "Chamber representative",
+  "Izba Polsko-Kazachstańska": "Polish-Kazakh Chamber of Commerce",
+  "Kierownik Biura": "Head of Office",
+  "Koordynator wolontariatu": "Volunteer Coordinator",
+  "· Butelkownia, Koneser, Warszawa": "· Butelkownia, Koneser, Warsaw",
+  "Business Women IMPACT 2026 · 11:30–24:00 · Butelkownia, Centrum Praskie Koneser, Warszawa": "Business Women IMPACT 2026 · 11:30 am–midnight · Butelkownia, Koneser Prague Centre, Warsaw",
+  "Pierwsze w Polsce wydarzenie gospodarcze, które na taką skalę łączy w jednej przestrzeni kobiecą dyplomację, izby gospodarcze i przemysłowo-handlowe, organizacje kobiet biznesu, delegacje zagraniczne oraz partnerów instytucjonalnych i korporacyjnych. Wspólne przedsięwzięcie wielu podmiotów gospodarczych, z inicjatywy Polish Women Chamber of Commerce.": "The first economic event in Poland to bring together, on this scale and in one place, women’s diplomacy, chambers of commerce and industry, women’s business organisations, foreign delegations and institutional and corporate partners. A joint undertaking of many economic organisations, initiated by the Polish Women Chamber of Commerce.",
+  "państw — delegacje zagraniczne": "countries — international delegations",
+  "uczestników": "participants",
+  "gości VIP": "VIP guests",
+  "Kup bilet": "Buy a ticket",
+  "Kongres nie jest galą ani tradycyjną konferencją, lecz platformą realnej współpracy zaprojektowaną na konkretne rezultaty. Moderowane okrągłe stoły, speed networking, warsztaty projektowe i matchmaking biznesowy prowadzą do powstania międzynarodowej mapy potrzeb, zasobów i możliwości, powołania zespołów roboczych i uruchomienia wspólnych projektów gospodarczych. Organizatorem jest Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w Polsce, obejmująca swoimi strukturami wszystkie województwa.": "The Congress is neither a gala nor a traditional conference, but a platform for real cooperation designed for concrete results. Moderated round tables, speed networking, project workshops and business matchmaking lead to an international map of needs, resources and opportunities, the creation of working groups and the launch of joint economic projects. It is organised by the Polish Women Chamber of Commerce — the only chamber of commerce for women in business in Poland, with structures in every region of the country.",
+  "Ambasadorki i delegacje z ponad 25 państw": "Ambassadors and delegations from over 25 countries",
+  "— od Europy, przez Amerykę Północną, Bliski Wschód i Azję, po Afrykę i Australię.": "— from Europe, North America, the Middle East and Asia to Africa and Australia.",
+  "Ponad 500 uczestników i do 100 gości VIP": "Over 500 participants and up to 100 VIP guests",
+  "— liderki izb, dyplomacja gospodarcza, inwestorki i właścicielki firm z różnych części świata.": "— chamber leaders, economic diplomats, women investors and business owners from around the world.",
+  "Wspólne projekty do grudnia 2027 r.": "Joint projects through December 2027",
+  "— pierwsze działania ruszą w ciągu 72 godzin od zakończenia spotkania delegacji.": "— the first actions begin within 72 hours of the delegations’ meeting.",
+  "Izby i organizacje współtworzące": "Co-creating chambers and organisations",
+  "— przedstawicielki 24 izb gospodarczych oraz delegacji międzynarodowych.": "— representatives of 24 chambers of commerce and international delegations.",
+  "Państw — delegacje": "Countries — delegations",
+  "Uczestników": "Participants",
+  "Gości VIP": "VIP guests",
+  "Stoisk w strefie Expo": "Expo stands",
+  "Uroczyste ogłoszenie powołania pierwszej światowej instytucji gospodarczej tego typu — platformy współpracy izb, organizacji gospodarczych i środowisk kobiet biznesu. Inicjatorką i Prezydentką GWCC jest Patricia Claudia Mitro.": "Ceremonial announcement of the first global economic institution of its kind — a platform for cooperation between chambers, business organisations and women’s business communities. The initiator and President of GWCC is Patricia Claudia Mitro.",
+  "Premiera międzynarodowego magazynu gospodarczego dla kobiet biznesu.": "Premiere of the international business magazine for women in business.",
+  "Ogłoszenie Krajowej Certyfikacji ESG.": "Announcement of the National ESG Certification.",
+  "Debata dyplomatyczna o tym, jak dyplomacja gospodarcza otwiera kobietom dostęp do nowych rynków.": "A diplomatic debate on how economic diplomacy opens new markets to women.",
+  "Podpisanie Honorowego Listu Intencyjnego Wsparcia Misji Polish Women Chamber of Commerce.": "Signing of the Honorary Letter of Intent in Support of the Mission of the Polish Women Chamber of Commerce.",
+  "Dyplomacja": "Diplomacy",
+  "List": "Letter",
+  "Krajowa Certyfikacja ESG": "National ESG Certification",
+  "Honorowy List Intencyjny": "Honorary Letter of Intent",
+  "Ambasador Demokratycznej Republiki Konga w Polsce": "Ambassador of the Democratic Republic of the Congo to Poland",
+  "Udział potwierdzony": "Confirmed",
+  "wraz z pierwszą radczynią Ambasady, Bijou Ambago Mbali": "with the Embassy’s First Counsellor, Bijou Ambago Mbali",
+  "Ambasador Kanady w Polsce": "Ambassador of Canada to Poland",
+  "Ambasador Indii w Polsce": "Ambassador of India to Poland",
+  "Zadeklarowała chęć udziału": "Has expressed her intention to attend",
+  "Francja": "France",
+  "Szwajcaria": "Switzerland",
+  "Włochy": "Italy",
+  "Niemcy": "Germany",
+  "Turcja": "Türkiye",
+  "Kanada": "Canada",
+  "USA": "USA",
+  "Australia": "Australia",
+  "ZEA": "UAE",
+  "Bahrajn": "Bahrain",
+  "Indie": "India",
+  "Indonezja": "Indonesia",
+  "Wietnam": "Vietnam",
+  "Bangladesz": "Bangladesh",
+  "Sri Lanka": "Sri Lanka",
+  "Uganda": "Uganda",
+  "Tanzania": "Tanzania",
+  "Specjalne strefy ekonomiczne": "Special economic zones",
+  "Agencje rozwoju regionalnego": "Regional development agencies",
+  "Samorządy terytorialne": "Local and regional governments",
+  "Izby gospodarcze i przemysłowo-handlowe": "Chambers of commerce and industry",
+  "Najważniejsze momenty": "Key moments",
+  "Wydarzenie": "An event",
+  "bez precedensu": "without precedent",
+  "Nigdy dotąd w Polsce do jednego wydarzenia gospodarczego nie zaproszono jednocześnie wszystkich ambasadorek państw obcych akredytowanych w naszym kraju oraz delegacji środowisk kobiet biznesu z ponad 25 państw.": "Never before in Poland have all women ambassadors accredited to the country and delegations of women’s business communities from over 25 countries been invited to a single economic event.",
+  "Kobieca dyplomacja i delegacje międzynarodowe": "Women’s diplomacy and international delegations",
+  "Ambasadorki i delegacje": "Ambassadors and delegations",
+  "z ponad 25 państw": "from over 25 countries",
+  "Wszystkie ambasadorki państw obcych akredytowane w Polsce zostały zaproszone w charakterze Gości Honorowych Polish Women Chamber of Commerce do zamkniętego Dnia Delegacji, 5 listopada 2026 r. Zaproszenia otrzymały także oficjalne delegacje z ponad 25 państw świata, reprezentujące izby gospodarcze, organizacje kobiet biznesu i środowiska przedsiębiorczyń.": "All women ambassadors accredited to Poland have been invited as Guests of Honour of the Polish Women Chamber of Commerce to the closed Delegation Day on 5 November 2026. Official delegations from over 25 countries — representing chambers of commerce, women’s business organisations and women entrepreneurs — have also been invited.",
+  "Ambasadorki, które wezmą aktywny udział w Kongresie": "Ambassadors taking an active part in the Congress",
+  "Trwają rozmowy z kolejnymi ambasadami oraz organizacjami kobiet biznesu — m.in. z Mołdawii, Bośni i Hercegowiny, Republiki Południowej Afryki, Mauritiusu i Australii. Pełna lista delegacji zostanie ogłoszona przed wydarzeniem.": "Talks are under way with further embassies and women’s business organisations, including from Moldova, Bosnia and Herzegovina, South Africa, Mauritius and Australia. The full list of delegations will be announced before the event.",
+  "Zaproszone organizacje kobiet biznesu z całego świata": "Invited women’s business organisations from around the world",
+  "Zaproszone instytucje w Polsce": "Invited institutions in Poland",
+  "Do udziału w Kongresie zaproszono specjalne strefy ekonomiczne, agencje rozwoju regionalnego oraz samorządy — jako partnerów rozwoju gospodarczego regionów i przedsiębiorczości kobiet. W zamkniętym Dniu Delegacji wezmą udział przedstawicielki 24 izb gospodarczych.": "Special economic zones, regional development agencies and local governments have been invited to take part in the Congress as partners in regional economic development and women’s entrepreneurship. Representatives of 24 chambers of commerce will attend the closed Delegation Day.",
+  "Delegacje": "Delegations",
+  "Butelkownia, Warszawa · 11:30–24:00": "Butelkownia, Warsaw · 11:30 am–midnight",
+  "Główna część Kongresu: światowa debata liderek izb, część dyplomatyczna, IMPACT TALKS o kapitale, sztucznej inteligencji i ekspansji międzynarodowej, panel finansowy, pięć centrów tematycznych, strefa Expo z 30 stoiskami, moderowany matchmaking biznesowy oraz wieczorne Business After Dark.": "The main part of the Congress: a global debate of chamber leaders, a diplomatic session, IMPACT TALKS on capital, artificial intelligence and international expansion, a finance panel, five thematic centres, an Expo zone with 30 stands, moderated business matchmaking and the evening Business After Dark.",
+  "Naszą ambicją jest, aby Warszawa stała się miejscem spotkania organizacji reprezentujących różne kraje, kultury i modele gospodarcze — połączonych wspólnym celem budowania większego dostępu kobiet do współpracy międzynarodowej, kapitału, wiedzy, rynków i procesów decyzyjnych. Kongres ma być początkiem trwałej, dobrze zorganizowanej i opartej na wzajemnym szacunku współpracy międzynarodowej kobiet biznesu.": "Our ambition is for Warsaw to become a meeting place for organisations representing different countries, cultures and economic models — united by the shared goal of giving women greater access to international cooperation, capital, knowledge, markets and decision-making. The Congress is meant to be the beginning of lasting, well-organised international cooperation among women in business, built on mutual respect.",
+  "Prezydentka Polish Women Chamber of Commerce · Inicjatorka i Prezydentka Global Women Chamber of Commerce": "President of the Polish Women Chamber of Commerce · Initiator and President of the Global Women Chamber of Commerce",
+  "Butelkownia, Centrum Praskie Koneser, ul. Ząbkowska, Warszawa": "Butelkownia, Koneser Prague Centre, ul. Ząbkowska, Warsaw",
+  "Bilety na Kongres": "Congress tickets",
+  "Kontakt dla mediów:": "Media contact:",
+  "Polish Women Chamber of Commerce — Izba Gospodarcza Kobiet Biznesu": "Polish Women Chamber of Commerce — Chamber of Commerce for Women in Business",
+  "Aleja Jana Pawła II 27, 00-867 Warszawa": "Aleja Jana Pawła II 27, 00-867 Warsaw, Poland",
   "Rada": "Council",
   "Rada Programowa": "Programme Council",
   "Rada Programowa Kongresu Gospodarczego": "Programme Council of the Economic Congress",
@@ -1320,7 +1511,7 @@ const I18N_EN = {
   "Patricia Claudia Mitro — Prezydentka Polish Women Chamber of Commerce": "Patricia Claudia Mitro — President of the Polish Women Chamber of Commerce",
   "Twój e-mail": "Your email",
   "__title": "Economic Congress of Business Women · 6 November 2026 · Butelkownia, Warsaw",
-  "__desc": "Economic Congress of Business Women — Business Women IMPACT 2026. 6 November 2026, Butelkownia, Warsaw, starting 11:30 am. 25 international delegations, 500 participants online and offline. Organiser: Polish Women Chamber of Commerce.",
+  "__desc": "Economic Congress of Business Women — Business Women IMPACT 2026. 5–6 November 2026, Butelkownia, Koneser Prague Centre, Warsaw. Ambassadors, delegations from over 25 countries, 500+ participants and the launch of the Global Women Chamber of Commerce. Organiser: Polish Women Chamber of Commerce.",
   "__alert": "Please enter your full name, a valid email address and tick the consent box.",
   "__mail": [
     "Full name",
