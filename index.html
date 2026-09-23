@@ -470,6 +470,13 @@ footer .logo{margin-bottom:26px}
 .day-tabs.single em{font-style:italic;font-family:var(--serif);font-size:1.05rem;color:rgba(255,255,255,.85)}
 @media (max-width:680px){.hero-facts{flex-direction:column;gap:14px;padding:18px 10px}.hero-facts i{width:60px;height:1px}.hero-date{padding:16px 18px!important}}
 
+.c-steps{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.c-steps > div{display:flex;gap:18px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:22px 24px;background:rgba(255,255,255,.04)}
+.c-steps b{flex:none;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--ink);font-family:var(--serif);font-size:1.3rem;display:flex;align-items:center;justify-content:center}
+.c-steps span{color:rgba(255,255,255,.78);font-size:.95rem;line-height:1.6}
+.c-steps strong{display:block;font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--gold-light);margin-bottom:4px}
+@media (max-width:680px){.c-steps{grid-template-columns:1fr}}
+
 /* ---------- program: zakładki dni i agenda ---------- */
 .day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
 .day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
@@ -641,7 +648,7 @@ footer .logo{margin-bottom:26px}
         <li class="reveal"><time>13:00–13:15</time><div><h4>Opening Show — IMPACT</h4><p>Film otwierający, muzyka, światło i&nbsp;ekrany LED. Oficjalne otwarcie przez Prezydentkę PWCC.</p></div></li>
         <li class="reveal"><time>13:15–14:00</time><div><h4>Debata I: Chambers United — od sieci do realnego biznesu</h4><p>Jak wykorzystać siłę izb i&nbsp;organizacji biznesowych, by przedsiębiorcy otrzymywali dostęp do rynków, rekomendacje, partnerów i&nbsp;klientów. Element specjalny: „I&nbsp;can open this door”.</p></div></li>
         <li class="reveal"><time>14:00–15:00</time><div><h4>IMPACT Talks I: Pieniądze • Pozycja • Wpływ</h4><p>Zysk bez przepraszania · Executive Presence · Wpływ bez udawania.</p></div></li>
-        <li class="reveal"><time>15:00–16:00</time><div><h4>Global Business Connections</h4><p>Moderowany networking w&nbsp;pięciu Centrach Biznesowych — trzy rozmowy, które mają prowadzić do spotkań, ofert i&nbsp;współpracy.</p></div></li>
+        <li class="reveal"><time>15:00–16:00</time><div><h4>Global Business Connections</h4><p>Pięć Centrów Biznesowych: w&nbsp;każdym trzy 10-minutowe speeche z&nbsp;narzędziami, pomysłami i&nbsp;wskazówkami biznesowymi, a&nbsp;następnie moderowany networking — trzy rozmowy, które mają prowadzić do spotkań, ofert i&nbsp;współpracy.</p></div></li>
         <li class="reveal"><time>16:00–16:45</time><div><h4>Debata II: Women Opening Global Markets</h4><p>Ambasadorki, Konsulki Honorowe i&nbsp;przedstawicielki środowisk międzynarodowych o&nbsp;tym, jak dyplomacja gospodarcza otwiera nowe rynki.</p></div></li>
         <li class="reveal"><time>16:45–17:00</time><div><h4>Global Cooperation Moment</h4><p>Honorowy List Intencyjny, deklaracja kierunku dalszej współpracy i&nbsp;wspólne zdjęcie.</p></div></li>
         <li class="reveal"><time>17:00–18:00</time><div><h4>IMPACT Talks II: Firma przyszłości</h4><p>AI jako cyfrowy zespół · Firma gotowa na świat · Odporność zamiast chaosu.</p></div></li>
@@ -661,7 +668,11 @@ footer .logo{margin-bottom:26px}
     <div class="sec-head reveal">
       <span class="eyebrow">Global Business Connections</span>
       <h2>Pięć Centrów <em>Biznesowych</em></h2>
-      <p class="lead">Przestrzenie Expo, w&nbsp;których odbywa się moderowany networking. Uczestnicy przechodzą przez trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.</p>
+      <p class="lead">Przestrzenie Expo, w&nbsp;których każde Centrum ma własny temat i&nbsp;jasny format — najpierw konkretna wiedza, potem konkretne rozmowy.</p>
+      <div class="c-steps">
+        <div><b>1</b><span><strong>Trzy 10-minutowe speeche</strong>Eksperci przekazują mocne narzędzia, pomysły i&nbsp;wskazówki biznesowe w&nbsp;temacie Centrum.</span></div>
+        <div><b>2</b><span><strong>Moderowany networking</strong>Odbądź trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.</span></div>
+      </div>
     </div>
     <div class="topics">
       <div class="topic reveal" data-n="01"><div class="bar"></div><h3>Global Markets &amp; Export</h3><p>Eksport, wejście na nowe rynki, logistyka, dystrybucja i&nbsp;e-commerce.</p></div>
@@ -1024,6 +1035,12 @@ const I18N_EN = {
   "Networking dinner, live cooking, DJ, R&B i neo-soul, Luxury Networking Lounge. Równolegle: Private Global Lounge — wyłącznie na zaproszenie.": "Networking dinner, live cooking, DJ, R&B and neo-soul, Luxury Networking Lounge. In parallel: the Private Global Lounge — by invitation only.",
   "Organizator zastrzega sobie prawo do zmian w programie. Lista prelegentek zostanie opublikowana wkrótce.": "The organiser reserves the right to change the programme. The list of speakers will be published soon.",
   "Pięć Centrów": "Five Business",
+  "Przestrzenie Expo, w których każde Centrum ma własny temat i jasny format — najpierw konkretna wiedza, potem konkretne rozmowy.": "Expo spaces where each Centre has its own theme and a clear format — practical knowledge first, then real conversations.",
+  "Trzy 10-minutowe speeche": "Three 10-minute talks",
+  "Eksperci przekazują mocne narzędzia, pomysły i wskazówki biznesowe w temacie Centrum.": "Experts share powerful tools, ideas and business tips on the Centre’s theme.",
+  "Moderowany networking": "Moderated networking",
+  "Odbądź trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.": "Hold three business conversations designed to lead to a meeting, an offer, cooperation or a recommendation.",
+  "Pięć Centrów Biznesowych: w każdym trzy 10-minutowe speeche z narzędziami, pomysłami i wskazówkami biznesowymi, a następnie moderowany networking — trzy rozmowy, które mają prowadzić do spotkań, ofert i współpracy.": "Five Business Centres: in each, three 10-minute talks packed with tools, ideas and business tips, followed by moderated networking — three conversations designed to lead to meetings, offers and cooperation.",
   "Biznesowych": "Centres",
   "Przestrzenie Expo, w których odbywa się moderowany networking. Uczestnicy przechodzą przez trzy rozmowy biznesowe, które mają prowadzić do spotkania, oferty, współpracy lub rekomendacji.": "Expo spaces hosting moderated networking. Participants take part in three business conversations designed to lead to a meeting, an offer, cooperation or a recommendation.",
   "Eksport, wejście na nowe rynki, logistyka, dystrybucja i e-commerce.": "Export, entering new markets, logistics, distribution and e-commerce.",
