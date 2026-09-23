@@ -487,6 +487,34 @@ footer .logo{margin-bottom:26px}
 .cover .c-head strong{font-family:var(--serif);font-size:3.2rem;line-height:1;font-weight:600;background:linear-gradient(160deg,#F3E2B8,var(--gold) 55%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
 .cover .c-head span{font-family:var(--serif);font-style:italic;font-size:1.05rem;line-height:1.1;color:#fff;max-width:130px}
 
+/* ---------- Rada Programowa (złote tło) ---------- */
+.rada{background:linear-gradient(135deg,#B8904A 0%,#D8B97A 30%,#E9D3A0 50%,#D2B06C 72%,#A9823E 100%);color:var(--ink);padding:100px 0}
+.rada .eyebrow{color:var(--navy)}
+.rada h2{color:var(--ink)}.rada h2 em{color:var(--navy)}
+.rada .lead{color:rgba(58,6,10,.78)}
+.rc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;align-items:start}
+.rc-logo[src$=".svg"]{max-width:230px;max-height:92px;margin:-8px 0 0}
+.rc{background:var(--paper);border-radius:18px;padding:30px 24px 22px;text-align:center;box-shadow:0 24px 50px -30px rgba(58,6,10,.55);display:flex;flex-direction:column;align-items:center}
+.rc-photo{width:132px;height:132px;border-radius:50%;padding:4px;background:linear-gradient(135deg,#F3E2B8,var(--gold),var(--gold-deep));margin-bottom:18px}
+.rc-photo img,.rc-photo .mono{width:100%;height:100%;border-radius:50%;object-fit:cover;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--navy-2),var(--ink));color:var(--gold-light);font-family:var(--serif);font-size:2.6rem;border:3px solid var(--paper)}
+.rc h3{font-family:var(--serif);font-size:1.3rem;color:var(--navy);margin-bottom:6px}
+.rc-role{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gold-deep);line-height:1.5}
+.rc-org{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--text);margin:8px 0 12px;line-height:1.35}
+.rc-logo{max-width:170px;max-height:54px;width:auto;height:auto;margin:4px 0 12px}
+.rc-logo.big{max-width:210px;max-height:80px;margin:20px 0 10px}
+.rc-org-only{justify-content:center}
+.rc details{margin-top:auto;width:100%;text-align:left;border-top:1px solid var(--line);padding-top:12px}
+.rc summary{cursor:pointer;text-align:center;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--navy);list-style:none}
+.rc summary::-webkit-details-marker{display:none}
+.rc summary::after{content:" +";color:var(--gold-deep)}
+.rc details[open] summary::after{content:" –"}
+.rc h5{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:14px 0 6px}
+.rc details p{font-size:.86rem;line-height:1.6;color:var(--muted)}
+.rc-www{display:inline-block;margin-top:10px;font-size:.72rem;letter-spacing:.1em;color:var(--navy);font-weight:600}
+.countdown-band{background:linear-gradient(90deg,var(--ink),var(--navy) 50%,var(--ink))!important;color:#fff!important}
+.countdown-band h3{color:#fff}.countdown-band h3 small{color:var(--gold-light)}
+.cd div{background:rgba(255,255,255,.06)!important;border:1px solid var(--line)}
+
 /* ---------- program: zakładki dni i agenda ---------- */
 .day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
 .day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
@@ -553,6 +581,7 @@ footer .logo{margin-bottom:26px}
     </a>
     <ul class="menu" id="menu">
       <li><a href="#o-kongresie">O Kongresie</a></li>
+      <li><a href="#rada">Rada</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#magazyn">Magazyn</a></li>
       <li><a href="#partnerzy">Partnerzy</a></li>
@@ -589,6 +618,88 @@ footer .logo{margin-bottom:26px}
         <a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a>
         <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-stream" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span>Dołącz online – stream</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RADA PROGRAMOWA ================= -->
+<section class="rada" id="rada">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Rada Programowa</span>
+      <h2>Rada Programowa Kongresu Gospodarczego <em>Kobiet Biznesu</em></h2>
+      <p class="lead">Liderki izb gospodarczych, klastrów i organizacji biznesowych z&nbsp;całej Polski, które współtworzą program Kongresu.</p>
+    </div>
+    <div class="rc-grid">
+      <article class="rc reveal">
+        <div class="rc-photo"><img src="assets/rada/marlena-miasko.jpg" alt="Marlena Miąsko" loading="lazy" width="480" height="480"></div>
+        <h3>Marlena Miąsko</h3>
+        <p class="rc-role">Wiceprezes, Zastępca Dyrektora Generalnego</p>
+        <p class="rc-org">Regionalna Izba Gospodarcza w Katowicach</p>
+        <img class="rc-logo" src="assets/rada/rig-katowice.svg" alt="Regionalna Izba Gospodarcza w Katowicach" loading="lazy">
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Menedżerka związana z Izbą od 10 lat, wcześniej Dyrektor ds. Współpracy Międzynarodowej RIG — koordynowała wsparcie ekspansji MŚP na rynki zagraniczne i tworzyła obszar międzynarodowy Europejskiego Kongresu Małych i Średnich Przedsiębiorstw. Doświadczenie zdobywała w międzynarodowych projektach komercyjnych (Polska, Niemcy, Austria, Szwajcaria, Czechy, Słowacja) oraz w belgijskiej organizacji YES for Europe (Erasmus+). Magister filologii germańskiej, studia III stopnia na Uniwersytecie Opolskim, studiowała także na Otto-Friedrich-Universität Bamberg.</p><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego działająca od 1990 roku, skupiająca blisko 700 firm członkowskich. Współtworzy ponad 2,5-milionową społeczność przedsiębiorców w Europie we współpracy z CEA-PME w Brukseli. Prowadzi przedstawicielstwa zagraniczne m.in. w Szanghaju, New Delhi, Las Vegas, Tel Awiwie, Kairze, Düsseldorfie i Dakarze. Organizator Europejskiego Kongresu MŚP, Kongresu Industry in Transition i Health Business Innovations.</p><a class="rc-www" href="https://rig.katowice.pl" target="_blank" rel="noopener">rig.katowice.pl →</a></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">JS</span></div>
+        <h3>Jolanta Sawińska</h3>
+        <p class="rc-role">Dyrektor Regionu, Raben Logistics Polska</p>
+        <p class="rc-org">Polsko-Turecka Izba Gospodarcza</p>
+        <img class="rc-logo" src="assets/rada/ptig.png" alt="Polsko-Turecka Izba Gospodarcza" loading="lazy">
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ponad 30 lat doświadczenia w branży logistycznej. Kompleksowo zarządza regionem w Raben Logistics Polska — podlegają jej dyrektorzy operacyjni i kluczowe działy wsparcia; kierowała strukturami na poziomie oddziałów i regionów, wdrażając strategie biznesowe i operacyjne. Wiceprezes Zarządu Społecznego Towarzystwa Oświatowego, wspierająca edukację i rozwój talentów.</p><h5>O organizacji</h5><p>Działa od 2007 roku, wspierając polskie i tureckie firmy w rozwoju współpracy handlowej: dostęp do wiarygodnych partnerów, pomoc prawna w negocjacjach i specjalistyczna wiedza o obu rynkach. Reprezentuje interesy członków wobec władz, współpracuje z izbami handlowymi i przemysłowymi w Turcji. Członek stowarzyszony Krajowej Izby Gospodarczej.</p><a class="rc-www" href="https://ptcoc.eu" target="_blank" rel="noopener">ptcoc.eu →</a></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">LS</span></div>
+        <h3>Lidia Secler</h3>
+        <p class="rc-role">Dyrektor Generalny</p>
+        <p class="rc-org">Regionalna Izba Gospodarcza w Kaliszu</p>
+        <img class="rc-logo" src="assets/rada/rig-kalisz.png" alt="Regionalna Izba Gospodarcza w Kaliszu" loading="lazy">
+        <details><summary>Czytaj więcej</summary><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego reprezentująca interesy zrzeszonych przedsiębiorców i pracodawców, szczególnie wobec organów władzy publicznej. Działa na rzecz rozwoju przedsiębiorczości i kształcenia zawodowego, promuje społeczną odpowiedzialność biznesu i stwarza warunki do polubownego rozstrzygania sporów. Hasło Izby: „Ułatwiamy biznes · Łączymy przedsiębiorców”.</p><a class="rc-www" href="https://rigkalisz.pl" target="_blank" rel="noopener">rigkalisz.pl →</a></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">MG</span></div>
+        <h3>dr Małgorzata Gierwazik</h3>
+        <p class="rc-role">Członek Zarządu</p>
+        <p class="rc-org">Polska Izba Gospodarcza Importerów, Eksporterów i Kooperacji</p>
+        
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Doktor nauk społecznych w zakresie nauk o polityce i administracji (UAM Poznań). Ekspertka komunikacji strategicznej oraz zarządzania w sektorze publicznym i prywatnym. Wykładowczyni UAM i Uniwersytetu WSB Merito — komunikacja biznesowa, ład korporacyjny, autorytet lidera i wizerunek organizacji. Autorka licznych publikacji, doradczyni kadry menedżerskiej w zakresie komunikacji i struktur governance.</p><h5>O organizacji</h5><p>Od 1995 roku kompleksowo wspiera firmy w internacjonalizacji i rozwoju eksportu. Ma około 50 porozumień o współpracy z partnerami na całym świecie. Wyszukuje i weryfikuje kontrahentów, organizuje misje gospodarcze i spotkania B2B, legalizuje dokumentację eksportową z upoważnienia Krajowej Izby Gospodarczej i wydaje certyfikaty dla obrotu międzynarodowego.</p><a class="rc-www" href="https://pcc.org.pl" target="_blank" rel="noopener">pcc.org.pl →</a></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">PW</span></div>
+        <h3>Pola Witecka</h3>
+        <p class="rc-role">Prezes Zarządu</p>
+        <p class="rc-org">Polska Izba Gospodarcza Agentów Ubezpieczeniowych</p>
+        
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ekspertka ds. zarządzania ryzykiem korporacyjnym i MŚP, Członek Zarządu SGU Group Sp. z o.o. W branży ubezpieczeniowej od 2004 roku — m.in. Dyrektor Agencji Wyłącznej TUiR Allianz Polska i Dyrektor Regionalny ESALIENS TFI. Certyfikowany Compliance Officer (ACO, AMLSO). Specjalizuje się w kompleksowym zabezpieczaniu firm: od majątku i OC, przez ryzyka cybernetyczne, po polisy D&O i procesy sukcesyjne. Absolwentka SGH, Uniwersytetu Ekonomicznego we Wrocławiu i studiów z wyceny nieruchomości.</p><h5>O organizacji</h5><p>Izba zrzeszająca agentów ubezpieczeniowych i reprezentująca ich interesy gospodarcze. Pod przewodnictwem Poli Witeckiej (Prezes Zarządu od grudnia 2025 r.) działa na rzecz profesjonalizacji doradztwa ubezpieczeniowego i bezpieczeństwa przedsiębiorców.</p></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><img src="assets/rada/izabela-taborowska.jpg" alt="Izabela Taborowska" loading="lazy" width="480" height="480"></div>
+        <h3>Izabela Taborowska</h3>
+        <p class="rc-role">Wiceprzewodnicząca Rady</p>
+        <p class="rc-org">Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji</p>
+        
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Ekspertka cyberbezpieczeństwa i IT z ponad 20-letnim doświadczeniem, od 2023 roku na czele CyberClue — firmy rozwijającej ideę cyberbezpieczeństwa 360°. Karierę zaczynała przy jednym z pierwszych produktów z rodziny Norton; współpracowała m.in. z Symantec, Aviva, Roche, Signal Iduna i Empik. Audytorka wiodąca ISO 27001 i ISO 22301 oraz audytorka wewnętrzna ISO 42001 i TISAX. Speakerka m.in. Forum Gospodarczego TIME, ekspertka TVP Info, Biznes24 i Dziennika Gazety Prawnej.</p><h5>O organizacji</h5><p>Organizacja samorządu gospodarczego sektora elektroniki, telekomunikacji i technologii cyfrowych, uczestnicząca w dialogu o regulacjach i przyszłości rynku technologicznego.</p><a class="rc-www" href="http://www.kigeit.org.pl" target="_blank" rel="noopener">www.kigeit.org.pl →</a></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">AZ</span></div>
+        <h3>Agnieszka Zdanowicz</h3>
+        <p class="rc-role">Wiceprezeska Zarządu</p>
+        <p class="rc-org">Klaster Gospodarki Cyrkularnej i Recyklingu — Krajowy Klaster Kluczowy</p>
+        
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Od 2019 roku odpowiada za strategię rozwoju, ofertę komercyjną i portfel projektów Klastra. Współautorka metodologii ProGOZ oraz narzędzi GoGreen, ProESG, ProEko i GOZ Index. Ekspertka gospodarki o obiegu zamkniętym i śladu węglowego (LCA), trenerka Akademii Managera Transformacji Biznesu, współtwórczyni Polish Circular Forum. Przez ponad 12 lat w samorządzie regionalnym, m.in. jako Dyrektorka Działu Polityki Miejskiej i Innowacyjności w Agencji Rozwoju Mazowsza; ewaluatorka europejskich projektów grantowych.</p><h5>O organizacji</h5><p>Działa od 2012 roku, od 2016 z tytułem Krajowego Klastra Kluczowego nadanym przez Ministerstwo Rozwoju i Technologii. Zrzesza blisko 200 firm i instytucji zielonej gospodarki — producentów, recyklerów, dostawców technologii, jednostki naukowe i doradcze. Organizator Polish Circular Forum — największego forum gospodarki cyrkularnej z perspektywy przemysłu.</p></details>
+      </article>
+      <article class="rc reveal">
+        <div class="rc-photo"><span class="mono" aria-hidden="true">MG</span></div>
+        <h3>Monika Gotlibowska</h3>
+        <p class="rc-role">Członkini Zarządu</p>
+        <p class="rc-org">Izba Przemysłowo-Handlowa w Toruniu</p>
+        
+        <details><summary>Czytaj więcej</summary><h5>O osobie</h5><p>Przedsiębiorczyni z ponad 25-letnim doświadczeniem, prowadząca firmę z sektora spożywczego i gastronomicznego. Absolwentka Wydziału Prawa i Administracji UMK w Toruniu. Trzecią kadencję w Zarządzie IPH w Toruniu, drugą kadencję członkini Prezydium Krajowej Izby Gospodarczej oraz członkini Toruńskiej Rady Rozwoju przy Prezydencie Miasta Torunia. Od lat działa na rzecz sektora MŚP i konkurencyjności polskich firm.</p><h5>O organizacji</h5><p>Ponad 35 lat działalności, głównie w sektorze MŚP: tysiące godzin doradztwa, setki wspartych firm regionalnych, kilkadziesiąt partnerstw lokalnych i zagranicznych oraz pomoc w założeniu kilkuset przedsiębiorstw.</p></details>
+      </article>
+      <article class="rc rc-org-only reveal">
+        <img class="rc-logo big" src="assets/rada/nanonet.png" alt="Fundacja Wspierania Nanonauki i Nanotechnologii NANONET" loading="lazy">
+        <p class="rc-org">Fundacja Wspierania Nanonauki i Nanotechnologii NANONET</p>
+        <details><summary>Czytaj więcej</summary><h5>O organizacji</h5><p>Popularyzuje wiedzę o nanotechnologii i integruje środowisko naukowe, akademickie i przemysł. Twórca portalu nanonet.pl (od 2006 r.) — największego polskojęzycznego medium o nanotechnologii. Koordynuje Śląski Klaster Nano, rozwijający współpracę nauki i biznesu oraz komercjalizację wyników badań.</p></details>
+      </article>
     </div>
   </div>
 </section>
@@ -892,6 +1003,46 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "Rada": "Council",
+  "Rada Programowa": "Programme Council",
+  "Rada Programowa Kongresu Gospodarczego": "Programme Council of the Economic Congress",
+  "Liderki izb gospodarczych, klastrów i organizacji biznesowych z całej Polski, które współtworzą program Kongresu.": "Leaders of chambers of commerce, clusters and business organisations from across Poland who shape the Congress programme.",
+  "Czytaj więcej": "Read more",
+  "O osobie": "About",
+  "O organizacji": "About the organisation",
+  "Wiceprezes, Zastępca Dyrektora Generalnego": "Vice-President, Deputy Director General",
+  "Regionalna Izba Gospodarcza w Katowicach": "Regional Chamber of Commerce in Katowice",
+  "Dyrektor Regionu, Raben Logistics Polska": "Regional Director, Raben Logistics Polska",
+  "Polsko-Turecka Izba Gospodarcza": "Polish-Turkish Chamber of Commerce",
+  "Dyrektor Generalny": "Director General",
+  "Regionalna Izba Gospodarcza w Kaliszu": "Regional Chamber of Commerce in Kalisz",
+  "Członek Zarządu": "Board Member",
+  "Polska Izba Gospodarcza Importerów, Eksporterów i Kooperacji": "Polish Chamber of Commerce for Importers, Exporters and Cooperation",
+  "Prezes Zarządu": "President of the Board",
+  "Polska Izba Gospodarcza Agentów Ubezpieczeniowych": "Polish Chamber of Insurance Agents",
+  "Wiceprzewodnicząca Rady": "Vice-Chair of the Council",
+  "Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji": "National Chamber of Commerce for Electronics and Telecommunications",
+  "Wiceprezeska Zarządu": "Vice-President of the Board",
+  "Klaster Gospodarki Cyrkularnej i Recyklingu — Krajowy Klaster Kluczowy": "Circular Economy and Recycling Cluster — National Key Cluster",
+  "Członkini Zarządu": "Board Member",
+  "Izba Przemysłowo-Handlowa w Toruniu": "Chamber of Industry and Commerce in Toruń",
+  "Fundacja Wspierania Nanonauki i Nanotechnologii NANONET": "NANONET Foundation for the Support of Nanoscience and Nanotechnology",
+  "Menedżerka związana z Izbą od 10 lat, wcześniej Dyrektor ds. Współpracy Międzynarodowej RIG — koordynowała wsparcie ekspansji MŚP na rynki zagraniczne i tworzyła obszar międzynarodowy Europejskiego Kongresu Małych i Średnich Przedsiębiorstw. Doświadczenie zdobywała w międzynarodowych projektach komercyjnych (Polska, Niemcy, Austria, Szwajcaria, Czechy, Słowacja) oraz w belgijskiej organizacji YES for Europe (Erasmus+). Magister filologii germańskiej, studia III stopnia na Uniwersytecie Opolskim, studiowała także na Otto-Friedrich-Universität Bamberg.": "A manager with the Chamber for 10 years, previously its Director of International Cooperation — she coordinated support for SMEs expanding abroad and built the international area of the European Congress of Small and Medium-sized Enterprises. She gained experience in international commercial projects (Poland, Germany, Austria, Switzerland, Czechia, Slovakia) and at the Belgian organisation YES for Europe (Erasmus+). MA in German philology, doctoral studies at the University of Opole; she also studied at Otto-Friedrich-Universität Bamberg.",
+  "Organizacja samorządu gospodarczego działająca od 1990 roku, skupiająca blisko 700 firm członkowskich. Współtworzy ponad 2,5-milionową społeczność przedsiębiorców w Europie we współpracy z CEA-PME w Brukseli. Prowadzi przedstawicielstwa zagraniczne m.in. w Szanghaju, New Delhi, Las Vegas, Tel Awiwie, Kairze, Düsseldorfie i Dakarze. Organizator Europejskiego Kongresu MŚP, Kongresu Industry in Transition i Health Business Innovations.": "A business self-government organisation founded in 1990, bringing together nearly 700 member companies. Together with CEA-PME in Brussels it is part of a community of over 2.5 million European entrepreneurs. It runs foreign representative offices in cities including Shanghai, New Delhi, Las Vegas, Tel Aviv, Cairo, Düsseldorf and Dakar, and organises the European SME Congress, the Industry in Transition Congress and Health Business Innovations.",
+  "Ponad 30 lat doświadczenia w branży logistycznej. Kompleksowo zarządza regionem w Raben Logistics Polska — podlegają jej dyrektorzy operacyjni i kluczowe działy wsparcia; kierowała strukturami na poziomie oddziałów i regionów, wdrażając strategie biznesowe i operacyjne. Wiceprezes Zarządu Społecznego Towarzystwa Oświatowego, wspierająca edukację i rozwój talentów.": "Over 30 years of experience in logistics. She manages a region at Raben Logistics Polska, overseeing operations directors and key support departments, and has led structures at branch and regional level, implementing business and operational strategies. Vice-President of the Board of the Social Educational Society, supporting education and talent development.",
+  "Działa od 2007 roku, wspierając polskie i tureckie firmy w rozwoju współpracy handlowej: dostęp do wiarygodnych partnerów, pomoc prawna w negocjacjach i specjalistyczna wiedza o obu rynkach. Reprezentuje interesy członków wobec władz, współpracuje z izbami handlowymi i przemysłowymi w Turcji. Członek stowarzyszony Krajowej Izby Gospodarczej.": "Active since 2007, it helps Polish and Turkish companies develop trade: access to reliable partners, legal support in negotiations and specialist knowledge of both markets. It represents members before public authorities and works with chambers of commerce and industry in Türkiye. An associate member of the Polish Chamber of Commerce (KIG).",
+  "Organizacja samorządu gospodarczego reprezentująca interesy zrzeszonych przedsiębiorców i pracodawców, szczególnie wobec organów władzy publicznej. Działa na rzecz rozwoju przedsiębiorczości i kształcenia zawodowego, promuje społeczną odpowiedzialność biznesu i stwarza warunki do polubownego rozstrzygania sporów. Hasło Izby: „Ułatwiamy biznes · Łączymy przedsiębiorców”.": "A business self-government organisation representing its member entrepreneurs and employers, especially before public authorities. It promotes entrepreneurship and vocational education, corporate social responsibility and amicable dispute resolution. The Chamber’s motto: “We make business easier · We connect entrepreneurs”.",
+  "Doktor nauk społecznych w zakresie nauk o polityce i administracji (UAM Poznań). Ekspertka komunikacji strategicznej oraz zarządzania w sektorze publicznym i prywatnym. Wykładowczyni UAM i Uniwersytetu WSB Merito — komunikacja biznesowa, ład korporacyjny, autorytet lidera i wizerunek organizacji. Autorka licznych publikacji, doradczyni kadry menedżerskiej w zakresie komunikacji i struktur governance.": "PhD in social sciences (political science and public administration, Adam Mickiewicz University in Poznań). An expert in strategic communication and public and private sector management. Lecturer at Adam Mickiewicz University and WSB Merito University in business communication, corporate governance, leadership authority and organisational image. Author of numerous publications and adviser to senior managers on communication and governance.",
+  "Od 1995 roku kompleksowo wspiera firmy w internacjonalizacji i rozwoju eksportu. Ma około 50 porozumień o współpracy z partnerami na całym świecie. Wyszukuje i weryfikuje kontrahentów, organizuje misje gospodarcze i spotkania B2B, legalizuje dokumentację eksportową z upoważnienia Krajowej Izby Gospodarczej i wydaje certyfikaty dla obrotu międzynarodowego.": "Since 1995 it has provided comprehensive support for internationalisation and export growth, with around 50 cooperation agreements with partners worldwide. It finds and vets business partners, organises trade missions and B2B meetings, legalises export documents under authorisation from the Polish Chamber of Commerce and issues certificates for international trade.",
+  "Ekspertka ds. zarządzania ryzykiem korporacyjnym i MŚP, Członek Zarządu SGU Group Sp. z o.o. W branży ubezpieczeniowej od 2004 roku — m.in. Dyrektor Agencji Wyłącznej TUiR Allianz Polska i Dyrektor Regionalny ESALIENS TFI. Certyfikowany Compliance Officer (ACO, AMLSO). Specjalizuje się w kompleksowym zabezpieczaniu firm: od majątku i OC, przez ryzyka cybernetyczne, po polisy D&O i procesy sukcesyjne. Absolwentka SGH, Uniwersytetu Ekonomicznego we Wrocławiu i studiów z wyceny nieruchomości.": "Corporate and SME risk management expert and Board Member of SGU Group Sp. z o.o. In insurance since 2004, including as Exclusive Agency Director at TUiR Allianz Polska and Regional Director at ESALIENS TFI. Certified Compliance Officer (ACO, AMLSO). She specialises in comprehensive business protection — from property and liability cover, through cyber risk, to D&O policies and succession. Graduate of SGH Warsaw School of Economics, Wrocław University of Economics and real-estate valuation studies.",
+  "Izba zrzeszająca agentów ubezpieczeniowych i reprezentująca ich interesy gospodarcze. Pod przewodnictwem Poli Witeckiej (Prezes Zarządu od grudnia 2025 r.) działa na rzecz profesjonalizacji doradztwa ubezpieczeniowego i bezpieczeństwa przedsiębiorców.": "A chamber bringing together insurance agents and representing their business interests. Led by Pola Witecka (President of the Board since December 2025), it works to professionalise insurance advice and strengthen the security of businesses.",
+  "Ekspertka cyberbezpieczeństwa i IT z ponad 20-letnim doświadczeniem, od 2023 roku na czele CyberClue — firmy rozwijającej ideę cyberbezpieczeństwa 360°. Karierę zaczynała przy jednym z pierwszych produktów z rodziny Norton; współpracowała m.in. z Symantec, Aviva, Roche, Signal Iduna i Empik. Audytorka wiodąca ISO 27001 i ISO 22301 oraz audytorka wewnętrzna ISO 42001 i TISAX. Speakerka m.in. Forum Gospodarczego TIME, ekspertka TVP Info, Biznes24 i Dziennika Gazety Prawnej.": "A cybersecurity and IT expert with over 20 years of experience, leading CyberClue since 2023 — a company built around the idea of 360° cybersecurity. She began her career on one of the first Norton products and has worked with Symantec, Aviva, Roche, Signal Iduna and Empik, among others. Lead auditor for ISO 27001 and ISO 22301 and internal auditor for ISO 42001 and TISAX. Speaker at events such as the TIME Economic Forum and commentator for TVP Info, Biznes24 and Dziennik Gazeta Prawna.",
+  "Organizacja samorządu gospodarczego sektora elektroniki, telekomunikacji i technologii cyfrowych, uczestnicząca w dialogu o regulacjach i przyszłości rynku technologicznego.": "A business self-government organisation for the electronics, telecommunications and digital technology sector, taking part in the dialogue on regulation and the future of the tech market.",
+  "Od 2019 roku odpowiada za strategię rozwoju, ofertę komercyjną i portfel projektów Klastra. Współautorka metodologii ProGOZ oraz narzędzi GoGreen, ProESG, ProEko i GOZ Index. Ekspertka gospodarki o obiegu zamkniętym i śladu węglowego (LCA), trenerka Akademii Managera Transformacji Biznesu, współtwórczyni Polish Circular Forum. Przez ponad 12 lat w samorządzie regionalnym, m.in. jako Dyrektorka Działu Polityki Miejskiej i Innowacyjności w Agencji Rozwoju Mazowsza; ewaluatorka europejskich projektów grantowych.": "Since 2019 she has been responsible for the Cluster’s development strategy, commercial offer and project portfolio. Co-author of the ProGOZ methodology and the GoGreen, ProESG, ProEko and GOZ Index tools. Expert in the circular economy and carbon footprint (LCA), trainer at the Business Transformation Manager Academy and co-creator of the Polish Circular Forum. Over 12 years in regional government, including as Director of Urban Policy and Innovation at the Mazovia Development Agency; evaluator of European grant projects.",
+  "Działa od 2012 roku, od 2016 z tytułem Krajowego Klastra Kluczowego nadanym przez Ministerstwo Rozwoju i Technologii. Zrzesza blisko 200 firm i instytucji zielonej gospodarki — producentów, recyklerów, dostawców technologii, jednostki naukowe i doradcze. Organizator Polish Circular Forum — największego forum gospodarki cyrkularnej z perspektywy przemysłu.": "Active since 2012 and holding National Key Cluster status from the Ministry of Development and Technology since 2016. It brings together nearly 200 green-economy companies and institutions — manufacturers, recyclers, technology providers, research and advisory bodies — and organises the Polish Circular Forum, the largest circular-economy forum from an industry perspective.",
+  "Przedsiębiorczyni z ponad 25-letnim doświadczeniem, prowadząca firmę z sektora spożywczego i gastronomicznego. Absolwentka Wydziału Prawa i Administracji UMK w Toruniu. Trzecią kadencję w Zarządzie IPH w Toruniu, drugą kadencję członkini Prezydium Krajowej Izby Gospodarczej oraz członkini Toruńskiej Rady Rozwoju przy Prezydencie Miasta Torunia. Od lat działa na rzecz sektora MŚP i konkurencyjności polskich firm.": "An entrepreneur with over 25 years of experience, running a company in the food and catering sector. Law graduate of Nicolaus Copernicus University in Toruń. Serving her third term on the Board of the Toruń Chamber, her second term on the Presidium of the Polish Chamber of Commerce (KIG), and a member of the Toruń Development Council. For years she has championed SMEs and the competitiveness of Polish companies.",
+  "Ponad 35 lat działalności, głównie w sektorze MŚP: tysiące godzin doradztwa, setki wspartych firm regionalnych, kilkadziesiąt partnerstw lokalnych i zagranicznych oraz pomoc w założeniu kilkuset przedsiębiorstw.": "Over 35 years of activity, mainly in the SME sector: thousands of hours of advisory work, hundreds of regional companies supported, dozens of local and international partnerships and help in founding several hundred businesses.",
+  "Popularyzuje wiedzę o nanotechnologii i integruje środowisko naukowe, akademickie i przemysł. Twórca portalu nanonet.pl (od 2006 r.) — największego polskojęzycznego medium o nanotechnologii. Koordynuje Śląski Klaster Nano, rozwijający współpracę nauki i biznesu oraz komercjalizację wyników badań.": "Promotes knowledge of nanotechnology and connects science, academia and industry. Creator of nanonet.pl (since 2006), the largest Polish-language nanotechnology medium. It coordinates the Silesian Nano Cluster, which fosters science–business cooperation and the commercialisation of research.",
   "Organizator:": "Organiser:",
   "Organizator główny:": "Lead organiser:",
   "Organizator główny": "Lead organiser",
