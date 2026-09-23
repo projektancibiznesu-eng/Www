@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kongres Gospodarczy Kobiet Biznesu 2026 · 5–6 listopada · Butelkownia, Warszawa</title>
-<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — 5–6 listopada 2026, Butelkownia, Warszawa. Dzień I: Global Women Chamber of Commerce. Dzień II: Business Women IMPACT 2026 dla 500 uczestników. Organizator: Polish Women Chamber of Commerce.">
-<meta property="og:title" content="Kongres Gospodarczy Kobiet Biznesu · 5–6.11.2026 · Warszawa">
-<meta property="og:description" content="Dzień I: Global Women Chamber of Commerce. Dzień II: Business Women IMPACT 2026 — debaty, IMPACT Talks, Centra Biznesowe, premiera magazynu. Organizator: PWCC.">
+<title>Kongres Gospodarczy Kobiet Biznesu · 6 listopada 2026 · Butelkownia, Warszawa</title>
+<meta name="description" content="Kongres Gospodarczy Kobiet Biznesu — Business Women IMPACT 2026. 6 listopada 2026, Butelkownia, Warszawa, start 11:30. 25 delegacji zagranicznych, 500 uczestników online i offline. Organizator: Polish Women Chamber of Commerce.">
+<meta property="og:title" content="Kongres Gospodarczy Kobiet Biznesu · 6 listopada 2026 · Warszawa">
+<meta property="og:description" content="Business Women IMPACT 2026 — 25 delegacji zagranicznych, 500 uczestników online i offline, debaty, IMPACT Talks, Centra Biznesowe i premiera magazynu. Organizator: PWCC.">
 <meta property="og:url" content="https://kongresgospodarczypwcc.pl/">
 <link rel="canonical" href="https://kongresgospodarczypwcc.pl/">
 <meta property="og:type" content="website">
@@ -101,8 +101,10 @@ header.nav.scrolled .shell{height:78px;box-shadow:0 18px 40px -18px rgba(40,4,8,
 .hero{position:relative;background:radial-gradient(1000px 700px at 75% 35%,rgba(196,38,48,.45),transparent 60%),radial-gradient(900px 600px at 0% 100%,rgba(30,2,5,.7),transparent 60%),linear-gradient(165deg,#8A161D 0%,var(--navy) 45%,var(--ink) 100%);color:#fff;overflow:hidden;padding:230px 0 140px}
 .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,120,110,.22) 1px,transparent 1.4px);background-size:14px 14px;mask-image:radial-gradient(ellipse 60% 55% at 72% 45%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse 60% 55% at 72% 45%,#000 10%,transparent 70%)}
 .hero .net{position:absolute;right:-5%;top:10%;width:70%;height:85%;opacity:.55;pointer-events:none}
-.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,900px);gap:70px;align-items:center}
-.hero h1{font-size:clamp(2.5rem,5.2vw,4.5rem);margin:24px 0 28px;font-weight:600;text-transform:uppercase;letter-spacing:-.035em;line-height:.98}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1000px);justify-content:center;text-align:center}
+.hero .wrap > div{display:flex;flex-direction:column;align-items:center}
+.hero .lead{margin-left:auto;margin-right:auto}
+.hero h1{font-size:clamp(2.8rem,7vw,6.4rem);margin:24px 0 28px;font-weight:600;text-transform:uppercase;letter-spacing:-.035em;line-height:.98}
 .hero h1 em{display:block;text-transform:none;font-size:.86em;letter-spacing:-.03em;margin-top:6px}
 .hero h1 .thin{display:block;font-family:var(--sans);font-weight:500;font-size:.78rem;line-height:1.6;color:rgba(255,255,255,.75);letter-spacing:.26em;margin-bottom:22px}
 .hero .lead{color:rgba(255,255,255,.88);max-width:600px}
@@ -448,6 +450,26 @@ footer .logo{margin-bottom:26px}
 .ac-place{margin-top:10px;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 .ac-logo{width:62%;height:auto;margin-top:30px;opacity:.9}
 
+:root{--hero-photo:url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1800&q=60")}
+.hero-bg{position:absolute;inset:-30px;background:var(--hero-photo) center/cover no-repeat;filter:blur(9px) saturate(.85);opacity:.32;mix-blend-mode:luminosity;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(40,0,3,.55) 100%);pointer-events:none}
+.hero .wrap{z-index:1}
+.hero .net{opacity:.35}
+.hero-date{align-items:center!important;text-align:center;border-left-width:1px!important;padding:20px 34px!important}
+.hero-date strong{font-size:clamp(2.6rem,5.4vw,4.4rem)!important}
+.hero-facts{display:flex;align-items:center;justify-content:center;gap:34px;margin:36px 0 40px;padding:22px 34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-facts div{display:flex;align-items:baseline;gap:12px}
+.hero-facts strong{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.2rem);color:var(--gold-light);line-height:1}
+.hero-facts span{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#fff;text-align:left;max-width:170px;line-height:1.5}
+.hero-facts i{width:1px;height:44px;background:var(--line)}
+.hero-ctas{justify-content:center}
+.day-tabs.single{grid-template-columns:minmax(0,520px);justify-content:center}
+.day-tabs.single > div{border-radius:16px;padding:22px 26px;text-align:center;background:var(--navy);color:#fff;box-shadow:0 20px 40px -24px rgba(58,6,10,.7)}
+.day-tabs.single strong{display:block;font-family:var(--serif);font-size:1.9rem;font-weight:600;color:#fff}
+.day-tabs.single span{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);font-weight:600;margin:6px 0 8px}
+.day-tabs.single em{font-style:italic;font-family:var(--serif);font-size:1.05rem;color:rgba(255,255,255,.85)}
+@media (max-width:680px){.hero-facts{flex-direction:column;gap:14px;padding:18px 10px}.hero-facts i{width:60px;height:1px}.hero-date{padding:16px 18px!important}}
+
 /* ---------- program: zakładki dni i agenda ---------- */
 .day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
 .day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
@@ -509,12 +531,11 @@ footer .logo{margin-bottom:26px}
   <div class="wrap"><div class="shell">
     <a href="#top" class="logo" aria-label="Kongres Gospodarczy Kobiet Biznesu — strona główna">
       <img class="emblem" src="assets/pwcc-emblem.png" alt="" width="297" height="295">
-      <span class="words"><span class="l0">Kongres Gospodarczy</span><span class="l1">Kobiet Biznesu</span><span class="l2">Warszawa · 5–6.11.2026</span></span>
+      <span class="words"><span class="l0">Kongres Gospodarczy</span><span class="l1">Kobiet Biznesu</span><span class="l2">Warszawa · 6.11.2026</span></span>
     </a>
     <ul class="menu" id="menu">
       <li><a href="#o-kongresie">O Kongresie</a></li>
       <li><a href="#program">Program</a></li>
-      <li><a href="#gwcc">GWCC</a></li>
       <li><a href="#magazyn">Magazyn</a></li>
       <li><a href="#partnerzy">Partnerzy</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
@@ -527,6 +548,7 @@ footer .logo{margin-bottom:26px}
 
 <!-- ================= HERO ================= -->
 <section class="hero" aria-label="Kongres">
+  <div class="hero-bg" aria-hidden="true"></div>
   <svg class="net" viewBox="0 0 800 500" fill="none" aria-hidden="true">
     <g stroke="#FF8A7A" stroke-opacity=".5" stroke-width="1">
       <path d="M90 300 Q250 120 420 210"/><path d="M420 210 Q560 90 700 170"/><path d="M420 210 Q520 330 640 360"/><path d="M200 380 Q320 260 420 210"/><path d="M700 170 Q690 290 640 360"/><path d="M300 140 Q360 100 420 210"/><path d="M90 300 Q150 360 200 380"/>
@@ -540,11 +562,10 @@ footer .logo{margin-bottom:26px}
       <h1><span class="thin">Butelkownia · Warszawa</span>Kongres Gospodarczy <em>Kobiet Biznesu</em></h1>
       <div class="hero-date"><strong>6 listopada 2026</strong><span>Business Women IMPACT 2026 · start 11:30 · Butelkownia, Warszawa</span></div>
       <p class="lead">Międzynarodowe wydarzenie biznesu, relacji i&nbsp;realnych możliwości współpracy. Izby gospodarcze, delegacje z&nbsp;różnych części świata, partnerzy, prelegentki i&nbsp;przedsiębiorczynie — w&nbsp;środowisku zaprojektowanym tak, by rozmowy zamieniały się w&nbsp;konkretne projekty.</p>
-      <div class="hero-meta">
-        <div><small>Dzień I · 5.11 · 11:00</small><strong>Global Women Chamber of Commerce</strong></div>
-        <div><small>Dzień II · 6.11 · 11:30</small><strong>Business Women IMPACT 2026</strong></div>
-        <div><small>Uczestnicy</small><strong>500 gości</strong></div>
-        <div><small>Miejsce</small><strong>Butelkownia, Warszawa</strong></div>
+      <div class="hero-facts">
+        <div><strong>25</strong><span>delegacji zagranicznych</span></div>
+        <i aria-hidden="true"></i>
+        <div><strong>500</strong><span>uczestników online i&nbsp;offline</span></div>
       </div>
       <div class="hero-ctas">
         <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
@@ -583,8 +604,8 @@ footer .logo{margin-bottom:26px}
       <h2>Wydarzenie, które <em>służy działaniu</em></h2>
       <p class="lead">Kongres Gospodarczy Kobiet Biznesu organizuje Polish Women Chamber of Commerce — jedyna Izba Gospodarcza Kobiet Biznesu w&nbsp;Polsce i&nbsp;Europie. Każda część programu ma określony cel biznesowy, dedykowaną przestrzeń i&nbsp;konkretną wartość dla uczestników.</p>
       <ul class="checks">
-        <li><span><b>Dzień I — Global Women Chamber of Commerce</b> — zamknięte spotkanie izb i&nbsp;delegacji międzynarodowych, które rozpoczyna tworzenie pierwszej światowej instytucji gospodarczej tego typu.</span></li>
-        <li><span><b>Dzień II — Business Women IMPACT 2026</b> — międzynarodowy dzień biznesu dla 500 uczestników: debaty, IMPACT Talks, Centra Biznesowe i&nbsp;networking.</span></li>
+        <li><span><b>25 delegacji zagranicznych</b> — izby gospodarcze i&nbsp;organizacje kobiet biznesu z&nbsp;różnych części świata.</span></li>
+        <li><span><b>Business Women IMPACT 2026</b> — międzynarodowy dzień biznesu dla 500 uczestników online i&nbsp;offline: debaty, IMPACT Talks, Centra Biznesowe i&nbsp;networking.</span></li>
         <li><span><b>Networking zaprojektowany, a&nbsp;nie przypadkowy</b> — Business Matchmaking Concierge kieruje uczestników do właściwych osób, partnerów, izb i&nbsp;delegacji.</span></li>
         <li><span><b>Premiera magazynu Business Women IMPACT</b> — pierwsza okładka nowej platformy medialnej PWCC.</span></li>
       </ul>
@@ -596,10 +617,10 @@ footer .logo{margin-bottom:26px}
 <!-- ================= STATS ================= -->
 <div class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><strong data-count="2">0</strong><span>Dni Kongresu w&nbsp;Warszawie</span></div>
-    <div class="stat reveal"><strong data-count="500">0</strong><span>Uczestników Dnia II</span></div>
-    <div class="stat reveal"><strong data-count="25">0</strong><span>Struktur założycielskich — cel GWCC</span></div>
+    <div class="stat reveal"><strong data-count="25">0</strong><span>Delegacji zagranicznych</span></div>
+    <div class="stat reveal"><strong data-count="500">0</strong><span>Uczestników online i&nbsp;offline</span></div>
     <div class="stat reveal"><strong data-count="5">0</strong><span>Centrów Biznesowych</span></div>
+    <div class="stat reveal"><strong data-count="3">0</strong><span>Bloki IMPACT Talks</span></div>
   </div>
 </div>
 
@@ -608,38 +629,14 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="sec-head center reveal">
       <span class="eyebrow center">Program Kongresu</span>
-      <h2>Dwa dni, w&nbsp;których kobiecy biznes <em>zabiera głos</em></h2>
+      <h2>Dzień, w&nbsp;którym kobiecy biznes <em>zabiera głos</em></h2>
       <p class="lead">Każdy blok ma jasno określony rezultat — od pierwszej rozmowy po konkretne zobowiązania po Kongresie.</p>
     </div>
-    <div class="day-tabs reveal" role="tablist">
-      <button type="button" role="tab" class="on" data-day="1" aria-selected="true"><strong>Dzień I</strong><span>5 listopada · 11:00–17:00</span><em>Global Women Chamber of Commerce</em></button>
-      <button type="button" role="tab" data-day="2" aria-selected="false"><strong>Dzień II</strong><span>6 listopada · od 11:30</span><em>Business Women IMPACT 2026</em></button>
-    </div>
-
-    <!-- DZIEŃ I -->
-    <div class="day-panel" data-panel="1">
-      <p class="day-note reveal">Spotkanie zamknięte — udział na zaproszenie. Izby gospodarcze i&nbsp;delegacje międzynarodowe rozpoczynają wspólne tworzenie Global Women Chamber of Commerce.</p>
-      <ol class="agenda">
-        <li class="reveal"><time>11:00–11:25</time><div><h4>Rejestracja i&nbsp;networking powitalny</h4><p>Potwierdzenie obecności, tłumaczenia i&nbsp;pierwsze kontakty.</p></div></li>
-        <li class="reveal"><time>11:25–11:40</time><div><h4>Otwarcie i&nbsp;wspólna ambicja</h4><p>Cel GWCC jako pierwszej światowej instytucji tego typu oraz rola 25 struktur założycielskich.</p></div></li>
-        <li class="reveal"><time>11:40–12:20</time><div><h4>Międzynarodowa mapa możliwości</h4><p>Każda organizacja przedstawia swój rynek, skalę działania, kompetencje i&nbsp;oczekiwane partnerstwa.</p></div></li>
-        <li class="reveal"><time>12:20–13:05</time><div><h4>Warsztat I: diagnoza i&nbsp;potencjał</h4><p>Potrzeby kobiet biznesu, bariery w&nbsp;eksporcie, ESG, finansowaniu i&nbsp;dostępie do łańcuchów dostaw.</p></div></li>
-        <li class="reveal"><time>13:05–13:25</time><div><h4>Przerwa kawowa</h4><p>Networking według obszarów zainteresowania.</p></div></li>
-        <li class="reveal"><time>13:25–13:45</time><div><h4>Wnioski i&nbsp;wspólne priorytety</h4><p>Najważniejsze potrzeby, zasoby i&nbsp;obszary możliwej współpracy.</p></div></li>
-        <li class="reveal highlight"><time>13:45–14:25</time><div><h4>Global Women Chamber of Commerce</h4><p>Przedstawienie modelu sieci, grona założycieli i&nbsp;uroczyste wręczenie nominacji do tworzonych struktur.</p></div></li>
-        <li class="reveal"><time>14:25–14:40</time><div><h4>Zdjęcia i&nbsp;komunikat medialny</h4><p>Wspólne zdjęcie nominowanych oraz delegacji.</p></div></li>
-        <li class="reveal"><time>14:40–15:00</time><div><h4>Przerwa kawowa</h4><p>Rozmowy z&nbsp;nominowanymi i&nbsp;partnerami.</p></div></li>
-        <li class="reveal"><time>15:00–15:25</time><div><h4>Pierwsze wspólne produkty GWCC</h4><p>Magazyn Business Women IMPACT, międzynarodowe certyfikacje oraz licencje na książki i&nbsp;programy szkoleniowe.</p></div></li>
-        <li class="reveal"><time>15:25–16:15</time><div><h4>Warsztat II: aktywności komercyjne</h4><p>Konkretne przedsięwzięcia: odbiorca, korzyść, model finansowania, liderzy i&nbsp;pierwsze kroki.</p></div></li>
-        <li class="reveal"><time>16:15–16:40</time><div><h4>Prezentacja portfela projektów</h4><p>3–5 najważniejszych projektów, organizacje prowadzące i&nbsp;terminy spotkań startowych.</p></div></li>
-        <li class="reveal"><time>16:40–16:55</time><div><h4>Deklaracje współpracy</h4><p>Zgłoszenia do projektów, komitetów i&nbsp;programów pilotażowych.</p></div></li>
-        <li class="reveal"><time>16:55–17:00</time><div><h4>Zamknięcie</h4><p>Podsumowanie i&nbsp;plan działań na kolejne 72 godziny.</p></div></li>
-      </ol>
-    </div>
+    <div class="day-tabs single reveal"><div class="on"><strong>6 listopada 2026</strong><span>Butelkownia, Warszawa · od 11:30</span><em>Business Women IMPACT 2026</em></div></div>
 
     <!-- DZIEŃ II -->
-    <div class="day-panel" data-panel="2" hidden>
-      <p class="day-note reveal">Międzynarodowy dzień biznesu, relacji i&nbsp;realnych możliwości współpracy — dla 500 uczestników.</p>
+    <div class="day-panel" data-panel="2">
+      <p class="day-note reveal">Międzynarodowy dzień biznesu, relacji i&nbsp;realnych możliwości współpracy — dla 500 uczestników online i&nbsp;offline.</p>
       <ol class="agenda">
         <li class="reveal"><time>11:30–13:00</time><div><h4>Registration &amp; Red Carpet Business Experience</h4><p>Welcome drink, Red Carpet, profesjonalna fotografia, video interviews, Social Media Wall, otwarcie stref Partnerów i&nbsp;Wystawców, matchmaking i&nbsp;dostęp do pięciu Centrów Biznesowych.</p></div></li>
         <li class="reveal"><time>13:00–13:15</time><div><h4>Opening Show — IMPACT</h4><p>Film otwierający, muzyka, światło i&nbsp;ekrany LED. Oficjalne otwarcie przez Prezydentkę PWCC.</p></div></li>
@@ -694,25 +691,6 @@ footer .logo{margin-bottom:26px}
       <article class="card reveal"><span class="num">Wellbeing</span><h3>Restore &amp; Power Lounge</h3><p>Strefa regeneracji: odpoczynek, hydration, ładowanie urządzeń, beauty touch-up i&nbsp;krótkie formaty wellness.</p></article>
       <article class="card reveal"><span class="num">Invitation only</span><h3>Private Global Lounge</h3><p>Zamknięta strefa premium dla delegacji, przedstawicielek izb, Partnerów Strategicznych i&nbsp;zaproszonych liderów.</p></article>
     </div>
-  </div>
-</section>
-
-<!-- ================= GWCC ================= -->
-<section class="dark" id="gwcc" style="background:radial-gradient(900px 500px at 85% 0%,rgba(198,161,94,.14),transparent 60%),linear-gradient(160deg,var(--ink),var(--navy))">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Dzień I · 5 listopada 2026 · spotkanie zamknięte</span>
-      <h2>Global Women <em>Chamber of Commerce</em></h2>
-      <p class="lead">Pierwszego dnia rozpoczyna się tworzenie pierwszej światowej instytucji gospodarczej tego typu — budowanej przez 25 struktur biznesowych reprezentujących kobiety przedsiębiorcze z&nbsp;różnych części świata. GWCC ma stać się stałą platformą wymiany kontaktów, rekomendacji, wiedzy, dostępu do rynków i&nbsp;wspólnych przedsięwzięć.</p>
-    </div>
-    <div class="gw-grid">
-      <div class="gw reveal"><strong>GWCC</strong><p>Ogłoszenie pierwszej światowej instytucji tego typu, grono struktur założycielskich i&nbsp;pierwsze nominacje.</p></div>
-      <div class="gw reveal"><strong>Wspólne projekty</strong><p>3–5 aktywności biznesowych i&nbsp;komercyjnych z&nbsp;liderem oraz planem realizacji do grudnia 2027&nbsp;r.</p></div>
-      <div class="gw reveal"><strong>ESG</strong><p>Wspólny kierunek: wspieranie kobiet w&nbsp;łańcuchach dostaw, eksporcie i&nbsp;dostępie do kapitału.</p></div>
-      <div class="gw reveal"><strong>Biznes</strong><p>Magazyn Business Women IMPACT, międzynarodowe certyfikacje i&nbsp;licencje na książki.</p></div>
-      <div class="gw reveal"><strong>Relacje</strong><p>Katalog izb i&nbsp;delegacji oraz konkretne połączenia między partnerami.</p></div>
-    </div>
-    <p class="gw-note reveal">Planowane komitety tematyczne: ESG, certyfikacja kobiet w&nbsp;biznesie, współpraca międzynarodowa i&nbsp;eksport, inwestycje, media oraz edukacja.</p>
   </div>
 </section>
 
@@ -796,23 +774,23 @@ footer .logo{margin-bottom:26px}
     </div>
     <div class="tiers">
       <div class="tier reveal">
-        <small>Dzień I</small>
-        <div class="tier-name">Partner Strategiczny Dnia</div>
-        <ul><li>Wyłączność branżowa i&nbsp;2 miejsca VIP</li><li>Logo w&nbsp;komunikacji Dnia I i&nbsp;obecność w&nbsp;katalogu</li><li>5-minutowa wypowiedź ekspercka</li><li>10 uzgodnionych rozmów po wydarzeniu</li><li>Zdjęcia i&nbsp;komunikat PR</li></ul>
+        <small>Pakiet</small>
+        <div class="tier-name">Partner Strategiczny</div>
+        <ul><li>Wyłączność branżowa i&nbsp;2 miejsca VIP</li><li>Logo w&nbsp;komunikacji Kongresu i&nbsp;obecność w&nbsp;katalogu</li><li>5-minutowa wypowiedź ekspercka</li><li>10 uzgodnionych rozmów po wydarzeniu</li><li>Zdjęcia i&nbsp;komunikat PR</li></ul>
       </div>
       <div class="tier reveal">
-        <small>Dzień I</small>
+        <small>Pakiet</small>
         <div class="tier-name">Partner ESG</div>
         <ul><li>Pełny pakiet strategiczny i&nbsp;tytuł Partnera ESG</li><li>Udział eksperta w&nbsp;części merytorycznej</li><li>Oznaczenie przy deklaracji ESG</li><li>Współpraca przy raporcie podsumowującym</li><li>15 uzgodnionych rozmów</li></ul>
       </div>
       <div class="tier featured reveal">
-        <span class="ribbon">Oba dni</span>
-        <small>Dzień I + Dzień II</small>
+        <span class="ribbon">Pakiet premium</span>
+        <small>Pakiet</small>
         <div class="tier-name">Partner Główny Kongresu</div>
-        <ul><li>Widoczność podczas obu dni Kongresu</li><li>Wyłączność branżowa całego wydarzenia i&nbsp;4 miejsca VIP</li><li>Wystąpienie eksperckie i&nbsp;strefa partnera w&nbsp;Dniu II</li><li>Pełny pakiet medialny</li><li>20 uzgodnionych rozmów B2B</li></ul>
+        <ul><li>Pełna widoczność podczas Kongresu</li><li>Wyłączność branżowa całego wydarzenia i&nbsp;4 miejsca VIP</li><li>Wystąpienie eksperckie i&nbsp;strefa partnera</li><li>Pełny pakiet medialny</li><li>20 uzgodnionych rozmów B2B</li></ul>
       </div>
     </div>
-    <p class="tier-note reveal">Maksymalnie 3 Partnerów Strategicznych Dnia I z&nbsp;wyłącznością branżową. Każdy partner przechodzi weryfikację reputacyjną. Kontakty po wydarzeniu są umawiane za zgodą obu stron — baza uczestników nie jest sprzedawana ani przekazywana.</p>
+    <p class="tier-note reveal">Maksymalnie 3 Partnerów Strategicznych z&nbsp;wyłącznością branżową. Każdy partner przechodzi weryfikację reputacyjną. Kontakty po wydarzeniu są umawiane za zgodą obu stron — baza uczestników nie jest sprzedawana ani przekazywana.</p>
     <div class="partners-grid reveal">
       <div class="plogo main logo-tile"><img src="assets/pwcc-logo.png" alt="Polish Women Chamber of Commerce" loading="lazy" width="782" height="295"></div>
       <div class="plogo main">Business Women<br>IMPACT</div>
@@ -849,7 +827,8 @@ footer .logo{margin-bottom:26px}
       </div>
       <div class="field"><label for="f-type">Zgłaszam się jako</label>
         <select id="f-type" name="type">
-          <option>Uczestniczka / uczestnik Dnia II</option>
+          <option>Uczestniczka / uczestnik Kongresu (offline)</option>
+          <option>Uczestnictwo online (stream)</option>
           <option>Izba gospodarcza / delegacja</option>
           <option>Partner / wystawca</option>
           <option>Prelegentka / prelegent</option>
@@ -876,7 +855,7 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <div class="f-title">Kongres Gospodarczy<strong>Kobiet Biznesu</strong><span>5–6.11.2026 · Butelkownia, Warszawa</span></div>
+        <div class="f-title">Kongres Gospodarczy<strong>Kobiet Biznesu</strong><span>6.11.2026 · Butelkownia, Warszawa</span></div>
         <div class="f-publisher"><small>Organizator</small><a href="https://polishwomenchamber.pl/" target="_blank" rel="noopener"><img src="assets/pwcc-logo-gold.png" alt="Polish Women Chamber of Commerce" loading="lazy" width="782" height="295"></a></div>
         <div class="socials">
           <a href="https://www.linkedin.com/company/izba-gospodarcza-polish-women-chamber-pwc" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></a>
@@ -886,7 +865,7 @@ footer .logo{margin-bottom:26px}
       </div>
       <div>
         <h5>Kongres</h5>
-        <ul><li><a href="#o-kongresie">O Kongresie</a></li><li><a href="#program">Program</a></li><li><a href="#centra">Centra Biznesowe</a></li><li><a href="#gwcc">Global Women Chamber of Commerce</a></li><li><a href="#partnerzy">Partnerzy</a></li><li><a href="#rejestracja">Rejestracja</a></li></ul>
+        <ul><li><a href="#o-kongresie">O Kongresie</a></li><li><a href="#program">Program</a></li><li><a href="#centra">Centra Biznesowe</a></li><li><a href="#partnerzy">Partnerzy</a></li><li><a href="#rejestracja">Rejestracja</a></li></ul>
       </div>
       <div>
         <h5>Ekosystem PWCC</h5>
@@ -916,7 +895,7 @@ const I18N_EN = {
   "· Butelkownia, Warszawa": "· Butelkownia, Warsaw",
   "Kongres Gospodarczy": "Economic Congress",
   "Kobiet Biznesu": "of Business Women",
-  "Warszawa · 5–6.11.2026": "Warsaw · 5–6.11.2026",
+  "Warszawa · 6.11.2026": "Warsaw · 6.11.2026",
   "O Kongresie": "About",
   "Program": "Programme",
   "Magazyn": "Magazine",
@@ -944,6 +923,26 @@ const I18N_EN = {
   "listopada 2026": "November 2026",
   "Butelkownia · Warszawa · 11:30": "Butelkownia · Warsaw · 11:30 am",
   "Dołącz online – stream": "Join online – live stream",
+  "delegacji zagranicznych": "international delegations",
+  "uczestników online i offline": "participants online and offline",
+  "25 delegacji zagranicznych": "25 international delegations",
+  "— izby gospodarcze i organizacje kobiet biznesu z różnych części świata.": "— chambers of commerce and women’s business organisations from around the world.",
+  "— międzynarodowy dzień biznesu dla 500 uczestników online i offline: debaty, IMPACT Talks, Centra Biznesowe i networking.": "— an international business day for 500 participants online and offline: debates, IMPACT Talks, Business Centres and networking.",
+  "Delegacji zagranicznych": "International delegations",
+  "Uczestników online i offline": "Participants online and offline",
+  "Bloki IMPACT Talks": "IMPACT Talks sessions",
+  "Dzień, w którym kobiecy biznes": "The day women in business",
+  "Butelkownia, Warszawa · od 11:30": "Butelkownia, Warsaw · from 11:30 am",
+  "Międzynarodowy dzień biznesu, relacji i realnych możliwości współpracy — dla 500 uczestników online i offline.": "An international day of business, relationships and real opportunities for cooperation — for 500 participants online and offline.",
+  "Partner Strategiczny": "Strategic Partner",
+  "Logo w komunikacji Kongresu i obecność w katalogu": "Logo in Congress communications and a listing in the directory",
+  "Pakiet premium": "Premium package",
+  "Pakiet": "Package",
+  "Pełna widoczność podczas Kongresu": "Full visibility throughout the Congress",
+  "Wystąpienie eksperckie i strefa partnera": "An expert talk and a partner zone",
+  "Maksymalnie 3 Partnerów Strategicznych z wyłącznością branżową. Każdy partner przechodzi weryfikację reputacyjną. Kontakty po wydarzeniu są umawiane za zgodą obu stron — baza uczestników nie jest sprzedawana ani przekazywana.": "A maximum of 3 Strategic Partners, each with sector exclusivity. Every partner undergoes reputational vetting. Post-event meetings are arranged with the consent of both sides — the participant database is never sold or shared.",
+  "Uczestniczka / uczestnik Kongresu (offline)": "Congress participant (in person)",
+  "Uczestnictwo online (stream)": "Online participation (live stream)",
   "Transmisja online · naffy.io": "Live stream · naffy.io",
   "5 listopada 2026 · 11:00 · Butelkownia, Warszawa": "5 November 2026 · 11:00 am · Butelkownia, Warsaw",
   "Dni": "Days",
@@ -1142,7 +1141,7 @@ const I18N_EN = {
   "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie Kongresu Gospodarczego Kobiet Biznesu i magazynu Business Women IMPACT.": "I consent to the processing of my personal data for the purpose of being contacted about the Economic Congress of Business Women and Business Women IMPACT magazine.",
   "Wyślij zgłoszenie": "Send registration",
   "Dziękujemy! Otworzyliśmy Twój program pocztowy z gotowym zgłoszeniem — wystarczy kliknąć „Wyślij”.": "Thank you! Your email app has opened with your registration ready — simply press “Send”.",
-  "5–6.11.2026 · Butelkownia, Warszawa": "5–6.11.2026 · Butelkownia, Warsaw",
+  "6.11.2026 · Butelkownia, Warszawa": "6.11.2026 · Butelkownia, Warsaw",
   "Kongres": "Congress",
   "Centra Biznesowe": "Business Centres",
   "Ekosystem PWCC": "PWCC ecosystem",
@@ -1156,8 +1155,8 @@ const I18N_EN = {
   "Język": "Language",
   "Patricia Claudia Mitro — Prezydentka Polish Women Chamber of Commerce": "Patricia Claudia Mitro — President of the Polish Women Chamber of Commerce",
   "Twój e-mail": "Your email",
-  "__title": "Economic Congress of Business Women 2026 · 5–6 November · Butelkownia, Warsaw",
-  "__desc": "Economic Congress of Business Women — 5–6 November 2026, Butelkownia, Warsaw. Day I: Global Women Chamber of Commerce. Day II: Business Women IMPACT 2026 for 500 participants. Organiser: Polish Women Chamber of Commerce.",
+  "__title": "Economic Congress of Business Women · 6 November 2026 · Butelkownia, Warsaw",
+  "__desc": "Economic Congress of Business Women — Business Women IMPACT 2026. 6 November 2026, Butelkownia, Warsaw, starting 11:30 am. 25 international delegations, 500 participants online and offline. Organiser: Polish Women Chamber of Commerce.",
   "__alert": "Please enter your full name, a valid email address and tick the consent box.",
   "__mail": [
     "Full name",
