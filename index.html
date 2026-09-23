@@ -424,6 +424,15 @@ footer .logo{margin-bottom:26px}
   .logo{gap:7px}
 }
 
+.hero-date{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:-4px 0 30px;padding:16px 26px 16px 22px;border:1px solid rgba(228,203,148,.55);border-left:4px solid var(--gold);border-radius:14px;background:rgba(0,0,0,.18);width:fit-content;max-width:100%}
+.hero-date strong{font-family:var(--serif);font-weight:600;font-size:clamp(2.2rem,4.2vw,3.5rem);line-height:1;color:var(--gold-light);letter-spacing:-.01em;white-space:nowrap}
+.hero-date span{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:600;line-height:1.7}
+.btn-stream{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.06)}
+.btn-stream:hover{background:rgba(255,255,255,.14);border-color:#fff}
+.live-dot{width:9px;height:9px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:live 1.6s infinite;flex:none}
+@keyframes live{70%{box-shadow:0 0 0 9px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+.contact-list a:hover{color:var(--gold-light)}
+
 /* ---------- program: zakładki dni i agenda ---------- */
 .day-tabs{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto 46px}
 .day-tabs button{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:16px;padding:22px 26px;cursor:pointer;font-family:var(--sans);transition:.3s;color:var(--text)}
@@ -475,7 +484,7 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="tb-left">Organizator: <b>Polish Women Chamber of Commerce</b><span class="tb-sub"> &nbsp;·&nbsp; Izba Gospodarcza Kobiet Biznesu</span></div>
     <div class="tb-right">
-      <a href="#program"><b>5–6.11.2026</b> · Butelkownia, Warszawa</a>
+      <a href="#program"><b>6 listopada 2026</b> · Butelkownia, Warszawa</a>
     </div>
   </div>
 </div>
@@ -513,7 +522,8 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div>
       <a class="publisher" href="https://polishwomenchamber.pl/" target="_blank" rel="noopener"><img src="assets/pwcc-logo-gold.png" alt="Polish Women Chamber of Commerce" width="782" height="295"></a>
-      <h1><span class="thin">5–6 listopada 2026 · Butelkownia, Warszawa</span>Kongres Gospodarczy <em>Kobiet Biznesu</em></h1>
+      <h1><span class="thin">Butelkownia · Warszawa</span>Kongres Gospodarczy <em>Kobiet Biznesu</em></h1>
+      <div class="hero-date"><strong>6 listopada 2026</strong><span>Business Women IMPACT 2026 · start 11:30 · Butelkownia, Warszawa</span></div>
       <p class="lead">Międzynarodowe wydarzenie biznesu, relacji i&nbsp;realnych możliwości współpracy. Izby gospodarcze, delegacje z&nbsp;różnych części świata, partnerzy, prelegentki i&nbsp;przedsiębiorczynie — w&nbsp;środowisku zaprojektowanym tak, by rozmowy zamieniały się w&nbsp;konkretne projekty.</p>
       <div class="hero-meta">
         <div><small>Dzień I · 5.11 · 11:00</small><strong>Global Women Chamber of Commerce</strong></div>
@@ -524,11 +534,12 @@ footer .logo{margin-bottom:26px}
       <div class="hero-ctas">
         <a href="#rejestracja" class="btn btn-gold">Zarejestruj się <span class="arr">→</span></a>
         <a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a>
+        <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-stream" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span>Dołącz online – stream</a>
       </div>
     </div>
 
     <div class="hero-visual">
-      <div class="seal" aria-hidden="true"><div class="seal-inner">Warszawa<strong>5–6.11</strong>2026</div></div>
+      <div class="seal" aria-hidden="true"><div class="seal-inner">Warszawa<strong>6.11</strong>2026</div></div>
       <div class="arch">
         <img src="assets/patricia-claudia-mitro.jpg" alt="Patricia Claudia Mitro — Prezydentka Polish Women Chamber of Commerce" width="1023" height="1537">
         <div class="arch-cap"><strong>Patricia Claudia Mitro</strong><span>Prezydentka Polish Women Chamber of Commerce</span></div>
@@ -540,7 +551,7 @@ footer .logo{margin-bottom:26px}
 <!-- ================= COUNTDOWN ================= -->
 <div class="countdown-band">
   <div class="wrap">
-    <h3><small>Do otwarcia Kongresu pozostało</small>5 listopada 2026 · 11:00 · Butelkownia, Warszawa</h3>
+    <h3><small>Do Business Women IMPACT 2026 pozostało</small>6 listopada 2026 · 11:30 · Butelkownia, Warszawa</h3>
     <div class="cd" id="countdown" aria-live="polite">
       <div><strong id="cd-d">--</strong><span>Dni</span></div>
       <div><strong id="cd-h">--</strong><span>Godzin</span></div>
@@ -818,6 +829,7 @@ footer .logo{margin-bottom:26px}
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="4" width="18" height="17"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span>5.11 · 11:00 · Dzień I &nbsp;|&nbsp; 6.11 · 11:30 · Dzień II</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Butelkownia, Warszawa</span></li>
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg></span><a href="" data-mail>—</a></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg></span><a href="https://www.naffy.io/polishwomenchamber" target="_blank" rel="noopener">Transmisja online · naffy.io</a></li>
       </ul>
     </div>
     <form class="reg reveal" id="regForm" novalidate>
@@ -917,7 +929,13 @@ const I18N_EN = {
   "Zostań partnerem": "Become a partner",
   "Warszawa": "Warsaw",
   "Prezydentka Polish Women Chamber of Commerce": "President of the Polish Women Chamber of Commerce",
-  "Do otwarcia Kongresu pozostało": "Countdown to the Congress opening",
+  "Do Business Women IMPACT 2026 pozostało": "Countdown to Business Women IMPACT 2026",
+  "6 listopada 2026 · 11:30 · Butelkownia, Warszawa": "6 November 2026 · 11:30 am · Butelkownia, Warsaw",
+  "6 listopada 2026": "6 November 2026",
+  "Business Women IMPACT 2026 · start 11:30 · Butelkownia, Warszawa": "Business Women IMPACT 2026 · starts 11:30 am · Butelkownia, Warsaw",
+  "Butelkownia · Warszawa": "Butelkownia · Warsaw",
+  "Dołącz online – stream": "Join online – live stream",
+  "Transmisja online · naffy.io": "Live stream · naffy.io",
   "5 listopada 2026 · 11:00 · Butelkownia, Warszawa": "5 November 2026 · 11:00 am · Butelkownia, Warsaw",
   "Dni": "Days",
   "Godzin": "Hours",
@@ -1200,7 +1218,7 @@ const I18N = (() => {
    ========================================================= */
 const CONFIG = {
   email: 'biuro@polishwomenchamber.pl',
-  eventDate: '2026-11-05T11:00:00+01:00'
+  eventDate: '2026-11-06T11:30:00+01:00'
 };
 
 // e-mail w sekcji kontakt
