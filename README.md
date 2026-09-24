@@ -18,8 +18,8 @@ Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgr
 
 ## Podstrona Investment Club — `/investment-club/`
 
-Strona Polish Investment Club by PWCC: `investment-club/index.html` + grafiki w `investment-club/img/` (plakaty, `skyline.webp` w tle nagłówka, `og-investment-club.jpg` do udostępnień). Logo i zdjęcie Prezydentki są brane z głównego `assets/`.
+Strona Polish Investment Club by PWCC (jasna wersja: krem, bordo, złoto): `investment-club/index.html` + grafiki w `investment-club/img/` (plakaty, `warszawa.webp` w nagłówku, `og-investment-club.jpg` do udostępnień). Logo i zdjęcie Prezydentki są brane z głównego `assets/`.
 
 - **Harmonogram spotkań**: lista `#meetings` — każde spotkanie to `<li data-date="RRRR-MM-DD">`. Strona sama wyszarza odbyte spotkania i wyróżnia najbliższe.
-- **Formularz aplikacyjny** (Google Forms) i kontakt (Joanna Pociask, biuro@) — w sekcjach `#dolacz` i `#kontakt`.
+- **Formularz aplikacyjny** (Google Forms) i kontakt (biuro@polishwomenchamber.pl) — w sekcjach `#dolacz` i `#kontakt`.
 - Treści oparte na: Harmonogram v3 ROZSZERZONY, Regulamin Członkowski PIC, prezentacja Polish Investment Club i oferta INVESTMENT CLUB. Strona jest tylko po polsku.
