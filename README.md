@@ -25,8 +25,8 @@ Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgr
 
 ## Podstrona książki — `/publikacja-bwi/`
 
-`publikacja-bwi/index.html` to strona książki **Business Women IMPACT** (treść z kodmilionerki11.pl): cel książki, symbolika 11, 11 kodów, 50 autorek i plan rozdziału, persona czytelniczki, korzyści dla autorek, harmonogram i kontakt.
+`publikacja-bwi/index.html` to strona naboru autorek do książki **Business Women IMPACT** w szacie graficznej polishwomenchamber.pl: tytuł, zaproszenie, kogo zapraszamy, misja i opis (11 kodów), rozdział, przygotowanie, harmonogram, wartości i korzyści, wcześniejsze realizacje, rezultaty, dlaczego warto, kontakt i formularz zgłoszeniowy.
 
-- **E-mail kontaktowy i link do zapisów (Calendly)**: obiekt `CONFIG` w ostatnim `<script>`.
+- **E-mail zgłoszeń, link do spotkania (Calendly) i koniec naboru**: obiekt `CONFIG` w ostatnim `<script>`.
 - **11 kodów**: tablica `CODES` w tym samym skrypcie.
 - **Harmonogram**: sekcja `#harmonogram` — każdy punkt to jeden `<li>` z datą w `<time>`.
