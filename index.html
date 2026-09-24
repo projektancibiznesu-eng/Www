@@ -528,6 +528,37 @@ footer .logo{margin-bottom:26px}
 .rc-more h5:first-child{margin-top:0}
 .rc details summary{position:relative;z-index:3}
 .rc-lead{box-shadow:0 0 0 2px var(--gold),0 24px 50px -30px rgba(58,6,10,.55)}
+/* ---------- tryb udziału + zgody ---------- */
+.mode-tiles{display:grid;grid-template-columns:1fr 1fr;gap:18px;width:100%;max-width:820px;margin:0 auto 26px}
+.mode{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:26px 24px 22px;border-radius:18px;background:linear-gradient(135deg,#F3E2B8 0%,var(--gold) 45%,#D8B774 70%,var(--gold-deep) 100%);color:var(--ink);box-shadow:0 22px 50px -20px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .3s,box-shadow .3s;overflow:hidden}
+.mode::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-18deg);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%,60%{left:-60%}100%{left:130%}}
+.mode:hover{transform:translateY(-4px);box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.mode-ico{width:50px;height:50px;border-radius:50%;background:var(--navy);color:var(--gold-light);display:flex;align-items:center;justify-content:center;margin-bottom:4px}
+.mode-ico svg{width:24px;height:24px}
+.mode-tag{display:inline-flex;align-items:center;gap:8px;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:var(--navy)}
+.mode strong{font-family:var(--serif);font-size:1.55rem;line-height:1.15;color:var(--ink)}
+.mode-txt{font-size:.84rem;line-height:1.45;color:rgba(40,0,3,.78)}
+.mode-cta{margin-top:8px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;background:var(--navy);color:var(--gold-light);padding:10px 18px;border-radius:40px}
+.ctr-set{border:1px solid var(--line);border-radius:14px;padding:16px 16px 10px;margin:4px 0 22px}
+.ctr-set legend{padding:0 8px;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);font-weight:600}
+.ctr{display:flex;gap:12px;align-items:flex-start;padding:9px 8px;border-radius:10px;cursor:pointer}
+.ctr:hover{background:rgba(255,255,255,.05)}
+.ctr input{accent-color:var(--gold);margin-top:4px}
+.ctr b{display:block;color:#fff;font-weight:600;font-size:.92rem}
+.ctr small{display:block;color:rgba(255,255,255,.6);font-size:.78rem}
+.consents{border-top:1px solid var(--line);padding-top:16px;margin-bottom:22px}
+.cons-h{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-light);font-weight:600;margin-bottom:10px}
+.consents .consent{margin:0 0 12px;align-items:flex-start}
+.consent.all span{font-weight:700;color:#fff}
+.clause{margin:10px 0 8px;font-size:.78rem;color:rgba(255,255,255,.7)}
+.clause summary{cursor:pointer;color:var(--gold-light);font-weight:600;letter-spacing:.06em}
+.clause h6{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);margin:12px 0 4px}
+.clause p{line-height:1.55}
+.cons-note{font-size:.72rem;color:rgba(255,255,255,.5)}
+.news-consent{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:.7rem;line-height:1.45;color:rgba(255,255,255,.55)}
+.news-consent input{accent-color:var(--gold);margin-top:2px}
+@media (max-width:680px){.mode-tiles{grid-template-columns:1fr}}
 /* ---------- momenty / dyplomacja ---------- */
 .cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
 .cards5 .card{padding:30px 22px 26px}
@@ -652,11 +683,23 @@ footer .logo{margin-bottom:26px}
         <i aria-hidden="true"></i>
         <div><strong>100</strong><span>gości VIP</span></div>
       </div>
-      <div class="hero-ctas">
-        <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-gold" target="_blank" rel="noopener">Kup bilet <span class="arr">→</span></a>
-        <a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a>
-        <a href="https://www.naffy.io/polishwomenchamber" class="btn btn-stream" target="_blank" rel="noopener"><span class="live-dot" aria-hidden="true"></span>Dołącz online – stream</a>
+      <div class="mode-tiles">
+        <a class="mode" href="https://www.naffy.io/polishwomenchamber" target="_blank" rel="noopener">
+          <span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <span class="mode-tag">Na żywo</span>
+          <strong>Weź udział stacjonarnie</strong>
+          <span class="mode-txt">Butelkownia, Centrum Praskie Koneser, Warszawa · 6 listopada, 11:30–24:00</span>
+          <span class="mode-cta">Kup bilet →</span>
+        </a>
+        <a class="mode" href="https://www.naffy.io/polishwomenchamber" target="_blank" rel="noopener">
+          <span class="mode-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg></span>
+          <span class="mode-tag"><i class="live-dot"></i>Online</span>
+          <strong>Dołącz przez transmisję</strong>
+          <span class="mode-txt">Oglądaj Kongres na żywo z dowolnego miejsca na świecie</span>
+          <span class="mode-cta">Dołącz online →</span>
+        </a>
       </div>
+      <div class="hero-ctas"><a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a><a href="#rejestracja" class="btn btn-ghost">Formularz zgłoszeniowy</a></div>
     </div>
   </div>
 </section>
@@ -1078,8 +1121,15 @@ footer .logo{margin-bottom:26px}
         <div class="field"><label for="f-seek">Czego szukam?</label><input id="f-seek" name="seek"></div>
         <div class="field"><label for="f-offer">Co mogę zaoferować?</label><input id="f-offer" name="offer"></div>
       </div>
+      <fieldset class="ctr-set"><legend>Wybierz jedno z 5 Centrów Expo, w którym weźmiesz udział *</legend><label class="ctr"><input type="radio" name="centre" value="Global Markets & Export" required><span><b>Global Markets &amp; Export</b><small>eksport, nowe rynki, logistyka, dystrybucja, e-commerce</small></span></label><label class="ctr"><input type="radio" name="centre" value="Money, Investment & Capital" required><span><b>Money, Investment &amp; Capital</b><small>finansowanie, inwestycje, bankowość, fundusze</small></span></label><label class="ctr"><input type="radio" name="centre" value="ESG & Responsible Growth" required><span><b>ESG &amp; Responsible Growth</b><small>ESG, energetyka, raportowanie, łańcuchy dostaw</small></span></label><label class="ctr"><input type="radio" name="centre" value="AI, Future & Digital Business" required><span><b>AI, Future &amp; Digital Business</b><small>AI, cyberbezpieczeństwo, automatyzacja, digital</small></span></label><label class="ctr"><input type="radio" name="centre" value="Brand, Media & Wellbeing" required><span><b>Brand, Media &amp; Wellbeing</b><small>marka, media, beauty, longevity, wellbeing</small></span></label></fieldset>
       <div class="field"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" rows="2"></textarea></div>
-      <label class="consent"><input type="checkbox" id="f-consent" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie Kongresu Gospodarczego Kobiet Biznesu i magazynu Business Women IMPACT.</label>
+      <div class="consents">
+        <p class="cons-h">Zgody i informacje</p>
+        <label class="consent all"><input type="checkbox" id="c-all"><span>Zaznacz wszystkie zgody</span></label>
+        <label class="consent"><input type="checkbox" id="c-rodo" name="c-rodo" required><span>Zapoznałam/em się z klauzulą informacyjną dotyczącą przetwarzania danych osobowych przez Polish Women Chamber of Commerce. *</span></label><label class="consent"><input type="checkbox" id="c-rec" name="c-rec" required><span>Przyjmuję do wiadomości, że Kongres jest fotografowany, filmowany i transmitowany online, a relacje z wydarzenia mogą obejmować wizerunek uczestników jako szczegół większej całości (art. 81 ust. 2 pkt 2 ustawy o prawie autorskim i prawach pokrewnych). *</span></label><label class="consent"><input type="checkbox" id="c-img" name="c-img"><span>Wyrażam zgodę na nieodpłatne utrwalenie i rozpowszechnianie mojego wizerunku oraz wypowiedzi zarejestrowanych podczas Kongresu przez Polish Women Chamber of Commerce — w materiałach relacyjnych i promocyjnych, na stronie internetowej, w mediach społecznościowych, w magazynie Business Women IMPACT i Polish Women Chamber TV.</span></label><label class="consent"><input type="checkbox" id="c-match" name="c-match"><span>Wyrażam zgodę na udostępnienie mojego imienia, nazwiska, firmy i adresu e-mail wybranym uczestnikom i partnerom Kongresu w ramach Business Matchmaking Concierge.</span></label><label class="consent"><input type="checkbox" id="c-news" name="c-news"><span>Chcę otrzymywać newsletter Polish Women Chamber of Commerce z informacjami o Kongresie, wydarzeniach i inicjatywach Izby na podany adres e-mail.</span></label><label class="consent"><input type="checkbox" id="c-mkt-email" name="c-mkt-email"><span>Wyrażam zgodę na otrzymywanie od Polish Women Chamber of Commerce informacji handlowych i marketingowych drogą elektroniczną (e-mail).</span></label><label class="consent"><input type="checkbox" id="c-mkt-tel" name="c-mkt-tel"><span>Wyrażam zgodę na kontakt telefoniczny i SMS w celach marketingowych dotyczących wydarzeń i usług Polish Women Chamber of Commerce.</span></label>
+        <details class="clause"><summary>Klauzula informacyjna RODO</summary><h6>Administrator danych</h6><p>Administratorem Twoich danych osobowych jest Polish Women Chamber of Commerce — Izba Gospodarcza Kobiet Biznesu, Aleja Jana Pawła II 27, 00-867 Warszawa. W sprawach danych osobowych możesz kontaktować się pod adresem biuro@polishwomenchamber.pl.</p><h6>Cele i podstawy prawne</h6><p>Dane przetwarzamy w celu: obsługi zgłoszenia i organizacji udziału w Kongresie, w tym matchmakingu biznesowego (art. 6 ust. 1 lit. b RODO); dokumentowania i relacjonowania wydarzenia oraz dochodzenia i obrony roszczeń (art. 6 ust. 1 lit. f RODO — prawnie uzasadniony interes Administratora); wypełnienia obowiązków prawnych, np. rachunkowych (art. 6 ust. 1 lit. c RODO); a w zakresie wyrażonych zgód — publikacji wizerunku, wysyłki newslettera i komunikacji marketingowej (art. 6 ust. 1 lit. a RODO, art. 81 ustawy o prawie autorskim i prawach pokrewnych oraz art. 398 ustawy Prawo komunikacji elektronicznej).</p><h6>Odbiorcy</h6><p>Dane mogą być przekazywane podmiotom wspierającym Administratora w organizacji Kongresu (np. obsługa sprzedaży biletów, transmisji, IT, poczty elektronicznej, fotografowie) na podstawie umów powierzenia. Za Twoją zgodą dane kontaktowe mogą zostać przekazane uczestnikom lub partnerom w ramach Business Matchmaking. Baza uczestników nie jest sprzedawana.</p><h6>Okres przechowywania</h6><p>Dane przechowujemy przez czas organizacji i rozliczenia Kongresu, a następnie przez okres przedawnienia roszczeń lub wymagany przepisami; dane przetwarzane na podstawie zgody — do czasu jej wycofania.</p><h6>Twoje prawa</h6><p>Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie. Każdą zgodę możesz w dowolnym momencie wycofać — bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem — pisząc na biuro@polishwomenchamber.pl lub klikając link rezygnacji w newsletterze. Przysługuje Ci skarga do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).</p><h6>Dobrowolność</h6><p>Podanie danych oznaczonych gwiazdką jest dobrowolne, ale niezbędne do przyjęcia zgłoszenia. Wyrażenie zgód dodatkowych jest dobrowolne i nie warunkuje udziału w Kongresie. Dane nie są przekazywane poza Europejski Obszar Gospodarczy ani wykorzystywane do zautomatyzowanego podejmowania decyzji, w tym profilowania.</p></details>
+        <p class="cons-note">* pola obowiązkowe. Zgody oznaczone bez gwiazdki są dobrowolne i możesz je wycofać w każdej chwili.</p>
+      </div>
       <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Wyślij zgłoszenie <span class="arr">→</span></button>
       <p class="form-ok" id="formOk">Dziękujemy! Otworzyliśmy Twój program pocztowy z gotowym zgłoszeniem — wystarczy kliknąć „Wyślij”.</p>
     </form>
@@ -1112,6 +1162,7 @@ footer .logo{margin-bottom:26px}
         <h5>Newsletter</h5>
         <p>Otrzymaj jako pierwsza/y informacje o&nbsp;programie, prelegentkach i&nbsp;premierze magazynu.</p>
         <form class="news" id="newsForm"><input type="email" placeholder="Twój e-mail" aria-label="E-mail" required><button>Zapisz</button></form>
+        <label class="news-consent"><input type="checkbox" id="n-consent" required><span>Chcę otrzymywać newsletter Polish Women Chamber of Commerce. Zapoznałam/em się z klauzulą informacyjną RODO (w formularzu zgłoszeniowym). Zgodę mogę wycofać w każdej chwili.</span></label>
       </div>
     </div>
   </div>
@@ -1127,6 +1178,45 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "Wyrażam zgodę na udostępnienie mojego imienia, nazwiska, firmy i adresu e-mail wybranym uczestnikom i partnerom Kongresu w ramach Business Matchmaking Concierge.": "I consent to my name, company and email address being shared with selected Congress participants and partners as part of the Business Matchmaking Concierge.",
+  "Na żywo": "In person",
+  "Weź udział stacjonarnie": "Attend in person",
+  "Butelkownia, Centrum Praskie Koneser, Warszawa · 6 listopada, 11:30–24:00": "Butelkownia, Koneser Prague Centre, Warsaw · 6 November, 11:30 am–midnight",
+  "Kup bilet →": "Buy a ticket →",
+  "Online": "Online",
+  "Dołącz przez transmisję": "Join via live stream",
+  "Oglądaj Kongres na żywo z dowolnego miejsca na świecie": "Watch the Congress live from anywhere in the world",
+  "Dołącz online →": "Join online →",
+  "Formularz zgłoszeniowy": "Registration form",
+  "eksport, nowe rynki, logistyka, dystrybucja, e-commerce": "export, new markets, logistics, distribution, e-commerce",
+  "finansowanie, inwestycje, bankowość, fundusze": "financing, investment, banking, funds",
+  "ESG, energetyka, raportowanie, łańcuchy dostaw": "ESG, energy, reporting, supply chains",
+  "AI, cyberbezpieczeństwo, automatyzacja, digital": "AI, cybersecurity, automation, digital",
+  "marka, media, beauty, longevity, wellbeing": "brand, media, beauty, longevity, wellbeing",
+  "Zapoznałam/em się z klauzulą informacyjną dotyczącą przetwarzania danych osobowych przez Polish Women Chamber of Commerce. *": "I have read the information notice on the processing of personal data by the Polish Women Chamber of Commerce. *",
+  "Przyjmuję do wiadomości, że Kongres jest fotografowany, filmowany i transmitowany online, a relacje z wydarzenia mogą obejmować wizerunek uczestników jako szczegół większej całości (art. 81 ust. 2 pkt 2 ustawy o prawie autorskim i prawach pokrewnych). *": "I acknowledge that the Congress is photographed, filmed and live-streamed, and that event coverage may show participants as part of a larger whole (Art. 81(2)(2) of the Polish Copyright Act). *",
+  "Wyrażam zgodę na nieodpłatne utrwalenie i rozpowszechnianie mojego wizerunku oraz wypowiedzi zarejestrowanych podczas Kongresu przez Polish Women Chamber of Commerce — w materiałach relacyjnych i promocyjnych, na stronie internetowej, w mediach społecznościowych, w magazynie Business Women IMPACT i Polish Women Chamber TV.": "I consent, free of charge, to the Polish Women Chamber of Commerce recording and publishing my image and statements captured during the Congress in coverage and promotional materials, on the website, social media, Business Women IMPACT magazine and Polish Women Chamber TV.",
+  "Chcę otrzymywać newsletter Polish Women Chamber of Commerce z informacjami o Kongresie, wydarzeniach i inicjatywach Izby na podany adres e-mail.": "I would like to receive the Polish Women Chamber of Commerce newsletter about the Congress, events and Chamber initiatives at the email address provided.",
+  "Wyrażam zgodę na otrzymywanie od Polish Women Chamber of Commerce informacji handlowych i marketingowych drogą elektroniczną (e-mail).": "I consent to receiving commercial and marketing information from the Polish Women Chamber of Commerce by electronic means (email).",
+  "Wyrażam zgodę na kontakt telefoniczny i SMS w celach marketingowych dotyczących wydarzeń i usług Polish Women Chamber of Commerce.": "I consent to being contacted by phone and SMS for marketing purposes regarding events and services of the Polish Women Chamber of Commerce.",
+  "Administrator danych": "Data controller",
+  "Administratorem Twoich danych osobowych jest Polish Women Chamber of Commerce — Izba Gospodarcza Kobiet Biznesu, Aleja Jana Pawła II 27, 00-867 Warszawa. W sprawach danych osobowych możesz kontaktować się pod adresem biuro@polishwomenchamber.pl.": "The controller of your personal data is the Polish Women Chamber of Commerce — Chamber of Commerce for Women in Business, Aleja Jana Pawła II 27, 00-867 Warsaw, Poland. For any data protection matters, contact biuro@polishwomenchamber.pl.",
+  "Cele i podstawy prawne": "Purposes and legal bases",
+  "Dane przetwarzamy w celu: obsługi zgłoszenia i organizacji udziału w Kongresie, w tym matchmakingu biznesowego (art. 6 ust. 1 lit. b RODO); dokumentowania i relacjonowania wydarzenia oraz dochodzenia i obrony roszczeń (art. 6 ust. 1 lit. f RODO — prawnie uzasadniony interes Administratora); wypełnienia obowiązków prawnych, np. rachunkowych (art. 6 ust. 1 lit. c RODO); a w zakresie wyrażonych zgód — publikacji wizerunku, wysyłki newslettera i komunikacji marketingowej (art. 6 ust. 1 lit. a RODO, art. 81 ustawy o prawie autorskim i prawach pokrewnych oraz art. 398 ustawy Prawo komunikacji elektronicznej).": "We process data to handle your registration and organise your participation in the Congress, including business matchmaking (Art. 6(1)(b) GDPR); to document and report on the event and to establish or defend legal claims (Art. 6(1)(f) GDPR — the Controller’s legitimate interest); to meet legal obligations such as accounting (Art. 6(1)(c) GDPR); and, where you have consented, to publish your image, send the newsletter and marketing communications (Art. 6(1)(a) GDPR, Art. 81 of the Polish Copyright Act and Art. 398 of the Polish Electronic Communications Law).",
+  "Odbiorcy": "Recipients",
+  "Dane mogą być przekazywane podmiotom wspierającym Administratora w organizacji Kongresu (np. obsługa sprzedaży biletów, transmisji, IT, poczty elektronicznej, fotografowie) na podstawie umów powierzenia. Za Twoją zgodą dane kontaktowe mogą zostać przekazane uczestnikom lub partnerom w ramach Business Matchmaking. Baza uczestników nie jest sprzedawana.": "Data may be shared with entities supporting the Controller in organising the Congress (e.g. ticketing, streaming, IT, email services, photographers) under data processing agreements. With your consent, contact details may be shared with participants or partners as part of Business Matchmaking. The participant database is never sold.",
+  "Okres przechowywania": "Retention",
+  "Dane przechowujemy przez czas organizacji i rozliczenia Kongresu, a następnie przez okres przedawnienia roszczeń lub wymagany przepisami; dane przetwarzane na podstawie zgody — do czasu jej wycofania.": "We keep data for the time needed to organise and settle the Congress and then for the limitation period for claims or as required by law; data processed on the basis of consent is kept until consent is withdrawn.",
+  "Twoje prawa": "Your rights",
+  "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie. Każdą zgodę możesz w dowolnym momencie wycofać — bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem — pisząc na biuro@polishwomenchamber.pl lub klikając link rezygnacji w newsletterze. Przysługuje Ci skarga do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).": "You have the right to access, rectify and erase your data, to restrict processing, to data portability and to object to processing based on legitimate interest. You may withdraw any consent at any time — without affecting the lawfulness of processing carried out before withdrawal — by writing to biuro@polishwomenchamber.pl or using the unsubscribe link in the newsletter. You may lodge a complaint with the President of the Personal Data Protection Office (ul. Stawki 2, 00-193 Warsaw).",
+  "Dobrowolność": "Voluntary provision",
+  "Podanie danych oznaczonych gwiazdką jest dobrowolne, ale niezbędne do przyjęcia zgłoszenia. Wyrażenie zgód dodatkowych jest dobrowolne i nie warunkuje udziału w Kongresie. Dane nie są przekazywane poza Europejski Obszar Gospodarczy ani wykorzystywane do zautomatyzowanego podejmowania decyzji, w tym profilowania.": "Providing the data marked with an asterisk is voluntary but necessary to accept your registration. Additional consents are voluntary and are not a condition of participation. Data is not transferred outside the European Economic Area or used for automated decision-making, including profiling.",
+  "Wybierz jedno z 5 Centrów Expo, w którym weźmiesz udział *": "Choose one of the 5 Expo Centres you will join *",
+  "Zgody i informacje": "Consents and information",
+  "Zaznacz wszystkie zgody": "Select all consents",
+  "Klauzula informacyjna RODO": "GDPR information notice",
+  "* pola obowiązkowe. Zgody oznaczone bez gwiazdki są dobrowolne i możesz je wycofać w każdej chwili.": "* required. Consents without an asterisk are optional and can be withdrawn at any time.",
+  "Chcę otrzymywać newsletter Polish Women Chamber of Commerce. Zapoznałam/em się z klauzulą informacyjną RODO (w formularzu zgłoszeniowym). Zgodę mogę wycofać w każdej chwili.": "I would like to receive the Polish Women Chamber of Commerce newsletter. I have read the GDPR information notice (in the registration form). I can withdraw my consent at any time.",
   "Prawniczka, mentorka globalnego przywództwa kobiet, certyfikowany coach ICI, doradczyni kariery oraz mentorka w obszarze tradingu i inteligencji finansowej. Ukończyła seminaria doktorskie oraz studia podyplomowe z doradztwa zawodowego w Akademii Nauk Społecznych i Medycznych w Lublinie. Od blisko dwóch dekad tworzy inicjatywy wspierające rozwój ekonomiczny kobiet i ich udział w międzynarodowym biznesie. Jako Prezydentka PWCC rozwija partnerstwa z administracją publiczną, dyplomacją, izbami gospodarczymi i środowiskiem akademickim; zainicjowała Global Women Chamber of Commerce. Założycielka i redaktorka naczelna magazynu Business Women IMPACT, twórczyni Polish Women Chamber TV, CEO GLOBAL WOMEN INVESTMENT, MEDIA & INSURANCE GROUP. Zrealizowała ponad 150 inicjatyw biznesowych, edukacyjnych, wydawniczych i społecznych, docierając do ponad 100 000 kobiet. Współautorka ogólnopolskich raportów o ESG i obronie cywilnej, autorka książek „Przestań czekać – zacznij żyć” oraz „Przewodnik do spełnionego życia: 50 metod i ćwiczeń”. Laureatka wyróżnienia Equality Leaders 2022 Forbes Women i Ambasady Brytyjskiej, członkini Krajowego Biura Rad Kobiet w Polsce. Za swoje największe osiągnięcie uważa wytrwałość — przekształcanie wyzwań w siłę i budowanie przyszłości zgodnej z własnymi wartościami. Języki: polski, angielski.": "A lawyer, mentor in global women’s leadership, ICI-certified coach, career adviser and mentor in trading and financial intelligence. She completed doctoral seminars and postgraduate studies in career guidance at the Academy of Social and Medical Sciences in Lublin. For nearly two decades she has created initiatives supporting women’s economic development and their participation in international business. As President of PWCC she builds partnerships with public administration, diplomacy, chambers of commerce and academia, and she initiated the Global Women Chamber of Commerce. Founder and Editor-in-Chief of Business Women IMPACT magazine, creator of Polish Women Chamber TV and CEO of GLOBAL WOMEN INVESTMENT, MEDIA & INSURANCE GROUP. She has delivered over 150 business, educational, publishing and social initiatives, reaching more than 100,000 women. Co-author of national reports on ESG and civil defence, and author of the books “Przestań czekać – zacznij żyć” and “Przewodnik do spełnionego życia: 50 metod i ćwiczeń”. Recipient of the 2022 Equality Leaders award from Forbes Women and the British Embassy, and a member of the National Bureau of Women’s Councils in Poland. She considers perseverance her greatest achievement — turning challenges into strength and building a future aligned with her values. Languages: Polish, English.",
   "Jedyna Izba Gospodarcza Kobiet Biznesu w Polsce, działająca na podstawie ustawy o izbach gospodarczych i obejmująca swoimi strukturami wszystkie województwa. Organizator Kongresu Gospodarczego Kobiet Biznesu — Business Women IMPACT 2026.": "The only chamber of commerce for women in business in Poland, operating under the Polish Act on Chambers of Commerce and present in every region of the country. Organiser of the Economic Congress of Business Women — Business Women IMPACT 2026.",
   "Prezydentka": "President",
@@ -1532,7 +1622,8 @@ const I18N_EN = {
   "Twój e-mail": "Your email",
   "__title": "Economic Congress of Business Women · 6 November 2026 · Butelkownia, Warsaw",
   "__desc": "Economic Congress of Business Women — Business Women IMPACT 2026. 5–6 November 2026, Butelkownia, Koneser Prague Centre, Warsaw. Ambassadors, delegations from over 25 countries, 500+ participants and the launch of the Global Women Chamber of Commerce. Organiser: Polish Women Chamber of Commerce.",
-  "__alert": "Please enter your full name, a valid email address and tick the consent box.",
+  "__alert": "Please enter your full name and a valid email, choose an Expo Centre and tick the required statements (*).",
+  "__nalert": "Please tick the newsletter consent.",
   "__mail": [
     "Full name",
     "Company",
@@ -1551,8 +1642,9 @@ const I18N = (() => {
   const ATTRS = ['placeholder', 'aria-label', 'alt'];
   const texts = [], attrs = [];
   const PL = { __title: document.title, __desc: document.querySelector('meta[name=description]').content,
-    __alert: 'Uzupełnij imię i nazwisko, poprawny e-mail oraz zaznacz zgodę.',
-    __mail: ['Imię i nazwisko', 'Firma', 'E-mail', 'Telefon', 'Zgłoszenie jako', 'Proszę o zapis do newslettera: ', 'Kogo chcę poznać', 'Czego szukam', 'Co mogę zaoferować'],
+    __mail: ['Imię i nazwisko', 'Firma', 'E-mail', 'Telefon', 'Zgłoszenie jako', 'Proszę o zapis do newslettera (zgoda wyrażona w formularzu): ', 'Kogo chcę poznać', 'Czego szukam', 'Co mogę zaoferować', 'Centrum Expo', 'Zgody', 'TAK', 'NIE'],
+    __alert: 'Uzupełnij imię i nazwisko, poprawny e-mail, wybierz Centrum Expo i zaznacz wymagane oświadczenia (*).',
+    __nalert: 'Zaznacz zgodę na otrzymywanie newslettera.',
     __subject: 'Kongres Gospodarczy Kobiet Biznesu 2026' };
   // zapamiętaj oryginalne (polskie) teksty
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -1661,16 +1753,22 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 document.getElementById('regForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = e.target;
-  if (!f.name.value.trim() || !f.email.checkValidity() || !document.getElementById('f-consent').checked){
+  const centre = f.querySelector('input[name=centre]:checked');
+  if (!f.name.value.trim() || !f.email.checkValidity() || !centre || !f['c-rodo'].checked || !f['c-rec'].checked){
     alert(I18N.t('__alert')); return;
   }
-  const L = I18N.t('__mail');
-  const body = `${L[0]}: ${f.name.value}\n${L[1]}: ${f.company.value}\n${L[2]}: ${f.email.value}\n${L[3]}: ${f.phone.value}\n${L[4]}: ${f.type.value}\n\n${L[6]}: ${f.meet.value}\n${L[7]}: ${f.seek.value}\n${L[8]}: ${f.offer.value}\n\n${f.message.value}`;
+  const L = I18N.t('__mail'), yn = el => el.checked ? L[11] : L[12];
+  const cons = [...f.querySelectorAll('.consents input[type=checkbox]:not(#c-all)')].map(el => `[${yn(el)}] ${el.nextElementSibling.textContent.trim()}`).join('\n');
+  const body = `${L[0]}: ${f.name.value}\n${L[1]}: ${f.company.value}\n${L[2]}: ${f.email.value}\n${L[3]}: ${f.phone.value}\n${L[4]}: ${f.type.value}\n${L[9]}: ${centre.value}\n\n${L[6]}: ${f.meet.value}\n${L[7]}: ${f.seek.value}\n${L[8]}: ${f.offer.value}\n\n${f.message.value}\n\n${L[10]} (${new Date().toLocaleString()}):\n${cons}`;
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(I18N.t('__subject') + ' — ' + f.type.value)}&body=${encodeURIComponent(body)}`;
   document.getElementById('formOk').style.display = 'block';
 });
+document.getElementById('c-all').addEventListener('change', e => {
+  document.querySelectorAll('#regForm .consents input[type=checkbox]').forEach(el => { el.checked = e.target.checked; });
+});
 document.getElementById('newsForm').addEventListener('submit', e => {
   e.preventDefault();
+  if (!document.getElementById('n-consent').checked){ alert(I18N.t('__nalert')); return; }
   const v = e.target.querySelector('input').value;
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Newsletter — ' + I18N.t('__subject'))}&body=${encodeURIComponent(I18N.t('__mail')[5] + v)}`;
 });
