@@ -582,6 +582,21 @@ footer .logo{margin-bottom:26px}
 .amb{display:flex;flex-direction:column;align-items:flex-start}
 .amb-photo{width:96px;height:96px;border-radius:50%;padding:3px;background:linear-gradient(135deg,#F3E2B8,var(--gold),var(--gold-deep));margin-bottom:16px}
 .amb-photo span,.amb-photo img{width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--navy-2),var(--ink));color:var(--gold-light);font-family:var(--serif);font-size:1.9rem;object-fit:cover;border:2px solid var(--ink)}
+/* ---------- raty Comfino ---------- */
+.raty{background:linear-gradient(135deg,#B8904A 0%,#D8B97A 30%,#E9D3A0 50%,#D2B06C 72%,#A9823E 100%);color:var(--ink);padding:46px 0}
+.raty-in{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center}
+.raty-badge{width:132px;height:132px;border-radius:50%;background:var(--navy);color:var(--gold-light);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 4px rgba(255,255,255,.35),0 20px 40px -20px rgba(58,6,10,.8)}
+.raty-badge strong{font-family:var(--serif);font-size:3.2rem;line-height:1}
+.raty-badge span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.raty-txt h3{font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.1rem);color:var(--ink);margin-bottom:8px}
+.raty-txt h3 em{color:var(--navy)}
+.raty-txt p{color:rgba(40,0,3,.85)}
+.raty-txt small{display:block;margin-top:8px;font-size:.72rem;color:rgba(40,0,3,.65)}
+.raty-btn{white-space:nowrap;text-transform:none;letter-spacing:.04em}
+.raty-pill{display:inline-block;margin:0 auto 22px;padding:9px 20px;border-radius:40px;border:1px solid var(--gold);color:#fff;font-size:.82rem;background:rgba(0,0,0,.2)}
+.raty-pill b{color:var(--gold-light)}
+.raty-pill:hover{background:rgba(198,161,94,.2)}
+@media (max-width:900px){.raty-in{grid-template-columns:1fr;text-align:center;justify-items:center}.raty-btn{white-space:normal}}
 /* ---------- momenty / dyplomacja ---------- */
 .cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
 .cards5 .card{padding:30px 22px 26px}
@@ -722,6 +737,7 @@ footer .logo{margin-bottom:26px}
           <span class="mode-cta">Dołącz online →</span>
         </a>
       </div>
+      <a class="raty-pill" href="#raty">Każdą usługę możesz rozłożyć na <b>10 rat 0%</b> z Comfino</a>
       <div class="hero-ctas"><a href="#partnerzy" class="btn btn-ghost">Zostań partnerem</a><a href="#rejestracja" class="btn btn-ghost">Formularz zgłoszeniowy</a></div>
     </div>
   </div>
@@ -1131,6 +1147,19 @@ footer .logo{margin-bottom:26px}
   </div>
 </section>
 
+<!-- ================= RATY COMFINO ================= -->
+<div class="raty" id="raty">
+  <div class="wrap raty-in reveal">
+    <div class="raty-badge"><strong>10</strong><span>rat 0%</span></div>
+    <div class="raty-txt">
+      <h3>Każdą usługę możesz rozłożyć na <em>10 rat 0%</em></h3>
+      <p>Bilety, pakiety partnerskie i usługi Polish Women Chamber of Commerce możesz sfinansować w systemie ratalnym Comfino. Jeżeli jesteś zainteresowana, napisz do nas — przygotujemy szczegóły.</p>
+      <small>Finansowanie udzielane za pośrednictwem Comfino, po pozytywnej ocenie wniosku. Szczegółowe warunki przekażemy indywidualnie.</small>
+    </div>
+    <a class="btn btn-dark raty-btn" href="mailto:biuro@polishwomenchamber.pl?subject=Raty%200%25%20Comfino%20%E2%80%94%20Kongres%20Gospodarczy%20Kobiet%20Biznesu">biuro@polishwomenchamber.pl <span class="arr">→</span></a>
+  </div>
+</div>
+
 <!-- ================= REGISTER ================= -->
 <section class="register" id="rejestracja">
   <div class="wrap split" id="kontakt">
@@ -1240,6 +1269,12 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "rat 0%": "instalments at 0%",
+  "Każdą usługę możesz rozłożyć na": "Spread the cost of any service over",
+  "10 rat 0%": "10 interest-free instalments",
+  "Bilety, pakiety partnerskie i usługi Polish Women Chamber of Commerce możesz sfinansować w systemie ratalnym Comfino. Jeżeli jesteś zainteresowana, napisz do nas — przygotujemy szczegóły.": "Tickets, partnership packages and Polish Women Chamber of Commerce services can be financed through the Comfino instalment system. If you are interested, write to us and we will send you the details.",
+  "Finansowanie udzielane za pośrednictwem Comfino, po pozytywnej ocenie wniosku. Szczegółowe warunki przekażemy indywidualnie.": "Financing provided via Comfino, subject to a positive credit assessment. Detailed terms will be provided individually.",
+  "z Comfino": "with Comfino",
   "Tu tworzy się historia": "History in the making",
   "Wspólny plan współpracy gospodarczej": "A joint economic cooperation plan",
   "do grudnia 2027 r.": "through December 2027",
