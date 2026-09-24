@@ -568,7 +568,12 @@ footer .logo{margin-bottom:26px}
 .pbar-list li:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(58,6,10,.45)}
 .pbar-list img{max-height:74px;max-width:190px;width:auto;height:auto}
 .pbar-list .pbar-org img{max-width:210px}
+.pbar-list img[src$=".svg"]{width:210px;max-width:210px;max-height:94px}
 @media (max-width:680px){.pbar-list li{height:84px;min-width:130px;padding:10px 14px}.pbar-list img{max-height:58px;max-width:140px}}
+.pbar-h2{margin-top:44px}
+.pbar-txt{flex-direction:column;text-align:center;max-width:230px;gap:4px}
+.pbar-txt b{font-family:var(--serif);font-size:1.35rem;color:var(--navy);letter-spacing:.04em}
+.pbar-txt span{font-size:.62rem;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 /* ---------- momenty / dyplomacja ---------- */
 .cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
 .cards5 .card{padding:30px 22px 26px}
@@ -1151,6 +1156,8 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <p class="pbar-h">Partnerzy wydarzenia</p>
     <ul class="pbar-list"><li class="pbar-org"><img src="assets/pwcc-logo.png" alt="Polish Women Chamber of Commerce — organizator" loading="lazy"></li><li><img src="assets/partnerzy/aelix-noir.png" alt="Aelix Noir — Power of Elegance" loading="lazy"></li><li><img src="assets/partnerzy/iwork.png" alt="iwork employment" loading="lazy"></li><li><img src="assets/partnerzy/certyfikacja-krajowa.png" alt="Certyfikacja Krajowa" loading="lazy"></li><li><img src="assets/partnerzy/patricia-mitro.png" alt="Patricia Mitro" loading="lazy"></li><li><img src="assets/partnerzy/fundacja-przedsiebiorczosc.png" alt="Fundacja Przedsiębiorczość" loading="lazy"></li></ul>
+    <p class="pbar-h pbar-h2">Izby i organizacje Rady Programowej</p>
+    <ul class="pbar-list"><li><img src="assets/rada/rig-katowice.svg" alt="Regionalna Izba Gospodarcza w Katowicach" loading="lazy"></li><li><img src="assets/rada/rig-kalisz.png" alt="Regionalna Izba Gospodarcza w Kaliszu" loading="lazy"></li><li><img src="assets/rada/ptig.png" alt="Polsko-Turecka Izba Gospodarcza" loading="lazy"></li><li><img src="assets/rada/pigieik.png" alt="Polska Izba Gospodarcza Importerów, Eksporterów i Kooperacji" loading="lazy"></li><li><img src="assets/rada/klaster-goz.png" alt="Klaster Gospodarki Cyrkularnej i Recyklingu" loading="lazy"></li><li><img src="assets/rada/nanonet.png" alt="Fundacja NANONET" loading="lazy"></li><li class="pbar-txt"><b>KIGEiT</b><span>Krajowa Izba Gospodarcza Elektroniki i Telekomunikacji</span></li><li class="pbar-txt"><b>PIGAU</b><span>Polska Izba Gospodarcza Agentów Ubezpieczeniowych</span></li><li class="pbar-txt"><b>IPH Toruń</b><span>Izba Przemysłowo-Handlowa w Toruniu</span></li><li class="pbar-txt"><b>PKIHP</b><span>Polsko-Kazachstańska Izba Handlowo-Przemysłowa</span></li></ul>
   </div>
 </section>
 
@@ -1196,6 +1203,8 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "Izby i organizacje Rady Programowej": "Chambers and organisations of the Programme Council",
+  "Polsko-Kazachstańska Izba Handlowo-Przemysłowa": "Polish-Kazakh Chamber of Commerce and Industry",
   "Partnerzy wydarzenia": "Event partners",
   "Wyrażam zgodę na udostępnienie mojego imienia, nazwiska, firmy i adresu e-mail wybranym uczestnikom i partnerom Kongresu w ramach Business Matchmaking Concierge.": "I consent to my name, company and email address being shared with selected Congress participants and partners as part of the Business Matchmaking Concierge.",
   "Na żywo": "In person",
