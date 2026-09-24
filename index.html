@@ -559,6 +559,15 @@ footer .logo{margin-bottom:26px}
 .news-consent{display:flex;gap:8px;align-items:flex-start;margin-top:10px;font-size:.7rem;line-height:1.45;color:rgba(255,255,255,.55)}
 .news-consent input{accent-color:var(--gold);margin-top:2px}
 @media (max-width:680px){.mode-tiles{grid-template-columns:1fr}}
+/* ---------- pasek partnerów ---------- */
+.pbar{background:var(--paper);padding:54px 0 58px;border-top:1px solid var(--line)}
+.pbar-h{text-align:center;font-size:.7rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:30px;display:flex;align-items:center;justify-content:center;gap:16px}
+.pbar-h::before,.pbar-h::after{content:"";width:48px;height:1px;background:var(--gold)}
+.pbar-list{list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:22px 30px}
+.pbar-list li{height:104px;min-width:170px;padding:14px 22px;background:#fff;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;transition:transform .3s,box-shadow .3s}
+.pbar-list li:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(58,6,10,.45)}
+.pbar-list img{max-height:74px;max-width:190px;width:auto;height:auto}
+@media (max-width:680px){.pbar-list li{height:84px;min-width:130px;padding:10px 14px}.pbar-list img{max-height:58px;max-width:140px}}
 /* ---------- momenty / dyplomacja ---------- */
 .cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
 .cards5 .card{padding:30px 22px 26px}
@@ -1136,6 +1145,14 @@ footer .logo{margin-bottom:26px}
   </div>
 </section>
 
+<!-- ================= PARTNERZY — PASEK ================= -->
+<section class="pbar" id="partnerzy-wydarzenia" aria-label="Partnerzy wydarzenia">
+  <div class="wrap">
+    <p class="pbar-h">Partnerzy wydarzenia</p>
+    <ul class="pbar-list"><li><img src="assets/partnerzy/aelix-noir.png" alt="Aelix Noir — Power of Elegance" loading="lazy"></li><li><img src="assets/partnerzy/iwork.png" alt="iwork employment" loading="lazy"></li><li><img src="assets/partnerzy/certyfikacja-krajowa.png" alt="Certyfikacja Krajowa" loading="lazy"></li><li><img src="assets/partnerzy/patricia-mitro.png" alt="Patricia Mitro" loading="lazy"></li><li><img src="assets/partnerzy/fundacja-przedsiebiorczosc.png" alt="Fundacja Przedsiębiorczość" loading="lazy"></li></ul>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
@@ -1178,6 +1195,7 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "Partnerzy wydarzenia": "Event partners",
   "Wyrażam zgodę na udostępnienie mojego imienia, nazwiska, firmy i adresu e-mail wybranym uczestnikom i partnerom Kongresu w ramach Business Matchmaking Concierge.": "I consent to my name, company and email address being shared with selected Congress participants and partners as part of the Business Matchmaking Concierge.",
   "Na żywo": "In person",
   "Weź udział stacjonarnie": "Attend in person",
