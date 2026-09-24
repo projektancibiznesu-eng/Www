@@ -103,13 +103,21 @@ header.nav .btn{padding:15px 22px;font-size:.72rem}
 .hero-text{position:relative;display:flex;flex-direction:column;justify-content:center;padding:150px max(32px,calc((100vw - var(--max))/2 + 32px)) 90px 30px}
 .hero .kicker{color:var(--gold)}
 .hero h1{color:#fff;margin-top:22px;font-weight:800;font-size:clamp(2.8rem,5.2vw,4.8rem);line-height:.98;letter-spacing:-.02em;text-transform:uppercase}
-.hero h1 em{display:block;font-style:italic;font-weight:500;text-transform:none;color:var(--gold-light);font-size:1.12em;letter-spacing:-.01em;margin-top:.04em}
+.hero h1 em{display:block;font-style:italic;font-weight:500;text-transform:none;color:var(--gold-light);font-size:.62em;line-height:1.1;letter-spacing:-.005em;margin-top:.18em}
 .hero .sub{margin-top:20px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.86rem;color:#fff}
 .hero p.claim{margin-top:16px;max-width:560px;font-size:1.06rem;color:rgba(255,255,255,.9)}
 .hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .deadline{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:10px 16px;border-radius:40px;background:rgba(0,0,0,.18);border:1px solid rgba(228,203,148,.45);font-size:.8rem;letter-spacing:.06em}
 .deadline::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold-light);box-shadow:0 0 0 4px rgba(228,203,148,.25);flex:none}
 .deadline b{color:var(--gold-light)}
+.countdown{margin-top:34px;max-width:560px}
+.cd-label{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--gold-light)}
+.cd-boxes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.cd-boxes div{background:rgba(0,0,0,.22);border:1px solid rgba(228,203,148,.45);border-radius:10px;padding:14px 8px 12px;text-align:center}
+.cd-boxes strong{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(2rem,3.4vw,2.8rem);line-height:1;color:#fff;font-variant-numeric:tabular-nums}
+.cd-boxes span{display:block;margin-top:6px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
+.cd-note{margin-top:12px;font-size:.88rem;color:rgba(255,255,255,.85)}
+.cd-note b{color:var(--gold-light)}
 .photo-cap{position:absolute;left:32px;bottom:34px;z-index:2;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)}
 .photo-cap small{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
 .photo-cap b{font-family:var(--serif);font-size:1.4rem;font-weight:600}
@@ -348,8 +356,9 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(198,16
   .prep,.values,.bens,.results,.codes,.reasons{grid-template-columns:1fr}
   .fact{padding:20px 16px}
   .fact strong{font-size:2rem}
-  .deadline{display:block;border-radius:12px;line-height:1.6}
-  .deadline::before{display:inline-block;margin-right:10px;vertical-align:middle}
+  .cd-boxes{gap:8px}
+  .cd-boxes div{padding:12px 4px 10px}
+  .cd-boxes span{font-size:.56rem;letter-spacing:.1em}
   .res.wide{grid-column:auto;grid-template-columns:1fr;gap:10px}
   .who-card,form.f{padding:30px 22px}
   form.f{grid-template-columns:1fr}
@@ -398,15 +407,24 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(198,16
     <div class="photo-cap"><small>Redaktor Naczelna</small><b>Patricia Claudia Mitro</b></div>
   </div>
   <div class="hero-text reveal">
-    <span class="kicker">Polish Women Chamber of Commerce · Publikacja BWI</span>
-    <h1>Business Women <em>Impact</em></h1>
-    <div class="sub">Międzynarodowa książka · 50 autorek · PL / EN</div>
+    <span class="kicker">Polish Women Chamber of Commerce zaprasza</span>
+    <h1>Zostań autorką <em>książki Business Women Impact</em></h1>
+    <div class="sub">Międzynarodowa publikacja · 50 autorek · PL / EN · 3 lata współpracy</div>
     <p class="claim">Książka o&nbsp;prawdziwej drodze kobiet do pierwszego miliona obrotu — i&nbsp;Twoja biznesowa wizytówka na lata. Zostań jedną z&nbsp;50 autorek i&nbsp;dołącz do trzyletniej współpracy z&nbsp;liderkami z&nbsp;Polski i&nbsp;świata.</p>
     <div class="cta">
       <a href="#dolacz" class="btn btn-gold">Zostań autorką <span class="ar">↗</span></a>
       <a href="#zaproszenie" class="btn btn-outline">Poznaj projekt</a>
     </div>
-    <div class="deadline">Nabór wyłącznie do <b>31 października 2026</b><span id="daysLeft"></span></div>
+    <div class="countdown" id="countdown" role="timer" aria-live="off">
+      <div class="cd-label">Do końca naboru zostało</div>
+      <div class="cd-boxes">
+        <div><strong id="cd-d">00</strong><span>dni</span></div>
+        <div><strong id="cd-h">00</strong><span>godzin</span></div>
+        <div><strong id="cd-m">00</strong><span>minut</span></div>
+        <div><strong id="cd-s">00</strong><span>sekund</span></div>
+      </div>
+      <div class="cd-note">Nabór wyłącznie do <b>31 października 2026, godz. 23:59</b></div>
+    </div>
   </div>
 </section>
 
@@ -735,8 +753,22 @@ document.querySelectorAll('[data-mail]').forEach(a => { a.href = 'mailto:' + CON
 document.querySelectorAll('[data-mailtext]').forEach(b => b.textContent = CONFIG.email);
 document.querySelectorAll('[data-calendly]').forEach(a => a.href = CONFIG.calendly);
 
-const days = Math.ceil((new Date(CONFIG.deadline) - new Date()) / 864e5);
-$('#daysLeft').textContent = days > 1 ? ` · zostało ${days} dni` : days === 1 ? ' · ostatni dzień' : '';
+/* zegar odliczający do końca naboru */
+const pad = n => String(n).padStart(2, '0');
+function tick(){
+  const left = new Date(CONFIG.deadline) - new Date();
+  if (left <= 0) {
+    $('#countdown').innerHTML = '<div class="cd-label">Nabór zakończony</div><div class="cd-note">Dziękujemy za wszystkie zgłoszenia.</div>';
+    return;
+  }
+  const t = Math.floor(left / 1000);
+  $('#cd-d').textContent = pad(Math.floor(t / 86400));
+  $('#cd-h').textContent = pad(Math.floor(t % 86400 / 3600));
+  $('#cd-m').textContent = pad(Math.floor(t % 3600 / 60));
+  $('#cd-s').textContent = pad(t % 60);
+  setTimeout(tick, 1000 - Date.now() % 1000);
+}
+tick();
 
 $('#codes').innerHTML = CODES.map(([n, q], i) => `<div><b>${ROMAN[i]}</b><span>${n}<i>„${q}”</i></span></div>`).join('');
 $('#a-code').insertAdjacentHTML('beforeend', CODES.map(([n], i) => `<option>Kod ${ROMAN[i]}: ${n}</option>`).join(''));
