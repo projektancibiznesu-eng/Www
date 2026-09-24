@@ -11,612 +11,710 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://kongresgospodarczypwcc.pl/assets/patricia-claudia-mitro.jpg">
 <link rel="canonical" href="https://kongresgospodarczypwcc.pl/publikacja-bwi/">
-<meta name="theme-color" content="#5C0E1C">
+<meta name="theme-color" content="#FAF7F2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
-   PALETA — kość słoniowa, bordo, złoto
+   PALETA — bordo + szafirowy granat + złoto
    ========================================================= */
 :root{
-  --ivory:#FBF8F3;
-  --cream:#F4EDE2;
-  --sand:#EBDFCB;
-  --white:#FFFFFF;
-  --bordo:#7B1428;
-  --bordo-deep:#4B0A17;
-  --wine:#5C0E1C;
-  --gold:#B38B45;
-  --gold-soft:#D8BD86;
-  --foil:linear-gradient(120deg,#8C6A2C 0%,#D9BB7A 30%,#F4E3B5 50%,#C9A159 70%,#8C6A2C 100%);
-  --text:#33252A;
-  --muted:#7D6B6A;
-  --hair:rgba(179,139,69,.5);
-  --hair-soft:rgba(179,139,69,.24);
-  --display:'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
-  --sans:'Jost', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
-  --max:1240px;
+  --bordo:#6E0E1C;          /* bordo PWCC */
+  --bordo-deep:#3C0610;     /* ciemne bordo */
+  --night:#4B0A17;          /* najciemniejsze tło */
+  --sapphire:#7A1426;       /* szafir — akcent */
+  --sapphire-2:#B38B45;     /* szafir jaśniejszy */
+  --navy:#6A1022;           /* granat — sekcje */
+  --navy-deep:#4B0A17;
+  --gold:#C9A45C;
+  --gold-light:#E6CE98;
+  --gold-deep:#A07C3C;
+  --champagne:#F3E3BC;
+  --ivory:#FAF7F2;
+  --pearl:#F1ECE4;
+  --text:#231018;
+  --muted:#6A5A61;
+  --line:rgba(201,164,92,.36);
+  --serif:'Playfair Display', 'Bodoni 72', Didot, Georgia, serif;
+  --sans:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --max:1200px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{font-family:var(--sans);font-weight:300;color:var(--text);background:var(--ivory);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);color:var(--text);background:var(--ivory);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
-section{position:relative;overflow-x:clip}
-b,strong{font-weight:500}
-.label{font-size:.68rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);font-weight:400}
-.foil{background:var(--foil);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s ease-in-out infinite}
-@keyframes shine{50%{background-position:100% 0}}
-h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.05;color:var(--bordo-deep);text-wrap:balance}
-h2{font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.015em}
-h2 em{font-style:italic;color:var(--bordo)}
-.lead{font-size:clamp(1.02rem,1.25vw,1.12rem);color:var(--muted);max-width:600px}
-.rule{display:flex;align-items:center;gap:16px;color:var(--gold)}
-.rule::before,.rule::after{content:"";height:1px;width:56px;background:var(--hair)}
-.rule span{font-family:var(--display);font-style:italic;font-size:1.1rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:19px 36px;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:400;border:1px solid var(--bordo);transition:all .4s ease;cursor:pointer;font-family:var(--sans);white-space:nowrap}
-.btn-bordo{background:var(--bordo);color:var(--ivory)}
-.btn-bordo:hover{background:var(--bordo-deep);border-color:var(--bordo-deep);box-shadow:0 20px 40px -20px rgba(75,10,23,.7)}
-.btn-line{color:var(--bordo);border-color:var(--gold)}
-.btn-line:hover{background:var(--white)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+section{padding:110px 0;position:relative;overflow-x:clip}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:38px;height:1px;background:currentColor}
+.dark .eyebrow,.navy .eyebrow{color:var(--gold)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(2rem,4vw,3.2rem);margin:16px 0 18px;color:var(--bordo-deep)}
+h2 em{font-style:italic;font-weight:400;color:var(--sapphire)}
+.dark h2,.navy h2{color:#fff}
+.dark h2 em,.navy h2 em{color:var(--gold-light)}
+.lead{font-weight:300;font-size:clamp(1.05rem,1.4vw,1.18rem);line-height:1.75;color:var(--muted);max-width:680px}
+.dark .lead,.navy .lead{color:rgba(255,255,255,.74)}
+.head{margin-bottom:56px}
+.head.center{text-align:center}
+.head.center .lead{margin:0 auto}
+.head.center .eyebrow::after{content:"";width:38px;height:1px;background:currentColor}
+.dark{background:radial-gradient(900px 600px at 90% 0%,rgba(29,63,140,.35),transparent 60%),linear-gradient(160deg,var(--night) 0%,var(--bordo-deep) 55%,var(--bordo) 130%);color:#fff}
+.navy{background:radial-gradient(800px 500px at 10% 100%,rgba(110,14,28,.45),transparent 60%),linear-gradient(160deg,var(--navy-deep) 0%,var(--navy) 60%,#132B63 120%);color:#fff}
+.pearl{background:var(--pearl)}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:17px 30px;border-radius:2px;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;border:1px solid var(--gold);transition:all .3s ease;cursor:pointer;font-family:var(--sans)}
+.btn-gold{background:linear-gradient(135deg,var(--champagne),var(--gold) 60%);color:#2A0A12;border-color:var(--gold)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px -14px rgba(201,164,92,.75)}
+.btn-ghost{color:var(--gold-light);background:transparent}
+.btn-ghost:hover{background:rgba(201,164,92,.12)}
+.btn-sapphire{background:var(--sapphire);color:#fff;border-color:var(--sapphire)}
+.btn-sapphire:hover{background:var(--navy)}
 .arr{transition:transform .3s}
-.btn:hover .arr{transform:translateX(5px)}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--sapphire-2);outline-offset:3px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{animation:none!important}}
-
-/* ================= PASEK NABORU ================= */
-.topbar{background:var(--wine);color:var(--ivory);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;text-align:center;padding:10px 16px}
-.topbar b{color:var(--gold-soft);font-weight:500}
-.topbar a{border-bottom:1px solid var(--gold-soft);margin-left:14px;color:var(--gold-soft)}
+.note{font-size:.82rem;color:var(--muted);line-height:1.6}
 
 /* ================= MENU ================= */
-header.nav{position:sticky;top:0;z-index:60;background:rgba(251,248,243,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--hair-soft)}
-header.nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:78px;gap:20px}
-.menu{display:flex;gap:28px;list-style:none}
-.menu.right{justify-content:flex-end;align-items:center}
-.menu a{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--text);white-space:nowrap;position:relative;transition:color .3s}
-.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s}
-.menu a:hover{color:var(--bordo)}
-.menu a:hover::after{transform:scaleX(1)}
-.brand{text-align:center;line-height:1}
-.brand small{display:block;font-size:.5rem;letter-spacing:.46em;text-transform:uppercase;color:var(--gold)}
-.brand b{display:block;font-family:var(--display);font-weight:400;font-size:1.45rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bordo-deep);margin-top:6px}
-.menu .btn{padding:13px 22px;font-size:.62rem;color:var(--ivory)}
-.menu .btn::after{display:none}
-.menu .btn:hover{color:var(--ivory)}
-.burger{display:none;width:40px;height:40px;position:relative;background:none;border:0;cursor:pointer;justify-self:end}
-.burger span,.burger::before,.burger::after{content:"";position:absolute;left:9px;right:9px;height:1px;background:var(--bordo);transition:transform .3s,opacity .3s}
+header.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s,box-shadow .35s,padding .35s;padding:20px 0}
+header.nav.solid{background:rgba(20,5,16,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(201,164,92,.25);padding:12px 0}
+header.nav .wrap{display:flex;align-items:center;gap:26px}
+.brand{display:flex;flex-direction:column;color:#fff;flex:none;line-height:1}
+.brand small{font-size:.52rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.brand b{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin-top:5px}
+.brand b i{color:var(--gold-light);font-weight:500}
+.menu{display:flex;gap:22px;list-style:none;margin-left:auto}
+.menu a{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);font-weight:500;white-space:nowrap;transition:color .25s}
+.menu a:hover{color:var(--gold-light)}
+header.nav .btn{padding:12px 20px;font-size:.68rem;white-space:nowrap}
+.burger{display:none;width:40px;height:40px;position:relative;margin-left:auto;background:none;border:0;cursor:pointer}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:9px;right:9px;height:1.5px;background:var(--gold-light);transition:transform .3s,opacity .3s}
 .burger span{top:19px}.burger::before{top:12px}.burger::after{top:26px}
 .nav-open .burger span{opacity:0}
 .nav-open .burger::before{transform:translateY(7px) rotate(45deg)}
 .nav-open .burger::after{transform:translateY(-7px) rotate(-45deg)}
-.mobile-menu{display:none}
 
 /* ================= HERO ================= */
-.hero{display:grid;grid-template-columns:1.08fr .92fr;min-height:min(820px,calc(100vh - 118px));background:var(--ivory)}
-.hero-text{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px max(32px,calc((100vw - var(--max))/2 + 32px));position:relative}
-.hero-text .label{display:block}
-.hero h1{margin-top:28px;line-height:.9}
-.hero h1 .l1{display:block;font-size:clamp(1rem,1.6vw,1.35rem);letter-spacing:.5em;text-transform:uppercase;color:var(--bordo-deep);font-weight:400}
-.hero h1 .l2{display:block;font-size:clamp(4.6rem,10.5vw,9.6rem);letter-spacing:-.02em;font-weight:500;margin-top:.12em;line-height:.85}
-.hero .tag{font-family:var(--display);font-style:italic;font-size:clamp(1.3rem,2vw,1.7rem);color:var(--bordo);margin-top:26px}
-.hero p.claim{margin-top:18px;max-width:500px;font-size:1.04rem}
-.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
-.stats{display:flex;flex-wrap:wrap;gap:0;margin-top:52px;border-top:1px solid var(--hair)}
-.stats div{padding:18px 30px 0 0;margin-right:30px;border-right:1px solid var(--hair-soft)}
-.stats div:last-child{border-right:0;margin-right:0}
-.stats strong{display:block;font-family:var(--display);font-size:2.1rem;line-height:1;color:var(--bordo);font-weight:400}
-.stats span{display:block;margin-top:8px;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
-.hero-photo{position:relative;min-height:560px;background:var(--wine);overflow:hidden}
-.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 14%}
-.hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(75,10,23,0) 45%,rgba(75,10,23,.85) 100%)}
-.hero-photo::after{content:"";position:absolute;inset:22px;z-index:2;border:1px solid rgba(216,189,134,.6);pointer-events:none}
-.caption{position:absolute;left:48px;right:48px;bottom:46px;z-index:3;color:var(--ivory)}
-.caption .label{color:var(--gold-soft)}
-.caption b{display:block;font-family:var(--display);font-weight:400;font-size:1.9rem;margin-top:6px}
-.caption span{font-size:.86rem;color:rgba(251,248,243,.82)}
-.mini-book{position:absolute;z-index:4;left:-64px;top:70px;width:150px;aspect-ratio:2/3;background:linear-gradient(160deg,#8E1A30,#5A0C1C 60%,#3E0712);box-shadow:24px 30px 50px -18px rgba(40,5,12,.7),inset 5px 0 8px -3px rgba(0,0,0,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;transform:rotate(-4deg)}
-.mini-book::before{content:"";position:absolute;inset:8px;border:1px solid rgba(216,189,134,.7)}
-.mini-book small{font-size:.38rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-soft)}
-.mini-book b{font-family:var(--display);font-weight:400;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ivory);margin-top:14px}
-.mini-book i{font-family:var(--display);font-size:1.7rem;letter-spacing:.02em;font-style:normal;margin-top:2px}
+.hero{padding:160px 0 120px;overflow:hidden;background:var(--night);color:#fff}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(700px 520px at 80% 40%,rgba(46,91,196,.32),transparent 62%),
+  radial-gradient(600px 500px at 10% 90%,rgba(110,14,28,.6),transparent 65%),
+  linear-gradient(118deg,transparent 0 56%,rgba(110,14,28,.35) 56% 80%,transparent 80%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.hero .wrap > *{min-width:0}
+.hero .kicker{font-size:.76rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.hero h1{font-weight:400;margin:24px 0 0;font-size:clamp(2.6rem,6.4vw,5.2rem);letter-spacing:.04em;text-transform:uppercase;line-height:.98}
+.hero h1 span{display:block;font-size:1.45em;letter-spacing:.01em;background:linear-gradient(135deg,var(--champagne),var(--gold) 55%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .tag{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2vw,1.55rem);color:var(--gold-light);margin-top:18px}
+.hero p.claim{font-size:clamp(1rem,1.3vw,1.12rem);font-weight:300;color:rgba(255,255,255,.84);margin-top:24px;max-width:560px}
+.hero p.claim b{color:#fff;font-weight:600}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.deadline{display:inline-flex;align-items:center;gap:12px;margin-top:30px;padding:10px 16px;border:1px solid rgba(46,91,196,.7);background:rgba(29,63,140,.28);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#DCE6FF}
+.deadline::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(201,164,92,.25)}
+.deadline b{color:#fff}
+.facts{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:34px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(201,164,92,.3)}
+.facts strong{display:block;font-family:var(--serif);font-weight:500;font-size:2.1rem;line-height:1;color:var(--gold-light)}
+.facts span{display:block;margin-top:8px;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.66)}
 
-/* ================= MARQUEE ================= */
-.marquee{background:var(--bordo-deep);color:var(--gold-soft);overflow:hidden;white-space:nowrap;border-top:1px solid rgba(216,189,134,.3);border-bottom:1px solid rgba(216,189,134,.3)}
-.marquee div{display:inline-flex;gap:44px;padding:18px 0;animation:slide 40s linear infinite;font-family:var(--display);font-style:italic;font-size:1.25rem}
-.marquee span::after{content:"✦";font-style:normal;font-size:.7rem;margin-left:44px;color:var(--gold);vertical-align:middle}
-@keyframes slide{to{transform:translateX(-50%)}}
+/* książka 3D */
+.book-stage{perspective:1800px;display:flex;justify-content:center;position:relative}
+.book{width:min(320px,78vw);aspect-ratio:2/3;position:relative;transform-style:preserve-3d;transform:rotateY(-24deg) rotateX(5deg);transition:transform 1.1s cubic-bezier(.2,.8,.2,1);animation:float 8s ease-in-out infinite}
+.book-stage:hover .book{transform:rotateY(-8deg) rotateX(2deg)}
+@keyframes float{50%{translate:0 -12px}}
+.book .front{position:absolute;inset:0;overflow:hidden;transform:translateZ(18px);padding:28px 24px;display:flex;flex-direction:column;
+  background:radial-gradient(circle at 75% 20%,rgba(46,91,196,.45),transparent 50%),linear-gradient(165deg,#5A0B18 0%,#2A0510 55%,#0C1433 100%);
+  box-shadow:inset 0 0 0 1px rgba(201,164,92,.55),inset 10px 0 18px -8px rgba(0,0,0,.6)}
+.book .front::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.1) 50%,transparent 62%)}
+.book .spine{position:absolute;top:0;bottom:0;left:0;width:36px;background:linear-gradient(90deg,#0A0C22,#3A0712);transform:rotateY(-90deg) translateZ(18px) translateX(-18px);transform-origin:left}
+.book .pages{position:absolute;top:4px;bottom:4px;right:0;width:34px;background:repeating-linear-gradient(90deg,#F7EFE2 0 1px,#E2D4BD 1px 2px);transform:rotateY(90deg) translateZ(-16px) translateX(17px);transform-origin:right}
+.book .frame{position:absolute;inset:14px;border:1px solid rgba(201,164,92,.5)}
+.book .pub{position:relative;font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:center;margin-top:8px}
+.book .ttl{position:relative;text-align:center;margin-top:auto;font-family:var(--serif);text-transform:uppercase;color:#fff;letter-spacing:.2em;font-size:1rem;line-height:1.3}
+.book .num{position:relative;text-align:center;font-family:var(--serif);font-size:3.5rem;line-height:1;margin-top:6px;background:linear-gradient(160deg,var(--champagne),var(--gold) 50%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.book .sub{position:relative;text-align:center;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:.8rem;margin-top:14px}
+.book .auth{position:relative;text-align:center;margin-top:auto;font-size:.5rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.75);padding-bottom:6px}
+.seal{position:absolute;top:0;right:4%;z-index:4;width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#4A78E0,var(--sapphire) 55%,var(--navy));display:grid;place-items:center;text-align:center;color:#fff;box-shadow:0 0 0 1px var(--gold),0 18px 40px -12px rgba(0,0,0,.6);font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;line-height:1.35}
+.seal strong{display:block;font-family:var(--serif);font-size:1.7rem;letter-spacing:0;line-height:1.05;color:var(--gold-light);font-weight:500}
 
 /* ================= WIZYTÓWKA ================= */
-.sec{padding:140px 0}
-.spread-sec{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px;align-items:center}
-.spread-sec > *{min-width:0}
-.ob > *{min-width:0}
-.spread-sec h2{margin:22px 0 22px;font-size:clamp(2.2rem,3.8vw,3.5rem)}
-.points{list-style:none;margin-top:38px;border-top:1px solid var(--hair)}
-.points li{display:grid;grid-template-columns:64px 1fr;padding:22px 0;border-bottom:1px solid var(--hair-soft)}
-.points .n{font-family:var(--display);font-style:italic;font-size:1.5rem;color:var(--gold)}
-.points h3{font-size:1.45rem;font-weight:400}
-.points p{color:var(--muted);font-size:.96rem;margin-top:4px}
-/* otwarta książka */
-.open-book{position:relative;perspective:2000px;padding:30px 0}
-.ob{display:grid;grid-template-columns:1fr 1fr;transform:rotateX(14deg) rotateZ(-2deg);box-shadow:0 60px 90px -50px rgba(75,10,23,.55);position:relative}
-.ob::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:60px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.14) 48%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.14) 52%,transparent);pointer-events:none}
-.pg{aspect-ratio:3/4;background:#FFFDF8;padding:34px 30px;position:relative;display:flex;flex-direction:column}
-.pg.l{background:linear-gradient(160deg,#8E1A30,#5A0C1C);color:var(--ivory);justify-content:flex-end}
-.pg.l::before{content:"";position:absolute;inset:14px;border:1px solid rgba(216,189,134,.55)}
-.pg .chap{font-size:.52rem;letter-spacing:.36em;text-transform:uppercase;color:var(--gold-soft);position:relative}
-.pg.l .code{font-family:var(--display);font-size:4.5rem;line-height:1;position:relative;margin-top:6px}
-.pg.l .code-n{font-family:var(--display);font-style:italic;font-size:1.3rem;color:var(--gold-soft);position:relative}
-.pg.r .chap{color:var(--gold)}
-.pg.r h4{font-size:1.5rem;margin-top:10px;font-weight:400}
-.pg.r h4 em{display:block;font-size:.95rem;color:var(--muted);font-style:italic;margin-top:4px}
-.pg.r .dropcap{margin-top:18px;font-family:var(--display);font-size:.78rem;line-height:1.6;color:var(--muted)}
-.pg.r .dropcap::first-letter{float:left;font-size:3.2rem;line-height:.8;padding:4px 8px 0 0;color:var(--bordo)}
-.pg.r .lines{margin-top:auto;display:grid;gap:7px}
-.pg.r .lines i{display:block;height:2px;background:rgba(123,20,40,.1)}
-.pg.r .lines i:nth-child(3n){width:70%}
-.pg.r .qr{position:absolute;right:26px;bottom:26px;width:38px;height:38px;border:2px solid var(--bordo);background:repeating-linear-gradient(90deg,var(--bordo) 0 3px,transparent 3px 6px),repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,253,248,.9) 3px 6px);opacity:.75}
-.ob-note{text-align:center;margin-top:26px;font-family:var(--display);font-style:italic;color:var(--muted)}
-
-/* ================= 3 LATA ================= */
-.years-sec{background:var(--cream)}
-.center{text-align:center}
-.center .lead{margin:18px auto 0}
-.center .rule{justify-content:center}
-.journey{display:grid;grid-template-columns:repeat(3,1fr);margin-top:80px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-.stop{padding:54px 36px 50px;text-align:center;position:relative}
-.stop + .stop{border-left:1px solid var(--hair-soft)}
-.stop .yr{font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
-.stop .place{display:block;font-family:var(--display);font-style:italic;font-size:clamp(3rem,5.5vw,4.8rem);color:var(--bordo);line-height:1.05;margin-top:10px}
-.stop .when{display:block;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-.stop p{margin-top:20px;color:var(--muted);font-size:.95rem}
-.alongside{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
-.al{display:flex;gap:18px;align-items:flex-start}
-.al .d{flex:none;width:12px;height:12px;border:1px solid var(--gold);transform:rotate(45deg);margin-top:9px}
-.al b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem;color:var(--bordo-deep)}
-.al span{font-size:.92rem;color:var(--muted)}
-
-/* ================= PAKIET (ZAPROSZENIE) ================= */
-.invite{max-width:960px;margin:70px auto 0;background:var(--white);padding:70px 70px 60px;position:relative;box-shadow:0 50px 100px -60px rgba(75,10,23,.5)}
-.invite::before{content:"";position:absolute;inset:14px;border:1px solid var(--hair)}
-.invite::after{content:"";position:absolute;inset:20px;border:1px solid var(--hair-soft)}
-.invite > *{position:relative;z-index:1}
-.invite h3{text-align:center;font-size:2.4rem;font-weight:400}
-.invite .sub{text-align:center;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-top:10px}
-.menu-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 60px;margin-top:46px}
-.menu-list li{display:grid;grid-template-columns:44px 1fr;padding:18px 0;border-bottom:1px solid var(--hair-soft)}
-.menu-list .rn{font-family:var(--display);font-style:italic;color:var(--gold);font-size:1.15rem}
-.menu-list b{display:block;font-family:var(--display);font-weight:400;font-size:1.25rem;color:var(--bordo-deep)}
-.menu-list span{font-size:.9rem;color:var(--muted)}
-.pct-band{margin-top:50px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding:34px 44px;background:linear-gradient(120deg,var(--wine),var(--bordo));color:var(--ivory)}
-.pct-band .big{font-family:var(--display);font-size:6rem;line-height:.9;font-weight:500}
-.pct-band b{display:block;font-family:var(--display);font-weight:400;font-size:1.6rem}
-.pct-band p{color:rgba(251,248,243,.82);margin-top:4px}
-.title-note{text-align:center;margin-top:34px;font-family:var(--display);font-style:italic;font-size:1.2rem;color:var(--bordo)}
-.title-note small{display:block;font-family:var(--sans);font-style:normal;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.card-sec{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.big{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.35;color:var(--bordo-deep)}
+.big em{font-style:italic;color:var(--sapphire)}
+.uses{list-style:none;display:grid;gap:0;margin-top:28px;border-top:1px solid var(--line)}
+.uses li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:18px 0;border-bottom:1px solid var(--line)}
+.uses .ic{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold-light)}
+.uses .ic svg{width:20px;height:20px}
+.uses h3{font-size:1.15rem;color:var(--bordo-deep)}
+.uses p{font-size:.92rem;color:var(--muted);margin-top:2px}
+.vcard{position:relative;aspect-ratio:1.75/1;max-width:520px;margin:0 auto;border-radius:6px;padding:34px 36px;color:#fff;display:flex;flex-direction:column;
+  background:radial-gradient(circle at 85% 15%,rgba(46,91,196,.55),transparent 55%),linear-gradient(150deg,var(--bordo) 0%,var(--bordo-deep) 55%,var(--navy) 120%);
+  box-shadow:0 40px 80px -40px rgba(12,27,63,.8),inset 0 0 0 1px rgba(201,164,92,.5);transform:rotate(-3deg)}
+.vcard + .vcard{margin-top:-60px;transform:rotate(4deg) translateX(40px);background:linear-gradient(150deg,var(--navy) 0%,var(--navy-deep) 100%);z-index:-1;position:relative}
+.vcard small{font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.vcard h4{font-family:var(--serif);font-size:1.7rem;font-weight:500;margin-top:8px}
+.vcard h4 i{color:var(--gold-light)}
+.vcard p{margin-top:auto;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.vcard .qr{position:absolute;right:30px;bottom:30px;width:54px;height:54px;background:
+  conic-gradient(from 90deg at 30% 30%,#fff 25%,transparent 0) 0 0/12px 12px,rgba(255,255,255,.12);border:3px solid #fff;border-radius:3px;opacity:.85}
+.vstack{position:relative;isolation:isolate;padding:30px 0 60px}
 
 /* ================= PRZESŁANIE ================= */
-.message-sec{background:var(--bordo-deep);color:var(--ivory);padding:130px 0}
-.message-sec::before{content:"";position:absolute;inset:26px;border:1px solid rgba(216,189,134,.3);pointer-events:none}
-.message{max-width:980px;margin:0 auto;text-align:center}
-.message .label{color:var(--gold-soft)}
-.message blockquote{font-family:var(--display);font-style:italic;font-size:clamp(1.55rem,2.8vw,2.45rem);line-height:1.35;margin-top:34px;color:var(--ivory);font-weight:400}
-.message blockquote::before{content:"";display:block;width:14px;height:14px;margin:0 auto 30px;border:1px solid var(--gold-soft);transform:rotate(45deg)}
-.signer{display:inline-flex;align-items:center;gap:22px;margin-top:46px;text-align:left}
-.signer img{width:92px;height:92px;border-radius:50%;object-fit:cover;object-position:50% 16%;box-shadow:0 0 0 1px var(--gold-soft),0 0 0 6px var(--bordo-deep),0 0 0 7px rgba(216,189,134,.5)}
-.signer b{display:block;font-family:var(--display);font-weight:400;font-size:1.6rem;color:var(--gold-soft)}
-.signer span{display:block;font-size:.78rem;letter-spacing:.06em;color:rgba(251,248,243,.75)}
+.message{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.portrait{position:relative;max-width:420px;width:100%;margin:0 auto}
+.portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 16%;border-radius:2px;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.portrait::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold);z-index:-1}
+.portrait{isolation:isolate}
+.quote{font-family:var(--serif);font-size:clamp(1.35rem,2.3vw,1.9rem);line-height:1.4;color:#fff;font-weight:400;position:relative}
+.quote::before{content:"„";position:absolute;left:0;top:-1.05em;font-size:5rem;color:var(--gold);line-height:1;opacity:.8}
+.quote em{color:var(--gold-light)}
+.sign{margin-top:30px;padding-top:22px;border-top:1px solid rgba(201,164,92,.35)}
+.sign b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:500;color:var(--gold-light)}
+.sign span{display:block;font-size:.78rem;letter-spacing:.1em;color:rgba(255,255,255,.7);margin-top:4px}
 
 /* ================= DLA KOGO ================= */
-.who{display:grid;grid-template-columns:1fr 1fr;margin-top:80px}
-.who article{padding:10px 64px}
-.who article + article{border-left:1px solid var(--hair)}
-.who h3{font-size:2.6rem;font-style:italic;color:var(--bordo)}
-.who .label{display:block;margin-bottom:12px}
-.who ul{list-style:none;margin-top:26px}
-.who li{padding:14px 0 14px 28px;border-bottom:1px solid var(--hair-soft);position:relative;font-size:1rem}
-.who li::before{content:"";position:absolute;left:0;top:23px;width:8px;height:8px;border:1px solid var(--gold);transform:rotate(45deg)}
-.who .q{margin-top:28px;font-family:var(--display);font-style:italic;font-size:1.25rem;color:var(--bordo);line-height:1.4}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.who article{background:#fff;border:1px solid rgba(110,14,28,.1);padding:40px 38px;position:relative;overflow:hidden}
+.who article::before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--bordo),var(--sapphire))}
+.who .k{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sapphire);font-weight:700}
+.who h3{font-size:1.75rem;color:var(--bordo-deep);margin:8px 0 18px}
+.checks{list-style:none;display:grid;gap:10px}
+.checks li{position:relative;padding-left:32px;color:var(--text);font-size:.98rem}
+.checks li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E6CE98' stroke-width='3'%3E%3Cpath d='M5 12l5 5L19 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.who blockquote{margin-top:22px;padding:16px 20px;background:var(--pearl);border-left:3px solid var(--gold);font-family:var(--serif);font-style:italic;color:var(--bordo-deep);font-size:1.05rem;line-height:1.45}
+
+/* ================= 3 LATA ================= */
+.years{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:10px}
+.yr{position:relative;border:1px solid rgba(201,164,92,.35);padding:36px 30px 32px;background:rgba(255,255,255,.04);transition:border-color .3s,transform .3s}
+.yr:hover{border-color:var(--gold);transform:translateY(-4px)}
+.yr .y{font-family:var(--serif);font-size:3.2rem;line-height:1;color:var(--gold-light)}
+.yr .n{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#9DB7F5;font-weight:600;margin-top:10px}
+.yr h3{font-size:1.45rem;color:#fff;margin:14px 0 10px}
+.yr p{font-size:.92rem;color:rgba(255,255,255,.72)}
+.yr .place{display:inline-flex;margin-top:18px;padding:6px 12px;border:1px solid rgba(46,91,196,.8);background:rgba(29,63,140,.35);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#DCE6FF}
+.every{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,164,92,.3);border:1px solid rgba(201,164,92,.3)}
+.every div{background:rgba(7,15,38,.55);padding:22px 24px}
+.every b{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.every span{display:block;font-family:var(--serif);font-size:1.15rem;margin-top:6px;color:#fff}
+
+/* ================= KORZYŚCI ================= */
+.bens{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ben{background:#fff;border:1px solid rgba(110,14,28,.1);padding:32px 28px 28px;transition:transform .35s,box-shadow .35s,border-color .35s}
+.ben:hover{transform:translateY(-5px);box-shadow:0 30px 60px -32px rgba(12,27,63,.4);border-color:var(--gold)}
+.ben .ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(150deg,var(--bordo),var(--bordo-deep));color:var(--gold-light);margin-bottom:18px}
+.ben:nth-child(3n+2) .ic{background:linear-gradient(150deg,var(--sapphire),var(--navy))}
+.ben .ic svg{width:22px;height:22px}
+.ben h3{font-size:1.28rem;color:var(--bordo-deep)}
+.ben p{font-size:.93rem;color:var(--muted);margin-top:8px}
+.ben.hl{background:linear-gradient(160deg,var(--navy),var(--navy-deep));border-color:var(--gold)}
+.ben.hl h3{color:var(--gold-light)}
+.ben.hl p{color:rgba(255,255,255,.75)}
+.ben.hl .ic{background:linear-gradient(135deg,var(--champagne),var(--gold));color:var(--navy)}
+.ben .pct{font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--gold-light);display:block;margin:4px 0 6px}
+.titleline{display:block;margin-top:10px;font-family:var(--serif);font-style:italic;color:var(--sapphire)}
 
 /* ================= 11 KODÓW ================= */
-.codes-sec{background:var(--cream)}
-.codes{display:grid;grid-template-columns:1fr 1fr;gap:0 80px;margin-top:70px;border-top:1px solid var(--hair)}
-.code{display:grid;grid-template-columns:70px 1fr;padding:24px 0;border-bottom:1px solid var(--hair-soft)}
-.code .rn{font-family:var(--display);font-size:1.6rem;color:var(--gold)}
-.code h3{font-size:1.6rem;font-weight:400}
-.code p{font-family:var(--display);font-style:italic;color:var(--bordo);font-size:1.05rem;margin-top:4px}
-.code.master{grid-column:1/-1;background:var(--bordo);padding:36px 40px;border:0;margin-top:26px}
-.code.master .rn,.code.master h3{color:var(--gold-soft)}
-.code.master p{color:var(--ivory);font-size:1.35rem}
-.chapter-note{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;text-align:center}
-.chapter-note div + div{border-left:1px solid var(--hair-soft)}
-.chapter-note strong{display:block;font-family:var(--display);font-size:3rem;font-weight:400;color:var(--bordo);line-height:1}
-.chapter-note span{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.shift{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:40px}
+.shift li{background:var(--ivory);padding:18px 20px;font-family:var(--serif);font-size:1.02rem;color:var(--muted)}
+.shift li b{display:block;color:var(--bordo);font-weight:500;font-size:1.12rem}
+.shift li b::before{content:"→ ";color:var(--sapphire)}
+.codes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.code{position:relative;background:#fff;border:1px solid rgba(110,14,28,.1);padding:26px 22px 22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,border-color .35s}
+.code:hover{transform:translateY(-4px);border-color:var(--gold)}
+.code .no{position:absolute;right:-4px;top:-22px;font-family:var(--serif);font-size:6.5rem;line-height:1;color:rgba(29,63,140,.08);pointer-events:none}
+.code .lbl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--sapphire);font-weight:700;position:relative}
+.code h3{font-size:1.45rem;color:var(--bordo-deep);margin-top:4px;position:relative}
+.code blockquote{font-family:var(--serif);font-style:italic;font-size:1rem;line-height:1.4;color:var(--bordo);margin-top:12px;flex:1;position:relative}
+.code .kw{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:.74rem;letter-spacing:.06em;color:var(--muted);position:relative}
+.code.master{grid-column:span 2;background:linear-gradient(150deg,var(--bordo) 0%,var(--bordo-deep) 55%,var(--navy) 120%);border-color:var(--gold)}
+.code.master .no{color:rgba(201,164,92,.2);font-size:9rem}
+.code.master h3{color:var(--gold-light);font-size:1.9rem}
+.code.master blockquote{color:#fff;font-size:1.25rem}
+.code.master .kw{color:rgba(255,255,255,.7);border-color:rgba(201,164,92,.35)}
+.code.master .lbl{color:var(--gold)}
+
+/* ================= ROZDZIAŁ ================= */
+.chapter{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.plan{list-style:none;counter-reset:s;border-top:1px solid rgba(201,164,92,.3)}
+.plan > li{counter-increment:s;position:relative;padding:15px 0 15px 52px;border-bottom:1px solid rgba(201,164,92,.22);color:rgba(255,255,255,.85);font-size:.97rem}
+.plan > li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:13px;font-family:var(--serif);font-size:1.25rem;color:var(--gold)}
+.plan b{color:#fff;font-weight:600}
+.plan .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.plan .tags span{font-size:.74rem;padding:4px 10px;border:1px solid rgba(46,91,196,.7);background:rgba(29,63,140,.3);color:#DCE6FF;border-radius:30px}
+.stat3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,164,92,.3);border:1px solid rgba(201,164,92,.3);margin-top:34px}
+.stat3 div{background:rgba(7,15,38,.5);padding:24px 16px;text-align:center}
+.stat3 strong{display:block;font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--gold-light);font-weight:500}
+.stat3 span{display:block;margin-top:8px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.66)}
 
 /* ================= HARMONOGRAM ================= */
-.tl{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);position:relative;margin-top:80px}
-.tl::before{content:"";position:absolute;left:10%;right:10%;top:7px;height:1px;background:var(--hair)}
-.tl li{position:relative;padding:40px 10px 0;text-align:center}
-.tl li::before{content:"";position:absolute;left:50%;top:1px;width:12px;height:12px;transform:translateX(-50%) rotate(45deg);background:var(--ivory);border:1px solid var(--gold)}
-.tl li.key::before{background:var(--gold)}
-.tl li.now::before{background:var(--bordo);border-color:var(--bordo)}
-.tl time{display:block;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
-.tl h4{font-size:1.4rem;margin-top:8px;font-weight:400}
+.tl{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.tl::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:linear-gradient(90deg,var(--bordo),var(--sapphire),var(--gold))}
+.tl li{position:relative;padding:34px 18px 0 0}
+.tl li::before{content:"";position:absolute;left:0;top:2px;width:15px;height:15px;border-radius:50%;background:var(--ivory);border:2px solid var(--sapphire)}
+.tl li.key::before{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 5px rgba(201,164,92,.22)}
+.tl li.now::before{background:var(--bordo);border-color:var(--bordo);box-shadow:0 0 0 5px rgba(110,14,28,.18)}
+.tl time{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sapphire);font-weight:700}
+.tl h4{font-size:1.22rem;color:var(--bordo-deep);margin-top:6px}
 .tl p{font-size:.88rem;color:var(--muted);margin-top:4px}
-.tl-note{text-align:center;margin-top:40px;font-family:var(--display);font-style:italic;color:var(--muted);font-size:1.1rem}
 
 /* ================= ZGŁOSZENIE ================= */
-.apply-sec{background:linear-gradient(180deg,var(--cream),var(--sand))}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:70px}
-.step{text-align:center}
-.step .num{font-family:var(--display);font-style:italic;font-size:3rem;color:var(--gold);line-height:1}
-.step h3{font-size:1.5rem;font-weight:400;margin-top:10px}
-.step p{font-size:.94rem;color:var(--muted);margin-top:6px}
-form.f{max-width:900px;margin:70px auto 0;background:var(--white);padding:70px 70px 56px;display:grid;grid-template-columns:1fr 1fr;gap:24px 36px;position:relative;box-shadow:0 50px 100px -60px rgba(75,10,23,.5)}
-form.f::before{content:"";position:absolute;inset:14px;border:1px solid var(--hair);pointer-events:none}
-form.f::after{content:"";position:absolute;inset:20px;border:1px solid var(--hair-soft);pointer-events:none}
-form.f > *{position:relative;z-index:1}
-form.f .fh{grid-column:1/-1;text-align:center;margin-bottom:10px}
-form.f .fh h3{font-size:2.4rem;font-weight:400}
-form.f .fh p{font-size:.66rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.apply{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+.steps{list-style:none;counter-reset:st;margin-top:30px}
+.steps li{counter-increment:st;display:grid;grid-template-columns:48px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(201,164,92,.25)}
+.steps li::before{content:counter(st);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:1.3rem;color:var(--navy);background:linear-gradient(135deg,var(--champagne),var(--gold))}
+.steps h3{font-size:1.15rem;color:#fff}
+.steps p{font-size:.9rem;color:rgba(255,255,255,.7);margin-top:2px}
+.alt{margin-top:28px;font-size:.92rem;color:rgba(255,255,255,.75)}
+.alt a{color:var(--gold-light);border-bottom:1px solid var(--gold)}
+form.f{background:var(--ivory);color:var(--text);padding:40px 38px;display:grid;grid-template-columns:1fr 1fr;gap:16px;box-shadow:0 50px 90px -50px rgba(0,0,0,.8);border-top:3px solid var(--gold)}
+form.f h3{grid-column:1/-1;font-size:1.7rem;color:var(--bordo-deep)}
+form.f .sub{grid-column:1/-1;font-size:.9rem;color:var(--muted);margin-top:-8px}
 form.f .full{grid-column:1/-1}
-form.f label{display:flex;flex-direction:column;gap:4px;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
-form.f label > span{display:block}
+form.f label{display:flex;flex-direction:column;gap:6px;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
 form.f label i{font-style:normal;color:var(--bordo)}
-form.f input,form.f select,form.f textarea{font:inherit;font-weight:300;font-size:1.02rem;letter-spacing:0;text-transform:none;color:var(--text);padding:10px 0;border:0;border-bottom:1px solid var(--hair);background:transparent;border-radius:0;outline:none;transition:border-color .3s;width:100%}
-form.f input:focus,form.f select:focus,form.f textarea:focus{border-bottom-color:var(--bordo)}
-form.f textarea{min-height:84px;resize:vertical}
-form.f .consent{flex-direction:row;align-items:flex-start;gap:12px;text-transform:none;letter-spacing:0;font-size:.84rem;line-height:1.5}
-form.f .consent input{width:auto;margin-top:4px;accent-color:var(--bordo)}
-form.f .actions{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:10px}
-form.f .actions small{font-size:.8rem;color:var(--muted)}
-form.f .actions small a{color:var(--bordo);border-bottom:1px solid var(--gold)}
-.ok{grid-column:1/-1;padding:14px 18px;background:var(--cream);border-left:2px solid var(--gold);font-size:.92rem}
+form.f label > span{display:block}
+form.f input,form.f select,form.f textarea{font:inherit;font-size:.95rem;letter-spacing:0;text-transform:none;color:var(--text);padding:13px 15px;border:1px solid rgba(12,27,63,.2);background:#fff;border-radius:2px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
+form.f input:focus,form.f select:focus,form.f textarea:focus{border-color:var(--sapphire);box-shadow:0 0 0 3px rgba(46,91,196,.18)}
+form.f textarea{min-height:110px;resize:vertical}
+form.f .consent{flex-direction:row;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-weight:400;font-size:.8rem;line-height:1.5}
+form.f .consent input{width:auto;margin-top:3px}
+form.f .actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.ok{grid-column:1/-1;padding:14px 16px;background:rgba(29,63,140,.08);border-left:3px solid var(--sapphire);font-size:.9rem;color:var(--navy)}
 
 /* ================= KONTAKT / STOPKA ================= */
-.contact{padding:100px 0;text-align:center}
-.clist{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:16px 56px;margin-top:30px}
-.clist span{display:block;font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
-.clist a,.clist em{font-family:var(--display);font-size:1.3rem;color:var(--bordo);font-style:normal}
-footer{background:var(--bordo-deep);color:rgba(251,248,243,.72);padding:74px 0 36px;font-size:.9rem}
+.contact{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:30px}
+.contact h2{margin:10px 0 0}
+.clist{list-style:none;display:grid;gap:8px;font-size:1rem}
+.clist span{display:inline-block;min-width:92px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.clist a{color:var(--sapphire);font-weight:600}
+footer{background:var(--navy-deep);color:rgba(255,255,255,.62);padding:64px 0 36px;font-size:.88rem}
 footer .top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;align-items:start}
 footer img{width:220px;height:auto}
-footer h5{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:14px;font-weight:400}
+footer h5{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:600}
 footer ul{list-style:none;display:grid;gap:8px}
-footer a:hover{color:var(--gold-soft)}
-footer details{margin-top:46px;border-top:1px solid rgba(216,189,134,.25);padding-top:22px}
-footer summary{cursor:pointer;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-soft);list-style:none;display:flex;align-items:center;gap:10px}
+footer a:hover{color:var(--gold-light)}
+footer details{margin-top:44px;border-top:1px solid rgba(201,164,92,.2);padding-top:22px}
+footer summary{cursor:pointer;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;list-style:none;display:flex;align-items:center;gap:10px}
 footer summary::-webkit-details-marker{display:none}
 footer summary::before{content:"+";font-size:1rem;width:14px}
 footer details[open] summary::before{content:"–"}
-footer details p{margin-top:14px;font-size:.8rem;line-height:1.7;color:rgba(251,248,243,.55);max-width:980px}
-footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(216,189,134,.25);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.76rem}
+footer details p{margin-top:14px;font-size:.78rem;line-height:1.7;color:rgba(255,255,255,.5);max-width:980px}
+footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(201,164,92,.2);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.76rem}
+
+
+/* =========================================================
+   JASNA SZATA GRAFICZNA — kość słoniowa, bordo, złoto
+   ========================================================= */
+header.nav.solid,.nav-open header.nav{background:rgba(250,247,242,.95);box-shadow:0 1px 0 var(--line)}
+.brand{color:var(--bordo-deep)}
+.brand b i{color:var(--bordo)}
+.menu a{color:var(--text)}
+.menu a:hover{color:var(--bordo)}
+.burger span,.burger::before,.burger::after{background:var(--bordo)}
+.nav-open .menu{background:var(--ivory)!important;border-bottom:1px solid var(--line)!important}
+.nav-open .menu a{border-bottom-color:rgba(201,164,92,.25)!important}
+.hero{background:var(--ivory);color:var(--text)}
+.hero::before{background:radial-gradient(760px 540px at 80% 42%,rgba(243,227,188,.9),transparent 64%),radial-gradient(600px 460px at 0% 100%,rgba(241,236,228,.95),transparent 70%),linear-gradient(118deg,transparent 0 60%,rgba(110,14,28,.05) 60% 82%,transparent 82%)}
+.hero h1{color:var(--bordo-deep)}
+.hero .kicker{color:var(--gold-deep)}
+.hero .tag{color:var(--bordo)}
+.hero p.claim{color:var(--text)}
+.hero p.claim b{color:var(--bordo-deep)}
+.hero .btn-ghost,.btn-ghost{color:var(--bordo);border-color:var(--gold)}
+.btn-ghost:hover{background:#fff}
+.btn-gold{background:var(--bordo);color:var(--ivory);border-color:var(--bordo)}
+.btn-gold:hover{background:var(--bordo-deep);box-shadow:0 16px 36px -14px rgba(110,14,28,.55)}
+.deadline{border-color:rgba(110,14,28,.35);background:rgba(110,14,28,.05);color:var(--bordo-deep)}
+.deadline b{color:var(--bordo)}
+.facts{border-top-color:var(--line)}
+.facts strong{color:var(--bordo)}
+.facts span{color:var(--muted)}
+.book .front{background:radial-gradient(circle at 75% 20%,rgba(243,227,188,.18),transparent 50%),linear-gradient(165deg,#8E1A2E 0%,#6A0F20 55%,#4A0914 100%)}
+.book .spine{background:linear-gradient(90deg,#3A0712,#6A0F20)}
+.seal{background:radial-gradient(circle at 30% 30%,#A3263A,var(--bordo) 55%,var(--bordo-deep));box-shadow:0 0 0 1px var(--gold),0 0 0 5px var(--ivory),0 0 0 6px var(--line),0 18px 40px -12px rgba(75,10,23,.45)}
+.vcard{background:radial-gradient(circle at 85% 15%,rgba(243,227,188,.22),transparent 55%),linear-gradient(150deg,var(--bordo) 0%,var(--bordo-deep) 100%)}
+.vcard + .vcard{background:linear-gradient(150deg,#F3E3BC,#E6CE98);color:var(--bordo-deep)}
+.vcard + .vcard small{color:var(--gold-deep)}
+.vcard + .vcard p{color:var(--bordo-deep)}
+/* sekcje, które były ciemne, są teraz jasne */
+.navy,#zgloszenie{background:var(--cream);color:var(--text)}
+.navy::before{display:none}
+.navy .eyebrow,#zgloszenie .eyebrow{color:var(--gold-deep)}
+.navy h2,#zgloszenie h2{color:var(--bordo-deep)}
+.navy h2 em,#zgloszenie h2 em{color:var(--bordo)}
+.navy .lead,#zgloszenie .lead{color:var(--muted)}
+.dark{background:linear-gradient(160deg,#5A0C1C 0%,var(--bordo) 100%)}
+.yr{background:#fff;border-color:var(--line)}
+.yr:hover{border-color:var(--gold)}
+.yr .n{color:var(--gold-deep)}
+.yr h3{color:var(--bordo-deep)}
+.yr p{color:var(--muted)}
+.yr .place{border-color:var(--bordo);background:transparent;color:var(--bordo)}
+.every{background:var(--line);border-color:var(--line)}
+.every div{background:#fff}
+.every b{color:var(--gold-deep)}
+.every span{color:var(--bordo-deep)}
+.plan{border-top-color:var(--line)}
+.plan > li{color:var(--text);border-bottom-color:rgba(201,164,92,.28)}
+.plan > li::before{color:var(--gold-deep)}
+.plan b{color:var(--bordo-deep)}
+.plan .tags span{border-color:var(--line);background:#fff;color:var(--muted)}
+.stat3{background:var(--line);border-color:var(--line)}
+.stat3 div{background:#fff}
+.stat3 strong{color:var(--bordo)}
+.stat3 span{color:var(--muted)}
+.steps li{border-bottom-color:rgba(201,164,92,.3)}
+.steps li::before{background:var(--bordo);color:var(--gold-light)}
+.steps h3{color:var(--bordo-deep)}
+.steps p,.alt{color:var(--muted)}
+.alt a{color:var(--bordo)}
+form.f{box-shadow:0 40px 80px -50px rgba(75,10,23,.45);border:1px solid var(--line);border-top:3px solid var(--bordo)}
+.ben.hl{background:linear-gradient(160deg,var(--bordo),var(--bordo-deep))}
+.ben.hl .ic{color:var(--bordo-deep)}
+.who article::before{background:linear-gradient(90deg,var(--bordo),var(--gold))}
+.who .k,.code .lbl,.tl time{color:var(--gold-deep)}
+.code .no{color:rgba(110,14,28,.07)}
+.shift li b::before{color:var(--gold)}
+.tl::before{background:linear-gradient(90deg,var(--bordo),var(--gold))}
+.tl li::before{border-color:var(--gold)}
+footer{background:var(--bordo-deep)}
 
 /* ================= RESPONSYWNOŚĆ ================= */
 @media (max-width:1180px){
-  header.nav .wrap{grid-template-columns:1fr auto}
-  .menu{display:none}
-  .brand{text-align:left}
+  .menu,header.nav .btn{display:none}
   .burger{display:block}
-  .nav-open .mobile-menu{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--ivory);padding:8px 32px 26px;border-bottom:1px solid var(--hair)}
-  .mobile-menu a{padding:14px 0;border-bottom:1px solid var(--hair-soft);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase}
-  .mobile-menu .btn{margin-top:18px;border-bottom:1px solid var(--bordo)}
+  .nav-open .menu{display:flex;position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;background:rgba(20,5,16,.98);padding:10px 28px 24px;border-bottom:1px solid rgba(201,164,92,.3)}
+  .nav-open .menu a{display:block;padding:14px 0;border-bottom:1px solid rgba(201,164,92,.15)}
+  .nav-open header.nav{background:rgba(20,5,16,.98)}
+  .codes{grid-template-columns:repeat(3,1fr)}
+  .code.master{grid-column:span 3}
 }
-@media (max-width:980px){
-  .sec{padding:100px 0}
-  .hero{grid-template-columns:1fr}
-  .hero-text{padding:70px 32px 60px}
-  .hero-photo{min-height:520px}
-  .mini-book{left:auto;right:30px;bottom:auto;top:-60px;width:120px}
-  .spread-sec{grid-template-columns:1fr;gap:60px}
-  .journey,.alongside,.steps{grid-template-columns:1fr}
-  .stop + .stop{border-left:0;border-top:1px solid var(--hair-soft)}
-  .who{grid-template-columns:1fr}
-  .who article{padding:10px 0}
-  .who article + article{border-left:0;border-top:1px solid var(--hair);padding-top:50px;margin-top:40px}
-  .codes,.menu-list{grid-template-columns:1fr}
-  .tl{grid-template-columns:1fr}
-  .tl::before{left:6px;right:auto;top:0;bottom:0;width:1px;height:auto}
-  .tl li{text-align:left;padding:0 0 30px 40px}
-  .tl li::before{left:0;top:6px;transform:rotate(45deg)}
+@media (max-width:960px){
+  section{padding:84px 0}
+  .hero .wrap,.card-sec,.message,.chapter,.apply{grid-template-columns:1fr;gap:56px}
+  .who,.years,.every{grid-template-columns:1fr}
+  .bens{grid-template-columns:1fr 1fr}
+  .shift{grid-template-columns:1fr 1fr}
+  .codes{grid-template-columns:repeat(2,1fr)}
+  .code.master{grid-column:span 2}
+  .tl{grid-template-columns:1fr;padding-left:6px}
+  .tl::before{left:13px;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(var(--bordo),var(--gold))}
+  .tl li{padding:0 0 28px 44px}
+  .tl li::before{left:6px;top:4px}
+  .portrait{max-width:340px}
   footer .top{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .wrap{padding:0 16px}
-  .sec{padding:76px 0}
-  .topbar{font-size:.6rem;letter-spacing:.16em}
-  .topbar a{display:inline-block;margin:4px 0 0 10px}
-  .brand b{font-size:1.05rem;letter-spacing:.1em}
-  .brand small{font-size:.44rem;letter-spacing:.3em}
-  .stats{display:grid;grid-template-columns:1fr 1fr}
-  .stats div{margin-right:0;padding:16px 0 0;border-right:0}
-  .open-book{padding:10px 0}
-  .ob{transform:none}
-  .hero-text{padding:54px 16px 50px}
-  .hero h1 .l1{letter-spacing:.32em}
-  .btn{white-space:normal;text-align:center;padding:17px 24px}
-  .stats div{padding-right:18px;margin-right:18px}
-  .stats strong{font-size:1.7rem}
-  .hero-photo{min-height:440px}
-  .caption{left:32px;right:32px;bottom:36px}
-  .caption b{font-size:1.5rem}
-  .mini-book{width:96px;right:22px;top:-48px}
-  .mini-book i{font-size:1.1rem}
-  .pg{padding:18px 14px}
-  .pg.l .code{font-size:2.6rem}
-  .pg.r h4{font-size:1rem}
-  .pg.r .dropcap{font-size:.6rem}
-  .pg.r .qr{width:26px;height:26px;right:14px;bottom:14px}
-  .invite,form.f{padding:50px 26px 40px}
+  section{padding:70px 0}
+  .hero{padding:130px 0 80px}
+  .hero h1{font-size:2.4rem}
+  .hero .kicker{letter-spacing:.2em;font-size:.68rem}
+  .btn{white-space:normal;text-align:center;justify-content:center}
+  .brand small{display:none}
+  .facts{grid-template-columns:1fr 1fr;gap:22px}
+  .facts strong{font-size:1.8rem}
+  .bens,.shift,.codes{grid-template-columns:1fr}
+  .code.master{grid-column:auto}
+  .who article,form.f{padding:28px 20px}
   form.f{grid-template-columns:1fr}
-  .pct-band{grid-template-columns:1fr;gap:10px;padding:28px 24px;text-align:center}
-  .pct-band .big{font-size:4.4rem}
-  .code.master{padding:28px 20px}
-  .chapter-note strong{font-size:2.2rem}
-  .message-sec::before{inset:10px}
-  .signer{flex-direction:column;text-align:center}
+  .vcard{padding:24px 22px}
+  .vcard h4{font-size:1.3rem}
+  .vcard + .vcard{transform:rotate(4deg) translateX(16px)}
+  .seal{width:92px;height:92px;font-size:.46rem}
+  .seal strong{font-size:1.35rem}
+  .stat3 strong{font-size:1.7rem}
 }
 </style>
 </head>
 <body>
 
-<!-- ================= PASEK NABORU ================= -->
-<div class="topbar">Nabór autorek wyłącznie do <b>31 października 2026</b><span id="daysLeft"></span><a href="#zgloszenie">Zgłoś się</a></div>
-
 <!-- ================= MENU ================= -->
 <header class="nav" id="nav">
   <div class="wrap">
-    <ul class="menu">
+    <a href="#top" class="brand" aria-label="Książka Business Women IMPACT — początek strony"><small>Publikacja BWI · Polish Women Chamber of Commerce</small><b>Business Women <i>IMPACT</i></b></a>
+    <ul class="menu" id="menu">
       <li><a href="#wizytowka">Wizytówka</a></li>
-      <li><a href="#3-lata">3 lata</a></li>
-      <li><a href="#pakiet">Pakiet autorki</a></li>
-    </ul>
-    <a href="#top" class="brand" aria-label="Książka Business Women IMPACT — początek strony"><small>Polish Women Chamber of Commerce</small><b>Business Women Impact</b></a>
-    <ul class="menu right">
       <li><a href="#dla-kogo">Dla kogo</a></li>
+      <li><a href="#3-lata">3 lata</a></li>
+      <li><a href="#korzysci">Korzyści</a></li>
       <li><a href="#harmonogram">Harmonogram</a></li>
-      <li><a href="#zgloszenie" class="btn btn-bordo">Zgłoś się</a></li>
+      <li><a href="#zgloszenie">Jak się zgłosić</a></li>
     </ul>
+    <a href="#zgloszenie" class="btn btn-gold">Zgłoś się</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
   </div>
-  <nav class="mobile-menu" aria-label="Menu">
-    <a href="#wizytowka">Wizytówka</a><a href="#3-lata">3 lata</a><a href="#pakiet">Pakiet autorki</a><a href="#dla-kogo">Dla kogo</a><a href="#harmonogram">Harmonogram</a><a href="#zgloszenie" class="btn btn-bordo">Zgłoś się</a>
-  </nav>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
-  <div class="hero-text reveal">
-    <span class="label">Książka · 50 autorek · Edycja PL / EN</span>
-    <h1><span class="l1">Business Women</span><span class="l2 foil">Impact</span></h1>
-    <div class="tag">Twoja biznesowa wizytówka na lata</div>
-    <p class="claim">Międzynarodowa publikacja Polish Women Chamber of Commerce, w&nbsp;której 50 liderek pokazuje swoją drogę do pierwszego miliona. A&nbsp;potem <b>trzy lata wspólnej drogi</b> — od sesji zdjęciowej po Summit w&nbsp;Dubaju.</p>
-    <div class="cta">
-      <a href="#zgloszenie" class="btn btn-bordo">Zgłoś się jako autorka <span class="arr">→</span></a>
-      <a href="#pakiet" class="btn btn-line">Pakiet autorki</a>
-    </div>
-    <div class="stats">
-      <div><strong>50</strong><span>autorek</span></div>
-      <div><strong>3 lata</strong><span>współpracy</span></div>
-      <div><strong>25%</strong><span>z&nbsp;poleceń</span></div>
-      <div><strong>3</strong><span>Summity</span></div>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="../assets/patricia-claudia-mitro.jpg" alt="Patricia Claudia Mitro, inicjatorka publikacji Business Women IMPACT" width="1023" height="1537">
-    <div class="mini-book" aria-hidden="true"><small>PWCC</small><b>Business Women</b><i class="foil">Impact</i></div>
-    <div class="caption"><span class="label">Inicjatorka i&nbsp;Redaktor Naczelna</span><b>Patricia Claudia Mitro</b><span>Prezydentka Polish Women Chamber of Commerce</span></div>
-  </div>
-</section>
-
-<!-- ================= MARQUEE ================= -->
-<div class="marquee" aria-hidden="true"><div>
-  <span>50 autorek</span><span>3 lata współpracy</span><span>Summit Polska 2027</span><span>Cypr 2028</span><span>Dubaj 2029</span><span>Edycja PL / EN</span><span>25% z poleceń</span><span>Sesja zdjęciowa i wideo</span>
-  <span>50 autorek</span><span>3 lata współpracy</span><span>Summit Polska 2027</span><span>Cypr 2028</span><span>Dubaj 2029</span><span>Edycja PL / EN</span><span>25% z poleceń</span><span>Sesja zdjęciowa i wideo</span>
-</div></div>
-
-<!-- ================= WIZYTÓWKA ================= -->
-<section class="sec" id="wizytowka">
-  <div class="wrap spread-sec">
+  <div class="wrap">
     <div class="reveal">
-      <div class="rule"><span>Wizytówka biznesowa</span></div>
-      <h2>Książka, którą wręczasz <em>zamiast wizytówki</em></h2>
-      <p class="lead">Twój rozdział to najmocniejsza prezentacja Ciebie i&nbsp;Twojej firmy: historia, liczby i&nbsp;wartości w&nbsp;eleganckiej, dwujęzycznej publikacji, która zostaje z&nbsp;Tobą na lata.</p>
-      <ol class="points">
-        <li><span class="n">I.</span><div><h3>Na spotkaniach z&nbsp;klientami</h3><p>Zamiast folderu — książka z&nbsp;Twoim rozdziałem i&nbsp;kodem QR do Twojej oferty.</p></div></li>
-        <li><span class="n">II.</span><div><h3>W&nbsp;kontaktach międzynarodowych</h3><p>Wersja angielska otwiera rozmowy z&nbsp;partnerami i&nbsp;inwestorami za granicą.</p></div></li>
-        <li><span class="n">III.</span><div><h3>Na scenie i&nbsp;w&nbsp;mediach</h3><p>Tytuł autorki, sesja zdjęciowa i&nbsp;wizytówka wideo do LinkedIn i&nbsp;prezentacji.</p></div></li>
-      </ol>
-    </div>
-    <div class="open-book reveal" aria-hidden="true">
-      <div class="ob">
-        <div class="pg l"><span class="chap">Rozdział · Kod</span><span class="code foil">VII</span><span class="code-n">System</span></div>
-        <div class="pg r"><span class="chap">Business Women Impact</span><h4>Twoje imię i&nbsp;nazwisko<em>Twoja firma · Twoja droga do miliona</em></h4><p class="dropcap">Buduję firmę, która działa, gdy śpię. Pierwszy milion był decyzją, drugi — systemem…</p><div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="qr"></span></div>
+      <span class="kicker">Książka · 50 autorek · PL / EN</span>
+      <h1>Business Women <span>IMPACT</span></h1>
+      <div class="tag">Twoja biznesowa wizytówka na lata</div>
+      <p class="claim">Międzynarodowa publikacja Polish Women Chamber of Commerce, w&nbsp;której 50 liderek pokazuje swoją drogę do <b>pierwszego miliona obrotu</b>. Do tego <b>3 lata wspólnej drogi</b>: sesja zdjęciowa, wywiad wideo, networking i&nbsp;coroczny Summit.</p>
+      <div class="cta">
+        <a href="#zgloszenie" class="btn btn-gold">Zgłoś się jako autorka <span class="arr">→</span></a>
+        <a href="#3-lata" class="btn btn-ghost">Co zyskujesz</a>
       </div>
-      <p class="ob-note">Tak może wyglądać Twój rozdział</p>
+      <div class="deadline">Nabór wyłącznie do <b>31 października 2026</b></div>
+      <div class="facts">
+        <div><strong>50</strong><span>autorek</span></div>
+        <div><strong>3 lata</strong><span>współpracy</span></div>
+        <div><strong>25%</strong><span>z&nbsp;poleceń</span></div>
+        <div><strong>PL · EN</strong><span>dwa języki</span></div>
+      </div>
+    </div>
+    <div class="book-stage reveal" aria-hidden="true">
+      <div class="seal"><div>Współpraca<strong>3 lata</strong>2027–2029</div></div>
+      <div class="book">
+        <div class="spine"></div>
+        <div class="pages"></div>
+        <div class="front">
+          <div class="frame"></div>
+          <div class="pub">Polish Women Chamber of Commerce</div>
+          <div class="ttl">Business<br>Women</div>
+          <div class="num">IMPACT</div>
+          <div class="sub">Mistrzowska droga kobiety,<br>która buduje imperium</div>
+          <div class="auth">50 autorek · edycja PL / EN</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= 3 LATA ================= -->
-<section class="sec years-sec" id="3-lata">
+<!-- ================= WIZYTÓWKA BIZNESOWA ================= -->
+<section id="wizytowka">
   <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>3 lata współpracy</span></div>
-      <h2 style="margin-top:22px">Trzy lata. Trzy Summity. <em>Trzy kraje.</em></h2>
-      <p class="lead">Publikacja to początek. Co roku w&nbsp;styczniu spotykamy się na Summicie, organizowanym dla autorek na preferencyjnych warunkach.</p>
-    </div>
-    <div class="journey reveal">
-      <div class="stop"><span class="yr">2027</span><span class="place">Polska</span><span class="when">styczeń</span><p>Pierwszy Summit, sesja zdjęciowa w&nbsp;pięknych przestrzeniach, wywiady i&nbsp;wizytówki wideo. W&nbsp;marcu inauguracja książki.</p></div>
-      <div class="stop"><span class="yr">2028</span><span class="place">Cypr</span><span class="when">styczeń</span><p>Drugi Summit autorek — relacje, wspólne projekty i&nbsp;dalsza promocja Twojej marki.</p></div>
-      <div class="stop"><span class="yr">2029</span><span class="place">Dubaj</span><span class="when">styczeń</span><p>Trzeci Summit i&nbsp;kontakty biznesowe w&nbsp;regionie Zatoki Perskiej.</p></div>
-    </div>
-    <div class="alongside reveal">
-      <div class="al"><span class="d"></span><div><b>Raz na kwartał</b><span>networking autorek online</span></div></div>
-      <div class="al"><span class="d"></span><div><b>Przez całe 3 lata</b><span>25% ze sprzedaży z&nbsp;Twojego linku</span></div></div>
-      <div class="al"><span class="d"></span><div><b>Sieć 50 liderek</b><span>z&nbsp;Polski i&nbsp;ze świata</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PAKIET AUTORKI ================= -->
-<section class="sec" id="pakiet">
-  <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>Pakiet autorki</span></div>
-      <h2 style="margin-top:22px">Wszystko, co <em>otrzymujesz</em></h2>
-    </div>
-    <div class="invite reveal">
-      <h3>Pakiet autorki</h3>
-      <p class="sub">Business Women Impact · 2027–2029</p>
-      <ul class="menu-list">
-        <li><span class="rn">I</span><div><b>Rozdział w&nbsp;książce PL / EN</b><span>10 stron, zdjęcie, biografia i&nbsp;kod QR</span></div></li>
-        <li><span class="rn">II</span><div><b>Biznesowa sesja zdjęciowa</b><span>styczeń, piękne przestrzenie</span></div></li>
-        <li><span class="rn">III</span><div><b>Wywiad wideo</b><span>profesjonalna rozmowa o&nbsp;Twojej drodze</span></div></li>
-        <li><span class="rn">IV</span><div><b>Wizytówka wideo</b><span>do LinkedIn, strony www i&nbsp;prezentacji</span></div></li>
-        <li><span class="rn">V</span><div><b>Coroczny Summit</b><span>preferencyjne warunki · Polska, Cypr, Dubaj</span></div></li>
-        <li><span class="rn">VI</span><div><b>Networking co kwartał</b><span>spotkania autorek online</span></div></li>
-        <li><span class="rn">VII</span><div><b>Promocja Twojej marki</b><span>strona projektu, social media, katalog autorek</span></div></li>
-        <li><span class="rn">VIII</span><div><b>Scena i&nbsp;media</b><span>premiera, Summit, podcasty, materiały PR</span></div></li>
-      </ul>
-      <div class="pct-band">
-        <span class="big foil">25%</span>
-        <div><b>Link afiliacyjny autorki</b><p>Każda autorka otrzymuje własny link rekomendacyjny i&nbsp;25% ze sprzedaży książek z&nbsp;jej poleceń.</p></div>
+    <div class="card-sec">
+      <div class="reveal">
+        <span class="eyebrow">Kluczowa wizytówka biznesowa</span>
+        <h2>Książka, którą <em>wręczasz zamiast wizytówki</em></h2>
+        <p class="big">Twój rozdział to najmocniejsza prezentacja Ciebie i&nbsp;Twojej firmy: <em>historia, liczby i&nbsp;wartości</em> w&nbsp;eleganckiej, dwujęzycznej publikacji.</p>
+        <ul class="uses">
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></span><div><h3>Na spotkaniach z&nbsp;klientami i&nbsp;partnerami</h3><p>Zamiast folderu firmowego — książka z&nbsp;Twoim rozdziałem i&nbsp;kodem QR do Twojej oferty.</p></div></li>
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></span><div><h3>W&nbsp;kontaktach międzynarodowych</h3><p>Wersja angielska otwiera rozmowy z&nbsp;partnerami i&nbsp;inwestorami za granicą.</p></div></li>
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5l8 5 8-5v14"/></svg></span><div><h3>Na scenie, w&nbsp;mediach i&nbsp;w&nbsp;sieci</h3><p>Tytuł autorki, sesja zdjęciowa i&nbsp;wizytówka wideo do LinkedIn, strony www i&nbsp;prezentacji.</p></div></li>
+        </ul>
       </div>
-      <p class="title-note"><small>Twój nowy tytuł</small>„Autorka międzynarodowej publikacji Business Women Impact”</p>
+      <div class="vstack reveal" aria-hidden="true">
+        <div class="vcard"><small>Autorka publikacji</small><h4>Business Women <i>IMPACT</i></h4><p>Rozdział · Sesja · Wideo · Summit</p><span class="qr"></span></div>
+        <div class="vcard"><small>Polish Women Chamber of Commerce</small><p>2027 · 2028 · 2029</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ================= PRZESŁANIE ================= -->
-<section class="message-sec" id="przeslanie">
-  <div class="wrap message reveal">
-    <span class="label">Dlaczego warto</span>
-    <blockquote>Każda z&nbsp;nas, która zbudowała firmę, ma historię wartą opowiedzenia. Ta książka pokazuje ją światu z&nbsp;klasą i&nbsp;zostaje z&nbsp;Tobą jako wizytówka biznesowa na lata. Przez trzy lata będziemy razem: na sesjach, na scenie Summitu i&nbsp;w&nbsp;sieci liderek z&nbsp;Polski i&nbsp;świata.</blockquote>
-    <div class="signer"><img src="../assets/patricia-claudia-mitro.jpg" alt="" width="1023" height="1537" loading="lazy"><div><b>Patricia Claudia Mitro</b><span>Prezydentka Polish Women Chamber of Commerce</span><span>Redaktor Naczelna Business Women IMPACT</span></div></div>
+<section class="dark" id="przeslanie">
+  <div class="wrap">
+    <div class="message">
+      <div class="portrait reveal"><img src="../assets/patricia-claudia-mitro.jpg" alt="Patricia Claudia Mitro" width="1023" height="1537" loading="lazy"></div>
+      <div class="reveal">
+        <span class="eyebrow">Dlaczego warto</span>
+        <p class="quote" style="margin-top:40px">Każda z&nbsp;nas, która zbudowała firmę, ma historię wartą opowiedzenia. Ta książka pokazuje ją światu z&nbsp;klasą — i&nbsp;<em>zostaje z&nbsp;Tobą jako wizytówka biznesowa na lata.</em> Przez trzy lata będziemy razem: na sesjach, na scenie Summitu i&nbsp;w&nbsp;sieci liderek z&nbsp;Polski i&nbsp;świata. Zapraszam Cię do grona 50 autorek.</p>
+        <div class="sign"><b>Patricia Claudia Mitro</b><span>Prezydentka Polish Women Chamber of Commerce · Redaktor Naczelna Business Women IMPACT</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ================= DLA KOGO ================= -->
-<section class="sec" id="dla-kogo">
+<section class="pearl" id="dla-kogo">
   <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>Dla kogo jest ta książka?</span></div>
-      <h2 style="margin-top:22px">Dla kobiet, które <em>budują z&nbsp;rozmachem</em></h2>
+    <div class="head center reveal">
+      <span class="eyebrow">Dla kogo jest ta książka?</span>
+      <h2>Dla kobiet, które <em>budują z&nbsp;rozmachem</em></h2>
+      <p class="lead">Piszą ją liderki, które już osiągnęły milion. Czytają kobiety, które są na tej drodze.</p>
     </div>
     <div class="who">
       <article class="reveal">
-        <span class="label">Piszą ją</span>
-        <h3>Autorki</h3>
-        <ul>
+        <span class="k">Autorki</span>
+        <h3>Zapraszamy Cię, jeśli…</h3>
+        <ul class="checks">
           <li>prowadzisz firmę z&nbsp;obrotem <b>min. 1 mln zł rocznie</b>,</li>
-          <li>działasz w&nbsp;Polsce lub za granicą, w&nbsp;dowolnej branży,</li>
+          <li>działasz w&nbsp;Polsce lub za granicą — w&nbsp;dowolnej branży,</li>
           <li>chcesz pokazać swoją drogę i&nbsp;inspirować inne kobiety,</li>
-          <li>szukasz prestiżowej wizytówki na rozmowy biznesowe,</li>
+          <li>szukasz prestiżowej wizytówki na rozmowy z&nbsp;klientami i&nbsp;partnerami,</li>
           <li>chcesz dołączyć do sieci 50 liderek na 3 lata.</li>
         </ul>
+        <blockquote>E-commerce, nieruchomości, usługi premium, technologie, edukacja, beauty, medycyna, produkcja — każda droga do miliona jest cenna.</blockquote>
       </article>
       <article class="reveal">
-        <span class="label">Czytają ją</span>
-        <h3>Czytelniczki</h3>
-        <ul>
-          <li>prowadzisz firmę i&nbsp;czujesz, że czas na więcej,</li>
+        <span class="k">Czytelniczki</span>
+        <h3>Książka jest dla Ciebie, jeśli…</h3>
+        <ul class="checks">
+          <li>prowadzisz własną firmę i&nbsp;czujesz, że czas na więcej,</li>
           <li>chcesz przejść od „robię wszystko sama” do roli CEO,</li>
-          <li>szukasz konkretnych kroków, nie tylko inspiracji,</li>
-          <li>budujesz system, zespół i&nbsp;markę, która działa bez Ciebie,</li>
-          <li>chcesz uczyć się od kobiet, które przeszły tę drogę.</li>
+          <li>szukasz konkretnych kroków, a&nbsp;nie tylko inspiracji,</li>
+          <li>chcesz budować system, zespół i&nbsp;markę, która działa bez Ciebie,</li>
+          <li>chcesz uczyć się od kobiet, które już przeszły tę drogę.</li>
         </ul>
+        <blockquote>„Nie chcę tylko zarabiać — chcę stworzyć coś, co będzie działało beze mnie.”</blockquote>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3 LATA ================= -->
+<section class="navy" id="3-lata">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">3 lata współpracy</span>
+      <h2>Publikacja to początek — <em>zostajemy razem na 3 lata</em></h2>
+      <p class="lead">Każdy styczeń to spotkanie autorek na Summicie, organizowanym dla autorek na preferencyjnych warunkach. Co roku w&nbsp;innym miejscu.</p>
+    </div>
+    <div class="years">
+      <article class="yr reveal"><div class="y">2027</div><div class="n">Rok pierwszy</div><h3>Start i&nbsp;premiera</h3><p>Styczniowa sesja zdjęciowa w&nbsp;pięknych przestrzeniach, wywiady i&nbsp;wizytówki wideo, pierwszy Summit, a&nbsp;w&nbsp;marcu inauguracja książki.</p><span class="place">Summit · Polska</span></article>
+      <article class="yr reveal"><div class="y">2028</div><div class="n">Rok drugi</div><h3>Wzrost i&nbsp;relacje</h3><p>Summit za granicą, networking autorek, wspólne projekty i&nbsp;dalsza promocja Twojej marki.</p><span class="place">Summit · Cypr</span></article>
+      <article class="yr reveal"><div class="y">2029</div><div class="n">Rok trzeci</div><h3>Skala międzynarodowa</h3><p>Summit w&nbsp;Dubaju i&nbsp;kontakty biznesowe w&nbsp;regionie Zatoki Perskiej.</p><span class="place">Summit · Dubaj</span></article>
+    </div>
+    <div class="every reveal">
+      <div><b>Zawsze w styczniu</b><span>Summit autorek na preferencyjnych warunkach</span></div>
+      <div><b>Raz na kwartał</b><span>Networking autorek online</span></div>
+      <div><b>Przez cały czas</b><span>Link afiliacyjny: 25% ze sprzedaży z&nbsp;poleceń</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KORZYŚCI ================= -->
+<section id="korzysci">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">Co otrzymujesz</span>
+      <h2>Wszystko, czego potrzebuje <em>Twoja marka</em></h2>
+    </div>
+    <div class="bens">
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/></svg></span><h3>Rozdział w&nbsp;książce PL / EN</h3><p>10 stron o&nbsp;Twojej drodze, ze zdjęciem, biografią i&nbsp;kodem QR prowadzącym do Twojej oferty.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l2-3h4l2 3"/></svg></span><h3>Biznesowa sesja zdjęciowa</h3><p>W&nbsp;styczniu, w&nbsp;pięknych przestrzeniach — zdjęcia do książki, mediów i&nbsp;Twojej komunikacji.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span><h3>Wywiad i&nbsp;wizytówka wideo</h3><p>Profesjonalny wywiad wideo i&nbsp;krótka wizytówka wideo do LinkedIn, strony www i&nbsp;prezentacji.</p></article>
+      <article class="ben hl reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg></span><h3>Link afiliacyjny</h3><span class="pct">25%</span><p>Każda autorka otrzymuje własny link rekomendacyjny i&nbsp;25% ze sprzedaży książek z&nbsp;jej poleceń.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21l1.4-7L2 9.3l7-.8z"/></svg></span><h3>Coroczny Summit</h3><p>Co roku w&nbsp;styczniu, na preferencyjnych warunkach: Polska, Cypr, Dubaj. Networking, wystąpienia i&nbsp;strefa VIP.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c.8-3 3.2-5 6-5s5.2 2 6 5M12 20c.8-3 3.2-5 6-5 1.3 0 2.5.4 3.5 1"/></svg></span><h3>Sieć 50 liderek</h3><p>Networking online raz na kwartał, zamknięta grupa i&nbsp;wspólne projekty z&nbsp;autorkami z&nbsp;Polski i&nbsp;świata.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></span><h3>Tytuł autorki</h3><p>Możesz przedstawiać się jako:<span class="titleline">„Autorka międzynarodowej publikacji Business Women IMPACT”</span></p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l18-8-8 18-2-8z"/></svg></span><h3>Promocja Twojej marki</h3><p>Twoja firma na stronie projektu (PL / EN), w&nbsp;mediach społecznościowych książki i&nbsp;partnerów oraz w&nbsp;katalogu autorek.</p></article>
+      <article class="ben reveal"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 8h14M7 14h10"/></svg></span><h3>Scena i&nbsp;media</h3><p>Wystąpienia na premierze i&nbsp;Summicie, wywiady w&nbsp;podcastach oraz gotowe materiały PR.</p></article>
     </div>
   </div>
 </section>
 
 <!-- ================= 11 KODÓW ================= -->
-<section class="sec codes-sec" id="kody">
+<section class="pearl" id="kody">
   <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>Treść książki</span></div>
-      <h2 style="margin-top:22px">11 kodów <em>drogi do miliona</em></h2>
-      <p class="lead">Każdy rozdział to jeden kod. Razem tworzą mapę przemiany kobiety, która buduje firmę na lata.</p>
+    <div class="head reveal">
+      <span class="eyebrow">Treść książki</span>
+      <h2>11 kodów <em>drogi do miliona</em></h2>
+      <p class="lead">Każdy rozdział odpowiada jednemu z&nbsp;11 kodów. Razem tworzą mapę przemiany kobiety, która buduje firmę na lata.</p>
     </div>
-    <div class="codes reveal" id="codes"></div>
-    <div class="chapter-note reveal">
-      <div><strong>10</strong><span>stron rozdziału</span></div>
-      <div><strong>5</strong><span>kroków do miliona</span></div>
-      <div><strong>PL · EN</strong><span>dwa języki</span></div>
+    <ul class="shift reveal">
+      <li>od działania z&nbsp;potrzeby<b>do działania z&nbsp;misji</b></li>
+      <li>od przetrwania<b>do tworzenia</b></li>
+      <li>od kontroli<b>do zaufania</b></li>
+      <li>od celu osobistego<b>do wpływu na innych</b></li>
+    </ul>
+    <div class="codes" id="codes"></div>
+  </div>
+</section>
+
+<!-- ================= ROZDZIAŁ ================= -->
+<section class="navy" id="rozdzial">
+  <div class="wrap">
+    <div class="chapter">
+      <div class="reveal">
+        <span class="eyebrow">Twój rozdział</span>
+        <h2>Prosta struktura, <em>pełne wsparcie redakcji</em></h2>
+        <p class="lead">Nie musisz być pisarką. Każda autorka pisze według tej samej, przejrzystej struktury, a&nbsp;redakcja pomaga dopracować tekst.</p>
+        <div class="stat3">
+          <div><strong>10</strong><span>stron rozdziału</span></div>
+          <div><strong>5</strong><span>kroków do miliona</span></div>
+          <div><strong>2</strong><span>języki</span></div>
+        </div>
+      </div>
+      <ol class="plan reveal">
+        <li><b>Zdjęcie i&nbsp;biografia</b></li>
+        <li><b>Wprowadzenie do Twojego kodu</b></li>
+        <li><b>Droga do miliona</b> — 5&nbsp;kroków w&nbsp;Twojej branży</li>
+        <li><b>Trzy kluczowe wyzwania</b> i&nbsp;czego unikać</li>
+        <li><b>Unikalna wiedza</b><div class="tags"><span>mapa drogi w&nbsp;branży</span><span>„złoto do wdrożenia”</span><span>refleksja</span></div></li>
+        <li><b>Ćwiczenia i&nbsp;narzędzia</b> dla czytelniczek</li>
+        <li><b>Podsumowanie</b> i&nbsp;wskazówki na przyszłość</li>
+      </ol>
     </div>
   </div>
 </section>
 
 <!-- ================= HARMONOGRAM ================= -->
-<section class="sec" id="harmonogram">
+<section id="harmonogram">
   <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>Harmonogram</span></div>
-      <h2 style="margin-top:22px">Od zgłoszenia <em>do Dubaju</em></h2>
+    <div class="head reveal">
+      <span class="eyebrow">Harmonogram</span>
+      <h2>Od zgłoszenia <em>do trzeciego Summitu</em></h2>
     </div>
     <ol class="tl reveal">
       <li class="now"><time>do 31.10.2026</time><h4>Nabór autorek</h4><p>Wyłącznie do końca października.</p></li>
-      <li><time>styczeń 2027</time><h4>Sesja, wideo, Summit</h4><p>Sesja zdjęciowa, wywiady i&nbsp;wizytówki wideo. Summit w&nbsp;Polsce.</p></li>
-      <li class="key"><time>marzec 2027</time><h4>Inauguracja</h4><p>Premiera książki PL / EN.</p></li>
+      <li><time>styczeń 2027</time><h4>Sesja i&nbsp;wideo · Summit Polska</h4><p>Sesja zdjęciowa, wywiady i&nbsp;wizytówki wideo, pierwszy Summit.</p></li>
+      <li class="key"><time>marzec 2027</time><h4>Inauguracja książki</h4><p>Premiera publikacji PL / EN.</p></li>
       <li><time>styczeń 2028</time><h4>Summit Cypr</h4><p>Drugie spotkanie autorek.</p></li>
       <li><time>styczeń 2029</time><h4>Summit Dubaj</h4><p>Trzecie spotkanie autorek.</p></li>
     </ol>
-    <p class="tl-note reveal">Przez całe trzy lata — networking autorek online raz na kwartał.</p>
+    <p class="note reveal" style="margin-top:22px">Przez całe 3 lata: networking autorek online raz na kwartał.</p>
   </div>
 </section>
 
 <!-- ================= ZGŁOSZENIE ================= -->
-<section class="sec apply-sec" id="zgloszenie">
+<section class="dark" id="zgloszenie">
   <div class="wrap">
-    <div class="center reveal">
-      <div class="rule"><span>Jak się zgłosić?</span></div>
-      <h2 style="margin-top:22px">Trzy kroki <em>do grona autorek</em></h2>
+    <div class="apply">
+      <div class="reveal">
+        <span class="eyebrow">Jak się zgłosić?</span>
+        <h2>Trzy kroki <em>do grona autorek</em></h2>
+        <ol class="steps">
+          <li><div><h3>Wypełnij formularz</h3><p>Kilka informacji o&nbsp;Tobie i&nbsp;Twojej firmie — zajmie to 3 minuty.</p></div></li>
+          <li><div><h3>Rozmowa z&nbsp;nami</h3><p>Oddzwonimy, opowiemy o&nbsp;warunkach i&nbsp;odpowiemy na pytania.</p></div></li>
+          <li><div><h3>Witamy w&nbsp;gronie autorek</h3><p>Podpisujesz umowę i&nbsp;razem zaczynamy pracę nad Twoim rozdziałem.</p></div></li>
+        </ol>
+        <div class="deadline" style="margin-top:30px">Nabór wyłącznie do <b>31 października 2026</b></div>
+        <p class="alt">Wolisz najpierw porozmawiać? <a href="#" data-calendly target="_blank" rel="noopener">Umów spotkanie informacyjne →</a></p>
+      </div>
+      <form class="f reveal" id="applyForm">
+        <h3>Formularz zgłoszeniowy</h3>
+        <p class="sub">Pola oznaczone <i style="color:var(--bordo);font-style:normal">*</i> są wymagane.</p>
+        <label for="a-name"><span>Imię i&nbsp;nazwisko <i>*</i></span><input id="a-name" name="name" required autocomplete="name"></label>
+        <label for="a-company"><span>Firma <i>*</i></span><input id="a-company" name="company" required autocomplete="organization"></label>
+        <label for="a-email"><span>E-mail <i>*</i></span><input id="a-email" type="email" name="email" required autocomplete="email"></label>
+        <label for="a-phone"><span>Telefon <i>*</i></span><input id="a-phone" type="tel" name="phone" required autocomplete="tel"></label>
+        <label for="a-industry"><span>Branża</span><input id="a-industry" name="industry" placeholder="np. nieruchomości, beauty"></label>
+        <label for="a-city"><span>Miasto i&nbsp;kraj</span><input id="a-city" name="city" placeholder="np. Kraków, Polska"></label>
+        <label for="a-turnover"><span>Roczny obrót firmy <i>*</i></span>
+          <select id="a-turnover" name="turnover" required>
+            <option value="">Wybierz</option>
+            <option>1–3 mln zł</option>
+            <option>3–10 mln zł</option>
+            <option>powyżej 10 mln zł</option>
+          </select>
+        </label>
+        <label for="a-code"><span>Twój kod</span><select id="a-code" name="code"><option value="">Jeszcze nie wiem</option></select>
+        </label>
+        <label for="a-www" class="full"><span>Strona www lub LinkedIn</span><input id="a-www" name="www" placeholder="https://"></label>
+        <label for="a-story" class="full"><span>Twoja droga w&nbsp;kilku zdaniach</span><textarea id="a-story" name="story" placeholder="Czym zajmuje się Twoja firma i jaki był Twój przełomowy moment?"></textarea></label>
+        <label class="consent full" for="a-consent"><input id="a-consent" type="checkbox" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w&nbsp;celu rozpatrzenia zgłoszenia do książki „Business Women IMPACT”.</label>
+        <div class="actions"><button class="btn btn-gold" type="submit">Wyślij zgłoszenie <span class="arr">→</span></button></div>
+        <div class="ok" id="applyOk" hidden>Otworzyliśmy wiadomość e-mail z&nbsp;Twoim zgłoszeniem — wyślij ją, a&nbsp;odezwiemy się wkrótce. Jeśli program pocztowy się nie otworzył, napisz na <b data-mailtext></b>.</div>
+      </form>
     </div>
-    <div class="steps reveal">
-      <div class="step"><div class="num">I</div><h3>Wypełnij formularz</h3><p>Kilka informacji o&nbsp;Tobie i&nbsp;Twojej firmie — to zajmie 3 minuty.</p></div>
-      <div class="step"><div class="num">II</div><h3>Porozmawiajmy</h3><p>Oddzwonimy, opowiemy o&nbsp;warunkach i&nbsp;odpowiemy na pytania.</p></div>
-      <div class="step"><div class="num">III</div><h3>Witamy w&nbsp;gronie</h3><p>Podpisujesz umowę i&nbsp;razem zaczynamy pracę nad Twoim rozdziałem.</p></div>
-    </div>
-    <form class="f reveal" id="applyForm">
-      <div class="fh"><h3>Zgłoszenie autorki</h3><p>Nabór wyłącznie do 31 października 2026</p></div>
-      <label for="a-name"><span>Imię i&nbsp;nazwisko <i>*</i></span><input id="a-name" name="name" required autocomplete="name"></label>
-      <label for="a-company"><span>Firma <i>*</i></span><input id="a-company" name="company" required autocomplete="organization"></label>
-      <label for="a-email"><span>E-mail <i>*</i></span><input id="a-email" type="email" name="email" required autocomplete="email"></label>
-      <label for="a-phone"><span>Telefon <i>*</i></span><input id="a-phone" type="tel" name="phone" required autocomplete="tel"></label>
-      <label for="a-industry"><span>Branża</span><input id="a-industry" name="industry"></label>
-      <label for="a-city"><span>Miasto i&nbsp;kraj</span><input id="a-city" name="city"></label>
-      <label for="a-turnover"><span>Roczny obrót firmy <i>*</i></span>
-        <select id="a-turnover" name="turnover" required>
-          <option value="">Wybierz</option>
-          <option>1–3 mln zł</option>
-          <option>3–10 mln zł</option>
-          <option>powyżej 10 mln zł</option>
-        </select>
-      </label>
-      <label for="a-code"><span>Twój kod</span>
-        <select id="a-code" name="code"><option value="">Jeszcze nie wiem</option></select>
-      </label>
-      <label for="a-www" class="full"><span>Strona www lub LinkedIn</span><input id="a-www" name="www"></label>
-      <label for="a-story" class="full"><span>Twoja droga w&nbsp;kilku zdaniach</span><textarea id="a-story" name="story"></textarea></label>
-      <label class="consent full" for="a-consent"><input id="a-consent" type="checkbox" required> Wyrażam zgodę na przetwarzanie moich danych osobowych w&nbsp;celu rozpatrzenia zgłoszenia do książki „Business Women IMPACT”.</label>
-      <div class="actions"><button class="btn btn-bordo" type="submit">Wyślij zgłoszenie <span class="arr">→</span></button><small>Wolisz najpierw porozmawiać? <a href="#" data-calendly target="_blank" rel="noopener">Umów spotkanie informacyjne</a></small></div>
-      <div class="ok" id="applyOk" hidden>Otworzyliśmy wiadomość e-mail z&nbsp;Twoim zgłoszeniem — wyślij ją, a&nbsp;odezwiemy się wkrótce. Jeśli program pocztowy się nie otworzył, napisz na <b data-mailtext></b>.</div>
-    </form>
   </div>
 </section>
 
 <!-- ================= KONTAKT ================= -->
-<section class="contact" id="kontakt">
-  <div class="wrap reveal">
-    <div class="rule" style="justify-content:center"><span>Kontakt</span></div>
-    <ul class="clist">
-      <li><span>Osoba</span><em>Patricia Claudia Mitro</em></li>
+<section class="pearl" id="kontakt" style="padding:70px 0">
+  <div class="wrap contact">
+    <div class="reveal"><span class="eyebrow">Kontakt</span><h2>Masz <em>pytania?</em></h2></div>
+    <ul class="clist reveal">
+      <li><span>Osoba</span>Patricia Claudia Mitro</li>
       <li><span>E-mail</span><a data-mail href="#"></a></li>
       <li><span>WWW</span><a href="https://polishwomenchamber.pl/" target="_blank" rel="noopener">polishwomenchamber.pl</a></li>
     </ul>
@@ -633,7 +731,7 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(216,18
       </div>
       <div>
         <h5>Książka</h5>
-        <ul><li><a href="#wizytowka">Wizytówka biznesowa</a></li><li><a href="#3-lata">3 lata współpracy</a></li><li><a href="#pakiet">Pakiet autorki</a></li><li><a href="#harmonogram">Harmonogram</a></li><li><a href="#zgloszenie">Zgłoszenie</a></li></ul>
+        <ul><li><a href="#wizytowka">Wizytówka biznesowa</a></li><li><a href="#dla-kogo">Dla kogo</a></li><li><a href="#3-lata">3 lata współpracy</a></li><li><a href="#harmonogram">Harmonogram</a></li><li><a href="#zgloszenie">Zgłoszenie</a></li></ul>
       </div>
       <div>
         <h5>PWCC</h5>
@@ -652,42 +750,36 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(216,18
 
 <script>
 /* =========================================================
-   KONFIGURACJA — e-mail zgłoszeń, link do spotkania, koniec naboru
+   KONFIGURACJA — e-mail zgłoszeń i link do spotkania (Calendly)
    ========================================================= */
 const CONFIG = {
   email: 'patricia.mitro@polishwomenchamber.pl',
-  calendly: 'https://calendly.com/polishwomenchamber/aplikuje-do-akademii-money-are-comming-clone',
-  deadline: '2026-10-31T23:59:59+01:00'
+  calendly: 'https://calendly.com/polishwomenchamber/aplikuje-do-akademii-money-are-comming-clone'
 };
 
-/* 11 kodów: nazwa, afirmacja */
+/* 11 kodów: nazwa, afirmacja, słowa-klucze */
 const CODES = [
-  ['Decyzja', 'Zaczynam od środka. Decyduję, że chcę więcej.'],
-  ['Wizja', 'Widzę coś, czego inni jeszcze nie dostrzegają.'],
-  ['Tożsamość', 'Nie jestem tylko właścicielką firmy. Jestem liderką.'],
-  ['Wiedza', 'Uczę się, żeby tworzyć. Rozwijam się, żeby dawać wartość.'],
-  ['Odwaga', 'Boję się. I robię to mimo wszystko.'],
-  ['Działanie', 'Nie czekam na znak. Robię pierwszy krok.'],
-  ['System', 'Buduję firmę, która działa, gdy śpię.'],
-  ['Zespół', 'Nie muszę wszystkiego robić sama.'],
-  ['Wpływ', 'Moja marka zmienia świat moich klientów.'],
-  ['Wolność', 'Pieniądze to środek. Wolność to cel.'],
-  ['Mistrzostwo', 'Jestem kobietą, która inspiruje. Tworzę dla przyszłych pokoleń.']
+  ['Decyzja', 'Zaczynam od środka. Decyduję, że chcę więcej.', 'przełom, determinacja'],
+  ['Wizja', 'Widzę coś, czego inni jeszcze nie dostrzegają.', 'intuicja, kierunek'],
+  ['Tożsamość', 'Nie jestem tylko właścicielką firmy. Jestem liderką.', 'przemiana, siła wewnętrzna'],
+  ['Wiedza', 'Uczę się, żeby tworzyć. Rozwijam się, żeby dawać wartość.', 'mistrzostwo, rozwój'],
+  ['Odwaga', 'Boję się. I robię to mimo wszystko.', 'ryzyko, przekraczanie granic'],
+  ['Działanie', 'Nie czekam na znak. Robię pierwszy krok.', 'energia, egzekucja'],
+  ['System', 'Buduję firmę, która działa, gdy śpię.', 'strategia, procesy'],
+  ['Zespół', 'Nie muszę wszystkiego robić sama.', 'relacje, liderowanie'],
+  ['Wpływ', 'Moja marka zmienia świat moich klientów.', 'misja, wartość'],
+  ['Wolność', 'Pieniądze to środek. Wolność to cel.', 'czas, wybór, przestrzeń'],
+  ['Mistrzostwo', 'Jestem kobietą, która inspiruje. Tworzę dla przyszłych pokoleń.', 'dziedzictwo, transformacja świata']
 ];
-const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI'];
 
 const $ = s => document.querySelector(s);
 document.querySelectorAll('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; a.textContent = CONFIG.email; });
 document.querySelectorAll('[data-mailtext]').forEach(b => b.textContent = CONFIG.email);
 document.querySelectorAll('[data-calendly]').forEach(a => a.href = CONFIG.calendly);
 
-/* pasek: ile dni do końca naboru */
-const days = Math.ceil((new Date(CONFIG.deadline) - new Date()) / 864e5);
-$('#daysLeft').textContent = days > 1 ? ` · zostało ${days} dni` : days === 1 ? ' · ostatni dzień' : '';
-
-$('#codes').innerHTML = CODES.map(([n, q], i) =>
-  `<div class="code${i === 10 ? ' master' : ''}"><span class="rn">${ROMAN[i]}</span><div><h3>${n}</h3><p>„${q}”</p></div></div>`).join('');
-$('#a-code').insertAdjacentHTML('beforeend', CODES.map(([n], i) => `<option>Kod ${ROMAN[i]}: ${n}</option>`).join(''));
+$('#codes').innerHTML = CODES.map(([n, q, k], i) =>
+  `<article class="code reveal${i === 10 ? ' master' : ''}"><span class="no" aria-hidden="true">${i + 1}</span><span class="lbl">Kod ${i + 1}</span><h3>${n}</h3><blockquote>„${q}”</blockquote><div class="kw">${k}</div></article>`).join('');
+$('#a-code').insertAdjacentHTML('beforeend', CODES.map(([n], i) => `<option>Kod ${i + 1}: ${n}</option>`).join(''));
 
 $('#applyForm').addEventListener('submit', e => {
   e.preventDefault();
@@ -703,10 +795,13 @@ $('#applyForm').addEventListener('submit', e => {
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Zgłoszenie autorki — Business Women IMPACT — ' + f.name.value)}&body=${encodeURIComponent(body)}`;
 });
 
+const nav = $('#nav');
+const onScroll = () => nav.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
 $('#burger').onclick = () => { const o = document.body.classList.toggle('nav-open'); $('#burger').setAttribute('aria-expanded', o); };
-document.querySelectorAll('.mobile-menu a').forEach(a => a.onclick = () => document.body.classList.remove('nav-open'));
+document.querySelectorAll('.menu a').forEach(a => a.onclick = () => document.body.classList.remove('nav-open'));
 
-const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:.06, rootMargin:'0px 0px -30px 0px'});
+const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:.08, rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
