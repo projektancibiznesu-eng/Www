@@ -23,3 +23,4 @@ Strona Polish Investment Club by PWCC (jasna wersja: krem, bordo, złoto): `inve
 - **Harmonogram spotkań**: lista `#meetings` — każde spotkanie to `<li data-date="RRRR-MM-DD">`. Strona sama wyszarza odbyte spotkania i wyróżnia najbliższe.
 - **Formularz aplikacyjny** (Google Forms) i kontakt (biuro@polishwomenchamber.pl) — w sekcjach `#dolacz` i `#kontakt`.
 - Treści oparte na: Harmonogram v3 ROZSZERZONY, Regulamin Członkowski PIC, prezentacja Polish Investment Club i oferta INVESTMENT CLUB. Strona jest tylko po polsku.
+- **Polityka prywatności i klauzula RODO**: `investment-club/polityka-prywatnosci.html` (klauzula dla kandydatów pod kotwicą `#kandydaci` — ten link warto wkleić do formularza Google). Strona Klubu nie używa cookies ani analityki, a czcionki są hostowane lokalnie w `investment-club/fonts/`. Jeśli dodasz np. Google Analytics lub Meta Pixel, trzeba dodać baner zgody i zaktualizować politykę.

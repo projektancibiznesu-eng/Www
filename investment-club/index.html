@@ -13,9 +13,7 @@
 <link rel="canonical" href="https://kongresgospodarczypwcc.pl/investment-club/">
 <meta name="theme-color" content="#FCF9F6">
 <link rel="icon" href="../assets/pwcc-emblem.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 /* =========================================================
    PALETA — jasna wersja: krem, bordo PWCC i złoto
@@ -317,6 +315,8 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 .values span+span::before{content:"•";color:var(--gold);margin-right:24px}
 @media (max-width:720px){.values span+span::before{display:none}}
 
+.rodo-note{max-width:720px;margin:26px auto 0;text-align:center;font-size:.84rem;line-height:1.6;color:var(--muted)}
+.rodo-note a{color:var(--bordo);text-decoration:underline}
 /* ---------- STOPKA ---------- */
 footer{background:var(--bordo);padding:56px 0 36px;font-size:.88rem;color:rgba(255,255,255,.8)}
 footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
@@ -656,6 +656,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
       <a class="btn btn-gold" href="https://forms.gle/AhZBfNcJv3oTx3bX6" target="_blank" rel="noopener">Wypełnij formularz aplikacyjny</a>
       <a class="btn btn-ghost" href="mailto:biuro@polishwomenchamber.pl?subject=Polish%20Investment%20Club">Napisz do nas</a>
     </div>
+    <p class="rodo-note reveal">Aplikując, przekazujesz dane osobowe administratorowi: Global Women Investment, Media &amp; Insurance Group Sp. z&nbsp;o.o. Dane są przetwarzane w&nbsp;celu kwalifikacji do Klubu i&nbsp;kontaktu z&nbsp;Tobą. Szczegóły i&nbsp;Twoje prawa: <a href="polityka-prywatnosci.html#kandydaci">klauzula informacyjna RODO</a>.</p>
   </div>
 </section>
 
@@ -793,6 +794,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
     <div class="ctas reveal">
       <a class="btn btn-gold" href="https://forms.gle/AhZBfNcJv3oTx3bX6" target="_blank" rel="noopener">Aplikuj do Klubu</a>
     </div>
+    <p class="rodo-note" style="margin-top:-30px;margin-bottom:40px">Aplikując, przekazujesz dane osobowe administratorowi: Global Women Investment, Media &amp; Insurance Group Sp. z&nbsp;o.o. Dane są przetwarzane w&nbsp;celu kwalifikacji do Klubu i&nbsp;kontaktu z&nbsp;Tobą. Szczegóły i&nbsp;Twoje prawa: <a href="polityka-prywatnosci.html#kandydaci">klauzula informacyjna RODO</a>.</p>
     <div class="cards2 reveal">
       <div>
         <div class="k">Masz pytania? Napisz do nas</div>
@@ -820,6 +822,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
         <li>Aleja Jana Pawła II 27, 00-867 Warszawa</li>
         <li>KRS 0000929711 · NIP 1133044391</li>
         <li>REGON 520306222</li>
+        <li><a href="mailto:biuro@polishwomenchamber.pl">biuro@polishwomenchamber.pl</a></li>
       </ul>
     </div>
     <div>
@@ -829,10 +832,15 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
         <li><a href="../">Kongres Gospodarczy Kobiet Biznesu 2026</a></li>
         <li><a href="https://calendly.com/polishwomenchamber" target="_blank" rel="noopener">Polish Investment &amp; Capital Academy</a></li>
       </ul>
+      <h4 style="margin-top:20px">Informacje prawne</h4>
+      <ul>
+        <li><a href="polityka-prywatnosci.html">Polityka prywatności i&nbsp;cookies</a></li>
+        <li><a href="polityka-prywatnosci.html#kandydaci">Klauzula informacyjna RODO</a></li>
+      </ul>
     </div>
     <div class="legal">
       <span>© <span id="year">2026</span> Global Women Investment, Media &amp; Insurance Group · Patronat: Polish Women Chamber of Commerce</span>
-      <span>Materiały na stronie mają charakter informacyjny i&nbsp;nie stanowią porady inwestycyjnej.</span>
+      <span>Materiały na stronie mają charakter informacyjny i&nbsp;nie stanowią porady inwestycyjnej ani rekomendacji w&nbsp;rozumieniu przepisów o&nbsp;obrocie instrumentami finansowymi. · Strona nie używa plików cookies. · <a href="polityka-prywatnosci.html">Polityka prywatności</a></span>
     </div>
   </div>
 </footer>
