@@ -286,11 +286,13 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 
 /* ---------- ZESPÓŁ ---------- */
 .team{background:var(--cream)}
-.pres{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.pres{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.pres .ph{position:sticky;top:100px}
 .pres .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:28px;box-shadow:0 40px 70px -35px rgba(90,20,20,.45)}
 .pres h3{font-size:clamp(1.8rem,3vw,2.4rem);margin:14px 0 4px}
 .pres .role{color:var(--gold-deep);letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;font-weight:700;margin-bottom:20px}
 .pres p{color:var(--muted);margin-bottom:14px}
+.pres p b{color:var(--bordo);font-weight:600}
 .committee{margin-top:64px}
 .committee .lbl{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:20px;text-align:center}
 .profile+.profile{margin-top:28px}
@@ -310,7 +312,7 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 .profile .tags{display:flex;flex-wrap:wrap;gap:8px}
 .profile .tags span{font-size:.8rem;padding:6px 14px;background:var(--cream);color:var(--bordo);border-radius:999px}
 @media (max-width:860px){.profile,.profile.rev{grid-template-columns:1fr;padding:24px}.profile.rev img{order:0}.profile img{max-width:320px}.pcols{grid-template-columns:1fr}}
-@media (max-width:900px){.pres{grid-template-columns:1fr;gap:36px}.pres .ph{max-width:380px}}
+@media (max-width:900px){.pres{grid-template-columns:1fr;gap:36px}.pres .ph{max-width:380px;position:static}}
 
 
 /* ---------- FAQ ---------- */
@@ -630,15 +632,16 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
 <section class="tours" id="wyjazdy">
   <div class="wrap">
     <div class="head reveal">
-      <span class="eyebrow">Investment Tours · PWCC &amp; Solea.Estate</span>
-      <h2>Wyjazdy <em>inwestycyjne</em></h2>
+      <span class="eyebrow">Investment Tours 2027 · PWCC &amp; Solea.Estate</span>
+      <h2>Wyjazdy <em>inwestycyjne 2027</em></h2>
       <p class="lead">To nie są wyjazdy turystyczne. Kameralna, networkingowa formuła: bezpośrednie spotkania z&nbsp;partnerami rynku nieruchomości, analiza konkretnych projektów i&nbsp;realne modele inwestowania oraz zabezpieczania kapitału za granicą.</p>
     </div>
     <div class="tour-grid">
-      <div class="tour reveal"><div class="st">Edycja zrealizowana · 2026</div><h3>Cypr · Pafos</h3><p>Wizyty u&nbsp;zweryfikowanych deweloperów, analiza projektów i&nbsp;modele inwestowania w&nbsp;regionie Morza Śródziemnego.</p></div>
-      <div class="tour reveal"><div class="st">Edycja zrealizowana · 2026</div><h3>Hiszpania · Costa del Sol / Almería</h3><p>Prezentacje wyselekcjonowanych nieruchomości i&nbsp;networking inwestorski.</p></div>
-      <div class="tour reveal"><div class="st">Kolejne kierunki</div><h3>Dubaj · Bali i&nbsp;inne</h3><p>Kolejne kameralne wyjazdy w&nbsp;trakcie roku klubowego. Terminy członkowie poznają z&nbsp;wyprzedzeniem.</p></div>
+      <div class="tour reveal"><div class="st">Planowany wyjazd · 2027</div><h3>Cypr · Pafos</h3><p>Wizyty u&nbsp;zweryfikowanych deweloperów, analiza projektów i&nbsp;modele inwestowania w&nbsp;regionie Morza Śródziemnego.</p></div>
+      <div class="tour reveal"><div class="st">Planowany wyjazd · 2027</div><h3>Hiszpania · Costa del Sol / Almería</h3><p>Prezentacje wyselekcjonowanych nieruchomości i&nbsp;networking inwestorski.</p></div>
+      <div class="tour reveal"><div class="st">Planowany wyjazd · 2027</div><h3>Dubaj · Bali</h3><p>Rynki o&nbsp;wysokim potencjale wzrostu: spotkania z&nbsp;deweloperami i&nbsp;lokalnymi inwestorami.</p></div>
     </div>
+    <p class="note reveal" style="margin-top:18px">Terminy wyjazdów w&nbsp;2027 roku członkowie Klubu poznają z&nbsp;wyprzedzeniem. Liczba miejsc na każdym wyjeździe jest ograniczona.</p>
     <ul class="adv reveal">
       <li>instytucjonalne wsparcie izby gospodarczej PWCC</li>
       <li>dostęp do zweryfikowanych deweloperów i&nbsp;projektów</li>
@@ -777,8 +780,12 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
         <span class="eyebrow">Prezydentka Klubu</span>
         <h3>Patricia Claudia Mitro</h3>
         <div class="role">Prezydentka Polish Women Chamber of Commerce</div>
-        <p>Prawniczka i&nbsp;Mentor Global Women’s Leadership z&nbsp;18-letnim doświadczeniem w&nbsp;pracy z&nbsp;przedsiębiorcami w&nbsp;Polsce i&nbsp;za granicą. Prezes Zarządu Global Women Investment, Media &amp; Insurance Group Sp. z&nbsp;o.o., która prowadzi Klub.</p>
-        <p>Laureatka nagrody Forbes Women &amp; UK Embassy Equality Leaders 2022. Buduje międzynarodowe modele współpracy, projekty inwestycyjne i&nbsp;partnerstwa między biznesem, inwestorami i&nbsp;instytucjami, m.in. w&nbsp;Europie i&nbsp;regionie GCC.</p>
+        <p>Patricia Claudia Mitro jest prawniczką, mentorką globalnego przywództwa kobiet, certyfikowanym coachem ICI, doradczynią kariery oraz mentorką w&nbsp;obszarze tradingu i&nbsp;inteligencji finansowej. Urodziła się 4&nbsp;sierpnia 1988 roku w&nbsp;Rzeszowie. Ukończyła seminaria doktorskie oraz studia podyplomowe z&nbsp;doradztwa zawodowego w&nbsp;Akademii Nauk Społecznych i&nbsp;Medycznych w&nbsp;Lublinie.</p>
+        <p>Od blisko dwóch dekad tworzy inicjatywy wspierające rozwój ekonomiczny kobiet oraz ich udział w&nbsp;międzynarodowym biznesie. Jako Prezydentka Polish Women Chamber of Commerce reprezentuje kobiety przedsiębiorczynie i&nbsp;rozwija partnerstwa z&nbsp;administracją publiczną, dyplomacją, izbami gospodarczymi oraz środowiskiem akademickim. Zainicjowała Global Women Chamber of Commerce, łącząc kobiety biznesu, inwestorki i&nbsp;instytucje z&nbsp;różnych krajów oraz wspierając międzynarodową ekspansję.</p>
+        <p>Jest założycielką i&nbsp;redaktorką naczelną globalnego magazynu biznesowego <b>Business Women IMPACT</b> oraz twórczynią <b>Polish Women Chamber TV</b>. Zrealizowała ponad 150 inicjatyw biznesowych, edukacyjnych, wydawniczych i&nbsp;społecznych, docierając do ponad 100&nbsp;000 kobiet. Jako CEO <b>Global Women Investment, Media &amp; Insurance Group</b> rozwija projekty łączące biznes, media, technologię i&nbsp;komunikację strategiczną, w&nbsp;tym premium personal branding dla ekspertek i&nbsp;liderek.</p>
+        <p>Jest współautorką ogólnopolskich raportów dotyczących ESG oraz obrony cywilnej, a&nbsp;także autorką książek <b>„Przestań czekać – zacznij żyć”</b> oraz <b>„Przewodnik do spełnionego życia: 50 metod i&nbsp;ćwiczeń”</b>. W&nbsp;2022 roku otrzymała wyróżnienie <b>Equality Leaders</b> od Forbes Women i&nbsp;Ambasady Brytyjskiej za promowanie równości i&nbsp;wzmacnianie pozycji kobiet. Jest członkinią Krajowego Biura Rad Kobiet w&nbsp;Polsce.</p>
+        <p>Jako mentorka w&nbsp;obszarze inwestowania, tradingu i&nbsp;inteligencji finansowej promuje odpowiedzialne budowanie kapitału oparte na edukacji, świadomości ryzyka i&nbsp;długoterminowym myśleniu. Za swoje największe osobiste osiągnięcie uważa wytrwałość: pokonywanie przeciwności, przekształcanie wyzwań w&nbsp;siłę oraz budowanie przyszłości zgodnej z&nbsp;własnymi wartościami.</p>
+        <p>Posługuje się językiem polskim i&nbsp;angielskim.</p>
       </div>
     </div>
     <div class="committee reveal">
