@@ -364,6 +364,13 @@ form.f .btn{justify-self:start}
 .fab b{font-family:var(--serif);font-size:1.1rem;color:var(--gold-light);font-weight:500}
 .fab a{background:var(--gold);color:#2A0A0D;padding:9px 14px;border-radius:30px;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
 
+.kod{background:#170103;padding:0}
+.kod a{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;padding:56px 0;border-top:1px solid rgba(198,161,94,.25)}
+.kod .n{font-family:var(--serif);font-size:6rem;line-height:.8;background:linear-gradient(160deg,#F3E2B8,var(--gold) 55%,var(--gold-deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kod small{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.kod h3{font-size:clamp(1.5rem,2.6vw,2.1rem);color:#fff;margin-top:6px;font-weight:500}
+.kod p{color:rgba(255,255,255,.65);font-size:.95rem;margin-top:6px}
+@media (max-width:760px){.kod a{grid-template-columns:1fr;gap:18px}.kod .n{font-size:4.5rem}}
 /* ================= STOPKA ================= */
 footer{background:#170103;color:rgba(255,255,255,.6);padding:70px 0 40px;font-size:.88rem}
 footer .top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;align-items:start}
@@ -754,6 +761,17 @@ footer .bottom{margin-top:50px;padding-top:24px;border-top:1px solid rgba(198,16
 
 <div class="fab" id="fab"><div><span>W zapytaniu</span><br><b id="fabSum">0 zł</b></div><a href="#zapytanie">Przejdź</a></div>
 
+<!-- ================= KOD MILIONERKI 11 ================= -->
+<section class="kod">
+  <div class="wrap">
+    <a href="../kod-milionerki-11/" class="reveal">
+      <span class="n" aria-hidden="true">11</span>
+      <div><small>Projekt wydawniczy PWCC · PL / EN</small><h3>Kod Milionerki 11 — 50 autorek, 11 kodów drogi do pierwszego miliona</h3><p>Międzynarodowa publikacja dla kobiet, których firmy osiągnęły min. 1 mln zł rocznego obrotu.</p></div>
+      <span class="btn btn-ghost">Poznaj projekt <span class="arr">→</span></span>
+    </a>
+  </div>
+</section>
+
 <!-- ================= STOPKA ================= -->
 <footer>
   <div class="wrap">
@@ -768,7 +786,7 @@ footer .bottom{margin-top:50px;padding-top:24px;border-top:1px solid rgba(198,16
       </div>
       <div>
         <h5>PWCC</h5>
-        <ul><li><a href="https://polishwomenchamber.pl/" target="_blank" rel="noopener">polishwomenchamber.pl</a></li><li><a href="../">Kongres Gospodarczy Kobiet Biznesu 2026</a></li><li><a data-mail href="#"></a></li></ul>
+        <ul><li><a href="https://polishwomenchamber.pl/" target="_blank" rel="noopener">polishwomenchamber.pl</a></li><li><a href="../">Kongres Gospodarczy Kobiet Biznesu 2026</a></li><li><a href="../kod-milionerki-11/">Kod Milionerki 11</a></li><li><a data-mail href="#"></a></li></ul>
       </div>
     </div>
     <div class="bottom"><span>© 2026 Polish Women Chamber of Commerce</span><span>Ceny reklam i&nbsp;partnerstw netto · subskrypcje konsumenckie brutto</span></div>
