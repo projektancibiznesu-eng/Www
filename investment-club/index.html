@@ -271,13 +271,27 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 .pres p{color:var(--muted);margin-bottom:14px}
 .committee{margin-top:64px}
 .committee .lbl{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:20px;text-align:center}
-.cm{display:grid;grid-template-columns:repeat(2,minmax(0,340px));justify-content:center;gap:20px}
+.cm{display:grid;grid-template-columns:minmax(0,420px);justify-content:center;gap:20px;margin-top:24px}
+.profile{display:grid;grid-template-columns:300px 1fr;gap:40px;background:#fff;border-radius:24px;padding:32px;box-shadow:var(--shadow);text-align:left}
+.profile img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:18px}
+.profile .r{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+.profile h3{font-size:clamp(1.6rem,2.6vw,2.1rem);margin:6px 0 12px}
+.profile p{color:var(--muted);margin-bottom:12px}
+.profile .inclub{background:var(--blush);color:var(--bordo);border-radius:12px;padding:12px 16px;font-weight:500}
+.pcols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0}
+.pcols h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bordo);margin-bottom:8px}
+.pcols ul{list-style:none}
+.pcols li{padding:5px 0 5px 22px;position:relative;font-size:.93rem;color:var(--text)}
+.pcols li::before{content:"✓";position:absolute;left:0;color:var(--gold-deep);font-weight:700}
+.profile .tags{display:flex;flex-wrap:wrap;gap:8px}
+.profile .tags span{font-size:.8rem;padding:6px 14px;background:var(--cream);color:var(--bordo);border-radius:999px}
+@media (max-width:860px){.profile{grid-template-columns:1fr;padding:24px}.profile img{max-width:320px}.pcols{grid-template-columns:1fr}}
 .cm>div{background:#fff;border-radius:var(--radius);padding:26px 26px;box-shadow:var(--shadow)}
 .cm .r{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
 .cm b{display:block;font-family:var(--serif);font-size:1.25rem;margin:6px 0 8px;font-weight:600;color:var(--bordo)}
 .cm span{font-size:.9rem;color:var(--muted)}
 @media (max-width:900px){.pres{grid-template-columns:1fr;gap:36px}.pres .ph{max-width:380px}}
-@media (max-width:620px){.cm{grid-template-columns:1fr}}
+
 
 /* ---------- MATERIAŁY ---------- */
 .gallery{background:var(--paper)}
@@ -701,8 +715,38 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
     </div>
     <div class="committee reveal">
       <div class="lbl">Komitet Programowy</div>
+      <article class="profile">
+        <img src="img/ewelina-gawlik.jpg" alt="Ewelina Gawlik" loading="lazy">
+        <div>
+          <div class="r">Dyrektorka Klubu · Dyrektor Regionalna PWCC</div>
+          <h3>Ewelina Gawlik</h3>
+          <p class="inclub">W&nbsp;Klubie odpowiada za organizację 12 spotkań w&nbsp;Warszawie: logistykę, scenariusze i&nbsp;oprawę każdego spotkania.</p>
+          <p>Przedsiębiorczyni ze Szczecina. Specjalizuje się w&nbsp;zarządzaniu biznesem jako HR Business Partner oraz w&nbsp;procesach restrukturyzacji i&nbsp;sukcesji. Działa w&nbsp;branżach HoReCa, HR i&nbsp;eventowej, a&nbsp;od lat buduje marki oparte na jakości, relacjach i&nbsp;profesjonalizmie.</p>
+          <p>W&nbsp;mediach ogólnopolskich i&nbsp;branżowych występuje jako ekspertka rynku pracy i&nbsp;zarządzania personelem. Organizuje prestiżowe gale biznesowe i&nbsp;wydarzenia networkingowe dla przedsiębiorców, liderów i&nbsp;marek premium.</p>
+          <div class="pcols">
+            <div>
+              <h4>Funkcje</h4>
+              <ul>
+                <li>Dyrektor Zarządzająca 3 spółek kapitałowych</li>
+                <li>Dyrektor Regionalna Polish Women Chamber of Commerce</li>
+                <li>Dyrektor Powiatowego Klubu PKB314</li>
+                <li>Ambasadorka Fundacji „Żyjemy za Krótko”</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Specjalizacje</h4>
+              <ul>
+                <li>outsourcing pracowniczy, rekrutacja i&nbsp;HR</li>
+                <li>zarządzanie hotelami i&nbsp;gastronomią</li>
+                <li>organizacja wydarzeń biznesowych</li>
+                <li>budowanie relacji między przedsiębiorcami</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tags"><span>Nova Praca Group</span><span>Work Employment</span><span>High Life</span><span>Hotel Bosak Szczecin</span><span>Corporate Events Ewelina Gawlik</span><span>Certyfikacja Krajowa</span></div>
+        </div>
+      </article>
       <div class="cm">
-        <div><div class="r">Dyrektorka</div><b>Ewelina Gawlik</b><span>Organizacja 12 spotkań w&nbsp;Warszawie: logistyka i&nbsp;oprawa</span></div>
         <div><div class="r">Koordynatorka</div><b>Małgorzata Grucka-Obst</b><span>Platforma klubowa, Giełda Konsultacji, rezerwacje, raporty kwartalne</span></div>
       </div>
     </div>
