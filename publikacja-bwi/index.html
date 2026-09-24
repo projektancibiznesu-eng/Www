@@ -103,6 +103,8 @@ header.nav .btn{padding:15px 22px;font-size:.72rem}
 .hero-text{position:relative;display:flex;flex-direction:column;justify-content:center;padding:150px max(32px,calc((100vw - var(--max))/2 + 32px)) 90px 30px}
 .hero .kicker{color:var(--gold)}
 .hero h1{color:#fff;margin-top:22px;font-weight:800;font-size:clamp(2.8rem,5.2vw,4.8rem);line-height:.98;letter-spacing:-.02em;text-transform:uppercase}
+.hero h1 .bk-title{display:block;margin-top:.2em;font-style:normal;font-weight:800;text-transform:uppercase;font-size:.86em;line-height:1;letter-spacing:-.01em;background:linear-gradient(135deg,#F3E2B8,#D9B774 55%,#C6A15E);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .bk-title small{display:block;font-family:var(--sans);font-size:.3em;letter-spacing:.3em;font-weight:700;color:var(--gold-light);-webkit-text-fill-color:var(--gold-light);margin-bottom:.35em}
 .hero h1 em{display:block;font-style:italic;font-weight:500;text-transform:none;color:var(--gold-light);font-size:.62em;line-height:1.1;letter-spacing:-.005em;margin-top:.18em}
 .hero .sub{margin-top:20px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.86rem;color:#fff}
 .hero p.claim{margin-top:16px;max-width:560px;font-size:1.06rem;color:rgba(255,255,255,.9)}
@@ -118,6 +120,8 @@ header.nav .btn{padding:15px 22px;font-size:.72rem}
 .cd-boxes span{display:block;margin-top:6px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
 .cd-note{margin-top:12px;font-size:.88rem;color:rgba(255,255,255,.85)}
 .cd-note b{color:var(--gold-light)}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.pills li{padding:9px 16px;border-radius:30px;background:rgba(255,255,255,.1);border:1px solid rgba(228,203,148,.5);font-size:.84rem;font-weight:600;color:#fff;letter-spacing:.02em}
 .photo-cap{position:absolute;left:32px;bottom:34px;z-index:2;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.4)}
 .photo-cap small{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);font-weight:700}
 .photo-cap b{font-family:var(--serif);font-size:1.4rem;font-weight:600}
@@ -225,7 +229,7 @@ header.nav .btn{padding:15px 22px;font-size:.72rem}
 .ben .ttl{display:block;margin-top:8px;font-family:var(--serif);font-style:italic;color:var(--bordo)}
 
 /* ================= 9–10. REALIZACJE ================= */
-.books{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:56px}
+.books{display:grid;grid-template-columns:repeat(2,minmax(0,300px));justify-content:center;gap:50px;margin-top:56px}
 .bk{text-align:center}
 .cover{aspect-ratio:2/3;border-radius:3px 8px 8px 3px;position:relative;padding:26px 20px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;box-shadow:inset 8px 0 12px -6px rgba(0,0,0,.4),0 30px 50px -30px rgba(62,0,4,.7);transition:transform .4s}
 .bk:hover .cover{transform:translateY(-8px) rotate(-1deg)}
@@ -302,7 +306,7 @@ form.f .actions{grid-column:1/-1}
 .ok{grid-column:1/-1;padding:14px 16px;border-radius:8px;background:var(--cream);border-left:3px solid var(--gold);font-size:.92rem}
 
 /* ================= STOPKA ================= */
-footer{background:var(--bordo-deep);color:rgba(255,255,255,.72);padding:70px 0 36px;font-size:.9rem}
+footer{background:linear-gradient(120deg,#8C0A12 0%,#A8121B 45%,#6A050C 100%);color:rgba(255,255,255,.72);padding:70px 0 36px;font-size:.9rem}
 footer .top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;align-items:start}
 footer img{width:220px;height:auto}
 footer h5{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
@@ -501,8 +505,7 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(198,16
   </div>
   <div class="hero-text reveal">
     <span class="kicker">Pod patronatem Polish Women Chamber of Commerce</span>
-    <h1>Zostań autorką <em>książki Business Women Impact</em></h1>
-    <div class="sub">Międzynarodowa publikacja · 50 autorek · PL / EN · 3 lata współpracy</div>
+    <h1>Zostań autorką <span class="bk-title"><small>książki</small>Business Women Impact</span></h1>
     <p class="claim">Przewodnik po sukcesie w&nbsp;biznesie, tworzony przez przedsiębiorczynie z&nbsp;Polski i&nbsp;świata — i&nbsp;Twoja biznesowa wizytówka na lata. Zostań jedną z&nbsp;50 autorek i&nbsp;dołącz do trzyletniej współpracy z&nbsp;liderkami z&nbsp;Polski i&nbsp;świata.</p>
     <div class="cta">
       <a href="#dolacz" class="btn btn-gold">Zostań autorką <span class="ar">↗</span></a>
@@ -518,6 +521,7 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(198,16
       </div>
       <div class="cd-note">Nabór wyłącznie do <b>31 października 2026, godz. 23:59</b></div>
     </div>
+    <ul class="pills"><li>Międzynarodowa publikacja</li><li>50 autorek</li><li>PL / EN</li><li>3 lata współpracy</li></ul>
   </div>
 </section>
 
@@ -742,12 +746,6 @@ footer .bottom{margin-top:28px;padding-top:22px;border-top:1px solid rgba(198,16
       <a class="bk reveal" href="https://www.naffy.io/global-women" target="_blank" rel="noopener">
         <div class="cover scd"><div class="tab"><span class="bird">✦</span><span class="t1">She<br>can<br>do it</span><span class="t3">Kobiety przyszłości</span></div></div>
         <h3>SHE CAN DO IT</h3><p>Kobiety Przyszłości</p></a>
-      <a class="bk reveal" href="https://www.naffy.io/global-women" target="_blank" rel="noopener">
-        <div class="cover wb"><span class="au">Patricia Mitro</span><span class="t1">Workbook<br>High-Level</span><span class="t2">Przewodnik</span><span class="t3">do Spełnionego Życia</span><span class="t4">50 metod i ćwiczeń</span><span class="au b">Patricia Mitro</span></div>
-        <h3>Przewodnik do Spełnionego Życia</h3><p>Workbook High-Level · 50 metod i&nbsp;ćwiczeń</p></a>
-      <a class="bk reveal" href="https://www.naffy.io/global-women" target="_blank" rel="noopener">
-        <div class="cover zz"><span class="t1">Zacznij<br>żyć</span><span class="t3">Przestań czekać</span></div>
-        <h3>Przestań czekać — zacznij żyć</h3><p>Patricia Mitro</p></a>
     </div>
     <div class="naffy reveal">
       <div><h3>Global Women <em>— wszystkie publikacje</em></h3><p>Zobacz nasze książki na platformie Naffy.</p></div>
