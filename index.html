@@ -574,6 +574,14 @@ footer .logo{margin-bottom:26px}
 .pbar-txt{flex-direction:column;text-align:center;max-width:230px;gap:4px}
 .pbar-txt b{font-family:var(--serif);font-size:1.35rem;color:var(--navy);letter-spacing:.04em}
 .pbar-txt span{font-size:.62rem;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.history{position:relative;margin:0 auto 34px;max-width:900px;text-align:center;padding:40px 44px;border-radius:20px;background:radial-gradient(600px 260px at 50% 0%,rgba(228,203,148,.35),transparent 70%),linear-gradient(160deg,var(--navy),var(--ink));color:#fff;box-shadow:0 0 0 2px var(--gold),0 30px 60px -30px rgba(58,6,10,.8)}
+.history-tag{display:inline-block;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;background:var(--gold);color:var(--ink);padding:7px 16px;border-radius:40px}
+.history h3{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.3rem);margin:18px 0 14px;line-height:1.2}
+.history h3 em{color:var(--gold-light);font-style:italic;font-weight:400}
+.history p{color:rgba(255,255,255,.82);line-height:1.7}
+.amb{display:flex;flex-direction:column;align-items:flex-start}
+.amb-photo{width:96px;height:96px;border-radius:50%;padding:3px;background:linear-gradient(135deg,#F3E2B8,var(--gold),var(--gold-deep));margin-bottom:16px}
+.amb-photo span,.amb-photo img{width:100%;height:100%;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--navy-2),var(--ink));color:var(--gold-light);font-family:var(--serif);font-size:1.9rem;object-fit:cover;border:2px solid var(--ink)}
 /* ---------- momenty / dyplomacja ---------- */
 .cards5{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
 .cards5 .card{padding:30px 22px 26px}
@@ -912,9 +920,9 @@ footer .logo{margin-bottom:26px}
     </div>
     <h4 class="sub-h reveal">Ambasadorki, które wezmą aktywny udział w Kongresie</h4>
     <div class="amb-grid">
-        <article class="amb reveal"><span class="amb-st">Udział potwierdzony</span><h3>J.E. Clémentine Shakembo Kamanga</h3><p class="amb-role">Ambasador Demokratycznej Republiki Konga w Polsce</p><p class="amb-x">wraz z pierwszą radczynią Ambasady, Bijou Ambago Mbali</p></article>
-        <article class="amb reveal"><span class="amb-st">Udział potwierdzony</span><h3>J.E. Emmanuelle Lamoureux</h3><p class="amb-role">Ambasador Kanady w Polsce</p></article>
-        <article class="amb reveal"><span class="amb-st">Zadeklarowała chęć udziału</span><h3>J.E. Neeta Bhushan</h3><p class="amb-role">Ambasador Indii w Polsce</p></article>
+        <article class="amb reveal"><div class="amb-photo" aria-hidden="true"><span>CK</span></div><span class="amb-st">Udział potwierdzony</span><h3>J.E. Clémentine Shakembo Kamanga</h3><p class="amb-role">Ambasador Demokratycznej Republiki Konga w Polsce</p><p class="amb-x">wraz z pierwszą radczynią Ambasady, Bijou Ambago Mbali</p></article>
+        <article class="amb reveal"><div class="amb-photo" aria-hidden="true"><span>EL</span></div><span class="amb-st">Udział potwierdzony</span><h3>J.E. Emmanuelle Lamoureux</h3><p class="amb-role">Ambasador Kanady w Polsce</p></article>
+        <article class="amb reveal"><div class="amb-photo" aria-hidden="true"><span>NB</span></div><span class="amb-st">Zadeklarowała chęć udziału</span><h3>J.E. Neeta Bhushan</h3><p class="amb-role">Ambasador Indii w Polsce</p></article>
     </div>
     <p class="amb-note reveal">Trwają rozmowy z kolejnymi ambasadami oraz organizacjami kobiet biznesu — m.in. z Mołdawii, Bośni i Hercegowiny, Republiki Południowej Afryki, Mauritiusu i Australii. Pełna lista delegacji zostanie ogłoszona przed wydarzeniem.</p>
     <div class="inv-grid">
@@ -936,10 +944,39 @@ footer .logo{margin-bottom:26px}
   <div class="wrap">
     <div class="sec-head center reveal">
       <span class="eyebrow center">Program Kongresu</span>
-      <h2>Dzień, w&nbsp;którym kobiecy biznes <em>zabiera głos</em></h2>
+      <h2>Dwa dni, w&nbsp;których kobiecy biznes <em>zabiera głos</em></h2>
       <p class="lead">Każdy blok ma jasno określony rezultat — od pierwszej rozmowy po konkretne zobowiązania po Kongresie.</p>
     </div>
-    <div class="day-tabs single reveal"><div class="on"><strong>6 listopada 2026</strong><span>Butelkownia, Warszawa · 11:30–24:00</span><em>Business Women IMPACT 2026</em></div></div>
+    <div class="day-tabs reveal" role="tablist">
+      <button type="button" role="tab" data-day="1" aria-selected="false"><strong>Dzień I · 5 listopada</strong><span>11:00–17:00 · spotkanie zamknięte</span><em>Dzień Delegacji · Global Women Chamber of Commerce</em></button>
+      <button type="button" role="tab" class="on" data-day="2" aria-selected="true"><strong>Dzień II · 6 listopada</strong><span>Butelkownia, Warszawa · 11:30–24:00</span><em>Business Women IMPACT 2026</em></button>
+    </div>
+
+    <!-- DZIEŃ I -->
+    <div class="day-panel" data-panel="1" hidden>
+      <div class="history reveal">
+        <span class="history-tag">Tu tworzy się historia</span>
+        <h3>Wspólny plan współpracy gospodarczej <em>do grudnia 2027 r.</em></h3>
+        <p>Dzień Delegacji to zamknięte spotkanie ambasadorek, izb gospodarczych i&nbsp;delegacji z&nbsp;ponad 25 państw. Jego zwieńczeniem będzie uroczyste powołanie Global Women Chamber of Commerce — pierwszej światowej instytucji gospodarczej tego typu. Wspólnie wypracujemy międzynarodową mapę potrzeb, zasobów i&nbsp;możliwości oraz plan współpracy gospodarczej z&nbsp;konkretnymi projektami, liderami i&nbsp;terminami realizacji do grudnia 2027 roku. Pierwsze działania ruszą w&nbsp;ciągu 72 godzin.</p>
+      </div>
+      <p class="day-note reveal">Spotkanie zamknięte — udział na zaproszenie.</p>
+      <ol class="agenda">
+        <li class="reveal"><time>11:00–11:25</time><div><h4>Rejestracja i&nbsp;networking powitalny</h4><p>Potwierdzenie obecności, tłumaczenia i&nbsp;pierwsze kontakty.</p></div></li>
+        <li class="reveal"><time>11:25–11:40</time><div><h4>Otwarcie i&nbsp;wspólna ambicja</h4><p>Cel GWCC jako pierwszej światowej instytucji tego typu oraz rola 25 struktur założycielskich.</p></div></li>
+        <li class="reveal"><time>11:40–12:20</time><div><h4>Międzynarodowa mapa możliwości</h4><p>Każda organizacja przedstawia swój rynek, skalę działania, kompetencje i&nbsp;oczekiwane partnerstwa.</p></div></li>
+        <li class="reveal"><time>12:20–13:05</time><div><h4>Warsztat I: diagnoza i&nbsp;potencjał</h4><p>Potrzeby kobiet biznesu, bariery w&nbsp;eksporcie, ESG, finansowaniu i&nbsp;dostępie do łańcuchów dostaw.</p></div></li>
+        <li class="reveal"><time>13:05–13:25</time><div><h4>Przerwa kawowa</h4><p>Networking według obszarów zainteresowania.</p></div></li>
+        <li class="reveal"><time>13:25–13:45</time><div><h4>Wnioski i&nbsp;wspólne priorytety</h4><p>Najważniejsze potrzeby, zasoby i&nbsp;obszary możliwej współpracy.</p></div></li>
+        <li class="reveal highlight"><time>13:45–14:25</time><div><h4>Global Women Chamber of Commerce</h4><p>Przedstawienie modelu sieci, grona założycieli i&nbsp;uroczyste wręczenie nominacji do tworzonych struktur.</p></div></li>
+        <li class="reveal"><time>14:25–14:40</time><div><h4>Zdjęcia i&nbsp;komunikat medialny</h4><p>Wspólne zdjęcie nominowanych oraz delegacji.</p></div></li>
+        <li class="reveal"><time>14:40–15:00</time><div><h4>Przerwa kawowa</h4><p>Rozmowy z&nbsp;nominowanymi i&nbsp;partnerami.</p></div></li>
+        <li class="reveal"><time>15:00–15:25</time><div><h4>Pierwsze wspólne produkty GWCC</h4><p>Magazyn Business Women IMPACT, międzynarodowe certyfikacje oraz licencje na książki i&nbsp;programy szkoleniowe.</p></div></li>
+        <li class="reveal"><time>15:25–16:15</time><div><h4>Warsztat II: aktywności komercyjne</h4><p>Konkretne przedsięwzięcia: odbiorca, korzyść, model finansowania, liderzy i&nbsp;pierwsze kroki.</p></div></li>
+        <li class="reveal"><time>16:15–16:40</time><div><h4>Prezentacja portfela projektów</h4><p>3–5 najważniejszych projektów, organizacje prowadzące i&nbsp;terminy spotkań startowych.</p></div></li>
+        <li class="reveal"><time>16:40–16:55</time><div><h4>Deklaracje współpracy</h4><p>Zgłoszenia do projektów, komitetów i&nbsp;programów pilotażowych.</p></div></li>
+        <li class="reveal"><time>16:55–17:00</time><div><h4>Zamknięcie</h4><p>Podsumowanie i&nbsp;plan działań na kolejne 72 godziny.</p></div></li>
+      </ol>
+    </div>
 
     <!-- DZIEŃ II -->
     <div class="day-panel" data-panel="2">
@@ -1203,6 +1240,15 @@ footer .logo{margin-bottom:26px}
    Nowy tekst na stronie = dopisz tu jego tłumaczenie.
    ========================================================= */
 const I18N_EN = {
+  "Tu tworzy się historia": "History in the making",
+  "Wspólny plan współpracy gospodarczej": "A joint economic cooperation plan",
+  "do grudnia 2027 r.": "through December 2027",
+  "Dzień Delegacji to zamknięte spotkanie ambasadorek, izb gospodarczych i delegacji z ponad 25 państw. Jego zwieńczeniem będzie uroczyste powołanie Global Women Chamber of Commerce — pierwszej światowej instytucji gospodarczej tego typu. Wspólnie wypracujemy międzynarodową mapę potrzeb, zasobów i możliwości oraz plan współpracy gospodarczej z konkretnymi projektami, liderami i terminami realizacji do grudnia 2027 roku. Pierwsze działania ruszą w ciągu 72 godzin.": "The Delegation Day is a closed meeting of ambassadors, chambers of commerce and delegations from over 25 countries, culminating in the ceremonial launch of the Global Women Chamber of Commerce — the first global economic institution of its kind. Together we will build an international map of needs, resources and opportunities, and an economic cooperation plan with concrete projects, leaders and deadlines through December 2027. The first actions will begin within 72 hours.",
+  "Spotkanie zamknięte — udział na zaproszenie.": "Closed meeting — by invitation only.",
+  "Dzień I · 5 listopada": "Day I · 5 November",
+  "11:00–17:00 · spotkanie zamknięte": "11:00 am–5:00 pm · closed meeting",
+  "Dzień Delegacji · Global Women Chamber of Commerce": "Delegation Day · Global Women Chamber of Commerce",
+  "Dzień II · 6 listopada": "Day II · 6 November",
   "Izby i organizacje Rady Programowej": "Chambers and organisations of the Programme Council",
   "Polsko-Kazachstańska Izba Handlowo-Przemysłowa": "Polish-Kazakh Chamber of Commerce and Industry",
   "Partnerzy wydarzenia": "Event partners",
