@@ -23,9 +23,9 @@ Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgr
 - **Ceny, strony i działy**: tablice `SECTIONS`, `COVERS`, `PACKAGES` i `DIST` na początku ostatniego `<script>` — mapa, tabele i zestawienie budują się z nich automatycznie.
 - **Adres zapytań**: obiekt `CONFIG` w tym samym skrypcie.
 
-## Podstrona książki — `/ksiazka/`
+## Podstrona książki — `/publikacja-bwi/`
 
-`ksiazka/index.html` to strona książki **Business Women IMPACT** (treść z kodmilionerki11.pl): cel książki, symbolika 11, 11 kodów, 50 autorek i plan rozdziału, persona czytelniczki, korzyści dla autorek, harmonogram i kontakt.
+`publikacja-bwi/index.html` to strona książki **Business Women IMPACT** (treść z kodmilionerki11.pl): cel książki, symbolika 11, 11 kodów, 50 autorek i plan rozdziału, persona czytelniczki, korzyści dla autorek, harmonogram i kontakt.
 
 - **E-mail kontaktowy i link do zapisów (Calendly)**: obiekt `CONFIG` w ostatnim `<script>`.
 - **11 kodów**: tablica `CODES` w tym samym skrypcie.
