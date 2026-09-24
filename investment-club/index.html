@@ -271,7 +271,9 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 .pres p{color:var(--muted);margin-bottom:14px}
 .committee{margin-top:64px}
 .committee .lbl{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:20px;text-align:center}
-.cm{display:grid;grid-template-columns:minmax(0,420px);justify-content:center;gap:20px;margin-top:24px}
+.profile+.profile{margin-top:28px}
+.profile.rev{grid-template-columns:1fr 300px}
+.profile.rev img{order:2}
 .profile{display:grid;grid-template-columns:300px 1fr;gap:40px;background:#fff;border-radius:24px;padding:32px;box-shadow:var(--shadow);text-align:left}
 .profile img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:18px}
 .profile .r{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
@@ -285,11 +287,7 @@ header.nav.scrolled{background:rgba(255,253,251,.95);backdrop-filter:blur(10px);
 .pcols li::before{content:"✓";position:absolute;left:0;color:var(--gold-deep);font-weight:700}
 .profile .tags{display:flex;flex-wrap:wrap;gap:8px}
 .profile .tags span{font-size:.8rem;padding:6px 14px;background:var(--cream);color:var(--bordo);border-radius:999px}
-@media (max-width:860px){.profile{grid-template-columns:1fr;padding:24px}.profile img{max-width:320px}.pcols{grid-template-columns:1fr}}
-.cm>div{background:#fff;border-radius:var(--radius);padding:26px 26px;box-shadow:var(--shadow)}
-.cm .r{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
-.cm b{display:block;font-family:var(--serif);font-size:1.25rem;margin:6px 0 8px;font-weight:600;color:var(--bordo)}
-.cm span{font-size:.9rem;color:var(--muted)}
+@media (max-width:860px){.profile,.profile.rev{grid-template-columns:1fr;padding:24px}.profile.rev img{order:0}.profile img{max-width:320px}.pcols{grid-template-columns:1fr}}
 @media (max-width:900px){.pres{grid-template-columns:1fr;gap:36px}.pres .ph{max-width:380px}}
 
 
@@ -735,9 +733,35 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(233,213,168,.25);paddin
           <div class="tags"><span>Nova Praca Group</span><span>Work Employment</span><span>High Life</span><span>Hotel Bosak Szczecin</span><span>Corporate Events Ewelina Gawlik</span><span>Certyfikacja Krajowa</span></div>
         </div>
       </article>
-      <div class="cm">
-        <div><div class="r">Koordynatorka</div><b>Małgorzata Grucka-Obst</b><span>Platforma klubowa, Giełda Konsultacji, rezerwacje, raporty kwartalne</span></div>
-      </div>
+      <article class="profile rev">
+        <img src="img/malgorzata-grucka-obst.jpg" alt="Małgorzata Grucka-Obst" loading="lazy">
+        <div>
+          <div class="r">Koordynatorka Klubu · Dyrektor Krajowa PWCC</div>
+          <h3>Małgorzata Grucka-Obst</h3>
+          <p class="inclub">W&nbsp;Klubie koordynuje codzienną pracę: platformę klubową, Giełdę Konsultacji, rezerwacje, bieżącą logistykę oraz kwartalne raporty dla członków.</p>
+          <p>Łączy doświadczenie w&nbsp;organizacji wydarzeń z&nbsp;pracą mentorki i&nbsp;rolą Dyrektor Krajowej Izby Gospodarczej Polish Women Chamber of Commerce. Dba o&nbsp;to, by członkowie Klubu mieli sprawną komunikację, dostęp do konsultacji i&nbsp;dobrze przygotowane spotkania.</p>
+          <div class="pcols">
+            <div>
+              <h4>Funkcje</h4>
+              <ul>
+                <li>Koordynatorka Polish Investment Club</li>
+                <li>Dyrektor Krajowa Izby Gospodarczej Polish Women Chamber of Commerce</li>
+                <li>Mentor Certyfikacja Brytyjska</li>
+                <li>Event Manager</li>
+              </ul>
+            </div>
+            <div>
+              <h4>W Klubie odpowiada za</h4>
+              <ul>
+                <li>platformę klubową i&nbsp;komunikację</li>
+                <li>Giełdę Konsultacji i&nbsp;rezerwacje</li>
+                <li>bieżącą logistykę</li>
+                <li>raporty kwartalne dla członków</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
