@@ -15,3 +15,5 @@ Strona to plik `index.html` i folder `assets/` (bez budowania) — wystarczy wgr
 - **Grafiki** (`assets/`): `patricia-claudia-mitro.jpg` (baner i okładka magazynu), `pwcc-logo.png` / `pwcc-logo-gold.png` (logo organizatora na jasne / bordowe tło), `pwcc-emblem.png` (godło w logo Kongresu w menu).
 - **Logotypy pozostałych partnerów**: miejsca oznaczone w sekcji Partnerzy.
 - **Wersja angielska (PL / EN)**: przełącznik w pasku menu. Tłumaczenia są w słowniku `I18N_EN` w `index.html` — każdy nowy polski tekst trzeba tam dopisać z angielskim odpowiednikiem. Wybór języka jest zapamiętywany; link `?lang=en` otwiera stronę od razu po angielsku, a osoby z przeglądarką w innym języku niż polski widzą automatycznie wersję angielską.
+
+**Dzień Delegacji (5.11.2026)** — osobna dwujęzyczna strona `dzien-delegacji.html` (PL/EN): link Zoom, program dnia, stoły warsztatowe, nagrania na miejscu i pełny tekst Manifestu Poparcia GWCC. Teksty obu języków są w tym pliku obok siebie (`data-l="pl"` / `data-l="en"`). Dokumenty do pobrania: `assets/dokumenty/`.
